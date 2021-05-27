@@ -1,0 +1,11 @@
+From /var/www/html/werewolf/../werewolf
+   82184ce..5b6ad36  master     -> origin/master
+Auto packing the repository for optimum performance. You may also
+run "git gc" manually. See "git help gc" for more information.
+Already up-to-date.
+From /var/www/html/werewolf/../werewolf
+   5b6ad36..e7badad  master     -> origin/master
+Updating 5b6ad36..e7badad
+Fast-forward
+ resources/views/welcome.blade.php | 1 +
+ 1 file changed, 1 insertion(+)

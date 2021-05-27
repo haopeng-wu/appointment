@@ -40,4 +40,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+	public function hostedGames(){
+		return $this->hasMany(Game::class, 'host_id');
+	}
+
+	public function foundedGames(){
+		return $this->hasMany(Game::class, 'founder_id');
+	}
+
+	public function playedGames(){
+		return $this->hasMany(PlayGame::class, 'player_id');
+	}
 }
