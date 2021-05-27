@@ -9,3 +9,6 @@ Updating 5b6ad36..e7badad
 Fast-forward
  resources/views/welcome.blade.php | 1 +
  1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   e7badad..d5a1884  master     -> origin/master
+Already up-to-date.
