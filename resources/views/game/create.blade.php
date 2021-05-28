@@ -3,16 +3,16 @@
 <form class="text-xl ml-10" method="post" action="/game/store">
     @csrf
     <div class="mb-8 text-3xl">
-        <label for="total-player">玩家总数:</label>
-        <input class="border border-gray-400 w-10 ml-2" type="string" name="total-player">
-        @error('total-player')
+        <label for="total">玩家总数:</label>
+        <input class="border border-gray-400 w-10 ml-2" type="string" name="total">
+        @error('total')
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
     </div>
     <div class="mb-4">
-        <label for="total-player">村名数:</label>
-        <input class="border border-gray-400 w-8 ml-2" type="string" name="total-player">
-        @error('total-player')
+        <label for="villager">村名数:</label>
+        <input class="border border-gray-400 w-8 ml-2" type="string" name="villager">
+        @error('villager')
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
     </div>
@@ -26,9 +26,9 @@
         白狼王<input class="mr-2 ml-1" type="checkbox" name="special" value="white-wolf-king">
     </div>
     <div class="mb-4">
-        <label for="total-player">狼人数:</label>
-        <input class="border border-gray-400 w-8 ml-2" type="string" name="total-player">
-        @error('total-player')
+        <label for="wolf">狼人数:</label>
+        <input class="border border-gray-400 w-8 ml-2" type="string" name="wolf">
+        @error('wolf')
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
     </div>
