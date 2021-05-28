@@ -31,5 +31,9 @@
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
     </div>
+
+    <button type='submit' class='bg-blue-500 rounded-full shadow py-2 px-4 text-white'>
+        创建
+    </button>
 </form>
 </x-master>
