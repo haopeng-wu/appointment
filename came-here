@@ -15,3 +15,27 @@ Already up-to-date.
 From /var/www/html/werewolf/../werewolf
    d5a1884..bc37753  master     -> origin/master
 Already up-to-date.
+From /var/www/html/werewolf/../werewolf
+   bc37753..19018b3  master     -> origin/master
+Already up-to-date.
+From /var/www/html/werewolf/../werewolf
+   19018b3..f15c73d  master     -> origin/master
+Updating 19018b3..f15c73d
+Fast-forward
+ resources/views/home.blade.php | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 resources/views/home.blade.php
+From /var/www/html/werewolf/../werewolf
+   f15c73d..fd20225  master     -> origin/master
+Updating f15c73d..fd20225
+Fast-forward
+ resources/views/components/master.blade.php | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 resources/views/components/master.blade.php
+From /var/www/html/werewolf/../werewolf
+   fd20225..d80a438  master     -> origin/master
+Updating fd20225..d80a438
+Fast-forward
+ resources/views/components/master.blade.php | 1 +
+ resources/views/home.blade.php              | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
