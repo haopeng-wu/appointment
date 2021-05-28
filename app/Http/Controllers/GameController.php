@@ -63,8 +63,9 @@ class GameController extends Controller
             "white-wolf-king"=>['nullable','numeric', 'max:1', 'min:0']
         ]);
         #dd($attributes);
-        Game::create($attributes);
-        return 'Created!';
+        $game=Game::create($attributes);
+        dd($game);
+        return view("game.created", ["gameId"=>]);
     }
 
     /**
