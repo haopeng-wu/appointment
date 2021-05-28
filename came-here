@@ -39,3 +39,19 @@ Fast-forward
  resources/views/components/master.blade.php | 1 +
  resources/views/home.blade.php              | 2 +-
  2 files changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   d80a438..ad4e9eb  master     -> origin/master
+Already up-to-date.
+From /var/www/html/werewolf/../werewolf
+   ad4e9eb..bf7784f  master     -> origin/master
+Updating ad4e9eb..bf7784f
+Fast-forward
+ resources/views/home.blade.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bf7784f..0a15857  master     -> origin/master
+Updating bf7784f..0a15857
+Fast-forward
+ resources/views/home.blade.php | 13 +++++++++++--
+ routes/web.php                 |  4 ++++
+ 2 files changed, 15 insertions(+), 2 deletions(-)
