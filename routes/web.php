@@ -17,6 +17,10 @@ Route::get('/', function () {
     #return view('welcome');
     return view('home');
 });
+Route::get('/startGame', function () {
+    #return view('welcome');
+    return view('home');
+});
 
 
 Auth::routes();
