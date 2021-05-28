@@ -22,5 +22,8 @@ Route::get('/game/create', 'App\Http\Controllers\GameController@create');
 
 Route::post('/game/enter', 'App\Http\Controllers\GameController@enter');
 
+Route::post('/game/store', 'App\Http\Controllers\GameController@store');
+
+
 
 Auth::routes();
