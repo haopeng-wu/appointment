@@ -53,7 +53,7 @@ class GameController extends Controller
         $attributes = request()->validate([
             "total"=>['required', 'numeric', 'max:15', 'min:4'],
             "villager"=>['required', 'numeric', 'max:15', 'min:4'],
-            "wolf"=>['required','numeric', 'max:15', 'min:4'],
+            "wolf"=>['required','numeric', 'max:15', 'min:1'],
             "witch"=>['nullable','numeric', 'max:1', 'min:0'],
             "hunter"=>['nullable','numeric', 'max:1', 'min:0'],
             "prophet"=>['nullable','numeric', 'max:1', 'min:0'],
