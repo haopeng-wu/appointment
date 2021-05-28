@@ -1,6 +1,7 @@
 <x-master>
 <h2 class="uppercase text-2xl mb-4">Let's create a game:</h2>
 <form class="text-xl ml-10" method="post" action="/game/store">
+    @csrf
     <div class="mb-8 text-3xl">
         <label for="total-player">玩家总数:</label>
         <input class="border border-gray-400 w-10 ml-2" type="string" name="total-player">
