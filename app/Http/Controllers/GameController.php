@@ -18,6 +18,21 @@ class GameController extends Controller
     }
 
     /**
+     * Enter a game.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function enter()
+    {
+        $attributes=request()->validate(["roomId"=>"number"]);
+        if(request('roomId')){
+            $roomId=$attributes['roomId']
+            return "Let enter room $roomId";
+        }
+        return "You didn't enter a room number";
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

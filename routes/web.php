@@ -17,10 +17,9 @@ Route::get('/', function () {
     #return view('welcome');
     return view('home');
 });
-Route::get('/startGame', function () {
-    #return view('welcome');
-    return view('home');
-});
+
+Route::get('/game/create', 'App\Http\Controllers\GameController@create');
+Route::get('/game/enter', 'App\Http\Controllers\GameController@create');
 
 
 Auth::routes();
