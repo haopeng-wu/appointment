@@ -50,8 +50,20 @@ class GameController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
-        dd($request["total"]);
+        $attributes = request()->validate([
+            "total"=>['required', 'numeric', 'max:15', 'min:4'],
+            "villager"=>['required', 'numeric', 'max:15', 'min:4'],
+            "wolf"=>['required','numeric', 'max:15', 'min:4'],
+            "witch"=>['nullable','numeric', 'max:1', 'min:0'],
+            "hunter"=>['nullable','numeric', 'max:1', 'min:0'],
+            "prophet"=>['nullable','numeric', 'max:1', 'min:0'],
+            "guardian"=>['nullable','numeric', 'max:1', 'min:0'],
+            "knight"=>['nullable','numeric', 'max:1', 'min:0'],
+            "wolf-king"=>['nullable','numeric', 'max:1', 'min:0'],
+            "white-wolf-king"=>['nullable','numeric', 'max:1', 'min:0']
+        ]);
+        dd($attributes);
+        return 0;
     }
 
     /**
