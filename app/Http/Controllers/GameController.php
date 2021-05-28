@@ -65,7 +65,7 @@ class GameController extends Controller
         #dd($attributes);
         $game=Game::create($attributes);
         dd($game);
-        return view("game.created", ["gameId"=>]);
+        #return view("game.created", ["gameId"=>]);
     }
 
     /**
