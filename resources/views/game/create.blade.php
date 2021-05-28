@@ -1,16 +1,16 @@
 <x-master>
 <h2 class="uppercase text-2xl mb-4">Let's create a game:</h2>
 <form class="text-xl ml-10" method="post" action="/game/store">
-    <div class="mb-4">
-        <label for="total-player">玩家数:</label>
-        <input class="border border-gray-400 w-8" type="string" name="total-player">
+    <div class="mb-8 text-3xl">
+        <label for="total-player">玩家总数:</label>
+        <input class="border border-gray-400 w-10 ml-2" type="string" name="total-player">
         @error('total-player')
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
     </div>
     <div class="mb-4">
         <label for="total-player">村名数:</label>
-        <input class="border border-gray-400 w-8" type="string" name="total-player">
+        <input class="border border-gray-400 w-8 ml-2" type="string" name="total-player">
         @error('total-player')
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
@@ -26,7 +26,7 @@
     </div>
     <div class="mb-4">
         <label for="total-player">狼人数:</label>
-        <input class="border border-gray-400 w-8" type="string" name="total-player">
+        <input class="border border-gray-400 w-8 ml-2" type="string" name="total-player">
         @error('total-player')
         <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
         @enderror
