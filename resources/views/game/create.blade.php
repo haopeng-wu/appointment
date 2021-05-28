@@ -1,6 +1,6 @@
 <x-master>
 <h2 class="uppercase text-2xl mb-4">Let's create a game:</h2>
-<form class="text-xl" method="post" action="/game/store">
+<form class="text-xl ml-10" method="post" action="/game/store">
     <div class="mb-4">
         <label for="total-player">玩家数:</label>
         <input class="border border-gray-400 w-8" type="string" name="total-player">
@@ -32,7 +32,7 @@
         @enderror
     </div>
 
-    <button type='submit' class='bg-blue-500 rounded-full shadow py-2 px-4 text-white'>
+    <button type='submit' class='bg-blue-500 rounded shadow py-2 px-4 text-white'>
         创建
     </button>
 </form>
