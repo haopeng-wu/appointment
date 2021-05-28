@@ -19,7 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/game/create', 'App\Http\Controllers\GameController@create');
-Route::get('/game/enter', 'App\Http\Controllers\GameController@create');
+
+Route::post('/game/enter', 'App\Http\Controllers\GameController@enter');
 
 
 Auth::routes();
