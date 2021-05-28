@@ -24,7 +24,7 @@ class GameController extends Controller
      */
     public function enter()
     {
-        $attributes=request()->validate(["roomId"=>"number"]);
+        $attributes=request()->validate(["roomId"=>"numeric"]);
         if(request('roomId')){
             $roomId=$attributes['roomId'];
             return "Let enter room $roomId";
@@ -39,7 +39,7 @@ class GameController extends Controller
      */
     public function create()
     {
-        //
+        return view()
     }
 
     /**
