@@ -17,13 +17,13 @@
         @enderror
     </div>
     <div class="mb-4">
-        女巫<input class="mr-2 ml-1" type="checkbox" name="special" value="witch">
-        预言家<input class="mr-2 ml-1" type="checkbox" name="special" value="prophet">
-        猎人<input class="mr-2 ml-1" type="checkbox" name="special" value="hunter">
-        守卫<input class="mr-2 ml-1" type="checkbox" name="special" value="guardian">
-        骑士<input class="mr-2 ml-1" type="checkbox" name="special" value="knight">
-        狼王<input class="mr-2 ml-1" type="checkbox" name="special" value="wolf-king">
-        白狼王<input class="mr-2 ml-1" type="checkbox" name="special" value="white-wolf-king">
+        女巫<input class="mr-2 ml-1" type="checkbox" name="witch" value="witch">
+        预言家<input class="mr-2 ml-1" type="checkbox" name="prophet" value="prophet">
+        猎人<input class="mr-2 ml-1" type="checkbox" name="hunter" value="hunter">
+        守卫<input class="mr-2 ml-1" type="checkbox" name="guardian" value="guardian">
+        骑士<input class="mr-2 ml-1" type="checkbox" name="knight" value="knight">
+        狼王<input class="mr-2 ml-1" type="checkbox" name="wolf-king" value="wolf-king">
+        白狼王<input class="mr-2 ml-1" type="checkbox" name="white-wolf-king" value="white-wolf-king">
     </div>
     <div class="mb-4">
         <label for="wolf">狼人数:</label>
