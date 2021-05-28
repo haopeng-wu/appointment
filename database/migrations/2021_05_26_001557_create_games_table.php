@@ -17,6 +17,18 @@ class CreateGamesTable extends Migration
             $table->id();
 			$table->foreignId('founder_id')->nullable();
 			$table->foreignId('host_id')->nullable();
+
+			$table->integer('total')->nullable();
+			$table->integer('villager')->nullable();
+			$table->integer('wolf')->nullable();
+			$table->integer('prophet')->nullable();
+			$table->integer('guardian')->nullable();
+			$table->integer('hunter')->nullable();
+			$table->integer('witch')->nullable();
+			$table->integer('knight')->nullable();
+			$table->integer('wolf-king')->nullable();
+			$table->integer('white-wolf-king')->nullable();
+
             $table->timestamps();
 
 			$table->foreign('founder_id')->references('id')->on('users')->onDelete('cascade');

@@ -55,3 +55,27 @@ Fast-forward
  resources/views/home.blade.php | 13 +++++++++++--
  routes/web.php                 |  4 ++++
  2 files changed, 15 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d63f60d..4a62a21  master     -> origin/master
+Updating d63f60d..4a62a21
+Fast-forward
+ app/Http/Controllers/GameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   4a62a21..0cc57f5  master     -> origin/master
+Updating 4a62a21..0cc57f5
+Fast-forward
+ app/Http/Controllers/GameController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   0cc57f5..02b1509  master     -> origin/master
+Updating 0cc57f5..02b1509
+Fast-forward
+ resources/views/game/create.blade.php | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   02b1509..596141f  master     -> origin/master
+Updating 02b1509..596141f
+Fast-forward
+ resources/views/game/create.blade.php | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
