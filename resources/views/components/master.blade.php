@@ -9,6 +9,7 @@
 <body>
 <div class="bg-blue-300">
     <h2>Werewolf</h2>
+    <a href="/"><h2>Home</h2></a>
 </div>
 {{$slot}}
 </body>
