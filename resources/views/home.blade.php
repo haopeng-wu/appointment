@@ -1,5 +1,5 @@
 <x-master>
-    <div class="">
+    <div class="container max-w-md mx-auto  justify-center">
         <div class="bg-blue-500 rounded-full shadow py-2 px-4 text-white text-xl">
             <a href="/game/create">建房</a>
         </div>
