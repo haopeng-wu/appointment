@@ -27,9 +27,11 @@ class GameController extends Controller
         $attributes=request()->validate(["roomId"=>["numeric","nullable"]]);
         if(request('roomId')){
             $roomId=$attributes['roomId'];
-            return "Let's enter room $roomId";
+            #return "Let's enter room $roomId";
+            return view("game.room",["roomId"=>$roomId]);
         }
-        return "You didn't enter a room number";
+        #return "You didn't enter a room number";
+        return view("game.enter-error");
     }
 
     /**
