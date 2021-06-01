@@ -44,7 +44,10 @@ class PlayGameController extends Controller
         $card_id=$card_ids[0];
         $card_name=Card::find($card_id)->name;
 
-        PlayGame::create(['game_id'=>$roomId, 'player_id'=>$user_id, 'card_id'=>$card_id]);
+        if(! PlayGame::exists(['game_id'=>$roomId, 'player_id'=>$user_id, 'card_id'=>$card_id])){
+            PlayGame::create(['game_id' => $roomId, 'player_id' => $user_id, 'card_id' => $card_id]);
+        }
+
         return "你的身份牌是：".$card_name.";用户号是："."$user_id".";房间名是：".$roomId;
 
     }
