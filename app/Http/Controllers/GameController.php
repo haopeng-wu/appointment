@@ -34,7 +34,7 @@ class GameController extends Controller
              * cookies:
              * user_id
              */
-            if ($request->cookie('user_id') or ){
+            if ($request->cookie('user_id')){
                 $user_id=$request->cookie('user_id');
                 $str="您已登陆，您的用户id是".$user_id;
                 return $str;
