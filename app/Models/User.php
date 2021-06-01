@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Game;
 
 class User extends Authenticatable
 {
@@ -52,4 +53,8 @@ class User extends Authenticatable
 	public function playedGames(){
 		return $this->hasMany(PlayGame::class, 'player_id');
 	}
+
+    public function playGame(Game $game){
+        return $this->hasMany(PlayGame::class, 'player_id')->save($game);
+    }
 }
