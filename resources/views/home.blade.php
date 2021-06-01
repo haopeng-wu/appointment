@@ -2,7 +2,7 @@
     <div class="container mx-auto h-screen justify-center flex flex-col max-w-xs">
         <div class>
             <div class="bg-blue-500 rounded-full hover:shadow hover:bg-blue-600
-            text-white text-xl mb-5 py-2 flex justify-center">
+            text-white text-xl mb-5 py-2 flex justify-center items-center" style="height:40px;">
                 <a class="" href="/game/create">建房</a>
             </div>
             <form class="flex flex-row justify-between bg-gray-200 rounded-full"
