@@ -28,7 +28,15 @@ class GameController extends Controller
         if(request('roomId')){
             $roomId=$attributes['roomId'];
             #check the cookies to decide whether this is an existing user
-            dd($request);
+            /*
+             * cookies:
+             * user_id
+             */
+            if ($request->cookie('user_id')){
+                return "您已登陆";
+            }else{
+                return "您未登录";
+            }
 
             return view("game.room",["roomId"=>$roomId]);
         }
