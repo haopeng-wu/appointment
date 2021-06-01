@@ -18,8 +18,8 @@ class PlayGameController extends Controller
     public function shuffle(Request $request)
     {
         # get the user_id
-        $user_id=0;
-        if ($request->cookie('user_id')){
+        $user_id = $request->cookie('user_id');
+        if ($user_id and User::find($user_id)){
             $u_id=$request->cookie('user_id');
             $str="您已登陆，您的用户id是".$u_id;
             $user_id=$u_id;
