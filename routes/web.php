@@ -20,9 +20,12 @@ Route::get('/', function () {
 
 Route::get('/game/create', 'App\Http\Controllers\GameController@create');
 
-Route::post('/game/enter', 'App\Http\Controllers\GameController@enter');
+Route::post('/game/enter', 'App\Http\Controllers\PlayGameController@enter');
 
 Route::post('/game/store', 'App\Http\Controllers\GameController@store');
+
+Route::post('/game/shuffle-cards', 'App\Http\Controllers\GameController@store');
+
 
 
 
