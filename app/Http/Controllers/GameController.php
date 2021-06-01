@@ -28,7 +28,7 @@ class GameController extends Controller
         if(request('roomId')){
             $roomId=$attributes['roomId'];
             #check the cookies to decide whether this is an existing user
-            dd($reques);
+            dd($request);
 
             return view("game.room",["roomId"=>$roomId]);
         }
