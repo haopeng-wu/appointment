@@ -22,13 +22,14 @@ class GameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function enter($request)
+    public function enter(Request $request)
     {
         $attributes=request()->validate(["roomId"=>["numeric","nullable"]]);
         if(request('roomId')){
             $roomId=$attributes['roomId'];
             #check the cookies to decide whether this is an existing user
-            dd($request);
+            dd($reques);
+
             return view("game.room",["roomId"=>$roomId]);
         }
         #return "You didn't enter a room number";
