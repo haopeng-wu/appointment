@@ -42,7 +42,7 @@ class PlayGameController extends Controller
         shuffle($card_array);
         # pick the first one for the user
         $card_id=$card_ids[0];
-        $card_name=Card::find($card_id);
+        $card_name=Card::find($card_id)->name;
 
         PlayGame::create(['game_id'=>$roomId, 'player_id'=>$user_id, 'card_id'=>$card_id]);
         return "你的身份牌是：".$card_name.";用户号是："."$user_id".";房间名是：".$roomId;
