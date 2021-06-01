@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\PlayGame;
 use App\Models\Card;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class PlayGameController extends Controller
 {
