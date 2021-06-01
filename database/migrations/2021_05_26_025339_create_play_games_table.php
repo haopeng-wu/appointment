@@ -17,7 +17,7 @@ class CreatePlayGamesTable extends Migration
             $table->id();
 			$table->foreignId('game_id');
 			$table->foreignId('player_id');
-			$table->foreignId('card_id');
+			$table->foreignId('card_id')->nullable();
             $table->timestamps();
 
 			$table->foreign('game_id')->references('id')->on('games')->onDelete('cascade');
