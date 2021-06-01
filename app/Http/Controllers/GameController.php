@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Game;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class GameController extends Controller
@@ -33,9 +34,16 @@ class GameController extends Controller
              * user_id
              */
             if ($request->cookie('user_id')){
-                return "您已登陆";
+                $user_id=$request->cookie('user_id');
+                $str="您已登陆，您的用户id是"+(string)$user_id;
+                return $str;
             }else{
-                return "您未登录";
+                # first create this user
+                $user=User::create();
+                # generate the user_id cookies
+                $minutes=30*24*60;  # remember a user for a month
+                $cookie = cookie('user_id', $user->id, $minutes);
+                return response("您未登录")->cookie($cookie);
             }
 
             return view("game.room",["roomId"=>$roomId]);
