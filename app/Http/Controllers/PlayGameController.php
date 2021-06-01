@@ -22,7 +22,8 @@ class PlayGameController extends Controller
         # get all the cards
         $card_ids=Card::all()->pluck('id');
         # shuffle the cards
-        shuffle($card_ids);
+        $card_array = (array)$card_ids;
+        shuffle($card_array);
         # pick the first one for the user
         $card_id=$card_ids[0];
         $card_name=Card::find($card_id);
