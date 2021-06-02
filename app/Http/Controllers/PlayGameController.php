@@ -84,7 +84,7 @@ class PlayGameController extends Controller
 
             # enter the room
             $user->enterRoom($roomId);
-            return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
+            return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id])->cookie($cookie);
         }
         #return "You didn't enter a room number";
         return view("game.enter-error");
