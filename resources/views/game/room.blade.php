@@ -1,6 +1,7 @@
 <x-master>
     <div>
-        <h1>Room<span class="text-red-600 font-bold ml-1">{{$roomId}}</span></h1>
+        <h1>欢迎玩家<span>{{$user_id}}</span>进入房间
+        <span class="text-red-600 font-bold ml-1">{{$roomId}}</span></h1>
         <div>
             <form method="post"
                   action="/game/shuffle-cards">

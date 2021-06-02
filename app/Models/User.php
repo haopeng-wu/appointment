@@ -50,6 +50,7 @@ class User extends Authenticatable
 		return $this->hasMany(Game::class, 'founder_id');
 	}
 
+	/*
     public function playedGames(){
         return $this->belongsToMany(Game::class, 'play_games', 'player_id');
     }
@@ -57,4 +58,10 @@ class User extends Authenticatable
     public function playGame(Game $game){
         return $this->belongsToMany(Game::class, 'play_games', 'player_id')->attach($game);
     }
+	*/
+
+    public function enterRoom($roomId){
+        return $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>6]);
+    }
+
 }

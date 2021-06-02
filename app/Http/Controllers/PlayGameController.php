@@ -36,10 +36,9 @@ class PlayGameController extends Controller
         # get the room id
         $roomId=$request['_roomId'];
         # get all the cards
-        $card_ids=Card::all()->pluck('id');
+        $card_ids=Card::all()->pluck('id')->all();
         # shuffle the cards
-        $card_array = (array)$card_ids;
-        shuffle($card_array);
+        shuffle($card_ids);
         # pick the first one for the user
         $card_id=$card_ids[0];
         $card_name=Card::find($card_id)->name;
@@ -62,6 +61,7 @@ class PlayGameController extends Controller
     {
         $attributes=request()->validate(["roomId"=>["numeric","nullable"]]);
         if(request('roomId')){
+            $user=null;
             $roomId=$attributes['roomId'];
             #check the cookies to decide whether this is an existing user
             /*
@@ -69,8 +69,9 @@ class PlayGameController extends Controller
              * user_id
              */
             if ($request->cookie('user_id')){
-                $user_id=$request->cookie('user_id');
-                $str="您已登陆，您的用户id是".$user_id;
+                $u_id=$request->cookie('user_id');
+                $user=User::find($u_id);
+                $str="您已登陆，您的用户id是".$u_id;
                 #return $str;
             }else{
                 # first create this user
@@ -81,7 +82,9 @@ class PlayGameController extends Controller
                 $cookie = cookie('user_id', $user->id, $minutes);
             }
 
-            return view("game.room", ["roomId"=>$roomId]);
+            # enter the room
+            $user->enterRoom($roomId);
+            return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
         }
         #return "You didn't enter a room number";
         return view("game.enter-error");
