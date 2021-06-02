@@ -79,12 +79,12 @@ class PlayGameController extends Controller
 
                 # set the user_id cookies
                 $minutes=30*24*60;  # remember a user for a month
-                $cookie = cookie('user_id', $user->id, $minutes);
+                Cookie::queue('user_id', $user->id, $minutes);
             }
 
             # enter the room
             $user->enterRoom($roomId);
-            return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id])->cookie($cookie);
+            return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
         }
         #return "You didn't enter a room number";
         return view("game.enter-error");
