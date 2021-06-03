@@ -114,7 +114,7 @@ class PlayGameController extends Controller
 
     public function showRole(Request $request){
         $room_id = $request->cookie('roomId');
-        $user_id = $request['user_id'];
+        $user_id = $request->cookie('user_id');
         $role_id = User::find($user_id)->hasMany(PlayGame::class, "player_id")
             ->where('game_id', '=', $room_id)
             ->first()['card_id'];
