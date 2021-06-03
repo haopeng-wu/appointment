@@ -66,7 +66,7 @@ class PlayGameController extends Controller
             $room->assignRole($player_id, $card_ids[$index]);
             $distribution[$player_id] = $card_names[$index];
         }
-        return view('game.playing',['$dist'=>$distribution]);
+        return view('game.playing',['dist'=>$distribution]);
     }
 
     public function shuffle(Request $request){
