@@ -8,6 +8,7 @@ use App\Models\PlayGame;
 use App\Models\Card;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\DB;
 
 class PlayGameController extends Controller
 {
@@ -105,8 +106,20 @@ class PlayGameController extends Controller
 
             # enter the room
             $user->enterRoom($roomId);
+
             return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
         }
         return view("game.enter-error");
+    }
+
+    public function showRole(Request $request){
+        $room_id = $request->cookie('roomId');
+        $user_id = $request['user_id'];
+        $role_id = User::find($user_id)->hasMany(PlayGame::class, "player_id")
+            ->where('game_id', '=', $room_id)
+            ->first()['card_id'];
+        $role = Card::find($role_id);
+
+        return view('game.role', ['role'=>$role]);
     }
 }

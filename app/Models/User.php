@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Game;
+use Illuminate\Support\Facades\Cookie;
 
 class User extends Authenticatable
 {
@@ -61,8 +62,12 @@ class User extends Authenticatable
 	*/
 
     public function enterRoom($roomId){
+        # store it in the database
         $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
         $this->hasMany(PlayGame::class, 'player_id')->touch();
+        # set the user_id cookies
+        $minutes=30*24*60;  # remember a user for a month
+        Cookie::queue('roomId', $roomId, $minutes);
         return ;
     }
 
