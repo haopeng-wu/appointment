@@ -16,7 +16,12 @@ class PlayGameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function shuffle(int $roomId)
+
+    public function shuffle(Request $request){
+        return shuffleNew($request['roomId']);
+    }
+
+    public function shuffleNew(int $roomId)
     {
         /*
          * check if the room has enough players

@@ -24,7 +24,7 @@ Route::post('/game/enter', 'App\Http\Controllers\PlayGameController@enter');
 
 Route::post('/game/store', 'App\Http\Controllers\GameController@store');
 
-Route::post('/game/shuffle-cards', 'App\Http\Controllers\PlayGameController@shuffle', ['roomdId'=>2]);
+Route::post('/game/shuffle-cards', 'App\Http\Controllers\PlayGameController@shuffle');
 
 
 
