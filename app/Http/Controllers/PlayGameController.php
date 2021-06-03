@@ -17,10 +17,6 @@ class PlayGameController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function shuffle(Request $request){
-        return shuffleNew($request['roomId']);
-    }
-
     public function shuffleNew(int $roomId)
     {
         /*
@@ -71,6 +67,10 @@ class PlayGameController extends Controller
             $distribution[$player_id] = $card_names[$index];
         }
         return view('game.playing',['$dist'=>$distribution]);
+    }
+
+    public function shuffle(Request $request){
+        return shuffleNew($request['roomId']);
     }
 
     /**
