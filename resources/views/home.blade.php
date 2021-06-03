@@ -12,7 +12,6 @@
                 @csrf
                 <input class="w-full bg-transparent focus-within:outline-none px-4"
                        type="number" name="roomId" placeholder="请输入房间号"
-                       style="-webkit-appearance: none; margin: 0;"
                        required>
                 <button class='bg-blue-500 rounded-full py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
