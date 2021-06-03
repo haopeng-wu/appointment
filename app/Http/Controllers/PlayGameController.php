@@ -57,7 +57,7 @@ class PlayGameController extends Controller
         shuffle($card_ids);
         $card_names=[];
         foreach ($card_ids as $card_id) {
-            array_push($card_names, Card::find($card_ids));
+            array_push($card_names, Card::find($card_ids)->name);
         }
 
         # distribute the cards to its players
