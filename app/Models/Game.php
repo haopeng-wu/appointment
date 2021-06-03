@@ -21,4 +21,9 @@ class Game extends Model
 	public function players(){
 		return $this->hasMany(PlayGame::class, 'game_id');
 	}
+
+	public function assignRole(int $player_id, int $role_id){
+	    $this->hasMany(PlayGame::class)->where('player_id', '=', $player_id)->update(['card_id'=>$role_id]);
+	    $this->hasMany(PlayGame::class)->where('player_id', '=', $player_id)->touch();
+    }
 }

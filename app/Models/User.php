@@ -61,7 +61,9 @@ class User extends Authenticatable
 	*/
 
     public function enterRoom($roomId){
-        return $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
+        $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
+        $this->hasMany(PlayGame::class, 'player_id')->touch();
+        return ;
     }
 
 }

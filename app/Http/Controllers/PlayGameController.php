@@ -16,41 +16,57 @@ class PlayGameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function shuffle(Request $request)
+    public function shuffle(int $roomId)
     {
-        # get the user_id
-        $user_id = $request->cookie('user_id');
-        if ($user_id and User::find($user_id)){
-            $u_id=$request->cookie('user_id');
-            $str="您已登陆，您的用户id是".$u_id;
-            $user_id=$u_id;
-            #return $str;
-        }else{
-            # first create this user
-            $user=User::create();
-            # set the user_id cookies
-            $minutes=30*24*60;  # remember a user for a month
-            $user_id=$user->id;
-            Cookie::queue('user_id', $user->id, $minutes);
+        /*
+         * check if the room has enough players
+         */
+        # get the set total of players of the room
+        $setTotal = Game::find($roomId)->total;
+        # get the player ids that entered the room within the last one hour
+        $game_plays = Game::find($roomId)->hasMany(PlayGame::class);
+        # get the total of players that entered the room within the last one hour
+        $total=$game_plays->where('updated_at', '>', now()->subHour())->get()->pluck('player_id')->count();
+        # check if the room has enough players
+        if ($total < $setTotal){
+            return response("玩家不够");
         }
-        # get the room id
-        $roomId=$request['_roomId'];
-        # get all the cards
-        $card_ids=Card::all()->pluck('id')->all();
+
+        $warning="";
+        if($total > $setTotal){
+            # more player want to play. Maybe need a reset of the game
+            $warning='实际参与人数大于房间设定。';
+        }
+
+        /*
+         * get all the cards of the room into an array
+         */
+        $card_ids=[];
+        $card_names=[];
+        $room=Game::find($roomId);
+        $card_types=['villager','wolf','prophet','guardian','hunter',
+            'witch','knight','wolf-king','white-wolf-king'];
+        foreach ($card_types as $attr){
+            $card_type_id = Card::where('name', $attr)->first()->id;
+            $card_type_name = Card::where('name', $attr)->first()->name;
+            $card_type_count = $room[$attr];
+            for ($i=0; $i < $card_type_count; $i++){
+                array_push($card_ids, $card_type_id);
+                array_push($card_names, $card_type_name);
+            }
+        }
         # shuffle the cards
         shuffle($card_ids);
-        # pick the first one for the user
-        $card_id=$card_ids[0];
-        $card_name=Card::find($card_id)->name;
 
-        if(! PlayGame::exists(['game_id'=>$roomId, 'player_id'=>$user_id, 'card_id'=>$card_id])){
-            PlayGame::create(['game_id' => $roomId, 'player_id' => $user_id, 'card_id' => $card_id]);
+        # distribute the cards to its players
+        $distribution=[];
+        $player_ids = $game_plays->orderBy('updated_at', 'desc')->pluck('player_id')->take($setTotal);
+        foreach ($player_ids as $index => $player_id) {
+            $room->assignRole($player_id, $card_ids[$index]);
+            $distribution[$player_id] = $card_names[$index];
         }
-
-        return "你的身份牌是：".$card_name.";用户号是："."$user_id".";房间名是：".$roomId;
-
+        return view('game.playing',['$dist'=>$distribution]);
     }
-
 
     /**
      * Enter a game.
@@ -71,8 +87,7 @@ class PlayGameController extends Controller
             if ($request->cookie('user_id')){
                 $u_id=$request->cookie('user_id');
                 $user=User::find($u_id);
-                $str="您已登陆，您的用户id是".$u_id;
-                #return $str;
+
             }else{
                 # first create this user
                 $user=User::create();
@@ -86,7 +101,6 @@ class PlayGameController extends Controller
             $user->enterRoom($roomId);
             return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
         }
-        #return "You didn't enter a room number";
         return view("game.enter-error");
     }
 }
