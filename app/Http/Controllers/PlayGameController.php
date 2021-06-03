@@ -43,21 +43,22 @@ class PlayGameController extends Controller
          * get all the cards of the room into an array
          */
         $card_ids=[];
-        $card_names=[];
         $room=Game::find($roomId);
         $card_types=['villager','wolf','prophet','guardian','hunter',
             'witch','knight','wolf-king','white-wolf-king'];
         foreach ($card_types as $attr){
             $card_type_id = Card::where('name', $attr)->first()->id;
-            $card_type_name = Card::where('name', $attr)->first()->name;
             $card_type_count = $room[$attr];
             for ($i=0; $i < $card_type_count; $i++){
                 array_push($card_ids, $card_type_id);
-                array_push($card_names, $card_type_name);
             }
         }
         # shuffle the cards
         shuffle($card_ids);
+        $card_names=[];
+        foreach ($card_ids as $card_id) {
+            array_push($card_names, Card::find($card_ids));
+        }
 
         # distribute the cards to its players
         $distribution=[];
