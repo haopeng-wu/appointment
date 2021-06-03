@@ -70,7 +70,7 @@ class PlayGameController extends Controller
     }
 
     public function shuffle(Request $request){
-        return shuffleNew($request['roomId']);
+        return $this->shuffleNew($request['roomId']);
     }
 
     /**
