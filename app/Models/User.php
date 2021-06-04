@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -64,7 +65,7 @@ class User extends Authenticatable
     public function enterRoom($roomId){
         # store it in the database
         $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
-        $this->hasMany(PlayGame::class, 'player_id')->touch();
+        $this->hasMany(PlayGame::class, 'player_id')->update(['set_game'=>Carbon::now()]);
         # set the user_id cookies
         $minutes=30*24*60;  # remember a user for a month
         Cookie::queue('roomId', $roomId, $minutes);

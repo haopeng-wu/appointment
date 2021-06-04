@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Game extends Model
 {
@@ -23,7 +25,14 @@ class Game extends Model
 	}
 
 	public function assignRole(int $player_id, int $role_id){
-	    $this->hasMany(PlayGame::class)->where('player_id', '=', $player_id)->update(['card_id'=>$role_id]);
-	    $this->hasMany(PlayGame::class)->where('player_id', '=', $player_id)->touch();
+        DB::table('play_games')
+            ->where('game_id','=',$this->id)
+            ->where('player_id', '=', $player_id)
+            ->update(['card_id'=>$role_id]);
+
+	    DB::table('play_games')
+            ->where('game_id','=',$this->id)
+            ->where('player_id', '=', $player_id)
+            ->update(['set_role'=>Carbon::now()]);
     }
 }
