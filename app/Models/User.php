@@ -66,7 +66,7 @@ class User extends Authenticatable
     public function enterRoom($roomId){
         # store it in the database
         $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
-        $this->hasMany(PlayGame::class, 'player_id')->update(['set_game_at'=>Carbon::now()]);
+        $this->hasMany(PlayGame::class, 'player_id')->update(['enter_game_at'=>Carbon::now()]);
         # set the user_id cookies
         $minutes=60*1.5;  # remember a room for a user for one hour and a half
         Cookie::queue('roomId', $roomId, $minutes);
@@ -76,8 +76,8 @@ class User extends Authenticatable
     public function currRoomId(){
         $play_game = DB::table('play_games')
             ->where('player_id', '=', $this->id)
-            ->where('set_game_at', '>', now()->subMinutes(60*1.5))
-            ->orderByDesc('set_game_at')
+            ->where('enter_game_at', '>', now()->subMinutes(60*1.5))
+            ->orderByDesc('enter_game_at')
             ->first();
         if($play_game){
             return $play_game->game_id;

@@ -19,7 +19,7 @@ class CreatePlayGamesTable extends Migration
 			$table->foreignId('player_id');
 			$table->foreignId('card_id')->nullable();
 			$table->timestamp('set_role_at')->nullable();
-            $table->timestamp('set_game_at')->nullable();
+            $table->timestamp('enter_game_at')->nullable();
 
             $table->timestamps();
 
