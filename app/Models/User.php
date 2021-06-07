@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Game;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\DB;
 
 class User extends Authenticatable
 {
@@ -67,9 +68,37 @@ class User extends Authenticatable
         $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
         $this->hasMany(PlayGame::class, 'player_id')->update(['set_game'=>Carbon::now()]);
         # set the user_id cookies
-        $minutes=30*24*60;  # remember a user for a month
+        $minutes=60*1.5;  # remember a room for a user for one hour and a half
         Cookie::queue('roomId', $roomId, $minutes);
         return ;
     }
 
+    public function currRoomId(){
+        $play_game = DB::table('play_games')
+            ->where('player_id', '=', $this->id)
+            ->where('set_game_at', '>', now()->subMinutes(60*1.5))
+            ->orderByDesc('set_game_at')
+            ->first();
+        if($play_game){
+            return $play_game['game_id'];
+        }else{
+            return null;
+        }
+    }
+
+    public function currRolId(int $room_id){
+        $play_game = DB::table('play_games')
+            ->where('player_id','=', $this->id)
+            ->where('game_id', '=', $room_id)
+            ->first();
+        if(
+            $play_game['card_id']
+            and $play_game['set_role_at']
+            and $play_game['set_role_at'] > now()->subMinutes(60*1.5)
+        ){
+            return $play_game['card_id'];
+        }else{
+            return null;
+        }
+    }
 }

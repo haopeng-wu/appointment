@@ -110,17 +110,21 @@ class PlayGameController extends Controller
             }else{
                 return view("game.enter-error", ["error"=>"该房间不存在！"]);
             }
-
         }
         return view("game.enter-error");
     }
 
     public function showRole(Request $request){
-        $room_id = $request->cookie('roomId');
-        $user_id = $request->cookie('user_id');
-        $role_id = User::find($user_id)->hasMany(PlayGame::class, "player_id")
-            ->where('game_id', '=', $room_id)
-            ->first()['card_id'];
+        $u_id_cookie = $request->cookie('user_id');
+        if (! $user = User::find($u_id_cookie)){
+            return view("game.enter-error", ["error"=>"还未进入房间哦！"]);
+        }
+        if(! $room_id = $user->currRoomId()){
+            return view("game.enter-error", ["error"=>"还未进入房间哦！"]);
+        }
+        if(! $role_id = $user->currRolId($room_id)){
+            return view("game.enter-error", ["error"=>"主持人暂未分发身份牌！"]);
+        }
         $role = Card::find($role_id);
 
         return view('game.role', ['role'=>$role]);
