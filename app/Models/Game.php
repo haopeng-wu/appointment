@@ -33,6 +33,6 @@ class Game extends Model
 	    DB::table('play_games')
             ->where('game_id','=',$this->id)
             ->where('player_id', '=', $player_id)
-            ->update(['set_role'=>Carbon::now()]);
+            ->update(['set_role_at'=>Carbon::now()]);
     }
 }
