@@ -80,7 +80,7 @@ class User extends Authenticatable
             ->orderByDesc('set_game_at')
             ->first();
         if($play_game){
-            return $play_game->game_id];
+            return $play_game->game_id;
         }else{
             return null;
         }
