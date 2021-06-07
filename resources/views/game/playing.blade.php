@@ -5,6 +5,6 @@
             @endforeach
         </div>
         <div>
-                <h3 class="text-red-700">请提醒玩家查看身份或刷新身份！</h3>
+                <h3 class="text-red-700">请提醒玩家查看或刷新身份！</h3>
         </div>
 </x-master>

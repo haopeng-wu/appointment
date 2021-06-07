@@ -122,7 +122,7 @@ class PlayGameController extends Controller
         if(! $room_id = $user->currRoomId()){
             return view("game.error", ["error"=>"还未进入房间哦！"]);
         }
-        if(! $role_id = $user->currRolId($room_id)){
+        if(! $role_id = $user->currRollId($room_id)){
             return view("game.error", ["error"=>"主持人暂未分发身份牌！"]);
         }
         $role = Card::find($role_id);
