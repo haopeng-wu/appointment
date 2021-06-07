@@ -90,7 +90,6 @@ class User extends Authenticatable
     }
 
     public function currRollId(int $room_id){
-        dd($room_id);
         $play_game = DB::table('play_games')
             ->where('player_id','=', $this->id)
             ->where('game_id', '=', $room_id)
