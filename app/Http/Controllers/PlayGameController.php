@@ -91,9 +91,8 @@ class PlayGameController extends Controller
              * cookies:
              * user_id
              */
-            if ($request->cookie('user_id')){
-                $u_id=$request->cookie('user_id');
-                $user=User::find($u_id);
+            $u_id_cookie = $request->cookie('user_id');
+            if ($u_id_cookie and $user=User::find($u_id_cookie)){
 
             }else{
                 # first create this user
