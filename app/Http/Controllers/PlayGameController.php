@@ -108,7 +108,7 @@ class PlayGameController extends Controller
                 $user->enterRoom($roomId);
                 return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
             }else{
-                return view("game.enter-error", [$error=>"该房间不存在！"]);
+                return view("game.enter-error", ["error"=>"该房间不存在！"]);
             }
 
         }
