@@ -31,7 +31,6 @@ class PlayGameController extends Controller
         $total=$game_plays->where('updated_at', '>', now()->subHour())->get()->pluck('player_id')->count();
         # check if the room has enough players
         if ($total < $setTotal){
-            return response("玩家不够");
             return view('game.error', ['error'=>"有玩家还未进房！"]);
         }
 
