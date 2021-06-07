@@ -80,7 +80,7 @@ class User extends Authenticatable
             ->orderByDesc('set_game_at')
             ->first();
         if($play_game){
-            return $play_game['game_id'];
+            return $play_game->game_id];
         }else{
             return null;
         }
@@ -92,11 +92,11 @@ class User extends Authenticatable
             ->where('game_id', '=', $room_id)
             ->first();
         if(
-            $play_game['card_id']
-            and $play_game['set_role_at']
-            and $play_game['set_role_at'] > now()->subMinutes(60*1.5)
+            $play_game->card_id
+            and $play_game->set_role_at
+            and $play_game->set_role_at > now()->subMinutes(60*1.5)
         ){
-            return $play_game['card_id'];
+            return $play_game->card_id;
         }else{
             return null;
         }
