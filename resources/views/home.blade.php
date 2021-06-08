@@ -8,7 +8,8 @@
                 </div>
             </a>
             <form class="flex flex-row justify-between bg-gray-200 rounded-full"
-                  method="post" action="/game/enter">
+                  method="post"
+                  action="/game/enter">
                 @csrf
                 <input class="w-full bg-transparent focus-within:outline-none px-4"
                        type="number" name="roomId" placeholder="请输入房间号"
