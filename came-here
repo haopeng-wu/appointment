@@ -79,3 +79,446 @@ Updating 02b1509..596141f
 Fast-forward
  resources/views/game/create.blade.php | 14 +++++++-------
  1 file changed, 7 insertions(+), 7 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   61bd91c..7db20a5  master     -> origin/master
+Updating 61bd91c..7db20a5
+Fast-forward
+ app/Http/Controllers/GameController.php | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   7db20a5..f9e908a  master     -> origin/master
+Updating 7db20a5..f9e908a
+Fast-forward
+ app/Http/Controllers/GameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   f9e908a..f15ba67  master     -> origin/master
+Updating f9e908a..f15ba67
+Fast-forward
+ app/Http/Controllers/GameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   f15ba67..490f21f  master     -> origin/master
+Updating f15ba67..490f21f
+Fast-forward
+ app/Http/Controllers/GameController.php | 10 ++++++++--
+ app/Models/User.php                     |  5 +++++
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   490f21f..bba63c7  master     -> origin/master
+Updating 490f21f..bba63c7
+Fast-forward
+ app/Models/User.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bba63c7..d6582ed  master     -> origin/master
+Updating bba63c7..d6582ed
+Fast-forward
+ app/Models/User.php | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+From /var/www/html/werewolf/../werewolf
+   d6582ed..6636052  master     -> origin/master
+Updating d6582ed..6636052
+Fast-forward
+ database/migrations/2021_05_26_025339_create_play_games_table.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   6636052..bc356e4  master     -> origin/master
+Updating 6636052..bc356e4
+Fast-forward
+ app/Http/Controllers/GameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bc356e4..00fb927  master     -> origin/master
+Updating bc356e4..00fb927
+Fast-forward
+ app/Models/User.php | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   00fb927..11c8274  master     -> origin/master
+Updating 00fb927..11c8274
+Fast-forward
+ app/Http/Controllers/GameController.php     | 39 ----------------------
+ app/Http/Controllers/PlayGameController.php | 50 +++++++++++++++++++++++++++++
+ resources/views/game/room.blade.php         | 11 +++++++
+ resources/views/home.blade.php              |  2 +-
+ routes/web.php                              |  5 ++-
+ 5 files changed, 66 insertions(+), 41 deletions(-)
+ create mode 100644 app/Http/Controllers/PlayGameController.php
+From /var/www/html/werewolf/../werewolf
+   11c8274..1fcdb5d  master     -> origin/master
+Updating 11c8274..1fcdb5d
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 26 ++++++++++++++++++++++++++
+ resources/views/game/room.blade.php         |  3 ++-
+ routes/web.php                              |  2 +-
+ 3 files changed, 29 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1fcdb5d..2f20a39  master     -> origin/master
+Updating 1fcdb5d..2f20a39
+Fast-forward
+ resources/views/game/room.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   2f20a39..53d9015  master     -> origin/master
+Updating 2f20a39..53d9015
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   53d9015..5c05fa3  master     -> origin/master
+Updating 53d9015..5c05fa3
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 24 ++++++++++++++++--------
+ 1 file changed, 16 insertions(+), 8 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   5c05fa3..75861cb  master     -> origin/master
+Updating 5c05fa3..75861cb
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   75861cb..ad23510  master     -> origin/master
+Updating 75861cb..ad23510
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   ad23510..fe57449  master     -> origin/master
+Updating ad23510..fe57449
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   fe57449..9169e0a  master     -> origin/master
+Updating fe57449..9169e0a
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   9169e0a..73852ed  master     -> origin/master
+Updating 9169e0a..73852ed
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 15 +++++++++------
+ app/Models/User.php                         |  7 +++++++
+ resources/views/game/room.blade.php         |  3 ++-
+ 3 files changed, 18 insertions(+), 7 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   73852ed..952b904  master     -> origin/master
+Updating 73852ed..952b904
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   952b904..4cb4c7c  master     -> origin/master
+Updating 952b904..4cb4c7c
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   4cb4c7c..778c532  master     -> origin/master
+Updating 4cb4c7c..778c532
+Fast-forward
+ app/Models/User.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   778c532..f7f560a  master     -> origin/master
+Updating 778c532..f7f560a
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 76 +++++++++++++++++------------
+ app/Models/Game.php                         |  5 ++
+ app/Models/User.php                         |  4 +-
+ resources/views/game/playing.blade.php      |  5 ++
+ 4 files changed, 58 insertions(+), 32 deletions(-)
+ create mode 100644 resources/views/game/playing.blade.php
+From /var/www/html/werewolf/../werewolf
+   f7f560a..62f4e5d  master     -> origin/master
+Updating f7f560a..62f4e5d
+Fast-forward
+ routes/web.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   62f4e5d..3798e37  master     -> origin/master
+Updating 62f4e5d..3798e37
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 7 ++++++-
+ routes/web.php                              | 2 +-
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   3798e37..2d05f51  master     -> origin/master
+Updating 3798e37..2d05f51
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   2d05f51..1a777a0  master     -> origin/master
+Updating 2d05f51..1a777a0
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   1a777a0..02da565  master     -> origin/master
+Updating 1a777a0..02da565
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   02da565..5f0d0d6  master     -> origin/master
+Updating 02da565..5f0d0d6
+Fast-forward
+ app/Http/Controllers/GameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   5f0d0d6..bfb32e7  master     -> origin/master
+Updating 5f0d0d6..bfb32e7
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bfb32e7..fc1b377  master     -> origin/master
+Updating bfb32e7..fc1b377
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   fc1b377..bede4ab  master     -> origin/master
+Updating fc1b377..bede4ab
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bede4ab..80bd221  master     -> origin/master
+Updating bede4ab..80bd221
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   80bd221..e410e8b  master     -> origin/master
+Updating 80bd221..e410e8b
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 13 +++++++++++++
+ app/Models/User.php                         |  5 +++++
+ resources/views/game/role.blade.php         |  3 +++
+ resources/views/game/room.blade.php         |  6 ++++++
+ routes/web.php                              |  3 +++
+ 5 files changed, 30 insertions(+)
+ create mode 100644 resources/views/game/role.blade.php
+From /var/www/html/werewolf/../werewolf
+   e410e8b..5be15d8  master     -> origin/master
+Updating e410e8b..5be15d8
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   5be15d8..1ca0558  master     -> origin/master
+Updating 5be15d8..1ca0558
+Fast-forward
+ routes/web.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   1ca0558..b9e4886  master     -> origin/master
+Updating 1ca0558..b9e4886
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   b9e4886..337e869  master     -> origin/master
+Updating b9e4886..337e869
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   337e869..31b7f6d  master     -> origin/master
+Updating 337e869..31b7f6d
+Fast-forward
+ resources/views/home.blade.php | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   31b7f6d..84a6c6a  master     -> origin/master
+Updating 31b7f6d..84a6c6a
+Fast-forward
+ resources/views/home.blade.php | 1 -
+ 1 file changed, 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   84a6c6a..c8fef30  master     -> origin/master
+Updating 84a6c6a..c8fef30
+Fast-forward
+ resources/views/home.blade.php | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   c8fef30..311e001  master     -> origin/master
+Updating c8fef30..311e001
+Fast-forward
+ public/css/custom.css                       | 11 +++++++++++
+ resources/views/components/master.blade.php |  3 ++-
+ resources/views/game/room.blade.php         |  9 ++++++---
+ resources/views/home.blade.php              |  1 -
+ 4 files changed, 19 insertions(+), 5 deletions(-)
+ create mode 100644 public/css/custom.css
+From /var/www/html/werewolf/../werewolf
+   311e001..2de5312  master     -> origin/master
+Updating 311e001..2de5312
+Fast-forward
+ app/Models/Game.php                                         | 13 +++++++++++--
+ app/Models/User.php                                         |  3 ++-
+ .../2021_05_26_025339_create_play_games_table.php           |  3 +++
+ 3 files changed, 16 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   2de5312..a0f096e  master     -> origin/master
+Updating 2de5312..a0f096e
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   a0f096e..483723a  master     -> origin/master
+Updating a0f096e..483723a
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 8 ++++++--
+ resources/views/game/enter-error.blade.php  | 6 ++++++
+ 2 files changed, 12 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   483723a..a374416  master     -> origin/master
+Updating 483723a..a374416
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   a374416..4633ee6  master     -> origin/master
+Updating a374416..4633ee6
+Fast-forward
+ app/Http/Controllers/PlayGameController.php        | 16 ++++++-----
+ app/Models/User.php                                | 31 +++++++++++++++++++++-
+ .../2021_05_26_025339_create_play_games_table.php  |  4 +--
+ 3 files changed, 42 insertions(+), 9 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   4633ee6..a78fdce  master     -> origin/master
+Updating 4633ee6..a78fdce
+Fast-forward
+ app/Models/Game.php | 2 +-
+ app/Models/User.php | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   a78fdce..bac46dc  master     -> origin/master
+Updating a78fdce..bac46dc
+Fast-forward
+ app/Models/User.php | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   bac46dc..3f87eab  master     -> origin/master
+Updating bac46dc..3f87eab
+Fast-forward
+ app/Models/User.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   3f87eab..410d3b2  master     -> origin/master
+Updating 3f87eab..410d3b2
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   410d3b2..351c67e  master     -> origin/master
+Updating 410d3b2..351c67e
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   351c67e..af64455  master     -> origin/master
+Updating 351c67e..af64455
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 1 -
+ 1 file changed, 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   af64455..b21a5f9  master     -> origin/master
+Updating af64455..b21a5f9
+Fast-forward
+ app/Http/Controllers/PlayGameController.php                     | 4 ++--
+ resources/views/game/{enter-error.blade.php => error.blade.php} | 0
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+ rename resources/views/game/{enter-error.blade.php => error.blade.php} (100%)
+From /var/www/html/werewolf/../werewolf
+   b21a5f9..19f7bf3  master     -> origin/master
+Updating b21a5f9..19f7bf3
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   19f7bf3..feb47e0  master     -> origin/master
+Updating 19f7bf3..feb47e0
+Fast-forward
+ app/Models/User.php                                               | 6 +++---
+ database/migrations/2021_05_26_025339_create_play_games_table.php | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   feb47e0..af0a295  master     -> origin/master
+Updating feb47e0..af0a295
+Fast-forward
+ resources/views/game/role.blade.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   af0a295..053878c  master     -> origin/master
+Updating af0a295..053878c
+Fast-forward
+ resources/views/game/role.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   053878c..1c46f8a  master     -> origin/master
+Updating 053878c..1c46f8a
+Fast-forward
+ resources/views/game/role.blade.php | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1c46f8a..2a3ce71  master     -> origin/master
+Updating 1c46f8a..2a3ce71
+Fast-forward
+ resources/views/game/role.blade.php | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   2a3ce71..eb20f76  master     -> origin/master
+Updating 2a3ce71..eb20f76
+Fast-forward
+ resources/views/game/role.blade.php | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   eb20f76..8270be5  master     -> origin/master
+Updating eb20f76..8270be5
+Fast-forward
+ resources/views/game/playing.blade.php | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   8270be5..99603b3  master     -> origin/master
+Updating 8270be5..99603b3
+Fast-forward
+ resources/views/game/playing.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   99603b3..b7dd8d9  master     -> origin/master
+Updating 99603b3..b7dd8d9
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 +-
+ app/Models/User.php                         | 3 ++-
+ resources/views/game/playing.blade.php      | 2 +-
+ 3 files changed, 4 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   b7dd8d9..96f2c6e  master     -> origin/master
+Updating b7dd8d9..96f2c6e
+Fast-forward
+ app/Models/User.php | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   96f2c6e..0b8faa7  master     -> origin/master
+Updating 96f2c6e..0b8faa7
+Fast-forward
+ app/Models/User.php | 1 -
+ 1 file changed, 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   0b8faa7..b18eade  master     -> origin/master
+Updating 0b8faa7..b18eade
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 17 +----------------
+ app/helpers.php                             | 25 +++++++++++++++++++++++++
+ composer.json                               |  3 ++-
+ resources/views/game/create.blade.php       |  3 ++-
+ resources/views/game/created.blade.php      | 10 +++++++++-
+ resources/views/home.blade.php              |  3 ++-
+ 6 files changed, 41 insertions(+), 20 deletions(-)
+ create mode 100644 app/helpers.php
