@@ -49,6 +49,8 @@ class GameController extends Controller
             "wolf-king"=>['nullable','numeric', 'max:1', 'min:0'],
             "white-wolf-king"=>['nullable','numeric', 'max:1', 'min:0']
         ]);
+        $user = loginOrCreate();
+        $attributes['founder_id'] = $user->id;
         $game=Game::create($attributes);
         return view("game.created", ["gameId"=>$game->id]);
     }
