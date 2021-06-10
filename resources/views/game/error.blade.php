@@ -1,5 +1,5 @@
 <x-master>
-    @if($error)
+    @isset($error)
         <div>
             <h2 class="text-red-600">{{$error}}</h2>
         </div>
@@ -7,5 +7,5 @@
     <div>
         <h2 class="text-red-600">您没有输入房间编号！</h2>
     </div>
-    @endif
+    @endisset
 </x-master>
