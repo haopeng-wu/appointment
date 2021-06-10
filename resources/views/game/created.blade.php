@@ -8,6 +8,7 @@
                   method="post"
             >
                 @csrf
+                <input type="hidden" name="roomId" value="{{$gameId}}">
                 <button class='bg-blue-500 rounded-full py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
                         style="min-width:100px;"
