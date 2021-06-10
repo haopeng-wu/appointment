@@ -66,6 +66,7 @@ class User extends Authenticatable
     public function enterRoom($roomId){
         # store it in the database
         $this->hasMany(PlayGame::class, 'player_id')->updateOrCreate(['game_id'=>$roomId]);
+        # update the enter_game_at timestamp
         DB::table('play_games')
             ->where('player_id', '=', $this->id)
             ->where('game_id', '=', $roomId)
