@@ -28,7 +28,7 @@ class PlayGameController extends Controller
         # get the player ids that entered the room within the last one hour
         $game_plays = Game::find($roomId)->hasMany(PlayGame::class);
         # get the total of players that entered the room within the last one hour
-        $total=$game_plays->where('updated_at', '>', now()->subHour())->get()->pluck('player_id')->count();
+        $total = $game_plays->where('enter_game_at', '>', now()->subHour())->get()->pluck('player_id')->count();
         # check if the room has enough players
         if ($total < $setTotal){
             return view('game.error', ['error'=>"有玩家还未进房！"]);
@@ -101,7 +101,7 @@ class PlayGameController extends Controller
 
     public function showRole(Request $request){
         $u_id_cookie = $request->cookie('user_id');
-        if (! $user = User::find($u_id_cookie)){
+        if ($u_id_cookie and ! $user = User::find($u_id_cookie)){
             return view("game.error", ["error"=>"还未进入房间哦！"]);
         }
         if(! $room_id = $user->currRoomId()){

@@ -6,13 +6,24 @@
         <div>
             <form action="/game/enter"
                   method="post"
+                  class="mr-2"
             >
                 @csrf
                 <input type="hidden" name="roomId" value="{{$gameId}}">
                 <button class='bg-blue-500 rounded-full py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
                         style="min-width:100px;"
-                        type='submit'>进入房间</button>
+                        type='submit'>加入游戏</button>
+            </form>
+            <form action="/game/enter"
+                  method="post"
+            >
+                @csrf
+                <input type="hidden" name="roomId" value="{{$gameId}}">
+                <button class='bg-blue-500 rounded-full py-2 px-4 text-white
+                hover:shadow hover:bg-blue-600 focus-within:outline-none'
+                        style="min-width:100px;"
+                        type='submit'>主持游戏</button>
             </form>
         </div>
     </div>
