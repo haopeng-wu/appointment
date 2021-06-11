@@ -26,13 +26,17 @@ class PlayGameController extends Controller
         # get the set total of players of the room
         $game = Game::find($roomId);
         $setTotal = $game->total;
-        /*
+
         # get the player ids that entered the room within the last one hour
         $game_plays = Game::find($roomId)->hasMany(PlayGame::class);
         # get the total of players that entered the room within the last one hour
         $total = $game_plays->where('enter_game_at', '>', now()->subHour())->get()->pluck('player_id')->count();
-        */
-        $total = $game->users()->where('enter_game_at', '>', now()->subHour())->count()
+
+        /*
+         *  an alternative to the above
+         */
+        #$total = $game->users()->where('enter_game_at', '>', now()->subHour())->count();
+
         # check if the room has enough players
         if ($total < $setTotal){
             return view('game.error', ['error'=>"有玩家还未进房！"]);
@@ -67,7 +71,7 @@ class PlayGameController extends Controller
 
         # distribute the cards to its players
         $distribution=[];
-        $player_ids = $game_plays->orderBy('updated_at', 'desc')->pluck('player_id')->take($setTotal);
+        $player_ids = $game_plays->orderBy('enter_game_at', 'desc')->pluck('player_id')->take($setTotal);
         foreach ($player_ids as $index => $player_id) {
             $room->assignRole($player_id, $card_ids[$index]);
             $distribution[$player_id] = $card_names[$index];
