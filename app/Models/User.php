@@ -53,11 +53,11 @@ class User extends Authenticatable
 		return $this->hasMany(Game::class, 'founder_id');
 	}
 
-	/*
-    public function playedGames(){
+
+    public function games(){
         return $this->belongsToMany(Game::class, 'play_games', 'player_id');
     }
-
+    /*
     public function playGame(Game $game){
         return $this->belongsToMany(Game::class, 'play_games', 'player_id')->attach($game);
     }
