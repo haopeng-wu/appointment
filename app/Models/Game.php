@@ -24,6 +24,10 @@ class Game extends Model
 		return $this->hasMany(PlayGame::class, 'game_id');
 	}
 
+	public function users(){
+	    return $this->belongsToMany(User::class, 'play_games', 'game_id', 'player_id');
+    }
+
 	public function assignRole(int $player_id, int $role_id){
         DB::table('play_games')
             ->where('game_id','=',$this->id)

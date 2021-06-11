@@ -24,11 +24,15 @@ class PlayGameController extends Controller
          * check if the room has enough players
          */
         # get the set total of players of the room
-        $setTotal = Game::find($roomId)->total;
+        $game = Game::find($roomId);
+        $setTotal = $game->total;
+        /*
         # get the player ids that entered the room within the last one hour
         $game_plays = Game::find($roomId)->hasMany(PlayGame::class);
         # get the total of players that entered the room within the last one hour
         $total = $game_plays->where('enter_game_at', '>', now()->subHour())->get()->pluck('player_id')->count();
+        */
+        $total = $game->users()->where('enter_game_at', '>', now()->subHour())->count()
         # check if the room has enough players
         if ($total < $setTotal){
             return view('game.error', ['error'=>"有玩家还未进房！"]);
