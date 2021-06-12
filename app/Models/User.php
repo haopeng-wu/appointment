@@ -49,10 +49,15 @@ class User extends Authenticatable
 		return $this->hasMany(Game::class, 'host_id');
 	}
 
+	public function hostGame($game){
+	    $this->hostedGames()->save($game);
+	    $game->update(['set_host_at'=>now()]);
+	    return ;
+    }
+
 	public function foundedGames(){
 		return $this->hasMany(Game::class, 'founder_id');
 	}
-
 
     public function games(){
         return $this->belongsToMany(Game::class, 'play_games', 'player_id');

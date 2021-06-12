@@ -29,8 +29,8 @@ class PlayGameController extends Controller
 
         # get the player ids that entered the room within the last one hour
         $game_plays = Game::find($roomId)->hasMany(PlayGame::class);
-        # get the total of players that entered the room within the last one hour
-        $total = $game_plays->where('enter_game_at', '>', now()->subHour())->get()->pluck('player_id')->count();
+        # get the total of players that entered the room within the last one hour and a half
+        $total = $game_plays->where('enter_game_at', '>', now()->subMinutes(90))->get()->pluck('player_id')->count();
 
         /*
          *  an alternative to the above

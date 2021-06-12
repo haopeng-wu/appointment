@@ -29,6 +29,7 @@ class CreateGamesTable extends Migration
 			$table->integer('wolf-king')->nullable();
 			$table->integer('white-wolf-king')->nullable();
 
+			$table->timestamp('set_host_at')->nullable();
             $table->timestamps();
 
 			$table->foreign('founder_id')->references('id')->on('users')->onDelete('cascade');
