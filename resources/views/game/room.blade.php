@@ -1,6 +1,6 @@
 <x-master>
 
-    @if(! $room->host or $room->host != $user)
+    @if((! $room->host) or $room->host != $user)
         <h1>欢迎玩家<span class="text-red-600 font-bold ml-1 mr-3">{{$user->id}}</span>进入房间
             <span class="text-red-600 font-bold ml-1">{{$room->id}}</span></h1>
         <div class="flex">
