@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class HostController extends Controller
 {
-    public function host(){
+    public function host(Request $request){
         return "you're a host now";
     }
 }
