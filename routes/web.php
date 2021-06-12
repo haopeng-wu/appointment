@@ -24,6 +24,8 @@ Route::post('/game/enter', 'App\Http\Controllers\PlayGameController@enter');
 
 Route::post('/game/store', 'App\Http\Controllers\GameController@store');
 
+Route::post('/game/host', 'App\Http\Controllers\HostController@host');
+
 Route::post('/game/shuffle-cards', 'App\Http\Controllers\PlayGameController@shuffle');
 
 Route::get('/game/role', 'App\Http\Controllers\PlayGameController@showRole');
