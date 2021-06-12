@@ -99,7 +99,7 @@ class PlayGameController extends Controller
             # enter the room
             if (Game::find($roomId)){
                 $user->enterRoom($roomId);
-                return view("game.room", ["roomId"=>$roomId, "user_id"=>$user->id]);
+                return view("game.room", ["room"=>Game::find($roomId), "user"=>$user]);
             }else{
                 return view("game.error", ["error"=>"该房间不存在！"]);
             }
