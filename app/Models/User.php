@@ -50,8 +50,11 @@ class User extends Authenticatable
 	}
 
 	public function hostGame($game){
+	    # become the host and set the timestamp
 	    $this->hostedGames()->save($game);
 	    $game->update(['set_host_at'=>now()]);
+	    # leave the game
+        $this->games()->detach($this->currRoomId());
 	    return ;
     }
 
