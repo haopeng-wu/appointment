@@ -34,6 +34,7 @@ class HostController extends Controller
         if(($room->host) and $room->host == $user){
             # this user is the host, can resign
             $room->update(["host_id"=>null]);
+            $room->refresh();
             return view("game.host-resigned", ['room'=>$room, 'user'=>$user]);
         }else{
             # there is a host, who hasn't retired yet, the current user cannot be a host of this game
