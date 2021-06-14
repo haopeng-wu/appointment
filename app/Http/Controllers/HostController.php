@@ -19,7 +19,7 @@ class HostController extends Controller
             # there is no host yet, this user becomes the first host of this game
             $user->hostGame($room);
             $room->refresh();
-            return view("game.room", ["room"=>$room, "user"=>$user]);
+            return view("host.dashboard", ["room"=>$room, "user"=>$user]);
         }else{
             # there is a host, who hasn't retired yet, the current user cannot be a host of this game
             return "已经有主持人";

@@ -107,8 +107,10 @@ class PlayGameController extends Controller
             if ($room) {
                 if ($room->host != $user) {
                     $user->enterGame($roomId);
+                    return view("game.room", ["room" => $room, "user" => $user]);
+                }else{
+                    return view("host.dashboard", ["room"=>$room, "user"=> $user]);
                 }
-                return view("game.room", ["room" => $room, "user" => $user]);
             } else {
                 return view("game.error", ["error" => "该房间不存在！"]);
             }
