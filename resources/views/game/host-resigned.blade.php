@@ -1,5 +1,5 @@
 <x-master>
-    <div>
+    <div class="flex">
         <a class="" href="/">
             <div class="bg-blue-500 rounded-full py-2 px-4 text-white
                         hover:shadow hover:bg-blue-600 focus-within:outline-none mr-3" style="height:40px;">
