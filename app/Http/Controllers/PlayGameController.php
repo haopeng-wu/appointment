@@ -84,8 +84,8 @@ class PlayGameController extends Controller
         $room = Game::find($request['_roomId']);
         if ($room and $room->host_id == loginOrCreate()->id) {
             return $this->shuffleNew($request['_roomId']);
-        }else{
-            return view("game.error", ["error"=>"您不是主持人，无法发牌。"]);
+        } else {
+            return view("game.error", ["error" => "您不是主持人，无法发牌。"]);
         }
     }
 
@@ -103,9 +103,12 @@ class PlayGameController extends Controller
             $user = loginOrCreate();
 
             # enter the room
-            if (Game::find($roomId)) {
-                $user->enterRoom($roomId);
-                return view("game.room", ["room" => Game::find($roomId), "user" => $user]);
+            $room = Game::find($roomId);
+            if ($room) {
+                if ($room->host != $user) {
+                    $user->enterGame($roomId);
+                }
+                return view("game.room", ["room" => $room, "user" => $user]);
             } else {
                 return view("game.error", ["error" => "该房间不存在！"]);
             }
