@@ -77,7 +77,7 @@ class PlayGameController extends Controller
             $room->assignRole($player_id, $card_ids[$index]);
             $distribution[$player_id] = $card_names[$index];
         }
-        session(['distribution'=>$distribution]);
+        session(['distribution' => $distribution]);
         return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
     }
 
@@ -107,16 +107,16 @@ class PlayGameController extends Controller
             # enter the room
             $room = Game::find($roomId);
             if ($room) {
-                if ($room->host and $room->host == $user) {
-                    return view("host.dashboard", ["room"=>$room, "user"=> $user]);
-                }else if($room->host and $room->set_host_at < Carbon::now()->subMinutes(90)){
-                    # resign the host and join the game as an ordinary player
-                    $room->update(["host_id"=>null]);
+                if ($room->set_host_at and $room->set_host_at < Carbon::now()->subMinutes(90)){
+                    # clear the host and join the game as an ordinary player
+                    $room->update(["host_id" => null]);
                     $room->refresh();
                     $user->enterGame($roomId);
                     return view("game.room", ["room" => $room, "user" => $user]);
-                }
-                else{
+                } else if ($room->host and $room->host == $user)
+                {
+                    return view("host.dashboard", ["room" => $room, "user" => $user]);
+                }  else {
                     # as an ordinary player
                     $user->enterGame($roomId);
                     return view("game.room", ["room" => $room, "user" => $user]);

@@ -82,6 +82,7 @@ class User extends Authenticatable
         # set the user_id cookies
         $minutes=60*1.5;  # remember a room for a user for one hour and a half
         Cookie::queue('roomId', $roomId, $minutes);
+        session(['room_id'=>$roomId]);
         return ;
     }
 
