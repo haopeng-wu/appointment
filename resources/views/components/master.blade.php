@@ -9,11 +9,11 @@
 </head>
 <body>
 <div class="bg-blue-300 flex">
-    @if($user_id = session('current_user'))
-        <h2 class="flex-1">欢迎玩家 <span class="text-red-700">{{$user_id}}</span></h2>
-    @endif
     <h2 class="flex-1">Werewolf</h2>
     <a class="flex-1" href="/"><h2>Home</h2></a>
+    @if($user_id = session('current_user'))
+        <h2 class="flex-1">您的编号是 <span class="text-red-700">{{$user_id}}</span></h2>
+    @endif
 </div>
 {{$slot}}
 </body>
