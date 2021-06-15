@@ -3,6 +3,21 @@
 
         <h1>欢迎主持人<span class="text-red-600 font-bold ml-1">{{$user->id}}</span>进入房间
             <span class="text-red-600 font-bold ml-1">{{$room->id}}</span></h1>
+        <div>
+            <h1 class="mb-3">房间配置：</h1>
+            <?php
+            $card_types = ['villager', 'wolf', 'prophet', 'guardian', 'hunter',
+                'witch', 'knight', 'wolf-king', 'white-wolf-king'];
+            $card_names = ['村名', '狼人', '预言家', '守卫', '猎人',
+                '女巫', '骑士', '狼王', '白狼王'];
+            ?>
+            <h2>玩家数：<span>{{$room->total}}</span>人</h2>
+            @foreach($card_types as $index => $attr)
+                @if($room[$attr] != 0)
+                <li>{{$card_names[$index]}}：<span>{{$room[$attr]}}</span></li>
+                @endif
+            @endforeach
+        </div>
         <div class="flex">
             <div>
                 <form method="post"

@@ -6,6 +6,7 @@ use App\Models\Game;
 use App\Models\User;
 use App\Models\PlayGame;
 use App\Models\Card;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\DB;
@@ -28,7 +29,7 @@ class PlayGameController extends Controller
         $setTotal = $game->total;
 
         # get the player ids that entered the room within the last one hour
-        $game_plays = Game::find($roomId)->hasMany(PlayGame::class);
+        $game_plays = $game->hasMany(PlayGame::class);
         # get the total of players that entered the room within the last one hour and a half
         $total = $game_plays->where('enter_game_at', '>', now()->subMinutes(90))->get()->pluck('player_id')->count();
 
@@ -105,11 +106,19 @@ class PlayGameController extends Controller
             # enter the room
             $room = Game::find($roomId);
             if ($room) {
-                if ($room->host != $user) {
+                if ($room->host and $room->host == $user) {
+                    return view("host.dashboard", ["room"=>$room, "user"=> $user]);
+                }else if($room->host and $room->set_host_at < Carbon::now()->subMinutes(90)){
+                    # resign the host and join the game as an ordinary player
+                    $room->update(["host_id"=>null]);
+                    $room->refresh();
                     $user->enterGame($roomId);
                     return view("game.room", ["room" => $room, "user" => $user]);
-                }else{
-                    return view("host.dashboard", ["room"=>$room, "user"=> $user]);
+                }
+                else{
+                    # as an ordinary player
+                    $user->enterGame($roomId);
+                    return view("game.room", ["room" => $room, "user" => $user]);
                 }
             } else {
                 return view("game.error", ["error" => "该房间不存在！"]);
