@@ -112,13 +112,16 @@ class PlayGameController extends Controller
                     $room->update(["host_id" => null]);
                     $room->refresh();
                     $user->enterGame($roomId);
+                    session(['room_id'=>$roomId]);
                     return view("game.room", ["room" => $room, "user" => $user]);
                 } else if ($room->host and $room->host == $user)
                 {
+                    session(['room_id'=>$roomId]);
                     return view("host.dashboard", ["room" => $room, "user" => $user]);
-                }  else {
+                } else {
                     # as an ordinary player
                     $user->enterGame($roomId);
+                    session(['room_id'=>$roomId]);
                     return view("game.room", ["room" => $room, "user" => $user]);
                 }
             } else {
