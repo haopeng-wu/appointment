@@ -24,7 +24,7 @@
                 <div>
                     <h1>当前玩家身份</h1>
                     @foreach($dist as $player_id => $role)
-                        <p><span class="text-red-600">{{$player_id}}</span> plays <span
+                        <p><span class="text-red-600">玩家{{$player_id}}</span> 是 <span
                                     class="text-red-600">{{$role}}</span></p>
                     @endforeach
                 </div>

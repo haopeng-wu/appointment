@@ -20,7 +20,10 @@ class HostController extends Controller
             $user->hostGame($room);
             $room->refresh();
             return view("host.dashboard", ["room"=>$room, "user"=>$user]);
-        }else{
+        }elseif($room->host == $user){
+            return view("host.dashboard", ["room"=>$room, "user"=>$user]);
+        }
+        else{
             # there is a host, who hasn't retired yet, the current user cannot be a host of this game
             return "已经有主持人";
         }
