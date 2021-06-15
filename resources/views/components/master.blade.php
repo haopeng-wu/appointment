@@ -9,11 +9,11 @@
 </head>
 <body>
 <div class="bg-blue-300 flex justify-between">
-    <h2 class="flex">Werewolf</h2>
-    <a class="flex" href="/"><h2>Home</h2></a>
     @if($user_id = session('current_user'))
         <h2 class="flex pr-2">您的编号是 <span class="text-red-700 font-bold">{{$user_id}}</span></h2>
     @endif
+    <a class="flex" href="/"><h2>Home</h2></a>
+    <h2 class="flex">Werewolf</h2>
 </div>
 {{$slot}}
 </body>
