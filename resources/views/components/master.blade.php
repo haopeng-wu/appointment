@@ -9,12 +9,12 @@
 </head>
 <body>
 <div class="bg-blue-300 flex justify-between">
+    <a class="flex" href="/"><h2>Home</h2></a>
     @if($user_id = session('current_user'))
         <h2 class="flex">您的编号是 <span class="text-red-700 font-bold">{{$user_id}}</span>
-            @if($roomId=session('room_id'))，当前活跃房间号为：<span class="text-red-700 font-bold">{{$roomId}}</span>@endif
+            @if($roomId=session('room_id'))，当前活跃房间号为<span class="text-red-700 font-bold">{{$roomId}}</span>@endif
         </h2>
     @endif
-    <a class="flex" href="/"><h2>Home</h2></a>
     <h2 class="flex">Werewolf</h2>
 </div>
 {{$slot}}
