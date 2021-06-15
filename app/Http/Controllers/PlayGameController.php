@@ -67,7 +67,7 @@ class PlayGameController extends Controller
         shuffle($card_ids);
         $card_names = [];
         foreach ($card_ids as $card_id) {
-            array_push($card_names, Card::find($card_id)->name);
+            array_push($card_names, Card::find($card_id)->chinese_name);
         }
 
         # distribute the cards to its players
@@ -77,7 +77,8 @@ class PlayGameController extends Controller
             $room->assignRole($player_id, $card_ids[$index]);
             $distribution[$player_id] = $card_names[$index];
         }
-        return view('game.playing', ['dist' => $distribution]);
+        session(['distribution'=>$distribution]);
+        return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
     }
 
     public function shuffle(Request $request)
