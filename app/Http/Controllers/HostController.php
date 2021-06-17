@@ -44,4 +44,9 @@ class HostController extends Controller
             return "您还不是主持人";
         }
     }
+
+    public function dashboard(int $room_id){
+        $room = Game::find($room_id);
+        return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
+    }
 }
