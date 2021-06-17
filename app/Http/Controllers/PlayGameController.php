@@ -78,7 +78,8 @@ class PlayGameController extends Controller
             $distribution[$player_id] = $card_names[$index];
         }
         session(['distribution' => $distribution]);
-        return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
+        #return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
+        return redirect("/dashboard/$room->id");
     }
 
     public function shuffle(Request $request)
@@ -117,7 +118,8 @@ class PlayGameController extends Controller
                 } else if ($room->host and $room->host == $user)
                 {
                     session(['room_id'=>$roomId]);
-                    return view("host.dashboard", ["room" => $room, "user" => $user]);
+                    #return view("host.dashboard", ["room" => $room, "user" => $user]);
+                    return redirect("/dashboard/$roomId");
                 } else {
                     # as an ordinary player
                     $user->enterGame($roomId);
