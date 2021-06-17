@@ -78,8 +78,7 @@ class PlayGameController extends Controller
             $distribution[$player_id] = $card_names[$index];
         }
         session(['distribution' => $distribution]);
-        return back();
-        #return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
+        return view('host.dashboard', ['room' => $room, 'user' => loginOrCreate()]);
     }
 
     public function shuffle(Request $request)
