@@ -133,8 +133,8 @@ class PlayGameController extends Controller
 
     public function showRole(Request $request)
     {
-        $u_id_cookie = $request->cookie('user_id');
-        if ($u_id_cookie and !$user = User::find($u_id_cookie)) {
+        $u_id_session = session('user_id');
+        if ($u_id_session and !$user = User::find($u_id_session)) {
             return view("game.error", ["error" => "还未进入房间哦！"]);
         }
         if (!$room_id = $user->currRoomId()) {

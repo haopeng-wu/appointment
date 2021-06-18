@@ -79,7 +79,7 @@ class User extends Authenticatable
             ->where('player_id', '=', $this->id)
             ->where('game_id', '=', $roomId)
             ->update(['enter_game_at'=>Carbon::now()]);
-        # set the user_id cookies
+        # set the user_id cookiis
         $minutes=60*1.5;  # remember a room for a user for one hour and a half
         Cookie::queue('roomId', $roomId, $minutes);
         return ;
