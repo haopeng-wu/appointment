@@ -17,6 +17,7 @@ class CreateCardsTable extends Migration
             $table->id();
 			$table->string('name')->nullable()->unique();
 			$table->string('chinese_name')->nullable()->unique();
+			$table->string('portrait')->nullable();
             $table->timestamps();
         });
     }
