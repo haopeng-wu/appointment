@@ -3,7 +3,7 @@
         <div class="mb-5">
             <h1>房间创建成功！房间号为: <span class="font-bold text-red-700 text-xl rounded">{{$gameId}}</span>。</h1>
         </div>
-        <div>
+        <div class="flex">
             <form action="/game/enter"
                   method="post"
                   class="mr-2"
