@@ -2,7 +2,7 @@
     <div class="">
         <div class="hidden"><h2>你的身份是：<span class="text-red-600 mb-3">{{$role->chinese_name}}</span>。</h2>
         </div>
-        <div class="flex justify-center">
+        <div class="">
             <img src="{{$role->portrait}}" alt="$role->chinese_name">
         </div>
         <a href="/game/role">

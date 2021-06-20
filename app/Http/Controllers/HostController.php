@@ -27,6 +27,7 @@ class HostController extends Controller
         } else {
             # there is a host, who hasn't retired yet, the current user cannot be a host of this game
             return "已经有主持人";
+            return view("game.error", ["error"=>"已经有主持人"]);
         }
     }
 
