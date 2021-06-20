@@ -8,12 +8,26 @@
             <h2 class="text-red-600">您没有输入房间编号！</h2>
         </div>
     @endisset
-    <a href="/">
-        <div class='bg-blue-500 rounded-full py-2 px-4 text-white
-                    hover:shadow hover:bg-blue-600 focus-within:outline-none'
-             style="min-width:100px;"
-        >
-            返回首页
-        </div>
-    </a>
+    <div class="flex">
+        @if(session("room_id"))
+        <a href="/room">
+            <div class='bg-blue-500 rounded-full py-2 px-4 text-white
+                    hover:shadow hover:bg-blue-600 focus-within:outline-none mr-2
+                    flex justify-center'
+                 style="min-width:100px;"
+            >
+                返回房间
+            </div>
+        </a>
+        @endif
+        <a href="/">
+            <div class='bg-blue-500 rounded-full py-2 px-4 text-white
+                    hover:shadow hover:bg-blue-600 focus-within:outline-none
+                    flex justify-center'
+                 style="min-width:100px;"
+            >
+                返回首页
+            </div>
+        </a>
+    </div>
 </x-master>
