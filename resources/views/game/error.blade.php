@@ -8,6 +8,7 @@
             <h2 class="text-red-600">您没有输入房间编号！</h2>
         </div>
     @endisset
+
     <div class="flex">
         @if(session("room_id"))
         <a href="/room">
