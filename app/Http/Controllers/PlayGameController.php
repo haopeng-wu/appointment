@@ -107,22 +107,24 @@ class PlayGameController extends Controller
             # enter the room
             $room = Game::find($roomId);
             if ($room) {
-                if ($room->set_host_at and $room->set_host_at < Carbon::now()->subMinutes(90)){
-                    # clear the host and join the game as an ordinary player
+                if ($room->set_host_at and $room->set_host_at < Carbon::now()->subMinutes(90)) {
+                    # there is no valid host, surely join the user into the game as an ordinary player and clear host
                     $room->update(["host_id" => null]);
                     $room->refresh();
                     $user->enterGame($roomId);
-                    session(['room_id'=>$roomId]);
-                    return view("game.room", ["room" => $room, "user" => $user]);
-                } else if ($room->host and $room->host == $user)
-                {
-                    session(['room_id'=>$roomId]);
+                    session(['room_id' => $roomId]);
+                    #return view("game.room", ["room" => $room, "user" => $user]);
+                    return redirect("/room");
+                } else if ($room->host and $room->host == $user) {
+                    # the host is valid and happened to be this user, then go to host dashboard
+                    session(['room_id' => $roomId]);
                     return redirect("/dashboard/$roomId");
                 } else {
-                    # as an ordinary player
+                    # in any other cases, join the user into the game as an player
                     $user->enterGame($roomId);
-                    session(['room_id'=>$roomId]);
-                    return view("game.room", ["room" => $room, "user" => $user]);
+                    session(['room_id' => $roomId]);
+                    #return view("game.room", ["room" => $room, "user" => $user]);
+                    return redirect("/room");
                 }
             } else {
                 return view("game.error", ["error" => "该房间不存在！"]);
@@ -146,5 +148,20 @@ class PlayGameController extends Controller
         $role = Card::find($role_id);
 
         return view('game.role', ['role' => $role]);
+    }
+
+    public function room(Request $request)
+    {
+
+        $user = loginOrCreate();
+
+        $room_id = $user->currRoomId();
+
+        if ($room_id and $room = Game::find($room_id))
+        {
+            return view("game.room", ['room'=>$room, 'user'=>$user]);
+        }else{
+            return view("game.error", ["error" => "您还未进入房间!"]);
+        }
     }
 }
