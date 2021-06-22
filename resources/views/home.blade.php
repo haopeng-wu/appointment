@@ -1,6 +1,6 @@
 <x-master>
     <div class="container mx-auto h-screen justify-center flex flex-col max-w-xs"
-    style="background-image: url('https://www.wuhaopeng.site:19000/images/u=304344891,2514493180&fm=26&gp=0.jpeg')">
+    style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!}) no-repeat;">
         <div class>
             <a class="" href="/game/create">
                 <div class="bg-blue-500 rounded-full hover:shadow hover:bg-blue-600
