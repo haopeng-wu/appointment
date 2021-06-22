@@ -32,7 +32,7 @@ Route::post('/game/host-resign', 'App\Http\Controllers\HostController@hostResign
 
 Route::post('/game/shuffle-cards', 'App\Http\Controllers\PlayGameController@shuffle');
 
-Route::get('/game/role', 'App\Http\Controllers\PlayGameController@showRole');
+Route::get('/role', 'App\Http\Controllers\PlayGameController@showRole');
 
 Route::get('/dashboard/{game}', 'App\Http\Controllers\HostController@dashboard');
 
