@@ -13,7 +13,7 @@
     style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
             background-repeat: no-repeat;
             background-position: center;
-            background-size: auto 100%;
+            background-size: cover;
             ">
         <div class>
             <a class="" href="/game/create">
