@@ -11,7 +11,9 @@
 
     <div class="container lg:mx-auto h-screen justify-center flex flex-col lg:max-w-xs"
     style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
-            background-repeat: no-repeat">
+            background-repeat: no-repeat;
+            background-position: center;
+            ">
         <div class>
             <a class="" href="/game/create">
                 <div class="bg-blue-500 rounded-full hover:shadow hover:bg-blue-600
