@@ -1,5 +1,15 @@
-<x-master>
-    <div class="container mx-auto h-screen justify-center flex flex-col max-w-xs"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Werewolf</title>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+    <div class="container lg:mx-auto h-screen justify-center flex flex-col lg:max-w-xs"
     style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
             background-repeat: no-repeat">
         <div class>
@@ -25,4 +35,5 @@
             </form>
         </div>
     </div>
-</x-master>
+</body>
+</html>
