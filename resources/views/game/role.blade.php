@@ -1,9 +1,10 @@
 <x-master>
-    <div class="" style="background-image: url({!! $role->portrait !!})">
+    <div class="h-screen" style="background-image: url({!! $role->portrait !!});
+            background-repeat: no-repeat; background-position: center; background-size: cover">
         <div class="hidden"><h2>你的身份是：<span class="text-red-600 mb-3">{{$role->chinese_name}}</span>。</h2>
         </div>
 
-        <!--
+    <!--
         <div class="">
             <img class="mx-auto" src="{{$role->portrait}}" alt="$role->chinese_name"
                  style="object-fit: cover">

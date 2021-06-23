@@ -7,7 +7,7 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body class="h-screen">
+<body class="">
 <!--
 <div class="bg-blue-300 flex justify-between">
     <a class="flex" href="/"><h2>Home</h2></a>

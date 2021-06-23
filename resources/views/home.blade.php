@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Werewolf</title>
-    <meta charset="UTF-8">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
-
+<x-master>
     <div class="container lg:mx-auto h-screen justify-center flex flex-col lg:max-w-xs"
-    style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            ">
+         style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
+                 background-repeat: no-repeat;
+                 background-position: center;
+                 background-size: cover;
+                 ">
         <div class>
             <a class="" href="/game/create">
                 <div class="bg-blue-500 rounded-full hover:shadow hover:bg-blue-600
@@ -34,9 +24,8 @@
                         style="min-width:100px;"
                         type='submit'>
                     进入房间
-                </button >
+                </button>
             </form>
         </div>
     </div>
-</body>
-</html>
+</x-master>
