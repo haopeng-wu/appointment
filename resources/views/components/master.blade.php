@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="h-screen">
+<!--
 <div class="bg-blue-300 flex justify-between">
     <a class="flex" href="/"><h2>Home</h2></a>
     @if($user_id = session('user_id'))
@@ -17,6 +18,7 @@
     @endif
     <h2 class="flex">Werewolf</h2>
 </div>
+-->
 {{$slot}}
 </body>
 </html>
