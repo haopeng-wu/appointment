@@ -4,8 +4,7 @@
         </div>
 
         <div class="">
-            <img class="mx-auto" src="{{$role->portrait}}" alt="$role->chinese_name"
-                 style="object-fit: cover">
+            <img class="mx-auto" src="{{$role->portrait}}" alt="{{$role->chinese_name}}">
         </div>
 
         <a href="/role">
