@@ -3,11 +3,8 @@
 <head>
     <title>Werewolf</title>
     <meta charset="UTF-8">
-    <!--
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="">
