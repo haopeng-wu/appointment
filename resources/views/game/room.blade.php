@@ -1,9 +1,11 @@
 <x-master>
 
+    <img src="{!! asset('images/u=2463211854,2553144130&fm=26&gp=0.jpeg') !!}" alt=""
+         class="rotate-90">
     @if((! $room->host) or $room->host != $user)
         <h1>欢迎玩家<span class="text-red-600 font-bold ml-1 mr-3">{{$user->id}}</span>进入房间
             <span class="text-red-600 font-bold ml-1">{{$room->id}}</span></h1>
-        <div class="flex" style="position: fixed; bottom: 0;">
+        <div class="flex" >
             <a href="/role">
                 <div class='bg-blue-500 rounded-full py-2 px-4 text-white
                     hover:shadow hover:bg-blue-600 focus-within:outline-none mr-3'
