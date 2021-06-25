@@ -1,10 +1,8 @@
 <x-master>
 
     <div style="display: grid; grid-template-rows: repeat(10, 1fr)">
-        <div style="grid-row: 1/10">
-            <img src="{!! asset('images/u=2463211854,2553144130&fm=26&gp=0.jpeg') !!}" alt=""
-                 style="object-fit: cover; width:100%">
-        </div>
+        <img src="{!! asset('images/u=2463211854,2553144130&fm=26&gp=0.jpeg') !!}" alt=""
+             style="object-fit: cover; width:100% grid-row: 1/10">
         <div style="grid-row: 10/11">
             @if((! $room->host) or $room->host != $user)
                 <h1>欢迎玩家<span class="text-red-600 font-bold ml-1 mr-3">{{$user->id}}</span>进入房间
