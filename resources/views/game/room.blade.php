@@ -1,7 +1,7 @@
 <x-master>
 
     <img src="{!! asset('images/u=2463211854,2553144130&fm=26&gp=0.jpeg') !!}" alt=""
-         class="">
+         style="object-fit: cover; width:100%">
     @if((! $room->host) or $room->host != $user)
         <h1>欢迎玩家<span class="text-red-600 font-bold ml-1 mr-3">{{$user->id}}</span>进入房间
             <span class="text-red-600 font-bold ml-1">{{$room->id}}</span></h1>
