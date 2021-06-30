@@ -19,12 +19,12 @@
     <div class="container lg:mx-auto justify-center flex flex-col lg:max-w-xs"
          style="grid-row: 6/7; grid-column: 3/9; border: solid; border: #9561e2"
          >
-        <div style="opacity: 0.7;">
+        <div>
             <a class="" href="/game/create">
-                <div class="bg-blue-500 rounded-full hover:shadow hover:bg-blue-600
-                text-white text-xl mb-5 py-2 flex justify-center items-center"
-                     style="height:100%; width: 100%">
-                    <span style="opacity: 1;">建房</span>
+                <div class="rounded-full hover:shadow hover:bg-blue-600
+                text-xl mb-5 py-2 flex justify-center items-center"
+                     style="height:100%; width: 100%; background-color: gold; opacity: 0.7;">
+                    <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">建房</span>
                 </div>
             </a>
             <form class="flex flex-row justify-between bg-gray-200 rounded-full"
