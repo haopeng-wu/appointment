@@ -22,9 +22,9 @@
         <div>
             <a class="" href="/game/create">
                 <div class="rounded-full hover:shadow hover:bg-blue-600
-                text-xl mb-5 py-2 flex justify-center items-center"
+                mb-5 py-2 flex justify-center items-center"
                      style="height:100%; width: 100%; background-color: gold; opacity: 0.7;">
-                    <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">建房</span>
+                    <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;opacity: 1;">建房</span>
                 </div>
             </a>
             <form class="flex flex-row justify-between bg-gray-200 rounded-full"
