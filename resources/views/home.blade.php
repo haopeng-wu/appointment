@@ -11,20 +11,26 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(10, 1fr);
         ">
 
     <div class="container lg:mx-auto justify-center flex flex-col lg:max-w-xs"
+         style="grid-row: 6/8; grid-column: 5/7; border: solid; border: #9561e2"
          >
-        <div class>
+        <div>
             <a class="" href="/game/create">
                 <div class="bg-blue-500 rounded-full hover:shadow hover:bg-blue-600
-                text-white text-xl mb-5 py-2 flex justify-center items-center" style="height:40px;">
+                text-white text-xl mb-5 py-2 flex justify-center items-center"
+                     style="height:100%; width: 100%">
                     建房
                 </div>
             </a>
             <form class="flex flex-row justify-between bg-gray-200 rounded-full"
                   method="post"
-                  action="/game/enter">
+                  action="/game/enter"
+                  style="height:100%; width: 100%">
                 @csrf
                 <input class="w-full bg-transparent focus-within:outline-none px-4"
                        type="number" name="roomId" placeholder="请输入房间号"
