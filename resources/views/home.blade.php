@@ -7,13 +7,13 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body class="" style="background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
+<body style="height: 100vh;background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         ">
 
-    <div class="container lg:mx-auto h-screen justify-center flex flex-col lg:max-w-xs"
+    <div class="container lg:mx-auto justify-center flex flex-col lg:max-w-xs"
          >
         <div class>
             <a class="" href="/game/create">
