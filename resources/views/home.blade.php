@@ -17,7 +17,7 @@
         ">
 
     <div class="container lg:mx-auto justify-center flex flex-col lg:max-w-xs"
-         style="grid-row: 6/8; grid-column: 5/7; border: solid; border: #9561e2"
+         style="grid-row: 6/7; grid-column: 3/9; border: solid; border: #9561e2"
          >
         <div>
             <a class="" href="/game/create">
