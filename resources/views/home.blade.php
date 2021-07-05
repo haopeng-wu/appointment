@@ -21,7 +21,7 @@
          >
         <div>
             <a class="" href="/game/create">
-                <div class="rounded-full hover:shadow hover:bg-blue-600
+                <div class="rounded-md hover:shadow hover:bg-blue-600
                 mb-5 py-2 flex justify-center items-center"
                      style="height:100%; width: 100%; background: rgba(48, 55, 242, 0.5);">
                     <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">建房</span>
