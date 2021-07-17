@@ -7,19 +7,20 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body style="height: 100vh;background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
+<body >
+
+<div style="height: 100vh;
+        background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         display: grid;
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(10, 1fr);
-        height: 100vh;
         ">
-
     <div class="container lg:mx-auto justify-center flex flex-col lg:max-w-xs"
          style="grid-row: 6/7; grid-column: 3/9; border: solid; border: #9561e2"
-         >
+    >
         <div>
             <a class="" href="/game/create">
                 <div class="rounded-lg hover:shadow hover:bg-blue-600
@@ -46,5 +47,6 @@
             </form>
         </div>
     </div>
-    </body>
-    </html>
+</div>
+</body>
+</html>
