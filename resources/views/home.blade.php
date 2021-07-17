@@ -36,11 +36,11 @@
                        type="number" name="roomId" placeholder="请输入房间号"
                        required
                        style="background: rgba(255, 255, 255, 0.5);">
-                <button class='rounded-md py-2 px-4 text-white
+                <button class='rounded-md py-2 px-4 text-white bg-transparent
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
                         style="min-width:100px; background: rgba(5, 17, 250, 0.5);"
                         type='submit'>
-                    <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">进入房间</span>
+                    <span style="color: white;">进入房间</span>
                 </button>
             </form>
         </div>
