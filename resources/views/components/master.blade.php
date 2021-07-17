@@ -10,7 +10,7 @@
 <body class="">
 <div class="bg-blue-300 flex justify-between">
     <a class="flex" href="/"><h2>Home</h2></a>
-    @if($user_id = session('user_id'))
+    @if(false and $user_id = session('user_id'))
         <h2 class="flex">您的编号是 <span class="text-red-700 font-bold">{{$user_id}}</span>
             @if($roomId=session('room_id'))，当前活跃房间号为<span class="text-red-700 font-bold">{{$roomId}}</span>@endif
         </h2>
