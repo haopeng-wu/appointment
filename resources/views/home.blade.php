@@ -27,15 +27,15 @@
                     <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">建房</span>
                 </div>
             </a>
-            <form class="flex flex-row justify-between bg-gray-200 rounded-full"
+            <form class="flex flex-row justify-between bg-gray-200 rounded-md"
                   method="post"
                   action="/game/enter"
-                  style="height:100%; width: 100%">
+                  style="height:100%; width: 100%; background: rgba(5, 17, 250, 0.5);">
                 @csrf
                 <input class="w-full bg-transparent focus-within:outline-none px-4"
                        type="number" name="roomId" placeholder="请输入房间号"
                        required>
-                <button class='bg-blue-500 rounded-full py-2 px-4 text-white
+                <button class='bg-blue-500 rounded-md py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
                         style="min-width:100px;"
                         type='submit'>
