@@ -8,15 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="">
-<div class="bg-blue-300 flex justify-between">
-    <a class="flex" href="/"><h2>Home</h2></a>
-    @if(false and $user_id = session('user_id'))
-        <h2 class="flex">您的编号是 <span class="text-red-700 font-bold">{{$user_id}}</span>
-            @if($roomId=session('room_id'))，当前活跃房间号为<span class="text-red-700 font-bold">{{$roomId}}</span>@endif
-        </h2>
-    @endif
-    <h2 class="flex">Werewolf</h2>
-</div>
-{{$slot}}
+@if(false)
+    <div class="bg-blue-300 flex justify-between">
+        <a class="flex" href="/"><h2>Home</h2></a>
+        @if($user_id = session('user_id'))
+            <h2 class="flex">您的编号是 <span class="text-red-700 font-bold">{{$user_id}}</span>
+                @if($roomId=session('room_id'))，当前活跃房间号为<span class="text-red-700 font-bold">{{$roomId}}</span>@endif
+            </h2>
+        @endif
+        <h2 class="flex">Werewolf</h2>
+    </div>
+@endif
+    {{$slot}}
 </body>
 </html>
