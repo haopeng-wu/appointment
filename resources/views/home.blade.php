@@ -32,8 +32,8 @@
                   action="/game/enter"
                   style="height:100%; width: 100%; background: rgba(255, 255, 255, 0.5);">
                 @csrf
-                <input class="w-full focus-within:outline-none px-4"
-                       type="number" name="roomId" placeholder="房间号"
+                <input class="w-full focus-within:outline-none px-2"
+                       type="number" name="roomId" placeholder="请输入房间号"
                        required
                        style="background: rgba(255, 255, 255, 0.5);">
                 <button class='rounded-md py-2 px-4 text-white
