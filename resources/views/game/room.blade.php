@@ -1,7 +1,7 @@
 <x-master>
 
     <div style="display: grid; grid-template-rows: repeat(10, 1fr)">
-        <div style="grid-row:1/10; background-image: url({!! asset('images/src=http---img7.d.cn-be-image-1711-sh447j9qodqsp.jpg&refer=http---img7.d.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg') !!});
+        <div style="grid-row:1/10; background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
                 background-repeat: no-repeat; background-position: center;
                 background-size: cover;">
             <!--
