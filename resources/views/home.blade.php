@@ -30,13 +30,13 @@
             <form class="flex flex-row justify-between bg-gray-200 rounded-lg"
                   method="post"
                   action="/game/enter"
-                  style="height:100%; width: 100%;">
+                  style="height:100%; width: 100%; background: rgba(255, 255, 255, 0.5);">
                 @csrf
                 <input class="w-full focus-within:outline-none px-4"
                        type="number" name="roomId" placeholder="请输入房间号"
                        required
                        style="background: rgba(255, 255, 255, 0.5);">
-                <button class='rounded-md py-2 px-4 text-white bg-transparent
+                <button class='rounded-md py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
                         style="min-width:100px; background: rgba(5, 17, 250, 0.5);"
                         type='submit'>
