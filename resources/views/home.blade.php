@@ -14,6 +14,7 @@
         display: grid;
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(10, 1fr);
+        height: 100vh;
         ">
 
     <div class="container lg:mx-auto justify-center flex flex-col lg:max-w-xs"
