@@ -21,23 +21,23 @@
          >
         <div>
             <a class="" href="/game/create">
-                <div class="rounded-md hover:shadow hover:bg-blue-600
+                <div class="rounded-lg hover:shadow hover:bg-blue-600
                 mb-5 py-2 flex justify-center items-center"
                      style="height:100%; width: 100%; background: rgba(5, 17, 250, 0.5);">
                     <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">建房</span>
                 </div>
             </a>
-            <form class="flex flex-row justify-between bg-gray-200 rounded-md"
+            <form class="flex flex-row justify-between bg-gray-200 rounded-lg"
                   method="post"
                   action="/game/enter"
-                  style="height:100%; width: 100%; background: rgba(5, 17, 250, 0.5);">
+                  style="height:100%; width: 100%;">
                 @csrf
                 <input class="w-full bg-transparent focus-within:outline-none px-4"
                        type="number" name="roomId" placeholder="请输入房间号"
                        required>
                 <button class='bg-blue-500 rounded-md py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
-                        style="min-width:100px;"
+                        style="min-width:100px; background: rgba(5, 17, 250, 0.5);"
                         type='submit'>
                     <span style="opacity: 1;">进入房间</span>
                 </button>
