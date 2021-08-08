@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div style="height: cal(100vh-1.75rem);
+<div style="height: calc(100vh - 1.75rem);
         background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
         background-repeat: no-repeat;
         background-position: center;
