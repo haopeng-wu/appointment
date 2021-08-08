@@ -1,12 +1,12 @@
 <x-master>
     <h2 class="uppercase text-2xl mb-4">Let's create a game:</h2>
-    <div style="display: grid; grid-template-rows: repeat(7, 1fr); height:100vh;">
+    <div style="display: grid; grid-template-rows: repeat(10, 1fr); height:100vh;">
         <img src="{!! asset("images/blue_moon.jpg") !!}" alt=""
              style="display: block; object-fit: cover;
-                 grid-row:1/3;">
+                 grid-row:1/4;">
         <form class="text-xl ml-10" method="post"
               action="/game/store"
-              style="grid-row:4/9;">
+              style="grid-row:5/10;">
             @csrf
             <div class="mb-8 text-3xl">
                 <label for="total">玩家总数:</label>
