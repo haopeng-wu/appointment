@@ -7,7 +7,7 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-
+<body>
 <div style="height: 100vh;
         background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
         background-repeat: no-repeat;
