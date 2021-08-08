@@ -1,7 +1,7 @@
 <x-master>
 
     <div style="height: 100vh;
-            background-image: url({!! asset('images/u=304344891,2514493180&fm=26&gp=0.jpeg') !!});
+            background-image: url({!! asset('bg2.jpeg') !!});
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
