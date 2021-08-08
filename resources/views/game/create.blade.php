@@ -6,7 +6,7 @@
                  grid-row:1/4;">
         <form class="text-xl" method="post"
               action="/game/store"
-              style="grid-row:5/10; margin: 0 auto;">
+              style="grid-row:5/10; width:80%; margin: 0 auto;">
             @csrf
             <div class="mb-4 text-2xl">
                 <label for="total">玩家总数:</label>
