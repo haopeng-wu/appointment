@@ -9,7 +9,7 @@
 </head>
 <body class="">
     <div class="bg-blue-300 flex justify-between"
-    style="height: 1.75rem">
+    style="height: 1.75rem; line-height: 1.75rem;">
         <a class="flex" href="/"><h2>Home</h2></a>
         @if($user_id = session('user_id'))
             <h2 class="flex">您的编号是 <span class="text-red-700 font-bold">{{$user_id}}</span>

@@ -1,6 +1,6 @@
 <x-master>
 
-    <div style="height: 100vh;
+    <div style="height: cal(100vh-1.75rem);
             background-image: url({!! asset('images/bg2.jpeg') !!});
             background-repeat: no-repeat;
             background-position: center;
