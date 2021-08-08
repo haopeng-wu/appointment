@@ -4,9 +4,9 @@
         <img src="{!! asset("images/blue_moon.jpg") !!}" alt=""
              style="display: block; object-fit: cover;
                  grid-row:1/4;">
-        <form class="text-xl ml-10" method="post"
+        <form class="text-xl" method="post"
               action="/game/store"
-              style="grid-row:5/10;">
+              style="grid-row:5/10; margin: 0 auto;">
             @csrf
             <div class="mb-4 text-2xl">
                 <label for="total">玩家总数:</label>
