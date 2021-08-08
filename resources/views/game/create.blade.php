@@ -3,10 +3,10 @@
     <div style="display: grid; grid-template-rows: repeat(5, 1fr); height:100vh;">
         <img src="{!! asset("images/blue_moon.jpg") !!}" alt=""
              style="display: block; object-fit: cover; height: 100%;
-                 grid-row:1/4;">
+                 grid-row:1/3;">
         <form class="text-xl ml-10" method="post"
               action="/game/store"
-              style="grid-row:4/6;">
+              style="grid-row:3/6;">
             @csrf
             <div class="mb-8 text-3xl">
                 <label for="total">玩家总数:</label>
