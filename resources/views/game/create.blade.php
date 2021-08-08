@@ -8,16 +8,16 @@
               action="/game/store"
               style="grid-row:5/10;">
             @csrf
-            <div class="mb-8 text-3xl">
+            <div class="mb-4 text-2xl">
                 <label for="total">玩家总数:</label>
-                <input class="border border-gray-400 w-10 ml-2" type="string" name="total">
+                <input class="border border-gray-400 w-10 ml-2" type="number" name="total">
                 @error('total')
                 <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
                 @enderror
             </div>
             <div class="mb-4">
                 <label for="villager">村名数:</label>
-                <input class="border border-gray-400 w-8 ml-2" type="string" name="villager">
+                <input class="border border-gray-400 w-8 ml-2" type="number" name="villager">
                 @error('villager')
                 <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
                 @enderror
@@ -33,7 +33,7 @@
             </div>
             <div class="mb-4">
                 <label for="wolf">狼人数:</label>
-                <input class="border border-gray-400 w-8 ml-2" type="string" name="wolf">
+                <input class="border border-gray-400 w-8 ml-2" type="number" name="wolf">
                 @error('wolf')
                 <p class='text-red-500 text-xs mt-2'>{{$message}}</p>
                 @enderror
