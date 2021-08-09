@@ -30,6 +30,7 @@
                         @csrf
                         <button class='rounded-lg hover:shadow hover:bg-blue-600
                 mb-5 py-2 flex justify-center items-center'
+                                style="height:100%; width: 100%; background: rgba(5, 17, 250, 0.5);"
                                 type='submit'>
                             <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">主持游戏</span>
                         </button>
