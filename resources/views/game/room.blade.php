@@ -26,7 +26,7 @@
                     <form class=""
                           method="post"
                           action="/game/host"
-                          style="height:100%; width: 100%; background: rgba(255, 255, 255, 0.5);">
+                          >
                         @csrf
                         <button class='rounded-lg hover:shadow hover:bg-blue-600
                 mb-5 py-2 flex justify-center items-center'
