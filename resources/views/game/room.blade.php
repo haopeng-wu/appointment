@@ -23,16 +23,15 @@
                             <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">查看身份</span>
                         </div>
                     </a>
-                    <form class="rounded-lg hover:shadow hover:bg-blue-600
-                mb-5 py-2 flex justify-center items-center"
+                    <form class=""
                           method="post"
                           action="/game/host"
                           style="height:100%; width: 100%; background: rgba(255, 255, 255, 0.5);">
                         @csrf
-                        <button class=''
-                                style="min-width:100px; background: rgba(5, 17, 250, 0.5);"
+                        <button class='rounded-lg hover:shadow hover:bg-blue-600
+                mb-5 py-2 flex justify-center items-center'
                                 type='submit'>
-                            <span style="color: white;">主持游戏</span>
+                            <span style="color: white; font-size: 1.25rem; line-height: 1.75rem;">主持游戏</span>
                         </button>
                     </form>
                 </div>
