@@ -28,10 +28,6 @@
                           action="/game/host"
                           style="height:100%; width: 100%; background: rgba(255, 255, 255, 0.5);">
                         @csrf
-                        <input class="w-full focus-within:outline-none px-2"
-                               type="number" name="roomId" placeholder="请输入房间号"
-                               required
-                               style="background: rgba(255, 255, 255, 0.5);">
                         <button class='rounded-md py-2 px-4 text-white
                 hover:shadow hover:bg-blue-600 focus-within:outline-none'
                                 style="min-width:100px; background: rgba(5, 17, 250, 0.5);"

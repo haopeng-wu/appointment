@@ -1,6 +1,6 @@
 <x-master>
     <h2 class="uppercase text-2xl mb-4">Let's create a game:</h2>
-    <div style="display: grid; grid-template-rows: repeat(10, 1fr); height:100vh;">
+    <div style="display: grid; grid-template-rows: repeat(10, 1fr); height:calc(100vh - 1.75rem);">
         <img src="{!! asset("images/blue_moon.jpg") !!}" alt=""
              style="display: block; object-fit: cover;
                  grid-row:1/4;">
