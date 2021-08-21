@@ -7,16 +7,17 @@
                 ">
         </div>
         <div>
-            <div style="font-size: 2em;
+
+                 style="font-size: 2em;
                         color: red;
-                        display: flex;">
+                        display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;">
                 @isset($error)
                     <h2>{{$error}}</h2>
                 @else
                     <h2>您没有输入房间编号！</h2>
                 @endisset
             </div>
-            <div style="display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;">
+            <div >
                 @if(session("room_id"))
                     <a href="/room">
                         <div class='bg-blue-500 rounded-full py-2 px-4 text-white
