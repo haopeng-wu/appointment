@@ -1,6 +1,13 @@
 <x-master>
     <div class="container mx-auto h-screen justify-center flex flex-col max-w-xs">
-        <div class>
+        <div style="height: 35vh; width: 100vw;
+                background-image: url({!! asset('error-wolf.jpg') !!});
+                background-size:cover;
+                ">
+
+
+        </div>
+        <div>
             @isset($error)
                 <div>
                     <h2 class="text-red-600">{{$error}}</h2>
