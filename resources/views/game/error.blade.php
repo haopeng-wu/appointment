@@ -7,7 +7,7 @@
                 ">
         </div>
         <div>
-            <div style="font-size: 3em;
+            <div style="font-size: 2em;
                         color: red;">
                 @isset($error)
                     <h2>{{$error}}</h2>
