@@ -28,6 +28,7 @@
                           action="/game/host"
                           >
                         @csrf
+                        <input type="hidden" name="_roomId" value="{{$room->id}}">
                         <button class='rounded-lg hover:shadow hover:bg-blue-600
                 mb-5 py-2 flex justify-center items-center'
                                 style="height:100%; width: 100%; background: rgba(5, 17, 250, 0.5);"

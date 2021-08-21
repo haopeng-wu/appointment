@@ -16,7 +16,6 @@ class HostController extends Controller
         $roomId = $request['_roomId'];
         $room = Game::find($roomId);
         $user = loginOrCreate();
-        dd($roomId);
 
         if ((!$room->host) or ($room->set_host_at < Carbon::now()->subMinutes(90))) {
             # there is no host yet, this user becomes the first host of this game
