@@ -1,7 +1,7 @@
 <x-master>
     <div class="container mx-auto h-screen justify-center flex flex-col max-w-xs">
         <div style="height: 35vh; width: 100vw;
-                background-image: url({!! asset('error-wolf.jpg') !!});
+                background-image: url({!! asset('images/error-wolf.jpg') !!});
                 background-size:cover;
                 ">
 
