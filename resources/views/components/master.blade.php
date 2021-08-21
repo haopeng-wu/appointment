@@ -6,8 +6,12 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="http://cdn.repository.webfont.com/webfonts/nomal/146166/46610/6120fefef629d8e280a7ab0e.css"
-    type="text/css">
+    <style>
+        @font-face {
+            font-family: xiaowanzi;
+            src: {!! asset('fonts/仓耳小丸子.ttf') !!};
+        }
+    </style>
 </head>
 <body class="">
     <div class="bg-blue-300 flex justify-between"
