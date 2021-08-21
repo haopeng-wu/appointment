@@ -7,16 +7,14 @@
                 ">
         </div>
         <div>
-            @isset($error)
-                <div>
-                    <h2 class="text-red-600">{{$error}}</h2>
-                </div>
-            @else
-                <div>
-                    <h2 class="text-red-600">您没有输入房间编号！</h2>
-                </div>
-            @endisset
-
+            <div style="font-size: 3em;
+                        color: red;">
+                @isset($error)
+                    <h2>{{$error}}</h2>
+                @else
+                    <h2>您没有输入房间编号！</h2>
+                @endisset
+            </div>
             <div class="flex">
                 @if(session("room_id"))
                     <a href="/room">
