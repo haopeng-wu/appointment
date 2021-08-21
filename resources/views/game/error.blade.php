@@ -3,6 +3,7 @@
         <div style="height: 35vh; width: 100vw;
                 background-image: url({!! asset('images/error-wolf.jpg') !!});
                 background-size:cover;
+                background-position: center;
                 ">
 
 
