@@ -6,7 +6,7 @@
                 background-position: center;
                 ">
         </div>
-        <div>
+        <div
 
                  style="font-size: 2em;
                         color: red;
