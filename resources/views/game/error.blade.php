@@ -8,14 +8,15 @@
         </div>
         <div>
             <div style="font-size: 2em;
-                        color: red;">
+                        color: red;
+                        display: flex;">
                 @isset($error)
                     <h2>{{$error}}</h2>
                 @else
                     <h2>您没有输入房间编号！</h2>
                 @endisset
             </div>
-            <div class="flex">
+            <div style="display: flex; justify-content: center; margin-top:1em; margin-bottom: 1em;">
                 @if(session("room_id"))
                     <a href="/room">
                         <div class='bg-blue-500 rounded-full py-2 px-4 text-white
