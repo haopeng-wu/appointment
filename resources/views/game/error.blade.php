@@ -12,12 +12,12 @@
                         color: red;
                         display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;">
                 @isset($error)
-                    <h2>{{$error}}</h2>
+                    <h2 style="font-family:'quyuanri2a0e0d58ac23af6';">{{$error}}</h2>
                 @else
                     <h2>您没有输入房间编号！</h2>
                 @endisset
             </div>
-            <div >
+            <div style="display: flex;">
                 @if(session("room_id"))
                     <a href="/room">
                         <div class='bg-blue-500 rounded-full py-2 px-4 text-white
