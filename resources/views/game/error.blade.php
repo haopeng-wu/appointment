@@ -13,7 +13,7 @@
                         display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;"
         >
             @isset($error)
-                <h2 style="font-family:'KaiTi';">{{$error}}</h2>
+                <h2 class="main-font">{{$error}}</h2>
             @else
                 <h2>您没有输入房间编号！</h2>
             @endisset

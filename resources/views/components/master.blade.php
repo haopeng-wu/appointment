@@ -6,12 +6,13 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style>
-        @font-face {
-            font-family: xiaowanzi;
-            src: {!! asset('fonts/仓耳小丸子.ttf') !!};
-        }
-    </style>
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $webfont.load(".main-font", "4c1bc821e8814f8783bafc16e47f6697", "jdzhonyuanjian");
+        /*$webfont.load("#id1,.class1,h1", "4c1bc821e8814f8783bafc16e47f6697", "jdzhonyuanjian");*/
+        /*．．．*/
+        $webfont.draw();
+    </script>
 </head>
 <body class="">
     <div class="bg-blue-300 flex justify-between"
