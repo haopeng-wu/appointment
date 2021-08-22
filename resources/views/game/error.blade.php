@@ -8,14 +8,15 @@
         </div>
         <div style="display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;"
         >
-            <div style="font-size: 2em;
+            <div>
+                <div style="font-size: 2em;
                         color: red;">
-                @isset($error)
-                    <h2 class="main-font">{{$error}}</h2>
-                @else
-                    <h2>您没有输入房间编号！</h2>
-                @endisset
-
+                    @isset($error)
+                        <h2 class="main-font">{{$error}}</h2>
+                    @else
+                        <h2>您没有输入房间编号！</h2>
+                    @endisset
+                </div>
                 <div style="display: flex; justify-content: space-between;">
                     @if(session("room_id"))
                         <a href="/room">
