@@ -23,8 +23,8 @@
                 <a href="/room">
                     <div class='bg-blue-500 py-2 px-4 text-white
                     hover:shadow hover:bg-blue-600 focus-within:outline-none mr-2
-                    flex justify-center'
-                         style="min-width:100px; border-radius:0.5em;"
+                    flex justify-center rounded-lg'
+                         style="min-width:100px;"
                     >
                         返回房间
                     </div>
@@ -33,8 +33,8 @@
             <a href="/">
                 <div class='bg-blue-500 py-2 px-4 text-white
                     hover:shadow hover:bg-blue-600 focus-within:outline-none
-                    flex justify-center'
-                     style="min-width:100px; border-radius:0.5em;"
+                    flex justify-center rounded-lg'
+                     style="min-width:100px;"
                 >
                     返回首页
                 </div>
