@@ -6,11 +6,10 @@
                 background-position: center;
                 ">
         </div>
-        <div style="font-size: 2em;
-                        color: red;
-                        display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;"
+        <div style="display: flex; justify-content: space-around; margin-top:1em; margin-bottom: 1em;"
         >
-            <div>
+            <div style="font-size: 2em;
+                        color: red;">
                 @isset($error)
                     <h2 class="main-font">{{$error}}</h2>
                 @else
