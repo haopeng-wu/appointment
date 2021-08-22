@@ -1,5 +1,5 @@
 <x-master>
-    <div class="h-screen">
+    <div style="height: calc(100vh - 1.75rem);">
         <div style="height: 35vh;
                 background-image: url({!! asset('images/error-wolf.jpg') !!});
                 background-size:cover;
