@@ -8,6 +8,6 @@
 </head>
 <body>
     {{$slot}}
-    <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 </body>
 </html>
