@@ -1,6 +1,6 @@
 console.log("hello");
-
 /*
+# an alternative
 let slots = document.querySelectorAll("input[name='time-slot']");
 
 for(let i = 0; i < slots.length; i++) {
@@ -9,8 +9,14 @@ for(let i = 0; i < slots.length; i++) {
     })
 }
 */
-
 let slots = document.querySelector(".time-slots");
+
 slots.addEventListener("change", function (event) {
     console.log(event.target);
 })
+
+let slotLabels = document.querySelectorAll(".time-slots label");
+
+for(let i = 0; i < slotLabels.length; i++) {
+    slotLabels[i].classList.add(".checked");
+}
