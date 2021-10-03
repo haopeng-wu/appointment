@@ -12,7 +12,7 @@ for(let i = 0; i < slots.length; i++) {
 let slots = document.querySelector(".time-slots");
 
 slots.addEventListener("change", function (event) {
-    console.log(event.target);
+    console.log(event.target.id);
 })
 
 let slotLabels = document.querySelectorAll(".time-slots label");
