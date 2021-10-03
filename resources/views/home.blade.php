@@ -16,17 +16,22 @@
                         </div>
 
                         <div class="time-slots">
-                            <input type="radio" id="slot-1" name="time-slot" value="slot-1">
-                            <label for="slot-1">8:30~10:00</label>
-
-                            <input type="radio" id="slot-2" name="time-slot" value="slot-2">
-                            <label for="slot-2">10:30~12:00</label>
-
-                            <input type="radio" id="slot-3" name="time-slot" value="slot-3">
-                            <label for="slot-3">14:30~16:00</label>
-
-                            <input type="radio" id="slot-4" name="time-slot" value="slot-4">
-                            <label for="slot-4">16:30~18:00</label>
+                            <div>
+                                <input type="radio" id="slot-1" name="time-slot" value="slot-1">
+                                <label for="slot-1">8:30~10:00</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="slot-2" name="time-slot" value="slot-2">
+                                <label for="slot-2">10:30~12:00</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="slot-3" name="time-slot" value="slot-3">
+                                <label for="slot-3">14:30~16:00</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="slot-4" name="time-slot" value="slot-4">
+                                <label for="slot-4">16:30~18:00</label>
+                            </div>
                         </div>
 
                     </article>
