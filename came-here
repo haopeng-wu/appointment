@@ -522,3 +522,1303 @@ Fast-forward
  resources/views/home.blade.php              |  3 ++-
  6 files changed, 41 insertions(+), 20 deletions(-)
  create mode 100644 app/helpers.php
+From /var/www/html/werewolf/../werewolf
+   b18eade..71ac332  master     -> origin/master
+Already up-to-date.
+From /var/www/html/werewolf/../werewolf
+   71ac332..da19850  master     -> origin/master
+Updating 71ac332..da19850
+Fast-forward
+ app/Models/User.php                    |  1 +
+ resources/views/game/created.blade.php | 11 ++++++++++-
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   da19850..f61a416  master     -> origin/master
+Updating da19850..f61a416
+Fast-forward
+ resources/views/game/created.blade.php | 1 -
+ 1 file changed, 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   f61a416..0319255  master     -> origin/master
+Updating f61a416..0319255
+Fast-forward
+ resources/views/game/error.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   0319255..97485c5  master     -> origin/master
+Updating 0319255..97485c5
+Fast-forward
+ resources/views/game/created.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   97485c5..ca45577  master     -> origin/master
+Updating 97485c5..ca45577
+Fast-forward
+ app/Http/Controllers/GameController.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From /var/www/html/werewolf/../werewolf
+   ca45577..ace5370  master     -> origin/master
+Updating ca45577..ace5370
+Fast-forward
+ app/Http/Controllers/PlayGameController.php |  4 ++--
+ resources/views/game/created.blade.php      | 13 ++++++++++++-
+ 2 files changed, 14 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   ace5370..b74462f  master     -> origin/master
+Updating ace5370..b74462f
+Fast-forward
+ app/Models/User.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   b74462f..bce0bc7  master     -> origin/master
+Updating b74462f..bce0bc7
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 6 +++++-
+ app/Models/Game.php                         | 4 ++++
+ 2 files changed, 9 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bce0bc7..efe8bc1  master     -> origin/master
+Updating bce0bc7..efe8bc1
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   efe8bc1..3047611  master     -> origin/master
+Updating efe8bc1..3047611
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   3047611..114c01e  master     -> origin/master
+Updating 3047611..114c01e
+Fast-forward
+ app/Http/Controllers/PlayGameController.php |  2 +-
+ resources/views/game/room.blade.php         | 29 +++++++++++++++--------------
+ 2 files changed, 16 insertions(+), 15 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   114c01e..1c0446b  master     -> origin/master
+Updating 114c01e..1c0446b
+Fast-forward
+ resources/views/game/room.blade.php | 50 ++++++++++++++++++++++---------------
+ 1 file changed, 30 insertions(+), 20 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1c0446b..ed3f6d2  master     -> origin/master
+Updating 1c0446b..ed3f6d2
+Fast-forward
+ app/Http/Controllers/HostController.php | 15 +++++++++++++++
+ resources/views/game/room.blade.php     | 14 ++++++++++++--
+ routes/web.php                          |  2 ++
+ 3 files changed, 29 insertions(+), 2 deletions(-)
+ create mode 100644 app/Http/Controllers/HostController.php
+From /var/www/html/werewolf/../werewolf
+   ed3f6d2..03199e7  master     -> origin/master
+Updating ed3f6d2..03199e7
+Fast-forward
+ app/Http/Controllers/HostController.php | 2 +-
+ resources/views/game/room.blade.php     | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   03199e7..3f3a482  master     -> origin/master
+Updating 03199e7..3f3a482
+Fast-forward
+ app/Http/Controllers/HostController.php                    | 14 ++++++++++++++
+ app/Http/Controllers/PlayGameController.php                |  4 ++--
+ app/Models/Game.php                                        |  4 ----
+ app/Models/User.php                                        |  7 ++++++-
+ .../migrations/2021_05_26_001557_create_games_table.php    |  1 +
+ resources/views/game/room.blade.php                        |  2 +-
+ 6 files changed, 24 insertions(+), 8 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   3f3a482..429542c  master     -> origin/master
+Updating 3f3a482..429542c
+Fast-forward
+ resources/views/game/room.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   429542c..d7dc768  master     -> origin/master
+Updating 429542c..d7dc768
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   d7dc768..afaf6c1  master     -> origin/master
+Updating d7dc768..afaf6c1
+Fast-forward
+ app/Http/Controllers/HostController.php | 6 ++----
+ resources/views/game/room.blade.php     | 2 +-
+ 2 files changed, 3 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   afaf6c1..ecd48e8  master     -> origin/master
+Updating afaf6c1..ecd48e8
+Fast-forward
+ app/Http/Controllers/HostController.php      | 15 ++++++
+ app/Http/Controllers/PlayGameController.php  | 71 +++++++++++++++-------------
+ app/Models/User.php                          |  3 ++
+ resources/views/game/host-resigned.blade.php | 22 +++++++++
+ resources/views/game/room.blade.php          | 42 +++++++++++-----
+ routes/web.php                               |  2 +
+ 6 files changed, 111 insertions(+), 44 deletions(-)
+ create mode 100644 resources/views/game/host-resigned.blade.php
+From /var/www/html/werewolf/../werewolf
+   ecd48e8..e00b0e0  master     -> origin/master
+Updating ecd48e8..e00b0e0
+Fast-forward
+ app/Http/Controllers/HostController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   e00b0e0..566a07f  master     -> origin/master
+Updating e00b0e0..566a07f
+Fast-forward
+ app/Http/Controllers/HostController.php     |  3 ++-
+ app/Http/Controllers/PlayGameController.php | 13 ++++++++-----
+ app/Models/User.php                         |  2 +-
+ 3 files changed, 11 insertions(+), 7 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   566a07f..35ba2cd  master     -> origin/master
+Updating 566a07f..35ba2cd
+Fast-forward
+ app/Http/Controllers/HostController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   35ba2cd..3bbfe2e  master     -> origin/master
+Updating 35ba2cd..3bbfe2e
+Fast-forward
+ app/Http/Controllers/HostController.php      | 1 +
+ resources/views/game/host-resigned.blade.php | 8 ++++----
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   3bbfe2e..de99c73  master     -> origin/master
+Updating 3bbfe2e..de99c73
+Fast-forward
+ resources/views/game/host-resigned.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   de99c73..5ded3c2  master     -> origin/master
+Updating de99c73..5ded3c2
+Fast-forward
+ resources/views/game/role.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   5ded3c2..fe94023  master     -> origin/master
+Updating 5ded3c2..fe94023
+Fast-forward
+ app/Http/Controllers/HostController.php     |  2 +-
+ app/Http/Controllers/PlayGameController.php |  4 +++-
+ resources/views/host/dashboard.blade.php    | 36 +++++++++++++++++++++++++++++
+ 3 files changed, 40 insertions(+), 2 deletions(-)
+ create mode 100644 resources/views/host/dashboard.blade.php
+From /var/www/html/werewolf/../werewolf
+   fe94023..c1b146a  master     -> origin/master
+Updating fe94023..c1b146a
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 17 +++++++++++++----
+ resources/views/host/dashboard.blade.php    | 15 +++++++++++++++
+ 2 files changed, 28 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   c1b146a..51aa301  master     -> origin/master
+Updating c1b146a..51aa301
+Fast-forward
+ app/Http/Controllers/PlayGameController.php |  5 +++--
+ resources/views/host/dashboard.blade.php    | 28 +++++++++++++++++++++-------
+ 2 files changed, 24 insertions(+), 9 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   51aa301..5b0136b  master     -> origin/master
+Updating 51aa301..5b0136b
+Fast-forward
+ app/Http/Controllers/HostController.php     |  5 +++-
+ app/helpers.php                             |  2 ++
+ resources/views/components/master.blade.php |  5 +++-
+ resources/views/game/room.blade.php         | 36 -----------------------------
+ resources/views/host/dashboard.blade.php    |  2 +-
+ 5 files changed, 11 insertions(+), 39 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   5b0136b..5b2b371  master     -> origin/master
+Updating 5b0136b..5b2b371
+Fast-forward
+ resources/views/components/master.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   5b2b371..93e385d  master     -> origin/master
+Updating 5b2b371..93e385d
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   93e385d..3ae5609  master     -> origin/master
+Updating 93e385d..3ae5609
+Fast-forward
+ resources/views/components/master.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   3ae5609..a6ae157  master     -> origin/master
+Updating 3ae5609..a6ae157
+Fast-forward
+ resources/views/components/master.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   a6ae157..8f13cba  master     -> origin/master
+Updating a6ae157..8f13cba
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 16 ++++++++--------
+ app/Models/User.php                         |  1 +
+ resources/views/components/master.blade.php |  4 +++-
+ 3 files changed, 12 insertions(+), 9 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   8f13cba..a270634  master     -> origin/master
+Updating 8f13cba..a270634
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 5 ++++-
+ app/Models/User.php                         | 1 -
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   a270634..8b483c9  master     -> origin/master
+Updating a270634..8b483c9
+Fast-forward
+ resources/views/components/master.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   8b483c9..c57bab8  master     -> origin/master
+Updating 8b483c9..c57bab8
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   c57bab8..2fab747  master     -> origin/master
+Updating c57bab8..2fab747
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   2fab747..73d1278  master     -> origin/master
+Updating 2fab747..73d1278
+Fast-forward
+ app/Http/Controllers/HostController.php | 5 +++++
+ routes/web.php                          | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   73d1278..296b136  master     -> origin/master
+Updating 73d1278..296b136
+Fast-forward
+ app/Http/Controllers/HostController.php     | 37 ++++++++++++++++++-----------
+ app/Http/Controllers/PlayGameController.php |  6 +++--
+ 2 files changed, 27 insertions(+), 16 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   296b136..b699cce  master     -> origin/master
+Updating 296b136..b699cce
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 2 --
+ 1 file changed, 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   b699cce..21db2fa  master     -> origin/master
+Updating b699cce..21db2fa
+Fast-forward
+ public/images/identities/civilian.jpeg                 | Bin 0 -> 84208 bytes
+ public/images/identities/dreamer.jpeg                  | Bin 0 -> 81102 bytes
+ public/images/identities/evil-knight.webp              | Bin 0 -> 52640 bytes
+ public/images/identities/fox.jpeg                      | Bin 0 -> 48147 bytes
+ public/images/identities/guardian.jpeg                 | Bin 0 -> 81816 bytes
+ public/images/identities/idiot.jpeg                    | Bin 0 -> 111537 bytes
+ public/images/identities/knight.jpeg                   | Bin 0 -> 79875 bytes
+ public/images/identities/prophet.jpeg                  | Bin 0 -> 84418 bytes
+ public/images/identities/thief.jpeg                    | Bin 0 -> 81715 bytes
+ public/images/identities/white-wolf-king.jpeg          | Bin 0 -> 88071 bytes
+ public/images/identities/wolf-beauty.jpeg              | Bin 0 -> 71656 bytes
+ public/images/identities/wolf.jpeg                     | Bin 0 -> 69471 bytes
+ public/images/u=1082217593,4283343962&fm=26&gp=0.jpeg  | Bin 0 -> 34033 bytes
+ public/images/u=1417261450,2154601377&fm=26&gp=0.jpeg  | Bin 0 -> 89104 bytes
+ public/images/u=1543790170,3931385087&fm=26&gp=0.jpeg  | Bin 0 -> 99831 bytes
+ public/images/u=1632578753,3626969963&fm=11&gp=0.jpeg  | Bin 0 -> 53392 bytes
+ public/images/u=1708772405,1053452992&fm=26&gp=0.jpeg  | Bin 0 -> 89240 bytes
+ public/images/u=1748964271,653854941&fm=26&gp=0.jpeg   | Bin 0 -> 69597 bytes
+ public/images/u=1761940368,3195751421&fm=26&gp=0.jpeg  | Bin 0 -> 39725 bytes
+ public/images/u=1950798665,780440326&fm=26&gp=0.jpeg   | Bin 0 -> 77025 bytes
+ public/images/u=2048341483,2691115879&fm=26&gp=0.jpeg  | Bin 0 -> 47703 bytes
+ public/images/u=2083588637,3328551943&fm=26&gp=0.jpeg  | Bin 0 -> 57500 bytes
+ public/images/u=2114650387,1454883445&fm=26&gp=0.jpeg  | Bin 0 -> 62028 bytes
+ public/images/u=2151015652,1529588450&fm=26&gp=0.jpeg  | Bin 0 -> 76833 bytes
+ public/images/u=2332558688,764670408&fm=26&gp=0.jpeg   | Bin 0 -> 61917 bytes
+ public/images/u=2362890424,696926562&fm=26&gp=0.jpeg   | Bin 0 -> 28859 bytes
+ public/images/u=2463211854,2553144130&fm=26&gp=0.jpeg  | Bin 0 -> 20872 bytes
+ public/images/u=2832765742,4006600525&fm=26&gp=0.jpeg  | Bin 0 -> 28354 bytes
+ public/images/u=2834892294,2335267391&fm=26&gp=0.jpeg  | Bin 0 -> 56205 bytes
+ public/images/u=304344891,2514493180&fm=26&gp=0.jpeg   | Bin 0 -> 122272 bytes
+ public/images/u=3164083893,1257228969&fm=26&gp=0.jpeg  | Bin 0 -> 37247 bytes
+ public/images/u=3175843656,2816492805&fm=26&gp=0.jpeg  | Bin 0 -> 40534 bytes
+ public/images/u=3245900342,2584518293&fm=26&gp=0.jpeg  | Bin 0 -> 56538 bytes
+ public/images/u=327262142,3372573274&fm=26&gp=0.jpeg   | Bin 0 -> 44843 bytes
+ public/images/u=3341265656,1917794081&fm=26&gp=0.jpeg  | Bin 0 -> 419302 bytes
+ public/images/u=3417161864,404602656&fm=26&gp=0.jpeg   | Bin 0 -> 41396 bytes
+ public/images/u=3486826546,1342152892&fm=26&gp=0.jpeg  | Bin 0 -> 34586 bytes
+ public/images/u=3562390288,4286959197&fm=26&gp=0.jpeg  | Bin 0 -> 304355 bytes
+ public/images/u=356969481,2032814761&fm=26&gp=0.jpeg   | Bin 0 -> 29081 bytes
+ public/images/u=3996935672,1668527936&fm=26&gp=0.jpeg  | Bin 0 -> 42841 bytes
+ public/images/u=4064705377,2016448845&fm=26&gp=0.jpeg  | Bin 0 -> 41085 bytes
+ public/images/u=4126362867,1308417503&fm=26&gp=0.jpeg  | Bin 0 -> 51443 bytes
+ public/images/u=4134972701,1471407014&fm=26&gp=0.jpeg  | Bin 0 -> 84801 bytes
+ public/images/u=492880253,4272097178&fm=26&gp=0.png    | Bin 0 -> 361344 bytes
+ public/images/u=506221917,875073469&fm=26&gp=0.jpeg    | Bin 0 -> 76799 bytes
+ public/images/u=531845122,1269297625&fm=26&gp=0.jpeg   | Bin 0 -> 66719 bytes
+ public/images/u=555455142,2387080898&fm=26&gp=0.jpeg   | Bin 0 -> 52387 bytes
+ public/images/u=946817766,1427109945&fm=26&gp=0.jpeg   | Bin 0 -> 52518 bytes
+ ...7\213\274\347\216\213\345\232\216\345\217\253.jpeg" | Bin 0 -> 74904 bytes
+ 49 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 public/images/identities/civilian.jpeg
+ create mode 100644 public/images/identities/dreamer.jpeg
+ create mode 100644 public/images/identities/evil-knight.webp
+ create mode 100644 public/images/identities/fox.jpeg
+ create mode 100644 public/images/identities/guardian.jpeg
+ create mode 100644 public/images/identities/idiot.jpeg
+ create mode 100644 public/images/identities/knight.jpeg
+ create mode 100644 public/images/identities/prophet.jpeg
+ create mode 100644 public/images/identities/thief.jpeg
+ create mode 100644 public/images/identities/white-wolf-king.jpeg
+ create mode 100644 public/images/identities/wolf-beauty.jpeg
+ create mode 100644 public/images/identities/wolf.jpeg
+ create mode 100644 public/images/u=1082217593,4283343962&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=1417261450,2154601377&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=1543790170,3931385087&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=1632578753,3626969963&fm=11&gp=0.jpeg
+ create mode 100644 public/images/u=1708772405,1053452992&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=1748964271,653854941&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=1761940368,3195751421&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=1950798665,780440326&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2048341483,2691115879&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2083588637,3328551943&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2114650387,1454883445&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2151015652,1529588450&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2332558688,764670408&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2362890424,696926562&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2463211854,2553144130&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2832765742,4006600525&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=2834892294,2335267391&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=304344891,2514493180&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3164083893,1257228969&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3175843656,2816492805&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3245900342,2584518293&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=327262142,3372573274&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3341265656,1917794081&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3417161864,404602656&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3486826546,1342152892&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3562390288,4286959197&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=356969481,2032814761&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=3996935672,1668527936&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=4064705377,2016448845&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=4126362867,1308417503&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=4134972701,1471407014&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=492880253,4272097178&fm=26&gp=0.png
+ create mode 100644 public/images/u=506221917,875073469&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=531845122,1269297625&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=555455142,2387080898&fm=26&gp=0.jpeg
+ create mode 100644 public/images/u=946817766,1427109945&fm=26&gp=0.jpeg
+ create mode 100644 "public/images/\347\231\275\347\213\274\347\216\213\345\232\216\345\217\253.jpeg"
+From /var/www/html/werewolf/../werewolf
+   21db2fa..6e3b3d3  master     -> origin/master
+Updating 21db2fa..6e3b3d3
+Fast-forward
+ .../2021_05_26_001617_create_cards_table.php        |   1 +
+ database/seeders/CardSeeder.php                     |  20 ++++++++++----------
+ public/images/identities/hunter.jpeg                | Bin 0 -> 81959 bytes
+ public/images/identities/witch.jpeg                 | Bin 0 -> 77928 bytes
+ 4 files changed, 11 insertions(+), 10 deletions(-)
+ create mode 100644 public/images/identities/hunter.jpeg
+ create mode 100644 public/images/identities/witch.jpeg
+From /var/www/html/werewolf/../werewolf
+   6e3b3d3..6cd9214  master     -> origin/master
+Updating 6e3b3d3..6cd9214
+Fast-forward
+ app/Models/Card.php | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+From /var/www/html/werewolf/../werewolf
+   6cd9214..d264738  master     -> origin/master
+Updating 6cd9214..d264738
+Fast-forward
+ database/seeders/CardSeeder.php | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d264738..add65b3  master     -> origin/master
+Updating d264738..add65b3
+Fast-forward
+ resources/views/game/created.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   add65b3..752bed4  master     -> origin/master
+Updating add65b3..752bed4
+Fast-forward
+ resources/views/game/created.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   752bed4..3974956  master     -> origin/master
+Updating 752bed4..3974956
+Fast-forward
+ app/Http/Controllers/PlayGameController.php |  4 ++--
+ app/Models/User.php                         |  2 +-
+ app/helpers.php                             | 17 ++++++++++++++++-
+ resources/views/components/master.blade.php |  2 +-
+ 4 files changed, 20 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   3974956..9b2588a  master     -> origin/master
+Updating 3974956..9b2588a
+Fast-forward
+ app/Http/Controllers/PlayGameController.php | 37 +++++++++++++++++++++--------
+ app/Models/User.php                         |  1 +
+ resources/views/game/error.blade.php        | 14 ++++++++---
+ routes/web.php                              |  2 ++
+ 4 files changed, 41 insertions(+), 13 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   9b2588a..ebb2d26  master     -> origin/master
+Updating 9b2588a..ebb2d26
+Fast-forward
+ app/Http/Controllers/PlayGameController.php |  2 +-
+ app/Models/Game.php                         | 48 ++++++++++++++++++++---------
+ resources/views/game/role.blade.php         |  3 ++
+ 3 files changed, 37 insertions(+), 16 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   ebb2d26..2649588  master     -> origin/master
+Updating ebb2d26..2649588
+Fast-forward
+ resources/views/game/role.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   2649588..676905f  master     -> origin/master
+Updating 2649588..676905f
+Fast-forward
+ resources/views/game/role.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   676905f..876d172  master     -> origin/master
+Updating 676905f..876d172
+Fast-forward
+ resources/views/game/error.blade.php | 31 +++++++++++++++++++++++--------
+ 1 file changed, 23 insertions(+), 8 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   876d172..c4e48e1  master     -> origin/master
+Updating 876d172..c4e48e1
+Fast-forward
+ app/Http/Controllers/HostController.php | 1 +
+ resources/views/game/role.blade.php     | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   c4e48e1..abd5fa6  master     -> origin/master
+Updating c4e48e1..abd5fa6
+Fast-forward
+ resources/views/game/role.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   abd5fa6..33a0ce9  master     -> origin/master
+Updating abd5fa6..33a0ce9
+Fast-forward
+ resources/views/game/error.blade.php | 54 +++++++++++++++++++-----------------
+ 1 file changed, 29 insertions(+), 25 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   33a0ce9..67346f4  master     -> origin/master
+Updating 33a0ce9..67346f4
+Fast-forward
+ resources/views/home.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   67346f4..98a7282  master     -> origin/master
+Updating 67346f4..98a7282
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   98a7282..19b4245  master     -> origin/master
+Updating 98a7282..19b4245
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   19b4245..82087a2  master     -> origin/master
+Updating 19b4245..82087a2
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   82087a2..b2f0b99  master     -> origin/master
+Updating 82087a2..b2f0b99
+Fast-forward
+ resources/views/home.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   b2f0b99..d003e1e  master     -> origin/master
+Updating b2f0b99..d003e1e
+Fast-forward
+ resources/views/home.blade.php | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d003e1e..d5622e2  master     -> origin/master
+Updating d003e1e..d5622e2
+Fast-forward
+ resources/views/home.blade.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   d5622e2..0facd18  master     -> origin/master
+Updating d5622e2..0facd18
+Fast-forward
+ resources/views/home.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   0facd18..c457c2c  master     -> origin/master
+Updating 0facd18..c457c2c
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   c457c2c..5575ba1  master     -> origin/master
+Updating c457c2c..5575ba1
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ routes/web.php                      | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   5575ba1..698778c  master     -> origin/master
+Updating 5575ba1..698778c
+Fast-forward
+ resources/views/game/role.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   698778c..c02bc4a  master     -> origin/master
+Updating 698778c..c02bc4a
+Fast-forward
+ resources/views/game/role.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   c02bc4a..6550a67  master     -> origin/master
+Updating c02bc4a..6550a67
+Fast-forward
+ resources/views/game/role.blade.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   6550a67..28e22eb  master     -> origin/master
+Updating 6550a67..28e22eb
+Fast-forward
+ resources/views/game/role.blade.php | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   28e22eb..2561ced  master     -> origin/master
+Updating 28e22eb..2561ced
+Fast-forward
+ resources/views/game/role.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   2561ced..a3f6c2b  master     -> origin/master
+Updating 2561ced..a3f6c2b
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ resources/views/game/role.blade.php         | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   a3f6c2b..ab90bc3  master     -> origin/master
+Updating a3f6c2b..ab90bc3
+Fast-forward
+ resources/views/game/role.blade.php | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   ab90bc3..8e4e607  master     -> origin/master
+Updating ab90bc3..8e4e607
+Fast-forward
+ resources/views/components/master.blade.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From /var/www/html/werewolf/../werewolf
+   8e4e607..f0636c7  master     -> origin/master
+Updating 8e4e607..f0636c7
+Fast-forward
+ resources/views/components/master.blade.php |  2 +-
+ resources/views/game/role.blade.php         |  5 +++--
+ resources/views/home.blade.php              | 27 ++++++++-------------------
+ 3 files changed, 12 insertions(+), 22 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   f0636c7..50bb935  master     -> origin/master
+Updating f0636c7..50bb935
+Fast-forward
+ resources/views/game/role.blade.php | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   50bb935..d10454e  master     -> origin/master
+Updating 50bb935..d10454e
+Fast-forward
+ resources/views/game/role.blade.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d10454e..7ca6bf4  master     -> origin/master
+Updating d10454e..7ca6bf4
+Fast-forward
+ resources/views/game/role.blade.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   7ca6bf4..2e4e951  master     -> origin/master
+Updating 7ca6bf4..2e4e951
+Fast-forward
+ resources/views/components/master.blade.php | 2 --
+ resources/views/game/room.blade.php         | 2 +-
+ 2 files changed, 1 insertion(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   2e4e951..11a94a6  master     -> origin/master
+Updating 2e4e951..11a94a6
+Fast-forward
+ resources/views/game/role.blade.php | 2 +-
+ resources/views/game/room.blade.php | 4 +++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   11a94a6..2894b5c  master     -> origin/master
+Updating 11a94a6..2894b5c
+Fast-forward
+ resources/views/components/master.blade.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From /var/www/html/werewolf/../werewolf
+   2894b5c..857cc95  master     -> origin/master
+Updating 2894b5c..857cc95
+Fast-forward
+ public/css/custom.css                       | 16 ++++++++++++++++
+ resources/views/components/master.blade.php |  3 ---
+ resources/views/game/room.blade.php         |  2 +-
+ 3 files changed, 17 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   857cc95..1c02891  master     -> origin/master
+Updating 857cc95..1c02891
+Fast-forward
+ resources/views/game/role.blade.php | 2 --
+ 1 file changed, 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1c02891..0e5a151  master     -> origin/master
+Updating 1c02891..0e5a151
+Fast-forward
+ .../images/u=2463211854,2553144130&fm=26&gp=0.jpeg  | Bin 20872 -> 21325 bytes
+ resources/views/game/role.blade.php                 |   4 ++--
+ resources/views/game/room.blade.php                 |   2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   0e5a151..603579d  master     -> origin/master
+Updating 0e5a151..603579d
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   603579d..ee6b226  master     -> origin/master
+Updating 603579d..ee6b226
+Fast-forward
+ resources/views/game/room.blade.php | 56 ++++++++++++++++++++-----------------
+ 1 file changed, 31 insertions(+), 25 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   ee6b226..f6f8403  master     -> origin/master
+Updating ee6b226..f6f8403
+Fast-forward
+ resources/views/game/room.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   f6f8403..7f7a112  master     -> origin/master
+Updating f6f8403..7f7a112
+Fast-forward
+ resources/views/game/room.blade.php | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   7f7a112..f2b0dfa  master     -> origin/master
+Updating 7f7a112..f2b0dfa
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   f2b0dfa..b142432  master     -> origin/master
+Updating f2b0dfa..b142432
+Fast-forward
+ resources/views/game/room.blade.php | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   b142432..ca5b58c  master     -> origin/master
+Updating b142432..ca5b58c
+Fast-forward
+ resources/views/home.blade.php | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   ca5b58c..a47029b  master     -> origin/master
+Updating ca5b58c..a47029b
+Fast-forward
+ public/images/bg.jpeg                              | Bin 0 -> 165170 bytes
+ public/images/blue_moon.jpg                        | Bin 0 -> 54255 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 0 -> 15966 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 0 -> 69724 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 0 -> 35820 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 0 -> 89678 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 0 -> 162337 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 0 -> 42856 bytes
+ resources/views/game/create.blade.php              |  83 +++++++++++----------
+ 9 files changed, 45 insertions(+), 38 deletions(-)
+ create mode 100644 public/images/bg.jpeg
+ create mode 100644 public/images/blue_moon.jpg
+ create mode 100644 public/images/src=http---5b0988e595225.cdn.sohucs.com-images-20171207-ee58d7d87b124af3b8408c809fe5c83f.jpeg&refer=http---5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ create mode 100644 public/images/src=http---bbswater-fd.zol-img.com.cn-t_s480x480-g5-M00-0B-01-ChMkJlknoxmIbcWBAAKW2cIxaMsAAcn2QGCYFsAApbx845.jpg&refer=http---bbswater-fd.zol-img.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ create mode 100644 public/images/src=http---img7.d.cn-be-image-1711-sh447j9qodqsp.jpg&refer=http---img7.d.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ create mode 100644 public/images/src=http---png.pngtree.com-thumb_back-fw800-back_our-20190621-ourmid-pngtree-black-minimalist-werewolf-killing-game-poster-image_191157.jpg&refer=http---png.pngtree.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ create mode 100644 public/images/src=http---wechat.shwilling.com-uploads-ueditor-image-20170328-1490685263566870.jpg&refer=http---wechat.shwilling.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ create mode 100644 public/images/src=http---www.szpoker.com-uploads-allimg-200313-1-2003131610219E.jpg&refer=http---www.szpoker.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+From /var/www/html/werewolf/../werewolf
+   a47029b..893135f  master     -> origin/master
+Updating a47029b..893135f
+Fast-forward
+ resources/views/game/create.blade.php | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   893135f..9d06507  master     -> origin/master
+Updating 893135f..9d06507
+Fast-forward
+ resources/views/game/create.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   9d06507..1aed1fd  master     -> origin/master
+Updating 9d06507..1aed1fd
+Fast-forward
+ resources/views/home.blade.php | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1aed1fd..00ae8b8  master     -> origin/master
+Updating 1aed1fd..00ae8b8
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   00ae8b8..c38db5d  master     -> origin/master
+Updating 00ae8b8..c38db5d
+Fast-forward
+ resources/views/home.blade.php | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   c38db5d..ef6beee  master     -> origin/master
+Updating c38db5d..ef6beee
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   ef6beee..d995ce0  master     -> origin/master
+Updating ef6beee..d995ce0
+Fast-forward
+ resources/views/home.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d995ce0..959a4e6  master     -> origin/master
+Updating d995ce0..959a4e6
+Fast-forward
+ resources/views/home.blade.php | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   959a4e6..fb048ac  master     -> origin/master
+Updating 959a4e6..fb048ac
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   fb048ac..0df599d  master     -> origin/master
+Updating fb048ac..0df599d
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   0df599d..8c1caa4  master     -> origin/master
+Updating 0df599d..8c1caa4
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   8c1caa4..a91c7fa  master     -> origin/master
+Updating 8c1caa4..a91c7fa
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   a91c7fa..adb3cf9  master     -> origin/master
+Updating a91c7fa..adb3cf9
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   adb3cf9..0561f30  master     -> origin/master
+Updating adb3cf9..0561f30
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   0561f30..8e61e8c  master     -> origin/master
+Updating 0561f30..8e61e8c
+Fast-forward
+ resources/views/home.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   8e61e8c..1a98ebd  master     -> origin/master
+Updating 8e61e8c..1a98ebd
+Fast-forward
+ resources/views/home.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1a98ebd..16152e8  master     -> origin/master
+Updating 1a98ebd..16152e8
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   16152e8..8d5e0b1  master     -> origin/master
+Updating 16152e8..8d5e0b1
+Fast-forward
+ resources/views/home.blade.php | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   8d5e0b1..920f3d0  master     -> origin/master
+Updating 8d5e0b1..920f3d0
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   920f3d0..f4a3218  master     -> origin/master
+Updating 920f3d0..f4a3218
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   f4a3218..6915dd9  master     -> origin/master
+Updating f4a3218..6915dd9
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   6915dd9..02a262c  master     -> origin/master
+Updating 6915dd9..02a262c
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   02a262c..01960b6  master     -> origin/master
+Updating 02a262c..01960b6
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   01960b6..88e2044  master     -> origin/master
+Updating 01960b6..88e2044
+Fast-forward
+ resources/views/home.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   88e2044..56103c7  master     -> origin/master
+Updating 88e2044..56103c7
+Fast-forward
+ resources/views/home.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   56103c7..1b6b7b0  master     -> origin/master
+Updating 56103c7..1b6b7b0
+Fast-forward
+ resources/views/home.blade.php | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1b6b7b0..402a730  master     -> origin/master
+Updating 1b6b7b0..402a730
+Fast-forward
+ resources/views/home.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   402a730..c7e57b4  master     -> origin/master
+Updating 402a730..c7e57b4
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   c7e57b4..4d4b016  master     -> origin/master
+Updating c7e57b4..4d4b016
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   4d4b016..0f1a869  master     -> origin/master
+Updating 4d4b016..0f1a869
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   0f1a869..bd96c62  master     -> origin/master
+Updating 0f1a869..bd96c62
+Fast-forward
+ resources/views/components/master.blade.php | 22 ++++++++++++----------
+ 1 file changed, 12 insertions(+), 10 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   bd96c62..d2ac8ea  master     -> origin/master
+Updating bd96c62..d2ac8ea
+Fast-forward
+ resources/views/home.blade.php | 2 --
+ 1 file changed, 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d2ac8ea..ce8e4ff  master     -> origin/master
+Updating d2ac8ea..ce8e4ff
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   ce8e4ff..f005ae8  master     -> origin/master
+Updating ce8e4ff..f005ae8
+Fast-forward
+ resources/views/game/create.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   f005ae8..7ce82b3  master     -> origin/master
+Updating f005ae8..7ce82b3
+Fast-forward
+ resources/views/game/create.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   7ce82b3..e199410  master     -> origin/master
+Updating 7ce82b3..e199410
+Fast-forward
+ resources/views/game/create.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   e199410..b7c7fa3  master     -> origin/master
+Updating e199410..b7c7fa3
+Fast-forward
+ resources/views/game/create.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   b7c7fa3..a2785f8  master     -> origin/master
+Updating b7c7fa3..a2785f8
+Fast-forward
+ resources/views/game/create.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   a2785f8..ffddd2d  master     -> origin/master
+Updating a2785f8..ffddd2d
+Fast-forward
+ resources/views/game/create.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   ffddd2d..794b92c  master     -> origin/master
+Updating ffddd2d..794b92c
+Fast-forward
+ resources/views/game/create.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   794b92c..aae89a2  master     -> origin/master
+Updating 794b92c..aae89a2
+Fast-forward
+ resources/views/components/master.blade.php | 2 --
+ 1 file changed, 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   aae89a2..5e707cd  master     -> origin/master
+Updating aae89a2..5e707cd
+Fast-forward
+ resources/views/game/create.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   5e707cd..24424ff  master     -> origin/master
+Updating 5e707cd..24424ff
+Fast-forward
+ resources/views/game/create.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   24424ff..7667b22  master     -> origin/master
+Updating 24424ff..7667b22
+Fast-forward
+ resources/views/game/create.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   7667b22..dafdaec  master     -> origin/master
+Updating 7667b22..dafdaec
+Fast-forward
+ resources/views/game/room.blade.php | 54 ++++++++++++++++++++-----------------
+ 1 file changed, 29 insertions(+), 25 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   dafdaec..9f72b5b  master     -> origin/master
+Updating dafdaec..9f72b5b
+Fast-forward
+ public/images/bg2.jpeg              | Bin 0 -> 47810 bytes
+ resources/views/game/room.blade.php |   2 +-
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 public/images/bg2.jpeg
+From /var/www/html/werewolf/../werewolf
+   9f72b5b..f5cafb8  master     -> origin/master
+Updating 9f72b5b..f5cafb8
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   f5cafb8..bf79c3e  master     -> origin/master
+Updating f5cafb8..bf79c3e
+Fast-forward
+ resources/views/components/master.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   bf79c3e..777a10f  master     -> origin/master
+Updating bf79c3e..777a10f
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ resources/views/game/room.blade.php         | 2 +-
+ resources/views/home.blade.php              | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   777a10f..f2e73fb  master     -> origin/master
+Updating 777a10f..f2e73fb
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ resources/views/home.blade.php      | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   f2e73fb..530cf9d  master     -> origin/master
+Updating f2e73fb..530cf9d
+Fast-forward
+ resources/views/game/create.blade.php | 2 +-
+ resources/views/game/room.blade.php   | 4 ----
+ 2 files changed, 1 insertion(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   530cf9d..000efaa  master     -> origin/master
+Updating 530cf9d..000efaa
+Fast-forward
+ resources/views/game/room.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   000efaa..e651928  master     -> origin/master
+Updating 000efaa..e651928
+Fast-forward
+ resources/views/game/room.blade.php | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   e651928..37a3cf8  master     -> origin/master
+Updating e651928..37a3cf8
+Fast-forward
+ resources/views/game/room.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   37a3cf8..0547ff5  master     -> origin/master
+Updating 37a3cf8..0547ff5
+Fast-forward
+ resources/views/game/room.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   0547ff5..6d6f8f3  master     -> origin/master
+Updating 0547ff5..6d6f8f3
+Fast-forward
+ app/Http/Controllers/HostController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   6d6f8f3..319caea  master     -> origin/master
+Updating 6d6f8f3..319caea
+Fast-forward
+ app/Http/Controllers/HostController.php | 1 -
+ resources/views/game/room.blade.php     | 1 +
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   319caea..f210d8e  master     -> origin/master
+Updating 319caea..f210d8e
+Fast-forward
+ ...999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg => error-wolf.jpg} | Bin
+ resources/views/game/error.blade.php                        |   9 ++++++++-
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+ rename public/images/{src=http---5b0988e595225.cdn.sohucs.com-images-20171207-ee58d7d87b124af3b8408c809fe5c83f.jpeg&refer=http---5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg => error-wolf.jpg} (100%)
+From /var/www/html/werewolf/../werewolf
+   f210d8e..19ce890  master     -> origin/master
+Updating f210d8e..19ce890
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   19ce890..4ab8b5a  master     -> origin/master
+Updating 19ce890..4ab8b5a
+Fast-forward
+ resources/views/game/error.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From /var/www/html/werewolf/../werewolf
+   4ab8b5a..b5d93cd  master     -> origin/master
+Updating 4ab8b5a..b5d93cd
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   b5d93cd..d4a2a56  master     -> origin/master
+Updating b5d93cd..d4a2a56
+Fast-forward
+ resources/views/game/error.blade.php | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   d4a2a56..c7afd5f  master     -> origin/master
+Updating d4a2a56..c7afd5f
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   c7afd5f..f4d8152  master     -> origin/master
+Updating c7afd5f..f4d8152
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   f4d8152..bd94370  master     -> origin/master
+Updating f4d8152..bd94370
+Fast-forward
+ resources/views/game/error.blade.php | 18 ++++++++----------
+ 1 file changed, 8 insertions(+), 10 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   bd94370..7e64a7a  master     -> origin/master
+Updating bd94370..7e64a7a
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   7e64a7a..8b95cdb  master     -> origin/master
+Updating 7e64a7a..8b95cdb
+Fast-forward
+ resources/views/game/error.blade.php | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   8b95cdb..673823b  master     -> origin/master
+Updating 8b95cdb..673823b
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   673823b..b7b3183  master     -> origin/master
+Updating 673823b..b7b3183
+Fast-forward
+ resources/views/game/error.blade.php | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   b7b3183..edac69a  master     -> origin/master
+Updating b7b3183..edac69a
+Fast-forward
+ resources/views/components/master.blade.php | 2 ++
+ resources/views/game/error.blade.php        | 4 ++--
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   edac69a..d0293f5  master     -> origin/master
+Updating edac69a..d0293f5
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   d0293f5..5cc4981  master     -> origin/master
+Updating d0293f5..5cc4981
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   5cc4981..f3ebbe0  master     -> origin/master
+Updating 5cc4981..f3ebbe0
+Fast-forward
+ ...0\200\263\345\260\217\344\270\270\345\255\220.ttf" | Bin 0 -> 1261164 bytes
+ resources/views/components/master.blade.php           |   8 ++++++--
+ resources/views/game/error.blade.php                  |   2 +-
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+ create mode 100644 "public/fonts/\344\273\223\350\200\263\345\260\217\344\270\270\345\255\220.ttf"
+From /var/www/html/werewolf/../werewolf
+   f3ebbe0..dc2b1eb  master     -> origin/master
+Updating f3ebbe0..dc2b1eb
+Fast-forward
+ resources/views/game/error.blade.php | 48 ++++++++++++++++++------------------
+ 1 file changed, 24 insertions(+), 24 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   dc2b1eb..8f8476b  master     -> origin/master
+Updating dc2b1eb..8f8476b
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   8f8476b..9837252  master     -> origin/master
+Updating 8f8476b..9837252
+Fast-forward
+ resources/views/components/master.blade.php | 13 +++++++------
+ resources/views/game/error.blade.php        |  2 +-
+ 2 files changed, 8 insertions(+), 7 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   9837252..102108c  master     -> origin/master
+Updating 9837252..102108c
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   102108c..4f1d37c  master     -> origin/master
+Updating 102108c..4f1d37c
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   4f1d37c..f0f5d87  master     -> origin/master
+Updating 4f1d37c..f0f5d87
+Fast-forward
+ resources/views/components/master.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   f0f5d87..0f9c590  master     -> origin/master
+Updating f0f5d87..0f9c590
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   0f9c590..dc31871  master     -> origin/master
+Updating 0f9c590..dc31871
+Fast-forward
+ resources/views/game/room.blade.php |  3 +-
+ resources/views/home.blade.php      | 86 +++++++++++++++++--------------------
+ 2 files changed, 40 insertions(+), 49 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   dc31871..e5d6dcc  master     -> origin/master
+Updating dc31871..e5d6dcc
+Fast-forward
+ resources/views/game/error.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   e5d6dcc..7e75b87  master     -> origin/master
+Updating e5d6dcc..7e75b87
+Fast-forward
+ resources/views/game/error.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   7e75b87..bff7f9f  master     -> origin/master
+Updating 7e75b87..bff7f9f
+Fast-forward
+ resources/views/game/error.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   bff7f9f..5a53384  master     -> origin/master
+Updating bff7f9f..5a53384
+Fast-forward
+ resources/views/game/error.blade.php | 34 ++++++++++++++++++----------------
+ 1 file changed, 18 insertions(+), 16 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   5a53384..1861313  master     -> origin/master
+Updating 5a53384..1861313
+Fast-forward
+ resources/views/game/error.blade.php | 32 ++++++++++++++++----------------
+ 1 file changed, 16 insertions(+), 16 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   1861313..93765f8  master     -> origin/master
+Updating 1861313..93765f8
+Fast-forward
+ resources/views/game/error.blade.php | 51 ++++++++++++++++++------------------
+ 1 file changed, 26 insertions(+), 25 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   93765f8..253342f  master     -> origin/master
+Updating 93765f8..253342f
+Fast-forward
+ resources/views/game/error.blade.php | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   253342f..0d4a86b  master     -> origin/master
+Updating 253342f..0d4a86b
+Fast-forward
+ resources/views/game/error.blade.php | 15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+From /var/www/html/werewolf/../werewolf
+   0d4a86b..0524e34  master     -> origin/master
+Updating 0d4a86b..0524e34
+Fast-forward
+ resources/views/game/error.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From /var/www/html/werewolf/../werewolf
+   0524e34..23a2041  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+	auto-git-pull.log
+	came-here
+Please, commit your changes or stash them before you can merge.
+Aborting
+Updating 0524e34..23a2041
+From /var/www/html/werewolf/../werewolf
+   23a2041..1a6e7fb  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+	auto-git-pull.log
+	came-here
+Please, commit your changes or stash them before you can merge.
+Aborting
+Updating 0524e34..1a6e7fb
