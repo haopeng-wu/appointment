@@ -8,5 +8,6 @@
 </head>
 <body>
     {{$slot}}
+    <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
 </body>
 </html>

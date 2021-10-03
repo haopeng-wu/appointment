@@ -9,10 +9,12 @@
             <form action="/appointment">
                 <div class="wrapper">
                     <article class="schedule">
+
                         <div class="date">
                             <label for="date">Which day would you like to schedule?</label>
                             <input id="date" name="date" type="date">
                         </div>
+
                         <div class="time-slots">
                             <input type="radio" id="slot-1" name="time-slot" value="slot-1">
                             <label for="slot-1">8:30~10:00</label>
