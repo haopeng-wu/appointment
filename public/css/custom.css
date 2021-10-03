@@ -1,7 +1,11 @@
 .checked{
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 4px;
     background-color: #f66d9b;
+}
+
+input[name='time-slot']{
+    display: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
