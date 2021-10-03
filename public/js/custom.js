@@ -18,5 +18,5 @@ slots.addEventListener("change", function (event) {
 let slotLabels = document.querySelectorAll(".time-slots label");
 
 for(let i = 0; i < slotLabels.length; i++) {
-    slotLabels[i].classList.add(".checked");
+    slotLabels[i].classList.add("checked");
 }
