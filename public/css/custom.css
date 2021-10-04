@@ -12,13 +12,13 @@ article.schedule, article.custom-info{
     margin: 1em;
     padding: 1em;
     background-color: lavender;
+    margin:0.7em;
 }
 
 .labels label, .inputs input{
     border-radius: 5px;
     padding: 4px;
-    width:5.5em;
-    text-align: center;
+    width:12em;
     display: block;
 }
 
@@ -52,7 +52,7 @@ input[name='time-slot']{
 }
 
 .time-slots > div{
-    margin:1em;
+    margin:0.7em;
 }
 
 
