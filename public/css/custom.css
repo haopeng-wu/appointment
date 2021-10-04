@@ -40,7 +40,6 @@ article.schedule, article.custom-info{
 
 .checked{
     background-color: #f66d7d;
-    transition: background-color 300ms;
 }
 
 .unchecked{
@@ -49,6 +48,7 @@ article.schedule, article.custom-info{
 .unchecked:hover{
     background-color: #d1baf6;
     cursor: pointer;
+    transition: background-color 200ms;
 }
 
 input[name='time-slot']{
