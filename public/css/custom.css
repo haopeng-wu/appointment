@@ -1,6 +1,7 @@
 .time-slots label{
     border-radius: 5px;
     padding: 4px;
+    width:5em;
 }
 
 .checked{
