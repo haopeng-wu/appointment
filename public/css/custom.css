@@ -31,6 +31,7 @@ article.schedule, article.custom-info{
 }
 .unchecked[hover]{
     background-color: #d1baf6;
+    cursor: pointer;
 }
 
 input[name='time-slot']{
