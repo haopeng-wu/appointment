@@ -1822,3 +1822,301 @@ error: Your local changes to the following files would be overwritten by merge:
 Please, commit your changes or stash them before you can merge.
 Aborting
 Updating 0524e34..1a6e7fb
+From ../appointment
+ + 1a6e7fb...a934638 master     -> origin/master  (forced update)
+Already up-to-date.
+From ../appointment
+   a934638..dbace94  master     -> origin/master
+Updating a934638..dbace94
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 15 ++++++++
+ resources/views/home.blade.php                 | 50 ++++++++++++++++++++++++++
+ routes/web.php                                 | 17 +--------
+ 3 files changed, 66 insertions(+), 16 deletions(-)
+ create mode 100644 app/Http/Controllers/AppointmentController.php
+From ../appointment
+   dbace94..2b30f81  master     -> origin/master
+Updating dbace94..2b30f81
+Fast-forward
+ public/css/custom.css                       | 3 +++
+ public/js/custom.js                         | 5 +++++
+ resources/views/components/master.blade.php | 1 +
+ resources/views/home.blade.php              | 2 ++
+ 4 files changed, 11 insertions(+)
+ create mode 100644 public/js/custom.js
+From ../appointment
+   2b30f81..40f0177  master     -> origin/master
+Updating 2b30f81..40f0177
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   40f0177..de4e3b1  master     -> origin/master
+Updating 40f0177..de4e3b1
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   de4e3b1..2a365ff  master     -> origin/master
+Updating de4e3b1..2a365ff
+Fast-forward
+ public/js/custom.js                         | 13 ++++++++-----
+ resources/views/components/master.blade.php |  2 +-
+ 2 files changed, 9 insertions(+), 6 deletions(-)
+From ../appointment
+   2a365ff..c70b166  master     -> origin/master
+Updating 2a365ff..c70b166
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   c70b166..7956a8f  master     -> origin/master
+Updating c70b166..7956a8f
+Fast-forward
+ resources/views/home.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   7956a8f..e63ddc2  master     -> origin/master
+Updating 7956a8f..e63ddc2
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   e63ddc2..8357c78  master     -> origin/master
+Updating e63ddc2..8357c78
+Fast-forward
+ public/js/custom.js | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+From ../appointment
+   8357c78..883552b  master     -> origin/master
+Updating 8357c78..883552b
+Fast-forward
+ public/css/custom.css |  4 ++++
+ public/js/custom.js   | 12 +++++++++---
+ 2 files changed, 13 insertions(+), 3 deletions(-)
+From ../appointment
+   883552b..f3670a2  master     -> origin/master
+Updating 883552b..f3670a2
+Fast-forward
+ public/css/custom.css | 2 --
+ public/js/custom.js   | 2 +-
+ 2 files changed, 1 insertion(+), 3 deletions(-)
+From ../appointment
+   f3670a2..8699aaa  master     -> origin/master
+Updating f3670a2..8699aaa
+Fast-forward
+ public/css/custom.css | 1 +
+ public/js/custom.js   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   8699aaa..45df4c7  master     -> origin/master
+Updating 8699aaa..45df4c7
+Fast-forward
+ public/js/custom.js | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   45df4c7..c04b40d  master     -> origin/master
+Updating 45df4c7..c04b40d
+Fast-forward
+ public/js/custom.js | 5 +++++
+ 1 file changed, 5 insertions(+)
+From ../appointment
+   c04b40d..3eed38f  master     -> origin/master
+Updating c04b40d..3eed38f
+Fast-forward
+ public/css/custom.css | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   3eed38f..1823ba7  master     -> origin/master
+Updating 3eed38f..1823ba7
+Fast-forward
+ resources/views/home.blade.php | 27 ++++++++++++++++-----------
+ 1 file changed, 16 insertions(+), 11 deletions(-)
+From ../appointment
+   1823ba7..77e785a  master     -> origin/master
+Updating 1823ba7..77e785a
+Fast-forward
+ public/css/custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   77e785a..d458176  master     -> origin/master
+Updating 77e785a..d458176
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   d458176..6d43ae9  master     -> origin/master
+Updating d458176..6d43ae9
+Fast-forward
+ public/css/custom.css | 6 ++++++
+ 1 file changed, 6 insertions(+)
+From ../appointment
+   6d43ae9..648b3d6  master     -> origin/master
+Updating 6d43ae9..648b3d6
+Fast-forward
+ public/css/custom.css                       | 7 ++++---
+ public/js/custom.js                         | 4 +++-
+ resources/views/components/master.blade.php | 2 +-
+ resources/views/home.blade.php              | 8 ++++----
+ 4 files changed, 12 insertions(+), 9 deletions(-)
+From ../appointment
+   648b3d6..d12086b  master     -> origin/master
+Updating 648b3d6..d12086b
+Fast-forward
+ public/css/custom.css | 1 +
+ public/js/custom.js   | 1 +
+ 2 files changed, 2 insertions(+)
+From ../appointment
+   d12086b..58194b9  master     -> origin/master
+Updating d12086b..58194b9
+Fast-forward
+ public/css/custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   58194b9..abc5911  master     -> origin/master
+Updating 58194b9..abc5911
+Fast-forward
+ public/css/custom.css | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   abc5911..528e4c0  master     -> origin/master
+Updating abc5911..528e4c0
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   528e4c0..eefaad6  master     -> origin/master
+Updating 528e4c0..eefaad6
+Fast-forward
+ public/css/custom.css          | 18 ++++++++++++++++--
+ resources/views/home.blade.php | 11 ++++++++++-
+ 2 files changed, 26 insertions(+), 3 deletions(-)
+From ../appointment
+   eefaad6..4242711  master     -> origin/master
+Updating eefaad6..4242711
+Fast-forward
+ public/css/custom.css          |  7 ++++++-
+ resources/views/home.blade.php | 29 ++++++++++++++---------------
+ 2 files changed, 20 insertions(+), 16 deletions(-)
+From ../appointment
+   4242711..a8c6913  master     -> origin/master
+Updating 4242711..a8c6913
+Fast-forward
+ public/css/custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   a8c6913..fe6a40c  master     -> origin/master
+Updating a8c6913..fe6a40c
+Fast-forward
+ public/css/custom.css | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   fe6a40c..f33eb98  master     -> origin/master
+Updating fe6a40c..f33eb98
+Fast-forward
+ public/css/custom.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+From ../appointment
+   f33eb98..b8ce788  master     -> origin/master
+Updating f33eb98..b8ce788
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   b8ce788..6226021  master     -> origin/master
+Updating b8ce788..6226021
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   6226021..7dd87dc  master     -> origin/master
+Updating 6226021..7dd87dc
+Fast-forward
+ public/css/custom.css          |  5 +++++
+ resources/views/home.blade.php | 12 +++++-------
+ 2 files changed, 10 insertions(+), 7 deletions(-)
+From ../appointment
+   7dd87dc..9e296aa  master     -> origin/master
+Updating 7dd87dc..9e296aa
+Fast-forward
+ resources/views/home.blade.php | 20 +++++++++++---------
+ 1 file changed, 11 insertions(+), 9 deletions(-)
+From ../appointment
+   9e296aa..4419cfb  master     -> origin/master
+Updating 9e296aa..4419cfb
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   4419cfb..2fdb024  master     -> origin/master
+Updating 4419cfb..2fdb024
+Fast-forward
+ public/css/custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   2fdb024..bf5a705  master     -> origin/master
+Updating 2fdb024..bf5a705
+Fast-forward
+ public/css/custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   bf5a705..b076c64  master     -> origin/master
+Updating bf5a705..b076c64
+Fast-forward
+ public/css/custom.css | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   b076c64..b60b495  master     -> origin/master
+Updating b076c64..b60b495
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b60b495..e1dceea  master     -> origin/master
+Updating b60b495..e1dceea
+Fast-forward
+ public/css/custom.css | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+From ../appointment
+   e1dceea..cb965b9  master     -> origin/master
+Updating e1dceea..cb965b9
+Fast-forward
+ public/css/custom.css | 4 ----
+ 1 file changed, 4 deletions(-)
+From ../appointment
+   cb965b9..9b079ff  master     -> origin/master
+Updating cb965b9..9b079ff
+Fast-forward
+ public/css/custom.css          |  2 ++
+ resources/views/home.blade.php | 11 +++++++++--
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+From ../appointment
+   9b079ff..5ed2c4e  master     -> origin/master
+Updating 9b079ff..5ed2c4e
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   5ed2c4e..d753041  master     -> origin/master
+Updating 5ed2c4e..d753041
+Fast-forward
+ public/css/custom.css | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   d753041..9e696bf  master     -> origin/master
+Updating d753041..9e696bf
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   9e696bf..4609ea0  master     -> origin/master
+Updating 9e696bf..4609ea0
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   4609ea0..2112f7b  master     -> origin/master
+Updating 4609ea0..2112f7b
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
