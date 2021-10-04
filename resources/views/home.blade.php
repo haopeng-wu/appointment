@@ -35,7 +35,7 @@
                         </div>
                     </article>
                     <article class="custom-info">
-                        <div class="flex">
+                        <div class="wrapper">
                             <div class="labels">
                                 <label for="name">Your name: </label>
                                 <label for="email">Email: </label>
