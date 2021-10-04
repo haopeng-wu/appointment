@@ -1,3 +1,14 @@
+.wrapper{
+    display: flex;
+}
+
+article.schedule, article.cus-info{
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    background-color: lavender;
+}
+
 .time-slots label{
     border-radius: 5px;
     padding: 4px;
@@ -7,11 +18,11 @@
 }
 
 .checked{
-    background-color: #f66d9b;
+    background-color: #f66d7d;
 }
 
 .unchecked{
-    background-color: #f5eff1;
+    background-color: #a779f1;
 }
 
 input[name='time-slot']{
@@ -21,6 +32,9 @@ input[name='time-slot']{
 .time-slots > div{
     margin:1em;
 }
+
+
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

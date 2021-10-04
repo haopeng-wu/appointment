@@ -18,7 +18,7 @@
                         <div class="time-slots">
                             <div>
                                 <input type="radio" id="slot-1" name="time-slot" value="slot-1">
-                                <label class="unchecked" for="slot-1">8:30~10:00</label>
+                                <label class="unchecked" for="slot-1">08:30~10:00</label>
                             </div>
                             <div>
                                 <input type="radio" id="slot-2" name="time-slot" value="slot-2">
@@ -33,7 +33,16 @@
                                 <label class="unchecked" for="slot-4">16:30~18:00</label>
                             </div>
                         </div>
+                    </article>
+                    <article class="cus-info">
+                        <label for="name">Your name: </label>
+                        <input type="text" id="name">
 
+                        <label for="email">Email: </label>
+                        <input type="email" id="email">
+
+                        <label for="tel">Tel: </label>
+                        <input type="text" id="tel">
                     </article>
                     <article class="custom-info">
 
