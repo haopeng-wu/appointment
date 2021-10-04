@@ -35,16 +35,14 @@
                         </div>
                     </article>
                     <article class="custom-info">
-                        <div>
+                        <div class="labels">
                             <label for="name">Your name: </label>
-                            <input type="text" id="name">
-                        </div>
-                        <div>
                             <label for="email">Email: </label>
-                            <input type="email" id="email">
-                        </div>
-                        <div>
                             <label for="tel">Tel: </label>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" id="email">
+                            <input type="text" id="name">
                             <input type="text" id="tel">
                         </div>
                     </article>

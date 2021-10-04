@@ -14,6 +14,11 @@ article.schedule, article.custom-info{
     background-color: lavender;
 }
 
+.labels label, .inputs input{
+
+}
+
+/* schedule article */
 .time-slots label{
     border-radius: 5px;
     padding: 4px;
