@@ -6,7 +6,7 @@
 
     <main>
         <section class="appointment">
-            <form action="/appointment">
+            <form class="appointment" action="/appointment">
                 <div class="wrapper">
                     <article class="schedule">
 
@@ -34,24 +34,23 @@
                             </div>
                         </div>
                     </article>
-                    <article class="cus-info">
-                        <label for="name">Your name: </label>
-                        <input type="text" id="name">
-
-                        <label for="email">Email: </label>
-                        <input type="email" id="email">
-
-                        <label for="tel">Tel: </label>
-                        <input type="text" id="tel">
-                    </article>
                     <article class="custom-info">
-
+                        <div>
+                            <label for="name">Your name: </label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="tel">Tel: </label>
+                            <input type="text" id="tel">
+                        </div>
                     </article>
                 </div>
 
-                <div>
-                    <button type="submit">Schedule</button>
-                </div>
+                <button type="submit">Make this appointment now</button>
             </form>
         </section>
         <section class="promote">

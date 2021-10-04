@@ -2,7 +2,12 @@
     display: flex;
 }
 
-article.schedule, article.cus-info{
+.appointment button{
+    margin: 1em;
+    width:100%;
+}
+
+article.schedule, article.custom-info{
     border-radius: 5px;
     margin: 1em;
     padding: 1em;
