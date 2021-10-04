@@ -17,9 +17,16 @@ article.schedule, article.custom-info{
 .labels label, .inputs input{
     border-radius: 5px;
     padding: 4px;
-    width:12em;
     display: block;
     margin:0.7em;
+}
+
+.labels label{
+    width: 6em;
+}
+
+.inputs input{
+    width: 12em;
 }
 
 .labels{
