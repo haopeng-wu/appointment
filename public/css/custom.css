@@ -12,7 +12,6 @@ article.schedule, article.custom-info{
     margin: 1em;
     padding: 1em;
     background-color: lavender;
-    margin:0.7em;
 }
 
 .labels label, .inputs input{
@@ -20,6 +19,7 @@ article.schedule, article.custom-info{
     padding: 4px;
     width:12em;
     display: block;
+    margin:0.7em;
 }
 
 .labels{
