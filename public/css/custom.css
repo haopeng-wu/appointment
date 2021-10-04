@@ -1,7 +1,10 @@
 .time-slots label{
     border-radius: 5px;
     padding: 4px;
+    display: inline-block;
     width:5em;
+    align-items: center;
+
 }
 
 .checked{
