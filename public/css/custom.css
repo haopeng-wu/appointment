@@ -15,7 +15,11 @@ article.schedule, article.custom-info{
 }
 
 .labels label, .inputs input{
+    display: block;
+}
 
+.labels{
+    margin-right: 10px;
 }
 
 /* schedule article */
