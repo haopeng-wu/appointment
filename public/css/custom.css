@@ -27,7 +27,10 @@ article.schedule, article.custom-info{
 }
 
 .unchecked{
-    background-color: #a779f1;
+    background-color: #b38cf3;
+}
+.unchecked[hover]{
+    background-color: #d1baf6;
 }
 
 input[name='time-slot']{
