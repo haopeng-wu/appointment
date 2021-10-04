@@ -21,10 +21,6 @@ article.schedule, article.custom-info{
     margin:0.7em;
 }
 
-.labels label{
-    width: 6em;
-}
-
 .inputs input{
     width: 12em;
 }
