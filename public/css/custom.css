@@ -33,6 +33,12 @@ article.schedule, article.custom-info{
 
 nav li{
     all:initial;
+    margin-right: 2em;
+
+}
+
+nav li:last-child{
+    margin-right: 0;
 }
 
 /* schedule article */
