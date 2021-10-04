@@ -2120,3 +2120,20 @@ Updating 4609ea0..2112f7b
 Fast-forward
  public/css/custom.css | 1 +
  1 file changed, 1 insertion(+)
+From ../appointment
+   2112f7b..5f81255  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   5f81255..fa3c96b  master     -> origin/master
+Updating 5f81255..fa3c96b
+Fast-forward
+ public/css/custom.css                       |  6 ++++++
+ resources/views/components/master.blade.php | 18 +++++++++++++++---
+ resources/views/home.blade.php              | 12 ------------
+ 3 files changed, 21 insertions(+), 15 deletions(-)
+From ../appointment
+   fa3c96b..68f27ef  master     -> origin/master
+Updating fa3c96b..68f27ef
+Fast-forward
+ public/css/custom.css | 6 ++++++
+ 1 file changed, 6 insertions(+)
