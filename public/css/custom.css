@@ -5,7 +5,6 @@
 .appointment button{
     margin: 1em;
     padding: 5px;
-    width:10em;
 }
 
 article.schedule, article.custom-info{
