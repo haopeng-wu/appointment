@@ -29,6 +29,12 @@ article.schedule, article.custom-info{
     margin-right: 10px;
 }
 
+/* nav */
+
+nav li{
+    all:initial;
+}
+
 /* schedule article */
 .time-slots label{
     border-radius: 5px;

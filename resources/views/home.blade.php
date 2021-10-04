@@ -1,16 +1,4 @@
 <x-master>
-    <nav class="wrapper">
-        <div class="nav-logo">
-
-        </div>
-        <ul class="wrapper">
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-        </ul>
-    </nav>
-
-
     <main>
         <section class="appointment">
             <form class="appointment" action="/appointment">
