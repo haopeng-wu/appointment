@@ -1,13 +1,14 @@
 .time-slots label{
     border-radius: 5px;
     padding: 4px;
-    background-color: #f5eff1;
 }
 
 .checked{
-    border-radius: 5px;
-    padding: 4px;
     background-color: #f66d9b;
+}
+
+.unchecked{
+    background-color: #f5eff1;
 }
 
 input[name='time-slot']{
