@@ -1,6 +1,13 @@
 <x-master>
-    <nav>
+    <nav class="wrapper">
+        <div class="nav-logo">
 
+        </div>
+        <ul class="wrapper">
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
     </nav>
 
 
@@ -42,8 +49,8 @@
                                 <label for="tel">Tel: </label>
                             </div>
                             <div class="inputs">
-                                <input type="email" id="email">
                                 <input type="text" id="name">
+                                <input type="email" id="email">
                                 <input type="text" id="tel">
                             </div>
                         </div>

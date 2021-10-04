@@ -36,6 +36,8 @@ article.schedule, article.custom-info{
     display: inline-block;
     width:5.5em;
     text-align: center;
+    background-color: #b38cf3;
+    transition: background-color 1s;
 }
 
 .checked{
