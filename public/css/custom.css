@@ -36,11 +36,11 @@ article.schedule, article.custom-info{
     display: inline-block;
     width:5.5em;
     text-align: center;
-    transition: background-color 500ms;
 }
 
 .checked{
     background-color: #f66d7d;
+    transition: background-color 300ms;
 }
 
 .unchecked{
