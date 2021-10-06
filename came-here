@@ -2137,3 +2137,22 @@ Updating fa3c96b..68f27ef
 Fast-forward
  public/css/custom.css | 6 ++++++
  1 file changed, 6 insertions(+)
+From ../appointment
+   68f27ef..a332785  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   a332785..4395176  master     -> origin/master
+Updating a332785..4395176
+Fast-forward
+ .../2014_10_12_000000_create_users_table.php       |  9 +++++---
+ ...2021_10_04_114304_create_appointments_table.php | 26 ++++++++++++++++++++++
+ 2 files changed, 32 insertions(+), 3 deletions(-)
+From ../appointment
+   4395176..a90284b  master     -> origin/master
+Updating 4395176..a90284b
+Fast-forward
+ database/migrations/2014_10_12_000000_create_users_table.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   a90284b..05878a1  master     -> origin/master
+Already up-to-date.
