@@ -21,7 +21,8 @@ class AppointmentController extends Controller
         ]);
 
         // create the user and leave the password empty for now.
-        if(!User::where('name', $attributes['customer_name'])->first()){
+        $user = User::where('name', $attributes['customer_name'])->first();
+        if(!$user){
             $user = User::create(['name'=>$attributes['customer_name'], 'email'=>$attributes['email'], 'tel'=>$attributes['tel']]);
         }
 
