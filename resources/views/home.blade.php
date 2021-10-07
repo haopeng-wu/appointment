@@ -13,19 +13,19 @@
 
                         <div class="time-slots">
                             <div>
-                                <input class="time_slot" type="radio" id="slot-1" name="which_slot" value="slot-1">
+                                <input class="time_slot" type="radio" id="slot-1" name="which_slot" value="1">
                                 <label class="unchecked" for="slot-1">08:30~10:00</label>
                             </div>
                             <div>
-                                <input class="time_slot" type="radio" id="slot-2" name="which_slot" value="slot-2">
+                                <input class="time_slot" type="radio" id="slot-2" name="which_slot" value="2">
                                 <label class="unchecked" for="slot-2">10:30~12:00</label>
                             </div>
                             <div>
-                                <input class="time_slot" type="radio" id="slot-3" name="which_slot" value="slot-3">
+                                <input class="time_slot" type="radio" id="slot-3" name="which_slot" value="3">
                                 <label class="unchecked" for="slot-3">14:30~16:00</label>
                             </div>
                             <div>
-                                <input class="time_slot" type="radio" id="slot-4" name="which_slot" value="slot-4">
+                                <input class="time_slot" type="radio" id="slot-4" name="which_slot" value="4">
                                 <label class="unchecked" for="slot-4">16:30~18:00</label>
                             </div>
                         </div>
