@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use App\Models\User;
-use http\Env\Request;
+use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
 {
