@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/appointment', 'App\Http\Controllers\AppointmentController@create');
+Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
 
 
