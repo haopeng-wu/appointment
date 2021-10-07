@@ -2156,3 +2156,59 @@ Fast-forward
 From ../appointment
    a90284b..05878a1  master     -> origin/master
 Already up-to-date.
+From ../appointment
+   05878a1..68fca0a  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   68fca0a..e1d82f7  master     -> origin/master
+Updating 68fca0a..e1d82f7
+Fast-forward
+ app/Http/Controllers/AppointmentController.php           | 15 +++++++++++++++
+ app/Models/Appointment.php                               |  3 +++
+ .../migrations/2014_10_12_000000_create_users_table.php  |  2 +-
+ resources/views/home.blade.php                           | 16 ++++++++--------
+ routes/web.php                                           |  2 +-
+ 5 files changed, 28 insertions(+), 10 deletions(-)
+From ../appointment
+   e1d82f7..2e9860d  master     -> origin/master
+Updating e1d82f7..2e9860d
+Fast-forward
+ public/css/custom.css          | 2 +-
+ resources/views/home.blade.php | 8 ++++----
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+From ../appointment
+   2e9860d..1e9e0ee  master     -> origin/master
+Updating 2e9860d..1e9e0ee
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1e9e0ee..72bb96c  master     -> origin/master
+Updating 1e9e0ee..72bb96c
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   72bb96c..6d3eca8  master     -> origin/master
+Updating 72bb96c..6d3eca8
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   6d3eca8..748de68  master     -> origin/master
+Updating 6d3eca8..748de68
+Fast-forward
+ resources/views/home.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   748de68..b70bae6  master     -> origin/master
+Updating 748de68..b70bae6
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b70bae6..bdf6207  master     -> origin/master
+Updating b70bae6..bdf6207
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
