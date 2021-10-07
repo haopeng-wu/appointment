@@ -22,7 +22,7 @@ class CreateAppointmentsTable extends Migration
             $table->integer("which_slot");
             $table->string("start_end_time");
 
-            $table->foreignId("customer_id")->nullable();
+            $table->foreignId("customer_id");
             $table->foreignId("consultant_id")->nullable()->default(0);
 
             $table->string("customer_name");
@@ -33,8 +33,8 @@ class CreateAppointmentsTable extends Migration
             $table->double("price", 12,4)->nullable()->default(300);
             $table->decimal("discount", 4,2)->nullable()->default(1);
             $table->double("charge", 12, 4)->nullable()->default(300);
-            $table->text("memo")->nullable()->default("");
-            $table->text("notes")->nullable()->default("");
+            $table->text("memo")->nullable();
+            $table->text("notes")->nullable();
             $table->boolean("payment_status")->default(0);
             $table->string("payment_method")->nullable()->default("stripe");
             $table->string("validity")->nullable()->default(1);
