@@ -13,7 +13,7 @@ class AppointmentController extends Controller
     public function store(Request  $request)
     {
         $attributes = request()->validate([
-            'customer_name'=>["required", ""],
+            'customer_name'=>["required"],
             'email'=>["required","email"],
             'tel'=>["between:6,18"],
             'date'=>["required"],
@@ -21,7 +21,7 @@ class AppointmentController extends Controller
         ]);
 
         // create the user and leave the password empty for now.
-        $user = User::create(['name'=>$attributes['name'], 'email'=>$attributes['email'], 'tel'=>$attributes['tel']]);
+        $user = User::create(['name'=>$attributes['customer_name'], 'email'=>$attributes['email'], 'tel'=>$attributes['tel']]);
 
         $appointment_no = "AT".date("ymdh").random_int(1000,9999);
 
