@@ -64,7 +64,7 @@ nav li:last-child{
     transition: background-color 200ms;
 }
 
-input[name='time-slot']{
+input.time-slot{
     display: none;
 }
 
