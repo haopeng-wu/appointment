@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Appointment;
 use App\Models\User;
 use http\Env\Request;
 
@@ -26,5 +27,7 @@ class AppointmentController extends Controller
 
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
+        $appointment = Appointment::create($attributes);
+        dd($attributes);
     }
 }
