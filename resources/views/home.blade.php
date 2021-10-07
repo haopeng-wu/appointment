@@ -1,7 +1,7 @@
 <x-master>
     <main>
         <section class="appointment">
-            <form class="appointment" action="/appointment">
+            <form method="post" class="appointment" action="/appointment">
                 <div class="wrapper">
                     <article class="schedule">
 
