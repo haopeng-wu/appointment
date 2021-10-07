@@ -21,7 +21,9 @@ class AppointmentController extends Controller
         ]);
 
         // create the user and leave the password empty for now.
-        $user = User::create(['name'=>$attributes['customer_name'], 'email'=>$attributes['email'], 'tel'=>$attributes['tel']]);
+        if(!User::where('name', $attributes['customer_name'])->first()){
+            $user = User::create(['name'=>$attributes['customer_name'], 'email'=>$attributes['email'], 'tel'=>$attributes['tel']]);
+        }
 
         $appointment_no = "AT".date("ymdh").random_int(1000,9999);
 
