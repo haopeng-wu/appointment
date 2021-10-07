@@ -2,6 +2,7 @@
     <main>
         <section class="appointment">
             <form method="post" class="appointment" action="/appointment">
+                @csrf
                 <div class="wrapper">
                     <article class="schedule">
 
