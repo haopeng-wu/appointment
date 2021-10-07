@@ -23,22 +23,22 @@ class CreateAppointmentsTable extends Migration
             $table->string("start_end_time");
 
             $table->foreignId("customer_id")->nullable();
-            $table->foreignId("consultant_id")->nullable();
+            $table->foreignId("consultant_id")->nullable()->default(0);
 
             $table->string("customer_name");
             $table->string("email");
-            $table->string("address")->nullable();
-            $table->string("tel")->nullable();
+            $table->string("address")->nullable()->default("");
+            $table->string("tel")->nullable()->default("");
 
-            $table->double("price", 12,4)->nullable();
-            $table->decimal("discount", 4,2)->nullable();
-            $table->double("charge", 12, 4)->nullable();
-            $table->text("memo")->nullable();
-            $table->text("notes")->nullable();
-            $table->boolean("payment_status");
-            $table->string("payment_method")->nullable();
-            $table->string("validity")->nullable();
-            $table->string("consultant")->nullable();
+            $table->double("price", 12,4)->nullable()->default(300);
+            $table->decimal("discount", 4,2)->nullable()->default(1);
+            $table->double("charge", 12, 4)->nullable()->default(300);
+            $table->text("memo")->nullable()->default("");
+            $table->text("notes")->nullable()->default("");
+            $table->boolean("payment_status")->default(0);
+            $table->string("payment_method")->nullable()->default("stripe");
+            $table->string("validity")->nullable()->default(1);
+            $table->string("consultant")->nullable()->default("M's mother");
 
             $table->foreign("customer_id")->references("id")->on("users");
             $table->foreign("consultant_id")->references("id")->on("users");
