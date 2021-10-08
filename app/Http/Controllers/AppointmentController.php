@@ -33,6 +33,7 @@ class AppointmentController extends Controller
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
         $appointment = Appointment::create($attributes);
-        return view('to_pay', ['appointment'=>$appointment]);
+        $start_end = explode('~', $attributes['which_slot']);
+        return view('to_pay', ['appt'=>$appointment, 'start_end'=>$start_end]);
     }
 }
