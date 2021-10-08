@@ -5,6 +5,9 @@
         </h2>
         <div>
             <p>
+                @php
+                dd($start_end)
+                @endphp
                 On {{$appt->date}}, from {{$start_end[0]}} to {{$start_end[1]}}, through Google Meeting.
             </p>
             <p>
