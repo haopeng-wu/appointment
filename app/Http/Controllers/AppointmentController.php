@@ -79,7 +79,7 @@ class AppointmentController extends Controller
 
         $attributes['klarna_order_id'] = $klarna_order_id;
 
-        $attributes['start_end_time'] = $start_end;
+        $attributes['start_end_time'] = $slots[$attributes['which_slot']];
 
         // creat a record in the database for this appointment
         $appointment = Appointment::create($attributes);
