@@ -32,7 +32,6 @@ class AppointmentController extends Controller
         $attributes['start_end_time'] = $slots[$attributes['which_slot']];
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
-        $appointment = Appointment::create($attributes);
         $start_end = explode('~', $slots[$attributes['which_slot']]);
 
         // make an order request to klarna, first step
@@ -66,7 +65,30 @@ class AppointmentController extends Controller
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
-        dd($response->json());
-        return view('to_pay', ['appt' => $appointment, 'start_end' => $start_end]);
+        //dd($response->json());
+
+        /*
+         * get the order create response from klarna
+         */
+        $klarna_return = $response->json();
+        /*
+         * parse the order response
+         */
+        $klarna_order_id = $klarna_return['order_id'];
+        $html_snippet = $klarna_return['html_snippet'];
+
+        $attributes['klarna_order_id'] = $klarna_order_id;
+
+        $attributes['start_end_time'] = $start_end;
+
+        // creat a record in the database for this appointment
+        $appointment = Appointment::create($attributes);
+
+
+        return view('to_pay', [
+            'appt' => $appointment,
+            'start_end' => $start_end,
+            'html_snippet'=>$html_snippet
+        ]);
     }
 }
