@@ -64,7 +64,6 @@ class AppointmentController extends Controller
   }
 }';
         $response = Http::withHeaders([
-            'content-type' => 'application/json',
             'username' => 'PK45418_9cb391cd02a1',
             'password' => 'ngVXPw5cTH02Rqyj'
         ])->withBody($rawBody, 'application/json')
