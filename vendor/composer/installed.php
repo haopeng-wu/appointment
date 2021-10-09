@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'e7badada0e50f1adad21a21031f5a8a6ad310d4d',
+    'reference' => '5f078edb74931c8dfefefb57b8b03a9d6511b74e',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -436,7 +436,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'e7badada0e50f1adad21a21031f5a8a6ad310d4d',
+      'reference' => '5f078edb74931c8dfefefb57b8b03a9d6511b74e',
     ),
     'laravel/sail' => 
     array (
@@ -959,6 +959,15 @@
       array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
+    ),
+    'stripe/stripe-php' => 
+    array (
+      'pretty_version' => 'v7.98.0',
+      'version' => '7.98.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '87f27d3da4a72c93da49d81011cb675c2847a7c0',
     ),
     'swiftmailer/swiftmailer' => 
     array (

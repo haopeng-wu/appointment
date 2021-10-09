@@ -2212,3 +2212,88 @@ Updating b70bae6..bdf6207
 Fast-forward
  app/Http/Controllers/AppointmentController.php | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   bdf6207..5943e87  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   5943e87..2275c55  master     -> origin/master
+Updating 5943e87..2275c55
+Fast-forward
+ resources/views/home.blade.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   2275c55..50a0c2b  master     -> origin/master
+Updating 2275c55..50a0c2b
+Fast-forward
+ app/Http/Controllers/AppointmentController.php |  4 +-
+ app/Models/User.php                            | 79 +-------------------------
+ 2 files changed, 5 insertions(+), 78 deletions(-)
+From ../appointment
+   50a0c2b..450b669  master     -> origin/master
+Updating 50a0c2b..450b669
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   450b669..903c2ad  master     -> origin/master
+Updating 450b669..903c2ad
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 22 ++++++++++++----------
+ 1 file changed, 12 insertions(+), 10 deletions(-)
+From ../appointment
+   903c2ad..63f2b3f  master     -> origin/master
+Updating 903c2ad..63f2b3f
+Fast-forward
+ ...2021_10_04_114304_create_appointments_table.php | 26 +++++++++++-----------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+From ../appointment
+   63f2b3f..0e831e6  master     -> origin/master
+Updating 63f2b3f..0e831e6
+Fast-forward
+ database/migrations/2021_10_04_114304_create_appointments_table.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   0e831e6..a43b04a  master     -> origin/master
+Updating 0e831e6..a43b04a
+Fast-forward
+ database/migrations/2021_10_04_114304_create_appointments_table.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   a43b04a..c1d9873  master     -> origin/master
+Updating a43b04a..c1d9873
+Fast-forward
+ database/migrations/2021_10_04_114304_create_appointments_table.php | 2 --
+ 1 file changed, 2 deletions(-)
+From ../appointment
+   c1d9873..7b2c68b  master     -> origin/master
+Updating c1d9873..7b2c68b
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ resources/views/to_pay.blade.php               | 5 +++++
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+ create mode 100644 resources/views/to_pay.blade.php
+From ../appointment
+   7b2c68b..4aee2d6  master     -> origin/master
+Updating 7b2c68b..4aee2d6
+Fast-forward
+ app/Http/Controllers/AppointmentController.php |  3 ++-
+ resources/views/to_pay.blade.php               | 22 +++++++++++++++++++---
+ 2 files changed, 21 insertions(+), 4 deletions(-)
+From ../appointment
+   4aee2d6..47cc33f  master     -> origin/master
+Updating 4aee2d6..47cc33f
+Fast-forward
+ resources/views/to_pay.blade.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   47cc33f..9506767  master     -> origin/master
+Updating 47cc33f..9506767
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   9506767..5f078ed  master     -> origin/master
+Updating 9506767..5f078ed
+Fast-forward
+ resources/views/to_pay.blade.php | 3 ---
+ 1 file changed, 3 deletions(-)
