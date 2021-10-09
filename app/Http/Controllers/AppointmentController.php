@@ -63,19 +63,11 @@ class AppointmentController extends Controller
     "push": "https://www.example.com/api/push?order_id={checkout.order.id}"
   }
 }';
-        /*
-        $response = Http::dd()->withHeaders([
-            'username' => 'PK45418_9cb391cd02a1',
-            'password' => 'ngVXPw5cTH02Rqyj'
-        ])->withBody($rawBody, 'application/json')
+        $response = Http::dd()
+            ->withBasicAuth('PK45418_9cb391cd02a1','ngVXPw5cTH02Rqyj')
+            ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
-        */
-        $response = Http::dd()->withHeaders([
-            'username' => 'PK45418_9cb391cd02a1',
-            'password' => 'ngVXPw5cTH02Rqyj'
-        ])
-            ->post("https://api.playground.klarna.com/checkout/v3/orders",['data1'=>'data1']);
-        //dd($response);
+
         return view('to_pay', ['appt' => $appointment, 'start_end' => $start_end]);
     }
 }
