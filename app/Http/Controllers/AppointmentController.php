@@ -73,7 +73,7 @@ class AppointmentController extends Controller
         $response = Http::dd()->withHeaders([
             'username' => 'PK45418_9cb391cd02a1',
             'password' => 'ngVXPw5cTH02Rqyj'
-        ])->withBody($rawBody, 'application/json')
+        ])
             ->post("https://api.playground.klarna.com/checkout/v3/orders",['data1'=>'data1']);
         //dd($response);
         return view('to_pay', ['appt' => $appointment, 'start_end' => $start_end]);
