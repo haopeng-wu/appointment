@@ -29,7 +29,6 @@ class AppointmentController extends Controller
             $user = User::create(['name' => $attributes['customer_name'], 'email' => $attributes['email'], 'tel' => $attributes['tel']]);
         }
         $appointment_no = "AT" . date("ymdh") . random_int(1000, 9999);
-        $attributes['start_end_time'] = $slots[$attributes['which_slot']];
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
 
