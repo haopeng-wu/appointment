@@ -88,7 +88,7 @@ class AppointmentController extends Controller
         $appointment->save();
 
 
-        $start_end = explode('~', $slots[$attributes['which_slot']]);
+        $start_end = explode('~', $slots[$attributes['which_slot']-1]);
 
         return view('to-pay', [
             'appt' => $appointment,
