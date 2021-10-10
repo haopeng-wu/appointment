@@ -20,7 +20,8 @@ Route::get('/', function () {
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
-
-
+Route::get('/thank-you/{appointment}', function (\App\Models\Appointment $appointment){
+    return view('thank-you', ['name'=>$appointment->customer_name]);
+});
 
 Auth::routes();

@@ -32,7 +32,12 @@ class AppointmentController extends Controller
         $attributes['start_end_time'] = $slots[$attributes['which_slot']];
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
-        $start_end = explode('~', $slots[$attributes['which_slot']]);
+
+        $attributes['start_end_time'] = $slots[$attributes['which_slot']];
+
+        // creat a record in the database for this appointment
+        $appointment = Appointment::create($attributes);
+
 
         // make an order request to klarna, first step
         $rawBody = '{
@@ -58,10 +63,11 @@ class AppointmentController extends Controller
           "merchant_urls": {
             "terms": "https://www.example.com/terms.html",
             "checkout": "https://www.example.com/checkout.html?order_id={checkout.order.id}",
-            "confirmation": "https://www.example.com/confirmation.html?order_id={checkout.order.id}",
+            "confirmation": "https://www.wuhaopeng.site/thank-you/%d",
             "push": "https://www.example.com/api/push?order_id={checkout.order.id}"
           }
         }';
+        $rawBody = sprintf($rawBody, $appointment->id);
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
@@ -77,15 +83,15 @@ class AppointmentController extends Controller
         $klarna_order_id = $klarna_return['order_id'];
         $html_snippet = $klarna_return['html_snippet'];
 
-        $attributes['klarna_order_id'] = $klarna_order_id;
+        //$attributes['klarna_order_id'] = $klarna_order_id;
 
-        $attributes['start_end_time'] = $slots[$attributes['which_slot']];
-
-        // creat a record in the database for this appointment
-        $appointment = Appointment::create($attributes);
+        $appointment->klarna_order_id = $klarna_order_id;
+        $appointment->save();
 
 
-        return view('to_pay', [
+        $start_end = explode('~', $slots[$attributes['which_slot']]);
+
+        return view('to-pay', [
             'appt' => $appointment,
             'start_end' => $start_end,
             'html_snippet'=>$html_snippet
