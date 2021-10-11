@@ -71,7 +71,7 @@ class AppointmentController extends Controller
             ],
           "merchant_urls": {
             "terms": "https://www.example.com/terms.html",
-            "checkout": "https://www.example.com/checkout.html?order_id={checkout.order.id}",
+            "checkout": "https://www.wuhaopeng.site:22000/checkout",
             "confirmation": "https://www.wuhaopeng.site:22000/thank-you/%d",
             "push": "https://www.example.com/api/push?order_id={checkout.order.id}"
           }
