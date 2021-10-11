@@ -53,7 +53,7 @@ class AppointmentController extends Controller
           "gui":
           {
             "options": "minimal_confirmation"
-          }
+          },
           "order_lines": [
               {
                   "type": "digital",
