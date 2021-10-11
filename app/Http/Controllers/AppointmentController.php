@@ -50,10 +50,7 @@ class AppointmentController extends Controller
              "title_mandatory": false,
              "phone_mandatory": false
           },
-          "gui":
-          {
-            "options": "minimal_confirmation"
-          },
+          "gui": "minimal_confirmation",
           "order_lines": [
               {
                   "type": "digital",
