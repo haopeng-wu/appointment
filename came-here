@@ -2297,3 +2297,124 @@ Updating 9506767..5f078ed
 Fast-forward
  resources/views/to_pay.blade.php | 3 ---
  1 file changed, 3 deletions(-)
+From ../appointment
+   5f078ed..d3c0fec  master     -> origin/master
+Auto packing the repository for optimum performance. You may also
+run "git gc" manually. See "git help gc" for more information.
+Already up-to-date.
+From ../appointment
+   d3c0fec..e31fcaa  master     -> origin/master
+Updating d3c0fec..e31fcaa
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 40 ++++++++++++++++++++++++--
+ 1 file changed, 38 insertions(+), 2 deletions(-)
+From ../appointment
+   e31fcaa..73aba6c  master     -> origin/master
+Updating e31fcaa..73aba6c
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   73aba6c..b48498f  master     -> origin/master
+Updating 73aba6c..b48498f
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   b48498f..928143c  master     -> origin/master
+Updating b48498f..928143c
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   928143c..02db474  master     -> origin/master
+Updating 928143c..02db474
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   02db474..7d037a6  master     -> origin/master
+Updating 02db474..7d037a6
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 16 ++++------------
+ 1 file changed, 4 insertions(+), 12 deletions(-)
+From ../appointment
+   7d037a6..edb2b5e  master     -> origin/master
+Updating 7d037a6..edb2b5e
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+From ../appointment
+   edb2b5e..11bee6c  master     -> origin/master
+Updating edb2b5e..11bee6c
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   11bee6c..cdf5e11  master     -> origin/master
+Updating 11bee6c..cdf5e11
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   cdf5e11..1c35008  master     -> origin/master
+Updating cdf5e11..1c35008
+Fast-forward
+ app/Http/Controllers/AppointmentController.php     | 54 +++++++++++-----------
+ ...2021_10_04_114304_create_appointments_table.php |  1 +
+ 2 files changed, 28 insertions(+), 27 deletions(-)
+From ../appointment
+   1c35008..b905fa1  master     -> origin/master
+Updating 1c35008..b905fa1
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 28 +++++++++++++++++++++++---
+ resources/views/to_pay.blade.php               | 10 +--------
+ 2 files changed, 26 insertions(+), 12 deletions(-)
+From ../appointment
+   b905fa1..d82a9d0  master     -> origin/master
+Updating b905fa1..d82a9d0
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ resources/views/to_pay.blade.php               | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   d82a9d0..f2d25f0  master     -> origin/master
+Updating d82a9d0..f2d25f0
+Fast-forward
+ resources/views/to_pay.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   f2d25f0..131cf41  master     -> origin/master
+Updating f2d25f0..131cf41
+Fast-forward
+ app/Http/Controllers/AppointmentController.php       | 20 +++++++++++++-------
+ resources/views/thank-you.blade.php                  |  5 +++++
+ .../views/{to_pay.blade.php => to-pay.blade.php}     |  0
+ routes/web.php                                       |  5 +++--
+ 4 files changed, 21 insertions(+), 9 deletions(-)
+ create mode 100644 resources/views/thank-you.blade.php
+ rename resources/views/{to_pay.blade.php => to-pay.blade.php} (100%)
+From ../appointment
+   131cf41..8d235d6  master     -> origin/master
+Updating 131cf41..8d235d6
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   8d235d6..9787844  master     -> origin/master
+Updating 8d235d6..9787844
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   9787844..986c497  master     -> origin/master
+Updating 9787844..986c497
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   986c497..21ac004  master     -> origin/master
+Updating 986c497..21ac004
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)

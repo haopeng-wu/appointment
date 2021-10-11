@@ -43,20 +43,24 @@ class AppointmentController extends Controller
           "purchase_country": "GB",
           "purchase_currency": "GBP",
           "locale": "en-GB",
-          "order_amount": 50000,
-          "order_tax_amount": 4545,
+          "order_amount": 10000,
+          "order_tax_amount": 909,
+			"options" : {
+				"title_mandatory": false,
+				"phone_mandatory": false
+			},
           "order_lines": [
               {
-                  "type": "physical",
+                  "type": "digital",
                   "reference": "19-402-USA",
-                  "name": "Red T-Shirt",
-                  "quantity": 5,
+                  "name": "Counselling",
+                  "quantity": 1,
                   "quantity_unit": "pcs",
                   "unit_price": 10000,
                   "tax_rate": 1000,
-                  "total_amount": 50000,
+                  "total_amount": 10000,
                   "total_discount_amount": 0,
-                  "total_tax_amount": 4545
+                  "total_tax_amount": 909
               }
             ],
           "merchant_urls": {
@@ -70,7 +74,9 @@ class AppointmentController extends Controller
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
-        //dd($response->json());
+		if(!$response->successful()){
+        	dd($response->json());
+		}
 
         /*
          * get the order create response from klarna
