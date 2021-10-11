@@ -32,7 +32,7 @@ class AppointmentController extends Controller
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
 
-        $attributes['start_end_time'] = $slots[$attributes['which_slot']-1];
+        $attributes['start_end_time'] = $slots[$attributes['which_slot'] - 1];
 
         // creat a record in the database for this appointment
         $appointment = Appointment::create($attributes);
@@ -45,10 +45,15 @@ class AppointmentController extends Controller
           "locale": "en-SE",
           "order_amount": 10000,
           "order_tax_amount": 909,
-			"options" : {
-				"title_mandatory": false,
-				"phone_mandatory": false
-			},
+          "options": 
+          {
+             "title_mandatory": false,
+             "phone_mandatory": false
+          },
+          "gui":
+          {
+            "options": "minimal_confirmation"
+          }
           "order_lines": [
               {
                   "type": "digital",
@@ -74,9 +79,9 @@ class AppointmentController extends Controller
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
-		if(!$response->successful()){
-        	dd($response->json());
-		}
+        if (!$response->successful()) {
+            dd($response->json());
+        }
 
         /*
          * get the order create response from klarna
@@ -94,12 +99,12 @@ class AppointmentController extends Controller
         $appointment->save();
 
 
-        $start_end = explode('~', $slots[$attributes['which_slot']-1]);
+        $start_end = explode('~', $slots[$attributes['which_slot'] - 1]);
 
         return view('to-pay', [
             'appt' => $appointment,
             'start_end' => $start_end,
-            'html_snippet'=>$html_snippet
+            'html_snippet' => $html_snippet
         ]);
     }
 }
