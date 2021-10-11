@@ -45,16 +45,7 @@ class AppointmentController extends Controller
           "locale": "en-SE",
           "order_amount": 10000,
           "order_tax_amount": 909,
-          "options": 
-          {
-             "title_mandatory": false,
-             "phone_mandatory": false
-          },
-          "gui": {
-            "options": [
-                "minimal_confirmation"
-            ]
-          },
+
           "order_lines": [
               {
                   "type": "digital",
