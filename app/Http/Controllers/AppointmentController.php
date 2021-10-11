@@ -18,7 +18,7 @@ class AppointmentController extends Controller
         $attributes = request()->validate([
             'customer_name' => ["required"],
             'email' => ["required", "email"],
-            'tel' => ["between:6,18"],
+            'tel' => ["between:,2:18"],
             'date' => ["required"],
             'which_slot' => ["required"]
         ]);
