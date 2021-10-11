@@ -40,9 +40,9 @@ class AppointmentController extends Controller
 
         // make an order request to klarna, first step
         $rawBody = '{
-          "purchase_country": "GB",
-          "purchase_currency": "GBP",
-          "locale": "en-GB",
+          "purchase_country": "SE",
+          "purchase_currency": "SEK",
+          "locale": "en-SE",
           "order_amount": 10000,
           "order_tax_amount": 909,
 			"options" : {
