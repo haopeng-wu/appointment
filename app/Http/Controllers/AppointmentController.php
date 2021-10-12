@@ -68,6 +68,9 @@ class AppointmentController extends Controller
           }
         }';
         $rawBody = sprintf($rawBody, $appointment->id);
+        /*
+         *  make the call to klarna
+         */
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
@@ -83,6 +86,7 @@ class AppointmentController extends Controller
          * parse the order response
          */
         $klarna_order_id = $klarna_return['order_id'];
+        dd($klarna_order_id);
         $html_snippet = $klarna_return['html_snippet'];
 
         //$attributes['klarna_order_id'] = $klarna_order_id;
