@@ -86,7 +86,7 @@ class AppointmentController extends Controller
          * parse the order response
          */
         $klarna_order_id = $klarna_return['order_id'];
-        dd($klarna_order_id);
+        //dd($klarna_order_id);
         $html_snippet = $klarna_return['html_snippet'];
 
         //$attributes['klarna_order_id'] = $klarna_order_id;
