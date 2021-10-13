@@ -44,7 +44,6 @@ class ConfirmationController extends Controller
          * read the response
          */
         $klarna_return = $response->json();
-        dd($klarna_return['status']);
         if ($klarna_return['status'] == 'CHECKOUT_COMPLETE'){
             $appointment->payment_status = 1;
             $appointment->charge = $klarna_return['order_amount'];
