@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +24,13 @@ Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
 Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'render']);
 
-//Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
+Route::get('/check-order/{appointment}', function (\App\Models\Appointment $appointment){
+    $klarna_order_id = $appointment->klarna_order_id;
+    $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
+        ->withHeaders(['content-type'=>'application/json'])
+        ->get("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id");
+    dd($response->json());
+});
 
 Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
