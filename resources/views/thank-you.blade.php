@@ -2,5 +2,5 @@
     <h2>
         Thank you for your purchase {{$name}}!
     </h2>
-    {{$html_snippet}}
+    {!! $html_snippet !!}
 </x-master>
