@@ -74,6 +74,7 @@ class AppointmentController extends Controller
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withBody($rawBody, 'application/json')
             ->post("https://api.playground.klarna.com/checkout/v3/orders");
+
         if (!$response->successful()) {
             dd($response->json());
         }
