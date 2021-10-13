@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class ConfirmationController extends Controller
 {
@@ -33,6 +34,7 @@ class ConfirmationController extends Controller
         /*
          *  make a request to klarna to retrieve the order and confirm its status
          */
+        Log::debug("pushed by klarna");
         $klarna_order_id = $appointment->klarna_order_id;
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withHeaders(['content-type'=>'application/json'])
@@ -44,6 +46,7 @@ class ConfirmationController extends Controller
          * read the response
          */
         $klarna_return = $response->json();
+        Log::debug($klarna_return);
         if ($klarna_return['status'] == 'CHECKOUT_COMPLETE'){
             $appointment->payment_status = 1;
             $appointment->charge = $klarna_return['order_amount'];
