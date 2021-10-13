@@ -64,10 +64,10 @@ class AppointmentController extends Controller
             "terms": "https://www.example.com/terms.html",
             "checkout": "https://www.wuhaopeng.site:22000/checkout",
             "confirmation": "https://www.wuhaopeng.site:22000/thank-you/%d",
-            "push": "https://www.example.com/api/push?order_id={checkout.order.id}"
+            "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d"
           }
         }';
-        $rawBody = sprintf($rawBody, $appointment->id);
+        $rawBody = sprintf($rawBody, $appointment->id, $appointment->id);
         /*
          *  make the call to klarna
          */

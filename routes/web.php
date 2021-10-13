@@ -23,11 +23,9 @@ Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
 Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'render']);
 
-/*
-Route::get('/thank-you/{appointment}', function (\App\Models\Appointment $appointment){
-    return view('thank-you', ['name'=>$appointment->customer_name]);
-});
- */
+Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
+
+
 
 
 
