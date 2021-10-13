@@ -23,7 +23,7 @@ Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
 Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'render']);
 
-Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
+//Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
 Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
