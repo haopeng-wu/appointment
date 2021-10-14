@@ -100,20 +100,6 @@ class AppointmentController extends Controller
 
         $start_end = explode('~', $slots[$attributes['which_slot'] - 1]);
 
-
-        /*
-         * update the merchant push urls, which can be put into a queue later on
-         */
-        $rawBody = '{
-          "merchant_urls": {
-            "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d"
-          }
-        }';
-        $rawBody = sprintf($rawBody, $klarna_order_id);
-        Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
-            ->withBody($rawBody, 'application/json')
-            ->post("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id");
-
         /*
          * flush these to the session to use it after the redirection
          */

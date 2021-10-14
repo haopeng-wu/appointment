@@ -28,7 +28,7 @@ Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationContro
 
 Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
-Route::post('/confirmation/push/{klarna_order_id}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
+Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
 Route::get('/check-order/{appointment}', function (\App\Models\Appointment $appointment){
     $klarna_order_id = $appointment->klarna_order_id;
