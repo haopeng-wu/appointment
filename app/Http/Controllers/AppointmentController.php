@@ -117,6 +117,7 @@ class AppointmentController extends Controller
             'start_end' => $start_end,
             'html_snippet' => $html_snippet
         ]);
+        dd($request->session()->all());
 
         return redirect('/checkout');
     }
