@@ -30,6 +30,8 @@ Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\Confirmati
 
 Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
+Route::get('/ack/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'ack']);
+
 Route::get('/check-order/{appointment}', function (\App\Models\Appointment $appointment){
     $klarna_order_id = $appointment->klarna_order_id;
     $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
