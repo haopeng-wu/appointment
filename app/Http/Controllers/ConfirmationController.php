@@ -21,10 +21,22 @@ class ConfirmationController extends Controller
         if (!$response->successful()) {
             dd($response->json());
         }
-        /*
-         * get the order create response from klarna
-         */
         $klarna_return = $response->json();
+        /*
+         *  synchronize the checkout status
+         */
+        if ($klarna_return['status'] == 'checkout_complete'){
+            $appointment->payment_status = 1;
+            $appointment->charge = $klarna_return['order_amount'];
+            $appointment->save();
+            /*
+             *  send an acknowledgement back to klarna
+             */
+            Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
+                ->withHeaders(['content-type'=>'application/json'])
+                ->get("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id/acknowledge");
+        }
+
         $html_snippet = $klarna_return['html_snippet'];
 
         return view('thank-you', ['name'=>$appointment->customer_name, 'html_snippet'=>$html_snippet]);
