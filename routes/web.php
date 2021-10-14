@@ -33,6 +33,7 @@ Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\Confirmat
 Route::get('/ack/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'ack']);
 
 Route::get('/check-sever/{appointment}', function (\App\Models\Appointment $appointment){
+    $klarna_order_id = $appointment->klarna_order_id;
     dd($appointment);
 });
 
