@@ -78,6 +78,6 @@ class ConfirmationController extends Controller
         $klarna_order_id = $appointment->klarna_order_id;
         $response = Http::withHeaders(['content-type' => 'application/json', 'authorization'=>'basic pwhcueUff0MmwLShJiBE9JHA=='])
             ->post("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id/acknowledge");
-        dd($response);
+        dd($response->json());
     }
 }
