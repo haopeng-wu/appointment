@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
-//Route::get('/checkout', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
+Route::get('/checkout', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
 
 Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'render']);
 

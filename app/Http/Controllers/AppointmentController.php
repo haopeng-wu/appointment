@@ -108,11 +108,16 @@ class AppointmentController extends Controller
             'html_snippet' => $html_snippet
         ]);
          */
+        /*
+         * flush these to the session to use it after the redirection
+         */
 
-        return redirect()->action([CheckoutController::class,'checkout'], [
+        $request->session()->flush([
             'appt' => $appointment,
             'start_end' => $start_end,
             'html_snippet' => $html_snippet
         ]);
+
+        return redirect('/checkout');
     }
 }
