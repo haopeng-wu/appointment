@@ -22,7 +22,13 @@ Route::get('/', function () {
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
+//Route::get('/checkout', [\App\Http\Controllers\CheckoutController::class, 'checkout']);
+
 Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'render']);
+
+Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
+
+Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
 Route::get('/check-order/{appointment}', function (\App\Models\Appointment $appointment){
     $klarna_order_id = $appointment->klarna_order_id;
@@ -31,14 +37,5 @@ Route::get('/check-order/{appointment}', function (\App\Models\Appointment $appo
         ->get("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id");
     dd($response->json());
 });
-
-
-Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
-
-Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
-
-
-
-
 
 Auth::routes();

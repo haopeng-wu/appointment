@@ -100,7 +100,16 @@ class AppointmentController extends Controller
 
         $start_end = explode('~', $slots[$attributes['which_slot'] - 1]);
 
-        return view('to-pay', [
+        /*
+         *
+         return view('to-pay', [
+            'appt' => $appointment,
+            'start_end' => $start_end,
+            'html_snippet' => $html_snippet
+        ]);
+         */
+
+        return redirect()->action([CheckoutController::class,'checkout'], [
             'appt' => $appointment,
             'start_end' => $start_end,
             'html_snippet' => $html_snippet
