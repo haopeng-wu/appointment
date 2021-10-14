@@ -12,7 +12,7 @@
     <div>
         <div class="nav-logo">
             <a href="/">
-                <img src="{{asset('images'/logo.jpeg)}}" alt="the site logo">
+                <img src="{{asset('images/logo.jpeg')}}" alt="the site logo">
             </a>
         </div>
         <ul class="wrapper">
