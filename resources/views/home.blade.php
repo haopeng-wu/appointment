@@ -79,7 +79,5 @@
     </main>
 
 
-    <footer>
 
-    </footer>
 </x-master>

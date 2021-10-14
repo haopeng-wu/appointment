@@ -2,6 +2,14 @@
     display: flex;
 }
 
+nav.wrapper{
+    justify-content: space-between;
+}
+
+.nav-logo img{
+    margin: 0 1em;
+}
+
 .appointment button{
     margin: 1em;
     padding: 5px;
@@ -71,9 +79,6 @@ input.time_slot{
 .time-slots > div{
     margin:0.7em;
 }
-
-
-
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

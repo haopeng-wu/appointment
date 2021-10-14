@@ -9,16 +9,28 @@
 </head>
 <body>
 <nav class="wrapper">
-    <div class="nav-logo">
-
+    <div>
+        <div class="nav-logo">
+            <a href="/">
+                <img src="{{asset('images'/logo.jpeg)}}" alt="the site logo">
+            </a>
+        </div>
+        <ul class="wrapper">
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
     </div>
-    <ul class="wrapper">
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-    </ul>
+
+    <div class="admin">
+        <a href="/admin">admin</a>
+    </div>
+
 </nav>
 {{$slot}}
+<footer>
+
+</footer>
 <script type="text/javascript"
         src="{{asset('js/custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 </body>

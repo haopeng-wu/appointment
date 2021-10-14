@@ -36,7 +36,6 @@ class ConfirmationController extends Controller
                 ->post("https://api.playground.klarna.com/ordermanagement/v1/orders/$klarna_order_id/acknowledge");
         }
 
-
         $html_snippet = $klarna_return['html_snippet'];
 
         return view('thank-you', ['name'=>$appointment->customer_name, 'html_snippet'=>$html_snippet]);

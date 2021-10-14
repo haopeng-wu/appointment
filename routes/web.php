@@ -36,6 +36,8 @@ Route::get('/check-server/{appointment}', function (\App\Models\Appointment $app
     dd($appointment);
 });
 
+Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index']);
+
 Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $appointment){
     $klarna_order_id = $appointment->klarna_order_id;
     $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
