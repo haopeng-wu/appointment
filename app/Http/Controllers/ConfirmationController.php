@@ -68,9 +68,9 @@ class ConfirmationController extends Controller
             $appointment->charge = $klarna_return['order_amount'];
             $appointment->save();
 
-        Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
-            ->withHeaders(['content-type' => 'application/json'])
-            ->post("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id/acknowledge");
+            Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
+                ->withHeaders(['content-type' => 'application/json'])
+                ->post("https://api.playground.klarna.com/ordermanagement/v1/orders/$klarna_order_id/acknowledge");
          }
     }
 
