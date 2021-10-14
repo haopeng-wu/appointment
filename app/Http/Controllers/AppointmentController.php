@@ -112,15 +112,9 @@ class AppointmentController extends Controller
          * flush these to the session to use it after the redirection
          */
 
-        /*
-         * $request->session()->flash([
-            'appt' => $appointment,
-            'start_end' => $start_end,
-            'html_snippet' => $html_snippet
-        ]);
-         */
-
         $request->session()->flash('appt', $appointment);
+        $request->session()->flash('start_end', $start_end);
+        $request->session()->flash('html_snippet', $html_snippet);
 
         //dd($request->session()->all());
 

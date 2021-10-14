@@ -7,7 +7,6 @@ class CheckoutController extends Controller
 {
     public function checkout(Request $request){
 
-        dd($request->session()->all());
         $appointment = $request->session()->get('appt');
         $start_end = $request->session()->get('start_end');
         $html_snippet = $request->session()->get('html_snippet');
