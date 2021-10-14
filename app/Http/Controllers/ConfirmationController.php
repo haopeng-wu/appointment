@@ -75,7 +75,6 @@ class ConfirmationController extends Controller
     }
 
     public function ack(Appointment $appointment){
-        dd($appointment);
         $klarna_order_id = $appointment->klarna_order_id;
         $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
             ->withHeaders(['content-type' => 'application/json'])
