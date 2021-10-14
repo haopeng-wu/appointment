@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav class="wrapper">
-    <div>
+    <div class="wrapper">
         <div class="nav-logo">
             <a href="/">
                 <img src="{{asset('images/logo.jpeg')}}" alt="the site logo">
