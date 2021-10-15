@@ -9,13 +9,17 @@
 </head>
 <body>
 <nav>
-    <div>
-        <ul class="wrapper">
-            <a href=""><li>Schedules</li></a>
-            <a href=""><li>Dashboard</li></a>
-            <a href=""><li>Klarna Portal</li></a>
-        </ul>
-    </div>
+    <ul class="wrapper">
+        <a href="">
+            <li>Schedules</li>
+        </a>
+        <a href="">
+            <li>Dashboard</li>
+        </a>
+        <a href="">
+            <li>Klarna Portal</li>
+        </a>
+    </ul>
 </nav>
 <main>
     {{$slot}}
