@@ -11,35 +11,6 @@ main {
     display: flex;
 }
 
-/*
-search bar
- */
-.search-bar {
-    width: 100%;
-    margin: 0.75em 0;
-    height: 32px;
-    border: solid black 2px;
-    border-radius: 5px;
-    border-collapse: collapse;
-}
-
-.search-bar input {
-    display: inline-block;
-    margin-right: 0.75em;
-    border: 0;
-    border-right: solid black 2px;
-    border-radius: 5px;
-    width: 100%;
-    padding-left: 0.75em;
-    border-collapse: collapse;
-}
-
-.icon img {
-    width: 32px;
-    height: 32px;
-}
-
-
 /* nav */
 nav{
     width: 100vw;
@@ -80,6 +51,62 @@ nav li:last-child {
     margin-right: 0;
 }
 
+/*
+search bar
+ */
+.search-bar {
+    width: 100%;
+    margin: 0.75em 0;
+    height: 32px;
+    border: solid black 2px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.search-bar input {
+    display: inline-block;
+    margin-right: 0.75em;
+    border: 0;
+    border-right: solid black 2px;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 0.75em;
+    border-collapse: collapse;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+}
+/*
+all the schedule divs
+ */
+div.today, div.tomorrow, div.latest-20{
+    margin:0.75em 0;
+    background-color: aquamarine;
+}
+
+/*
+today div
+ */
+
+div.today{
+    height: 20vh;
+}
+
+/*
+tomorrow div
+ */
+div.tomorrow{
+    height: 30vh;
+}
+
+/*
+latest 20 orders
+ */
+div.latest-20{
+    height: 30vh;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

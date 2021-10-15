@@ -5,4 +5,13 @@
             <img src="{{asset('images/search_icon.png')}}" alt="search icon">
         </div>
     </div>
+    <div class="today">
+
+    </div>
+    <div class="tomorrow">
+
+    </div>
+    <div class="latest-20">
+
+    </div>
 </x-a-master>
