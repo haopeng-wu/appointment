@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav>
-    <ul class="wrapper">
+    <ul>
         <a href="">
             <li>Schedules</li>
         </a>
