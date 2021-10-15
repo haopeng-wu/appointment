@@ -16,6 +16,7 @@ search bar
 .search-bar input{
     display: inline-block;
     margin-right:0.75em;
+    border: 0;
     border-right: solid black 2px;
     border-radius: 5px;
     width: 100%;
