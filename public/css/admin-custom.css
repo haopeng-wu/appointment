@@ -19,6 +19,7 @@ search bar
     border-radius: 5px;
     width: 100%;
     padding-left: 0.75em;
+    border-collapse:collapse;
 }
 
 .icon img{
