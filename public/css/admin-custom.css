@@ -3,7 +3,7 @@ body{
 }
 
 main {
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ all the schedule divs
  */
 div.today, div.tomorrow, div.latest-20{
     margin:0.75em 0;
-    background-color: aquamarine;
+    background-color: #f8ca97;
 }
 
 /*
@@ -98,14 +98,14 @@ div.today{
 tomorrow div
  */
 div.tomorrow{
-    height: 30vh;
+    height: 20vh;
 }
 
 /*
 latest 20 orders
  */
 div.latest-20{
-    height: 30vh;
+    height: 20vh;
 }
 
 /* Chrome, Safari, Edge, Opera */
