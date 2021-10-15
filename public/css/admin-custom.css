@@ -10,11 +10,12 @@ search bar
     height: 32px;
     border: solid black 2px;
     border-radius: 5px;
+    border-collapse:collapse;
 }
 
 .search-bar input{
     display: inline-block;
-    margin-left:0.75em;
+    margin-right:0.75em;
     border-radius: 5px;
     width: 100%;
     padding-left: 0.75em;
