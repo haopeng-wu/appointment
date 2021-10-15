@@ -10,15 +10,9 @@
 <body>
 <nav>
     <ul>
-
-            <li>Schedules</li>
-
-
-            <li>Dashboard</li>
-
-
-            <li>Klarna Portal</li>
-
+        <li>Schedules</li>
+        <li>Dashboard</li>
+        <li>Klarna Portal</li>
     </ul>
 </nav>
 <main>
