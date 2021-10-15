@@ -1,58 +1,53 @@
-body{
+body {
     width: 80vw;
     margin: 0 auto;
     background-color: bisque;
-}
-/*
-search bar
- */
-.search-bar{
-    height: 32px;
-    border: solid black 2px;
-    border-radius: 5px;
-    border-collapse:collapse;
-}
-
-.search-bar input{
-    display: inline-block;
-    margin-right:0.75em;
-    border: 0;
-    border-right: solid black 2px;
-    border-radius: 5px;
-    width: 100%;
-    padding-left: 0.75em;
-    border-collapse:collapse;
-}
-
-.icon img{
-    width: 32px;
-    height: 32px;
-}
-
-nav, .search-bar{
-    width: 100%;
-    margin: 0.75em 0;
-}
-
-/* nav */
-nav ul{
-
-}
-
-nav li{
-    border: solid black 2px;
-    margin-right: 0.75em;
-    display: inline-block;
 }
 
 .wrapper {
     display: flex;
 }
 
-nav li {
-    all: initial;
-    margin-right: 2em;
+/*
+search bar
+ */
+.search-bar {
+    width: 100%;
+    margin: 0.75em 0;
+    height: 32px;
+    border: solid black 2px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
 
+.search-bar input {
+    display: inline-block;
+    margin-right: 0.75em;
+    border: 0;
+    border-right: solid black 2px;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 0.75em;
+    border-collapse: collapse;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* nav */
+nav {
+    width: 100%;
+    margin: 0.75em 0;
+}
+
+nav li {
+    border: solid black 2px;
+    margin-right: 0.75em;
+    display: inline-block;
+    padding: 4px 4px;
 }
 
 nav li:last-child {
