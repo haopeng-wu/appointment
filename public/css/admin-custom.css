@@ -83,7 +83,7 @@ all the schedule divs
  */
 div.today, div.tomorrow, div.latest-20{
     margin:0.75em 0;
-    background-color: #f7ffe3;
+    background-color: #fcf4e3;
     border-radius: 5px;
 }
 
@@ -106,7 +106,7 @@ div.tomorrow{
 latest 20 orders
  */
 div.latest-20{
-    height: 20vh;
+    height: 25vh;
 }
 
 /* Chrome, Safari, Edge, Opera */
