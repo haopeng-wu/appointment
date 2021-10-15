@@ -5,14 +5,22 @@
             <img src="{{asset('images/search_icon.png')}}" alt="search icon">
         </div>
     </div>
-    <div class="today">
+    <article class="today schedule">
         <h4>Schedules for Today:</h4>
-        <div></div>
-    </div>
-    <div class="tomorrow">
+        <div class="wrapper">
+            <div class="morning">
+
+            </div>
+            <div class="afternoon">
+
+            </div>
+        </div>
+    </article>
+    <article class="tomorrow schedule">
         <h4>Schedules for Tomorrow:</h4>
-    </div>
-    <div class="latest-20">
+        <div class="grid"></div>
+    </article>
+    <article class="latest-20">
         <h4>Latest 20 Orders:</h4>
-    </div>
+    </article>
 </x-a-master>

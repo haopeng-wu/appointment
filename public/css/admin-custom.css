@@ -88,7 +88,7 @@ search bar
 /*
 all the schedule divs
  */
-div.today, div.tomorrow, div.latest-20{
+article.today, article.tomorrow, article.latest-20{
     margin:0.75em 0;
     background-color: #fcf4e3;
     border-radius: 5px;
@@ -96,25 +96,34 @@ div.today, div.tomorrow, div.latest-20{
     box-sizing: border-box;
 }
 
+.schedule .wrapper{
+    justify-content: space-between;
+}
+
+.schedule .morning, .schedule .afternoon{
+    height: 100%;
+    background-color: #bde2f8;
+}
+
 /*
 today div
  */
 
-div.today{
+article.today{
     height: 20vh;
 }
 
 /*
 tomorrow div
  */
-div.tomorrow{
+article.tomorrow{
     height: 20vh;
 }
 
 /*
 latest 20 orders
  */
-div.latest-20{
+article.latest-20{
     height: 25vh;
     overflow: auto;
 }
