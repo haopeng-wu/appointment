@@ -11,9 +11,9 @@
 <nav>
     <div>
         <ul class="wrapper">
-            <li>Schedules</li>
-            <li>Dashboard</li>
-            <li>Klarna Portal</li>
+            <a href=""><li>Schedules</li></a>
+            <a href=""><li>Dashboard</li></a>
+            <a href=""><li>Klarna Portal</li></a>
         </ul>
     </div>
 </nav>
