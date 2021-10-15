@@ -55,6 +55,9 @@ nav li {
     padding: 10px 20px;
     border-collapse: collapse;
 }
+nav li:last-child{
+    border-width: 1px 1px 1px 1px;
+}
 
 nav li:last-child {
     margin-right: 0;
