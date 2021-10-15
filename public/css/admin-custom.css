@@ -52,6 +52,7 @@ nav ul {
     border-collapse: collapse;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap:0;
 }
 
 nav li {
