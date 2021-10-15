@@ -45,12 +45,13 @@ nav {
 
 nav ul {
     all: initial;
+    border-collapse: collapse;
 }
 
 nav li {
     border: solid black 1px;
     display: inline-block;
-    padding: 4px 10px;
+    padding: 10px 20px;
     border-collapse: collapse;
 }
 
