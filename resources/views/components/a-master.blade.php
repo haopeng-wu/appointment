@@ -10,15 +10,15 @@
 <body>
 <nav>
     <ul>
-        <a href="">
+
             <li>Schedules</li>
-        </a>
-        <a href="">
+
+
             <li>Dashboard</li>
-        </a>
-        <a href="">
+
+
             <li>Klarna Portal</li>
-        </a>
+
     </ul>
 </nav>
 <main>

@@ -60,7 +60,7 @@ nav li {
     padding: 10px 20px;
     border-collapse: collapse;
     background-color: beige;
-    width: 33.3333%;
+    width: 33.3333vw;
 }
 nav li:last-child{
     border-width: 1px 1px 1px 1px;
