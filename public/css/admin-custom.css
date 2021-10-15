@@ -83,7 +83,7 @@ all the schedule divs
  */
 div.today, div.tomorrow, div.latest-20{
     margin:0.75em 0;
-    background-color: #d8d2f6;
+    background-color: #f7ffe3;
     border-radius: 5px;
 }
 
