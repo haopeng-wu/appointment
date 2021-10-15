@@ -9,6 +9,8 @@ search bar
 
 .search-bar .input{
     margin-left:0.75em;
+    width: 100%;
+    height: 48px;
 }
 
 .search-bar input{
