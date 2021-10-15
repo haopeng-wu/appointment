@@ -3,11 +3,18 @@ body{
     margin: 0 auto;
     background-color: bisque;
 }
+/*
+search bar
+ */
 
 .search-bar .input{
     margin-left:0.75em;
 }
 
+.search-bar input{
+    display: inline-block;
+    border-radius: 5px;
+}
 
 nav, .search-bar{
     width: 100%;
@@ -16,11 +23,12 @@ nav, .search-bar{
 
 /* nav */
 nav ul{
-    justify-content: space-between;
+
 }
 
 nav li{
     border: black solid 2px;
+    margin-right: 0.75em;
 }
 
 .wrapper {
