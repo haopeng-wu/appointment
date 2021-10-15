@@ -67,7 +67,6 @@ search bar
     display: inline-block;
     margin-right: 0.75em;
     border: 0;
-    border-right: solid black 2px;
     border-radius: 5px;
     width: 100%;
     padding-left: 0.75em;
@@ -107,6 +106,7 @@ latest 20 orders
  */
 div.latest-20{
     height: 25vh;
+    overflow: auto;
 }
 
 /* Chrome, Safari, Edge, Opera */

@@ -6,12 +6,12 @@
         </div>
     </div>
     <div class="today">
-
+        <h4>Schedules for Today:</h4>
     </div>
     <div class="tomorrow">
-
+        <h4>Schedules for Tomorrow:</h4>
     </div>
     <div class="latest-20">
-
+        <h4>Latest 20 Orders:</h4>
     </div>
 </x-a-master>
