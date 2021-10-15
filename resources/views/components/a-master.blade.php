@@ -17,7 +17,9 @@
         </ul>
     </div>
 </nav>
-{{$slot}}
+<main>
+    {{$slot}}
+</main>
 <footer>
 
 </footer>

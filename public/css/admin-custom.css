@@ -1,6 +1,10 @@
-body {
+main {
     width: 80vw;
     margin: 0 auto;
+}
+nav{
+    width: 100vw;
+    margin:0;
 }
 
 .wrapper {
