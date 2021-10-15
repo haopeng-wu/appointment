@@ -1,0 +1,68 @@
+body{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.search-bar .input{
+    margin-left:0.75em;
+}
+
+
+nav, .search-bar{
+    width: 100%;
+    margin: 0.75em 0;
+}
+
+/* nav */
+nav ul{
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.nav-logo img {
+    width: 2em;
+    margin: 0 1em;
+}
+
+nav li {
+    all: initial;
+    margin-right: 2em;
+
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
