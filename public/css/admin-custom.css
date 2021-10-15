@@ -16,6 +16,7 @@ search bar
 .search-bar input{
     display: inline-block;
     margin-right:0.75em;
+    border-right: solid black 2px;
     border-radius: 5px;
     width: 100%;
     padding-left: 0.75em;
@@ -38,7 +39,7 @@ nav ul{
 }
 
 nav li{
-    border: black solid 2px;
+    border: solid black 2px;
     margin-right: 0.75em;
     display: inline-block;
 }
