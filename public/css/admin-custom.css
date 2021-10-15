@@ -43,6 +43,10 @@ nav {
     margin: 0.75em 0;
 }
 
+nav ul {
+    all: initial;
+}
+
 nav li {
     border: solid black 1px;
     display: inline-block;
