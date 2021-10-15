@@ -7,6 +7,7 @@
     </div>
     <div class="today">
         <h4>Schedules for Today:</h4>
+        <div></div>
     </div>
     <div class="tomorrow">
         <h4>Schedules for Tomorrow:</h4>
