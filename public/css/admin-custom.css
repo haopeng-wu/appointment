@@ -2,10 +2,6 @@ main {
     width: 80vw;
     margin: 0 auto;
 }
-nav{
-    width: 100vw;
-    margin:0;
-}
 
 .wrapper {
     display: flex;
@@ -41,10 +37,9 @@ search bar
 
 
 /* nav */
-nav {
-    width: 100%;
-    margin: 0.75em 0;
-
+nav{
+    width: 100vw;
+    margin:0;
 }
 
 nav ul {
