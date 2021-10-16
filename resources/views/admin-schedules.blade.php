@@ -8,7 +8,9 @@
     <article class="today schedule">
         <h4>Schedules for Today:</h4>
         <div class="wrapper">
-
+            @foreach($todays as $item)
+                <div><span>$item-start_end_time</span><span>1:30</span><span>type</span><span>Link</span></div>
+            @endforeach
         </div>
     </article>
 
