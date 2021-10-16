@@ -9,8 +9,19 @@
         <h4>Schedules for Today:</h4>
         <div class="schedule">
             @foreach($todays as $item)
-                <div><span>{{$item->start_end_time}}</span><span>1:30</span><span>type</span><span>Link</span></div>
+
             @endforeach
+            <table>
+                <th></th>
+                @foreach($todays as $item)
+                    <tr>
+                        <td>{{$item->start_end_time}}</td>
+                        <td>1:30</td>
+                        <td>type</td>
+                        <td>Link</td>
+                    </tr>
+                @endforeach
+            </table>
         </div>
     </article>
 
