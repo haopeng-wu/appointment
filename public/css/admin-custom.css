@@ -127,6 +127,11 @@ article.the-day-after-tomorrow{
     height: 20vh;
 }
 
+div.schedule span{
+    display: inline-block;
+    margin-right: 0.25em;
+}
+
 /*
 latest 20 orders
  */
