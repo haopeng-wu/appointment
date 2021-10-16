@@ -8,12 +8,7 @@
     <article class="today schedule">
         <h4>Schedules for Today:</h4>
         <div class="wrapper">
-            <div class="morning">
 
-            </div>
-            <div class="afternoon">
-
-            </div>
         </div>
     </article>
 

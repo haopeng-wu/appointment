@@ -23,7 +23,7 @@ class Appointment extends Model
     }
 
     public static function onToday(){
-
+        dd(Appointment::where('date','=',"2021-10-10")->get());
     }
 
     public static function onTomorrow(){

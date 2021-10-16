@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
+
 class AdminDashController extends Controller
 {
     public function index(){
-        return view('admin-schedules');
+        $todays = Appointment::onToday();
+        return view('admin-schedules',['todays'=>$todays]);
     }
 }
