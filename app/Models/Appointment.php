@@ -23,7 +23,7 @@ class Appointment extends Model
     }
 
     public static function onToday(){
-        return self::where('date','=',"2021-10-10")->get();
+        return self::where('date','=',"2021-10-10")->orderBy('start_end_time')->get();
     }
 
     public static function onTomorrow(){
