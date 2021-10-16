@@ -16,10 +16,17 @@
             </div>
         </div>
     </article>
+
     <article class="tomorrow schedule">
         <h4>Schedules for Tomorrow:</h4>
         <div class="grid"></div>
     </article>
+
+    <article class="the-day-after-tomorrow schedule">
+        <h4>Schedules for Tomorrow:</h4>
+        <div class="grid"></div>
+    </article>
+
     <article class="latest-20">
         <h4>Latest 20 Orders:</h4>
     </article>
