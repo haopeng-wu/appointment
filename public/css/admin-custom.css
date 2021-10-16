@@ -94,6 +94,7 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
     border-radius: 5px;
     padding: 0.45em;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .schedule .wrapper{
