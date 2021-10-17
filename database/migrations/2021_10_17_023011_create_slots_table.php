@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -16,9 +17,10 @@ class CreateSlotsTable extends Migration
         Schema::create('slots', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->time('start_at');
-            $table->time('end_at');
-            $table->string('duration');
+            $table->time('start_at')->nullable()->default(Carbon::createFromTime(0,0));
+            $table->time('end_at')->nullable()->default(Carbon::createFromTime(0,0));;
+            $table->string('duration')->nullable()->default(Carbon::createFromTime(0,0));;
+            $table->boolean('is_valid')->nullable()->default(false);
         });
     }
 
