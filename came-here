@@ -2418,3 +2418,961 @@ Updating 986c497..21ac004
 Fast-forward
  app/Http/Controllers/AppointmentController.php | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   21ac004..c609779  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   c609779..da9812c  master     -> origin/master
+Updating c609779..da9812c
+Fast-forward
+ app/Http/Controllers/AppointmentController.php  |   6 +-
+ app/Http/Controllers/ConfirmationController.php |  14 ++
+ app/Http/Controllers/GameController.php         | 102 ---------------
+ app/Http/Controllers/HostController.php         |  62 ---------
+ app/Http/Controllers/PlayGameController.php     | 167 ------------------------
+ 5 files changed, 17 insertions(+), 334 deletions(-)
+ create mode 100644 app/Http/Controllers/ConfirmationController.php
+ delete mode 100644 app/Http/Controllers/GameController.php
+ delete mode 100644 app/Http/Controllers/HostController.php
+ delete mode 100644 app/Http/Controllers/PlayGameController.php
+From ../appointment
+   da9812c..2956de0  master     -> origin/master
+Updating da9812c..2956de0
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 25 +++++++++++++++----------
+ 1 file changed, 15 insertions(+), 10 deletions(-)
+From ../appointment
+   2956de0..bcedd65  master     -> origin/master
+Updating 2956de0..bcedd65
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   bcedd65..fc7dc8b  master     -> origin/master
+Updating bcedd65..fc7dc8b
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+From ../appointment
+   fc7dc8b..0ee6fa9  master     -> origin/master
+Updating fc7dc8b..0ee6fa9
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   0ee6fa9..a9e9d13  master     -> origin/master
+Updating 0ee6fa9..a9e9d13
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   a9e9d13..2af0068  master     -> origin/master
+Updating a9e9d13..2af0068
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 11 +----------
+ 1 file changed, 1 insertion(+), 10 deletions(-)
+From ../appointment
+   2af0068..384ad97  master     -> origin/master
+Updating 2af0068..384ad97
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   384ad97..be50a02  master     -> origin/master
+Updating 384ad97..be50a02
+Fast-forward
+ resources/views/home.blade.php | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+From ../appointment
+   be50a02..694d205  master     -> origin/master
+Updating be50a02..694d205
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   694d205..0a33172  master     -> origin/master
+Updating 694d205..0a33172
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   0a33172..aa1d40b  master     -> origin/master
+Updating 0a33172..aa1d40b
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   aa1d40b..0b0e217  master     -> origin/master
+Updating aa1d40b..0b0e217
+Fast-forward
+ app/Http/Controllers/AppointmentController.php  |  1 +
+ app/Http/Controllers/ConfirmationController.php | 19 ++++++++++++++++++-
+ resources/views/thank-you.blade.php             |  1 +
+ routes/web.php                                  |  7 +++++++
+ 4 files changed, 27 insertions(+), 1 deletion(-)
+From ../appointment
+   0b0e217..b080a90  master     -> origin/master
+Updating 0b0e217..b080a90
+Fast-forward
+ resources/views/thank-you.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b080a90..6607c6d  master     -> origin/master
+Updating b080a90..6607c6d
+Fast-forward
+ app/Http/Controllers/AppointmentController.php  |  4 ++--
+ app/Http/Controllers/ConfirmationController.php | 29 +++++++++++++++++++++++++
+ routes/web.php                                  |  8 +++----
+ 3 files changed, 34 insertions(+), 7 deletions(-)
+From ../appointment
+   6607c6d..ac7ad8d  master     -> origin/master
+Updating 6607c6d..ac7ad8d
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   ac7ad8d..bc4d347  master     -> origin/master
+Updating ac7ad8d..bc4d347
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   bc4d347..fd161d4  master     -> origin/master
+Updating bc4d347..fd161d4
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   fd161d4..f4adc0a  master     -> origin/master
+Updating fd161d4..f4adc0a
+Fast-forward
+ routes/web.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   f4adc0a..fa5504b  master     -> origin/master
+Updating f4adc0a..fa5504b
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ routes/web.php                                  | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   fa5504b..dcd1af9  master     -> origin/master
+Updating fa5504b..dcd1af9
+Fast-forward
+ routes/web.php | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+From ../appointment
+   dcd1af9..e884d14  master     -> origin/master
+Updating dcd1af9..e884d14
+Fast-forward
+ routes/web.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   e884d14..a6c1017  master     -> origin/master
+Updating e884d14..a6c1017
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 11 ++++++++++-
+ app/Http/Controllers/CheckoutController.php    | 14 ++++++++++++++
+ routes/web.php                                 | 15 ++++++---------
+ 3 files changed, 30 insertions(+), 10 deletions(-)
+ create mode 100644 app/Http/Controllers/CheckoutController.php
+From ../appointment
+   a6c1017..3bc80fe  master     -> origin/master
+Updating a6c1017..3bc80fe
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 7 ++++++-
+ app/Http/Controllers/CheckoutController.php    | 8 +++++++-
+ routes/web.php                                 | 2 +-
+ 3 files changed, 14 insertions(+), 3 deletions(-)
+From ../appointment
+   3bc80fe..d4354ea  master     -> origin/master
+Updating 3bc80fe..d4354ea
+Fast-forward
+ app/Http/Controllers/CheckoutController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   d4354ea..51313ac  master     -> origin/master
+Updating d4354ea..51313ac
+Fast-forward
+ app/Http/Controllers/CheckoutController.php | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+From ../appointment
+   51313ac..17cba36  master     -> origin/master
+Updating 51313ac..17cba36
+Fast-forward
+ app/Http/Controllers/CheckoutController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   17cba36..bbae537  master     -> origin/master
+Updating 17cba36..bbae537
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   bbae537..821d58b  master     -> origin/master
+Updating bbae537..821d58b
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   821d58b..b808708  master     -> origin/master
+Updating 821d58b..b808708
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   b808708..8318bca  master     -> origin/master
+Updating b808708..8318bca
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 10 ++--------
+ app/Http/Controllers/CheckoutController.php    |  1 -
+ 2 files changed, 2 insertions(+), 9 deletions(-)
+From ../appointment
+   8318bca..fd2f6ed  master     -> origin/master
+Updating 8318bca..fd2f6ed
+Fast-forward
+ app/Http/Controllers/AppointmentController.php  | 20 ++++++++++++--------
+ app/Http/Controllers/ConfirmationController.php | 16 ++++++++++++++--
+ 2 files changed, 26 insertions(+), 10 deletions(-)
+From ../appointment
+   fd2f6ed..b900f96  master     -> origin/master
+Updating fd2f6ed..b900f96
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 21 +++++++++++----------
+ routes/web.php                                  |  2 +-
+ 2 files changed, 12 insertions(+), 11 deletions(-)
+From ../appointment
+   b900f96..6d26988  master     -> origin/master
+Updating b900f96..6d26988
+Fast-forward
+ app/Http/Controllers/AppointmentController.php  | 14 --------------
+ app/Http/Controllers/ConfirmationController.php |  7 ++++---
+ routes/web.php                                  |  2 +-
+ 3 files changed, 5 insertions(+), 18 deletions(-)
+From ../appointment
+   6d26988..8d8f90c  master     -> origin/master
+Updating 6d26988..8d8f90c
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   8d8f90c..f7a44e7  master     -> origin/master
+Updating 8d8f90c..f7a44e7
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 7 +++++++
+ routes/web.php                                  | 2 ++
+ 2 files changed, 9 insertions(+)
+From ../appointment
+   f7a44e7..eb1ede0  master     -> origin/master
+Updating f7a44e7..eb1ede0
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   eb1ede0..5013a66  master     -> origin/master
+Updating eb1ede0..5013a66
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   5013a66..ba9f976  master     -> origin/master
+Updating 5013a66..ba9f976
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   ba9f976..be78237  master     -> origin/master
+Updating ba9f976..be78237
+Fast-forward
+ routes/web.php | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   be78237..35a5700  master     -> origin/master
+Updating be78237..35a5700
+Fast-forward
+ routes/web.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   35a5700..f83de56  master     -> origin/master
+Updating 35a5700..f83de56
+Fast-forward
+ routes/web.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   f83de56..3bf3e7b  master     -> origin/master
+Updating f83de56..3bf3e7b
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   3bf3e7b..6b6aaf3  master     -> origin/master
+Updating 3bf3e7b..6b6aaf3
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   6b6aaf3..a3f2b5b  master     -> origin/master
+Updating 6b6aaf3..a3f2b5b
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   a3f2b5b..00f89fd  master     -> origin/master
+Updating a3f2b5b..00f89fd
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   00f89fd..740206f  master     -> origin/master
+Updating 00f89fd..740206f
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   740206f..09e7bab  master     -> origin/master
+Updating 740206f..09e7bab
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   09e7bab..a6b9b3e  master     -> origin/master
+Updating 09e7bab..a6b9b3e
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   a6b9b3e..373ec47  master     -> origin/master
+Updating a6b9b3e..373ec47
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   373ec47..46e0d1c  master     -> origin/master
+Updating 373ec47..46e0d1c
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   46e0d1c..3c94c91  master     -> origin/master
+Updating 46e0d1c..3c94c91
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   3c94c91..a772678  master     -> origin/master
+Updating 3c94c91..a772678
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   a772678..e82ee10  master     -> origin/master
+Updating a772678..e82ee10
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   e82ee10..855a80b  master     -> origin/master
+Updating e82ee10..855a80b
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   855a80b..5d73c9b  master     -> origin/master
+Updating 855a80b..5d73c9b
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   5d73c9b..bcf741c  master     -> origin/master
+Updating 5d73c9b..bcf741c
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   bcf741c..c616f52  master     -> origin/master
+Updating bcf741c..c616f52
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c616f52..7eca698  master     -> origin/master
+Updating c616f52..7eca698
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   7eca698..ac856f5  master     -> origin/master
+Updating 7eca698..ac856f5
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   ac856f5..42a6fa7  master     -> origin/master
+Updating ac856f5..42a6fa7
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   42a6fa7..7d40280  master     -> origin/master
+Updating 42a6fa7..7d40280
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   7d40280..ee0bef3  master     -> origin/master
+Updating 7d40280..ee0bef3
+Fast-forward
+ app/Http/Controllers/AdminDashController.php       |  10 ++++++
+ app/Http/Controllers/ConfirmationController.php    |   1 -
+ app/Models/Appointment.php                         |  34 +++++++++++++++++++++
+ public/css/custom.css                              |  11 +++++--
+ public/images/bg.jpeg                              | Bin 165170 -> 0 bytes
+ public/images/bg2.jpeg                             | Bin 47810 -> 0 bytes
+ public/images/blue_moon.jpg                        | Bin 54255 -> 0 bytes
+ public/images/error-wolf.jpg                       | Bin 15966 -> 0 bytes
+ public/images/identities/civilian.jpeg             | Bin 84208 -> 0 bytes
+ public/images/identities/dreamer.jpeg              | Bin 81102 -> 0 bytes
+ public/images/identities/evil-knight.webp          | Bin 52640 -> 0 bytes
+ public/images/identities/fox.jpeg                  | Bin 48147 -> 0 bytes
+ public/images/identities/guardian.jpeg             | Bin 81816 -> 0 bytes
+ public/images/identities/hunter.jpeg               | Bin 81959 -> 0 bytes
+ public/images/identities/idiot.jpeg                | Bin 111537 -> 0 bytes
+ public/images/identities/knight.jpeg               | Bin 79875 -> 0 bytes
+ public/images/identities/prophet.jpeg              | Bin 84418 -> 0 bytes
+ public/images/identities/thief.jpeg                | Bin 81715 -> 0 bytes
+ public/images/identities/white-wolf-king.jpeg      | Bin 88071 -> 0 bytes
+ public/images/identities/witch.jpeg                | Bin 77928 -> 0 bytes
+ public/images/identities/wolf-beauty.jpeg          | Bin 71656 -> 0 bytes
+ public/images/identities/wolf.jpeg                 | Bin 69471 -> 0 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 69724 -> 0 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 35820 -> 0 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 89678 -> 0 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 162337 -> 0 bytes
+ ...02&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg | Bin 42856 -> 0 bytes
+ .../images/u=1082217593,4283343962&fm=26&gp=0.jpeg | Bin 34033 -> 0 bytes
+ .../images/u=1417261450,2154601377&fm=26&gp=0.jpeg | Bin 89104 -> 0 bytes
+ .../images/u=1543790170,3931385087&fm=26&gp=0.jpeg | Bin 99831 -> 0 bytes
+ .../images/u=1632578753,3626969963&fm=11&gp=0.jpeg | Bin 53392 -> 0 bytes
+ .../images/u=1708772405,1053452992&fm=26&gp=0.jpeg | Bin 89240 -> 0 bytes
+ .../images/u=1748964271,653854941&fm=26&gp=0.jpeg  | Bin 69597 -> 0 bytes
+ .../images/u=1761940368,3195751421&fm=26&gp=0.jpeg | Bin 39725 -> 0 bytes
+ .../images/u=1950798665,780440326&fm=26&gp=0.jpeg  | Bin 77025 -> 0 bytes
+ .../images/u=2048341483,2691115879&fm=26&gp=0.jpeg | Bin 47703 -> 0 bytes
+ .../images/u=2083588637,3328551943&fm=26&gp=0.jpeg | Bin 57500 -> 0 bytes
+ .../images/u=2114650387,1454883445&fm=26&gp=0.jpeg | Bin 62028 -> 0 bytes
+ .../images/u=2151015652,1529588450&fm=26&gp=0.jpeg | Bin 76833 -> 0 bytes
+ .../images/u=2332558688,764670408&fm=26&gp=0.jpeg  | Bin 61917 -> 0 bytes
+ .../images/u=2362890424,696926562&fm=26&gp=0.jpeg  | Bin 28859 -> 0 bytes
+ .../images/u=2463211854,2553144130&fm=26&gp=0.jpeg | Bin 21325 -> 0 bytes
+ .../images/u=2832765742,4006600525&fm=26&gp=0.jpeg | Bin 28354 -> 0 bytes
+ .../images/u=2834892294,2335267391&fm=26&gp=0.jpeg | Bin 56205 -> 0 bytes
+ .../images/u=304344891,2514493180&fm=26&gp=0.jpeg  | Bin 122272 -> 0 bytes
+ .../images/u=3164083893,1257228969&fm=26&gp=0.jpeg | Bin 37247 -> 0 bytes
+ .../images/u=3175843656,2816492805&fm=26&gp=0.jpeg | Bin 40534 -> 0 bytes
+ .../images/u=3245900342,2584518293&fm=26&gp=0.jpeg | Bin 56538 -> 0 bytes
+ .../images/u=327262142,3372573274&fm=26&gp=0.jpeg  | Bin 44843 -> 0 bytes
+ .../images/u=3341265656,1917794081&fm=26&gp=0.jpeg | Bin 419302 -> 0 bytes
+ .../images/u=3417161864,404602656&fm=26&gp=0.jpeg  | Bin 41396 -> 0 bytes
+ .../images/u=3486826546,1342152892&fm=26&gp=0.jpeg | Bin 34586 -> 0 bytes
+ .../images/u=3562390288,4286959197&fm=26&gp=0.jpeg | Bin 304355 -> 0 bytes
+ .../images/u=356969481,2032814761&fm=26&gp=0.jpeg  | Bin 29081 -> 0 bytes
+ .../images/u=3996935672,1668527936&fm=26&gp=0.jpeg | Bin 42841 -> 0 bytes
+ .../images/u=4064705377,2016448845&fm=26&gp=0.jpeg | Bin 41085 -> 0 bytes
+ .../images/u=4126362867,1308417503&fm=26&gp=0.jpeg | Bin 51443 -> 0 bytes
+ .../images/u=4134972701,1471407014&fm=26&gp=0.jpeg | Bin 84801 -> 0 bytes
+ .../images/u=492880253,4272097178&fm=26&gp=0.png   | Bin 361344 -> 0 bytes
+ .../images/u=506221917,875073469&fm=26&gp=0.jpeg   | Bin 76799 -> 0 bytes
+ .../images/u=531845122,1269297625&fm=26&gp=0.jpeg  | Bin 66719 -> 0 bytes
+ .../images/u=555455142,2387080898&fm=26&gp=0.jpeg  | Bin 52387 -> 0 bytes
+ .../images/u=946817766,1427109945&fm=26&gp=0.jpeg  | Bin 52518 -> 0 bytes
+ ...3\274\347\216\213\345\232\216\345\217\253.jpeg" | Bin 74904 -> 0 bytes
+ resources/views/components/master.blade.php        |  24 +++++++++++----
+ resources/views/home.blade.php                     |   2 --
+ routes/web.php                                     |   2 ++
+ 67 files changed, 72 insertions(+), 12 deletions(-)
+ create mode 100644 app/Http/Controllers/AdminDashController.php
+ delete mode 100644 public/images/bg.jpeg
+ delete mode 100644 public/images/bg2.jpeg
+ delete mode 100644 public/images/blue_moon.jpg
+ delete mode 100644 public/images/error-wolf.jpg
+ delete mode 100644 public/images/identities/civilian.jpeg
+ delete mode 100644 public/images/identities/dreamer.jpeg
+ delete mode 100644 public/images/identities/evil-knight.webp
+ delete mode 100644 public/images/identities/fox.jpeg
+ delete mode 100644 public/images/identities/guardian.jpeg
+ delete mode 100644 public/images/identities/hunter.jpeg
+ delete mode 100644 public/images/identities/idiot.jpeg
+ delete mode 100644 public/images/identities/knight.jpeg
+ delete mode 100644 public/images/identities/prophet.jpeg
+ delete mode 100644 public/images/identities/thief.jpeg
+ delete mode 100644 public/images/identities/white-wolf-king.jpeg
+ delete mode 100644 public/images/identities/witch.jpeg
+ delete mode 100644 public/images/identities/wolf-beauty.jpeg
+ delete mode 100644 public/images/identities/wolf.jpeg
+ delete mode 100644 public/images/src=http---bbswater-fd.zol-img.com.cn-t_s480x480-g5-M00-0B-01-ChMkJlknoxmIbcWBAAKW2cIxaMsAAcn2QGCYFsAApbx845.jpg&refer=http---bbswater-fd.zol-img.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ delete mode 100644 public/images/src=http---img7.d.cn-be-image-1711-sh447j9qodqsp.jpg&refer=http---img7.d.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ delete mode 100644 public/images/src=http---png.pngtree.com-thumb_back-fw800-back_our-20190621-ourmid-pngtree-black-minimalist-werewolf-killing-game-poster-image_191157.jpg&refer=http---png.pngtree.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ delete mode 100644 public/images/src=http---wechat.shwilling.com-uploads-ueditor-image-20170328-1490685263566870.jpg&refer=http---wechat.shwilling.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ delete mode 100644 public/images/src=http---www.szpoker.com-uploads-allimg-200313-1-2003131610219E.jpg&refer=http---www.szpoker.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg.jpg
+ delete mode 100644 public/images/u=1082217593,4283343962&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=1417261450,2154601377&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=1543790170,3931385087&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=1632578753,3626969963&fm=11&gp=0.jpeg
+ delete mode 100644 public/images/u=1708772405,1053452992&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=1748964271,653854941&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=1761940368,3195751421&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=1950798665,780440326&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2048341483,2691115879&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2083588637,3328551943&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2114650387,1454883445&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2151015652,1529588450&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2332558688,764670408&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2362890424,696926562&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2463211854,2553144130&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2832765742,4006600525&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=2834892294,2335267391&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=304344891,2514493180&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3164083893,1257228969&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3175843656,2816492805&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3245900342,2584518293&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=327262142,3372573274&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3341265656,1917794081&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3417161864,404602656&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3486826546,1342152892&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3562390288,4286959197&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=356969481,2032814761&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=3996935672,1668527936&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=4064705377,2016448845&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=4126362867,1308417503&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=4134972701,1471407014&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=492880253,4272097178&fm=26&gp=0.png
+ delete mode 100644 public/images/u=506221917,875073469&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=531845122,1269297625&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=555455142,2387080898&fm=26&gp=0.jpeg
+ delete mode 100644 public/images/u=946817766,1427109945&fm=26&gp=0.jpeg
+ delete mode 100644 "public/images/\347\231\275\347\213\274\347\216\213\345\232\216\345\217\253.jpeg"
+From ../appointment
+   ee0bef3..ceb0852  master     -> origin/master
+Updating ee0bef3..ceb0852
+Fast-forward
+ public/images/logo.jpeg | Bin 0 -> 4513 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 public/images/logo.jpeg
+From ../appointment
+   ceb0852..580a1fa  master     -> origin/master
+Updating ceb0852..580a1fa
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   580a1fa..aeb5be2  master     -> origin/master
+Updating 580a1fa..aeb5be2
+Fast-forward
+ app/Http/Controllers/AdminDashController.php | 2 +-
+ public/css/custom.css                        | 1 +
+ resources/views/components/master.blade.php  | 2 +-
+ 3 files changed, 3 insertions(+), 2 deletions(-)
+From ../appointment
+   aeb5be2..e25dd93  master     -> origin/master
+Updating aeb5be2..e25dd93
+Fast-forward
+ app/Http/Controllers/AdminDashController.php  |   2 +-
+ public/css/admin-custom.css                   |  68 ++++++++++++++++++++++++++
+ public/css/custom.css                         |  44 ++++++++---------
+ public/images/search_icon.png                 | Bin 0 -> 376 bytes
+ resources/views/admin-dashboard.blade.php     |  10 ++++
+ resources/views/admin-schedules.blade.php     |   3 ++
+ resources/views/components/a-master.blade.php |  27 ++++++++++
+ 7 files changed, 131 insertions(+), 23 deletions(-)
+ create mode 100644 public/css/admin-custom.css
+ create mode 100644 public/images/search_icon.png
+ create mode 100644 resources/views/admin-dashboard.blade.php
+ create mode 100644 resources/views/admin-schedules.blade.php
+ create mode 100644 resources/views/components/a-master.blade.php
+From ../appointment
+   e25dd93..e07252d  master     -> origin/master
+Updating e25dd93..e07252d
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 13 +++----------
+ resources/views/admin-schedules.blade.php | 13 ++++++++++---
+ 2 files changed, 13 insertions(+), 13 deletions(-)
+From ../appointment
+   e07252d..c47b25a  master     -> origin/master
+Updating e07252d..c47b25a
+Fast-forward
+ public/css/admin-custom.css               | 4 ++++
+ resources/views/admin-schedules.blade.php | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   c47b25a..94daa0a  master     -> origin/master
+Updating c47b25a..94daa0a
+Fast-forward
+ public/css/admin-custom.css | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+From ../appointment
+   94daa0a..f53c643  master     -> origin/master
+Updating 94daa0a..f53c643
+Fast-forward
+ public/css/admin-custom.css | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   f53c643..48794a0  master     -> origin/master
+Updating f53c643..48794a0
+Fast-forward
+ public/css/admin-custom.css               | 9 +++------
+ resources/views/admin-schedules.blade.php | 4 +---
+ 2 files changed, 4 insertions(+), 9 deletions(-)
+From ../appointment
+   48794a0..b741e1b  master     -> origin/master
+Updating 48794a0..b741e1b
+Fast-forward
+ public/css/admin-custom.css | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+From ../appointment
+   b741e1b..9210237  master     -> origin/master
+Updating b741e1b..9210237
+Fast-forward
+ public/css/admin-custom.css   |   7 +------
+ public/images/search_icon.png | Bin 376 -> 213 bytes
+ 2 files changed, 1 insertion(+), 6 deletions(-)
+From ../appointment
+   9210237..ce6c096  master     -> origin/master
+Updating 9210237..ce6c096
+Fast-forward
+ public/css/admin-custom.css | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   ce6c096..b9ac8e5  master     -> origin/master
+Updating ce6c096..b9ac8e5
+Fast-forward
+ public/css/admin-custom.css               | 1 +
+ resources/views/admin-schedules.blade.php | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   b9ac8e5..3973fb6  master     -> origin/master
+Updating b9ac8e5..3973fb6
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   3973fb6..6a4a79b  master     -> origin/master
+Updating 3973fb6..6a4a79b
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   6a4a79b..9931c1b  master     -> origin/master
+Updating 6a4a79b..9931c1b
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   9931c1b..71e4917  master     -> origin/master
+Updating 9931c1b..71e4917
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   71e4917..bc56dfe  master     -> origin/master
+Updating 71e4917..bc56dfe
+Fast-forward
+ public/css/admin-custom.css | 43 +++++++++++++++++++------------------------
+ 1 file changed, 19 insertions(+), 24 deletions(-)
+From ../appointment
+   bc56dfe..d5eec99  master     -> origin/master
+Updating bc56dfe..d5eec99
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   d5eec99..a7d9b5a  master     -> origin/master
+Updating d5eec99..a7d9b5a
+Fast-forward
+ public/css/admin-custom.css | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+From ../appointment
+   a7d9b5a..da66277  master     -> origin/master
+Updating a7d9b5a..da66277
+Fast-forward
+ public/css/admin-custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   da66277..bf971b9  master     -> origin/master
+Updating da66277..bf971b9
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   bf971b9..b068e00  master     -> origin/master
+Updating bf971b9..b068e00
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   b068e00..e36b713  master     -> origin/master
+Updating b068e00..e36b713
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   e36b713..d57224c  master     -> origin/master
+Updating e36b713..d57224c
+Fast-forward
+ public/css/admin-custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   d57224c..f33fe90  master     -> origin/master
+Updating d57224c..f33fe90
+Fast-forward
+ public/css/admin-custom.css | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   f33fe90..82ff146  master     -> origin/master
+Updating f33fe90..82ff146
+Fast-forward
+ public/css/admin-custom.css                   | 1 +
+ resources/views/components/a-master.blade.php | 6 +++---
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+From ../appointment
+   82ff146..020c9a0  master     -> origin/master
+Updating 82ff146..020c9a0
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   020c9a0..08934b7  master     -> origin/master
+Updating 020c9a0..08934b7
+Fast-forward
+ public/css/admin-custom.css                   | 6 +++++-
+ resources/views/components/a-master.blade.php | 4 +++-
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+From ../appointment
+   08934b7..fe36402  master     -> origin/master
+Updating 08934b7..fe36402
+Fast-forward
+ public/css/admin-custom.css | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+From ../appointment
+   fe36402..3f03b3c  master     -> origin/master
+Updating fe36402..3f03b3c
+Fast-forward
+ public/css/admin-custom.css | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   3f03b3c..4ff943f  master     -> origin/master
+Updating 3f03b3c..4ff943f
+Fast-forward
+ public/css/admin-custom.css                   |  1 +
+ resources/views/components/a-master.blade.php | 18 +++++++++++-------
+ 2 files changed, 12 insertions(+), 7 deletions(-)
+From ../appointment
+   4ff943f..5448031  master     -> origin/master
+Updating 4ff943f..5448031
+Fast-forward
+ public/css/admin-custom.css | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   5448031..d17e1e7  master     -> origin/master
+Updating 5448031..d17e1e7
+Fast-forward
+ public/css/admin-custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   d17e1e7..7d25b7c  master     -> origin/master
+Updating d17e1e7..7d25b7c
+Fast-forward
+ resources/views/components/a-master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   7d25b7c..9115439  master     -> origin/master
+Updating 7d25b7c..9115439
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   9115439..7c9b13d  master     -> origin/master
+Updating 9115439..7c9b13d
+Fast-forward
+ public/css/admin-custom.css | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+From ../appointment
+   7c9b13d..4f4d424  master     -> origin/master
+Updating 7c9b13d..4f4d424
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   4f4d424..fa04ba4  master     -> origin/master
+Updating 4f4d424..fa04ba4
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   fa04ba4..00d24ab  master     -> origin/master
+Updating fa04ba4..00d24ab
+Fast-forward
+ public/css/admin-custom.css                   |  2 +-
+ resources/views/components/a-master.blade.php | 12 ++++++------
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+From ../appointment
+   00d24ab..a053f4f  master     -> origin/master
+Updating 00d24ab..a053f4f
+Fast-forward
+ public/css/admin-custom.css                   | 12 +++++++++++-
+ resources/views/components/a-master.blade.php | 12 +++---------
+ 2 files changed, 14 insertions(+), 10 deletions(-)
+From ../appointment
+   a053f4f..b17c3bf  master     -> origin/master
+Updating a053f4f..b17c3bf
+Fast-forward
+ public/css/admin-custom.css               | 85 ++++++++++++++++++++-----------
+ resources/views/admin-schedules.blade.php |  9 ++++
+ 2 files changed, 65 insertions(+), 29 deletions(-)
+From ../appointment
+   b17c3bf..babddce  master     -> origin/master
+Updating b17c3bf..babddce
+Fast-forward
+ public/css/admin-custom.css | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   babddce..3d38025  master     -> origin/master
+Updating babddce..3d38025
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   3d38025..c2d9b9f  master     -> origin/master
+Updating 3d38025..c2d9b9f
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c2d9b9f..b401c1e  master     -> origin/master
+Updating c2d9b9f..b401c1e
+Fast-forward
+ public/css/admin-custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   b401c1e..baf7cf8  master     -> origin/master
+Updating b401c1e..baf7cf8
+Fast-forward
+ public/css/admin-custom.css               | 2 +-
+ resources/views/admin-schedules.blade.php | 6 +++---
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   baf7cf8..fc7e86d  master     -> origin/master
+Updating baf7cf8..fc7e86d
+Fast-forward
+ public/css/admin-custom.css               | 5 +++++
+ resources/views/admin-schedules.blade.php | 1 +
+ 2 files changed, 6 insertions(+)
+From ../appointment
+   fc7e86d..f4514fe  master     -> origin/master
+Updating fc7e86d..f4514fe
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   f4514fe..4cf366c  master     -> origin/master
+Updating f4514fe..4cf366c
+Fast-forward
+ public/css/admin-custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   4cf366c..3daf047  master     -> origin/master
+Updating 4cf366c..3daf047
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   3daf047..5f6779f  master     -> origin/master
+Updating 3daf047..5f6779f
+Fast-forward
+ public/css/admin-custom.css               | 17 +++++++++++++----
+ resources/views/admin-schedules.blade.php | 22 +++++++++++++++-------
+ 2 files changed, 28 insertions(+), 11 deletions(-)
+From ../appointment
+   5f6779f..8ac08ed  master     -> origin/master
+Updating 5f6779f..8ac08ed
+Fast-forward
+ public/css/admin-custom.css               | 9 ++++++++-
+ resources/views/admin-schedules.blade.php | 7 +++++++
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+From ../appointment
+   8ac08ed..4e37d1e  master     -> origin/master
+Updating 8ac08ed..4e37d1e
+Fast-forward
+ app/Http/Controllers/AdminDashController.php | 5 ++++-
+ app/Models/Appointment.php                   | 2 +-
+ resources/views/admin-schedules.blade.php    | 5 -----
+ 3 files changed, 5 insertions(+), 7 deletions(-)
+From ../appointment
+   4e37d1e..48b14f6  master     -> origin/master
+Updating 4e37d1e..48b14f6
+Fast-forward
+ app/Models/Appointment.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   48b14f6..96387ed  master     -> origin/master
+Updating 48b14f6..96387ed
+Fast-forward
+ app/Models/Appointment.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   96387ed..ce3c190  master     -> origin/master
+Updating 96387ed..ce3c190
+Fast-forward
+ app/Models/Appointment.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   ce3c190..7a8a8d2  master     -> origin/master
+Updating ce3c190..7a8a8d2
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ app/Models/Appointment.php                     | 2 +-
+ resources/views/admin-schedules.blade.php      | 4 +++-
+ 3 files changed, 5 insertions(+), 3 deletions(-)
+From ../appointment
+   7a8a8d2..27d7213  master     -> origin/master
+Updating 7a8a8d2..27d7213
+Fast-forward
+ resources/views/admin-schedules.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   27d7213..2f29e42  master     -> origin/master
+Updating 27d7213..2f29e42
+Fast-forward
+ resources/views/admin-schedules.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   2f29e42..a989e40  master     -> origin/master
+Updating 2f29e42..a989e40
+Fast-forward
+ public/css/admin-custom.css               | 5 +++++
+ resources/views/admin-schedules.blade.php | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   a989e40..94e195e  master     -> origin/master
+Updating a989e40..94e195e
+Fast-forward
+ resources/views/admin-schedules.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   94e195e..5a1fde7  master     -> origin/master
+Updating 94e195e..5a1fde7
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   5a1fde7..5f0e5ac  master     -> origin/master
+Updating 5a1fde7..5f0e5ac
+Fast-forward
+ public/css/admin-custom.css               |  2 --
+ resources/views/admin-schedules.blade.php | 13 ++++++++++++-
+ 2 files changed, 12 insertions(+), 3 deletions(-)
+From ../appointment
+   5f0e5ac..51d1a35  master     -> origin/master
+Updating 5f0e5ac..51d1a35
+Fast-forward
+ app/Models/Appointment.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
