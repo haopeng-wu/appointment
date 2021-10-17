@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class SlotSeeder extends Seeder
 {
@@ -11,8 +13,29 @@ class SlotSeeder extends Seeder
      *
      * @return void
      */
+    //$slots = ['8:30 - 10:00', '10:30 - 12:00', '14:30 - 16:00', '16:30 - 18:00'];
     public function run()
     {
         //
+        DB::table('slots')->insert([
+            'start_at'=>Carbon::createFromTime(8,30),
+            'end_at'=>Carbon::createFromTime(10,0),
+            'duration'=>"01:30",
+        ]);
+        DB::table('slots')->insert([
+            'start_at'=>Carbon::createFromTime(10,30),
+            'end_at'=>Carbon::createFromTime(12,0),
+            'duration'=>"01:30",
+        ]);
+        DB::table('slots')->insert([
+            'start_at'=>Carbon::createFromTime(14,30),
+            'end_at'=>Carbon::createFromTime(16,0),
+            'duration'=>"01:30",
+        ]);
+        DB::table('slots')->insert([
+            'start_at'=>Carbon::createFromTime(16,30),
+            'end_at'=>Carbon::createFromTime(18,0),
+            'duration'=>"01:30",
+        ]);
     }
 }
