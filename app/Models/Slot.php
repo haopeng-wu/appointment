@@ -22,6 +22,7 @@ class Slot extends Model
         $temp_time = '';
         foreach ($all as $item){
             if ($item['is_valid']){
+                $temp_slot = '';
                 $temp_time = substr($item['start_at'], 0, 5);
                 $temp_slot .= $temp_time;
                 $temp_slot .= ' - ';
