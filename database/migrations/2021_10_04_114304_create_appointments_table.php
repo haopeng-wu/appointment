@@ -41,6 +41,7 @@ class CreateAppointmentsTable extends Migration
             $table->string("consultant")->nullable()->default("mother");
 
             $table->foreign("customer_id")->references("id")->on("users");
+            $table->foreign('which_slot')->references('id')->on('slots');
         });
     }
 
