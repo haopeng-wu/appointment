@@ -19,7 +19,7 @@ class AppointmentController extends Controller
         Log::debug("store");
         $slots = Slot::validSlots();
 
-        $attributes = Validator::make($request->all(), [
+        $validator = Validator::make($request->all(), [
             'customer_name' => ["required"],
             'email' => ["required", "email"],
             'tel' => ["between:2,18"],
@@ -27,6 +27,13 @@ class AppointmentController extends Controller
             'which_slot' => ["required"]
         ]);
 
+        if ($validator->fails()) {
+            return redirect('/')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $attributes = $validator->validated();
 
         // create the user and leave the password empty for now.
         $user = User::where('name', $attributes['customer_name'])->first();
