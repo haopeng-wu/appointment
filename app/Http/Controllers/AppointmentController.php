@@ -98,7 +98,7 @@ class AppointmentController extends Controller
             "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d"
           }
         }';
-        $rawBody = sprintf($rawBody, $charge, $tax, $price, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id);
+        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id);
         /*
          *  make the call to klarna
          */
