@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,7 +24,7 @@ class Appointment extends Model
     }
 
     public static function onToday(){
-        return self::where('date','=',"2021-10-10")->orderBy('start_end_time')->get();
+        return self::where('date','=',substr(Carbon::today(),0,10))->orderBy('start_end_time')->get();
     }
 
     public static function onTomorrow(){
