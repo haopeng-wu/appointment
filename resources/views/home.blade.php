@@ -8,7 +8,7 @@
 
                         <div class="date">
                             <label for="date">Which day would you like to schedule?</label>
-                            <input id="date" name="date" type="date" value="{{old('date')}}>
+                            <input id="date" name="date" type="date" value="{{old('date')}}">
                         </div>
 
                         <div class="time-slots">
@@ -32,15 +32,15 @@
                                 <label for="tel">Tel: </label>
                             </div>
                             <div class="inputs">
-                                <input name="customer_name" type="text" id="customer_name" value="{{old('customer_name')}}>
+                                <input name="customer_name" type="text" id="customer_name" value="{{old('customer_name')}}">
                                 @error("customer_name")
                                 <p class="error">{{$message}}</p>
                                 @enderror
-                                <input name="email" type="email" id="email" value="{{old('email')}}>
+                                <input name="email" type="email" id="email" value="{{old('email')}}">
                                 @error("email")
                                 <p class="error">{{$message}}</p>
                                 @enderror
-                                <input name="tel" type="text" id="tel" value="{{old('tel')}}>
+                                <input name="tel" type="text" id="tel" value="{{old('tel')}}">
                                 @error("tel")
                                 <p class="error">{{$message}}</p>
                                 @enderror
