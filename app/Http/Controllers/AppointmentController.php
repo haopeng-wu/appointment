@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Appointment;
+use App\Models\Slot;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -15,7 +16,7 @@ class AppointmentController extends Controller
     public function store(Request $request)
     {
         Log::debug("store");
-        $slots = ['8:30 - 10:00', '10:30 - 12:00', '14:30 - 16:00', '16:30 - 18:00'];
+        $slots = Slot::validSlots();
 
         $attributes = request()->validate([
             'customer_name' => ["required"],
