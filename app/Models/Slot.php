@@ -13,7 +13,7 @@ class Slot extends Model
     /*
      * provides an array containing all the valid time slots in a format like '8:30 - 10:00'
      */
-    public function validSlots(){
+    static public function validSlots(){
         //$slots = ['8:30 - 10:00', '10:30 - 12:00', '14:30 - 16:00', '16:30 - 18:00'];
         $returnSlots = [];
         $all = Self::all();
