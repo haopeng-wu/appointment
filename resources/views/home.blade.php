@@ -12,34 +12,18 @@
                         </div>
 
                         <div class="time-slots">
-                            <div>
-                                <input class="time_slot" type="radio" id="slot-1" name="which_slot" value="1">
-                                @error("which_slot")
-                                <p>{{$message}}</p>
-                                @enderror
-                                <label class="unchecked" for="slot-1">08:30~10:00</label>
-                            </div>
-                            <div>
-                                <input class="time_slot" type="radio" id="slot-2" name="which_slot" value="2">
-                                @error("which_slot")
-                                <p>{{$message}}</p>
-                                @enderror
-                                <label class="unchecked" for="slot-2">10:30~12:00</label>
-                            </div>
-                            <div>
-                                <input class="time_slot" type="radio" id="slot-3" name="which_slot" value="3">
-                                @error("which_slot")
-                                <p>{{$message}}</p>
-                                @enderror
-                                <label class="unchecked" for="slot-3">14:30~16:00</label>
-                            </div>
-                            <div>
-                                <input class="time_slot" type="radio" id="slot-4" name="which_slot" value="4">
-                                @error("which_slot")
-                                <p>{{$message}}</p>
-                                @enderror
-                                <label class="unchecked" for="slot-4">16:30~18:00</label>
-                            </div>
+                            @foreach($slots as $slot)
+                                <div>
+                                    <input class="time_slot" type="radio" id="{{'slot-'.($loop->index+1)}}"
+                                           name="which_slot" value="{{$loop->index+1}}">
+                                    @error("which_slot")
+                                    <p>{{$message}}</p>
+                                    @enderror
+                                    <label class="unchecked" for="{{'slot-'.($loop->index+1)}}">{{$slot}}</label>
+                                </div>
+                            @endforeach
+
+
                         </div>
                     </article>
                     <article class="custom-info">
@@ -77,7 +61,6 @@
 
         </section>
     </main>
-
 
 
 </x-master>

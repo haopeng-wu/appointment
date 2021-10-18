@@ -18,12 +18,19 @@ class Slot extends Model
         $returnSlots = [];
         $all = Self::all();
 
-        $temp = '';
+        $temp_slot = '';
+        $temp_time = '';
         foreach ($all as $item){
             if ($item['is_valid']){
-                dd($item['start_at']);
-                $item = $item['start_at'].' - '.$item['end_at'];
+                $temp_time = substr($item['start_at'], 0, 5);
+                $temp_slot .= $temp_time;
+                $temp_slot .= ' - ';
+                $temp_time = substr($item['end_at'], 0, 5);
+                $temp_slot .= $temp_time;
+
+                array_push($returnSlots, $temp_slot);
             }
         }
+        return $returnSlots;
     }
 }
