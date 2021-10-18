@@ -29,9 +29,28 @@ class Slot extends Model
                 $temp_time = substr($item['end_at'], 0, 5);
                 $temp_slot .= $temp_time;
 
-                array_push($returnSlots, $temp_slot);
+                $returnSlots[$item->id] = $temp_slot;
             }
         }
         return $returnSlots;
+    }
+
+    static public function slotPrices(){
+        $returnPrices = [];
+        $all = Self::all();
+
+        foreach ($all as $item){
+            if ($item['is_valid']){
+                $temp_slot = '';
+                $temp_time = substr($item['start_at'], 0, 5);
+                $temp_slot .= $temp_time;
+                $temp_slot .= ' - ';
+                $temp_time = substr($item['end_at'], 0, 5);
+                $temp_slot .= $temp_time;
+
+                $returnPrices[$item->id] = $item->price;
+            }
+        }
+        return $returnPrices;
     }
 }

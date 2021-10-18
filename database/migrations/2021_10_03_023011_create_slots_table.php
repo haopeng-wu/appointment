@@ -18,8 +18,10 @@ class CreateSlotsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->time('start_at')->nullable()->default(Carbon::createFromTime(0,0));
-            $table->time('end_at')->nullable()->default(Carbon::createFromTime(0,0));;
-            $table->string('duration')->nullable()->default(Carbon::createFromTime(0,0));;
+            $table->time('end_at')->nullable()->default(Carbon::createFromTime(0,0));
+            $table->string('duration')->nullable()->default(Carbon::createFromTime(0,0));
+            $table->integer('price')->nullable()->default('20000');
+            $table->string('currency')->nullable()->default('SEK');
             $table->boolean('is_valid')->nullable()->default(false);
         });
     }

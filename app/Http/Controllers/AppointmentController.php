@@ -16,6 +16,7 @@ class AppointmentController extends Controller
 {
     public function store(Request $request)
     {
+        $vat = 0.25;
         Log::debug("store");
         $slots = Slot::validSlots();
 
@@ -55,6 +56,7 @@ class AppointmentController extends Controller
 
         // creat a record in the database for this appointment
         $appointment = Appointment::create($attributes);
+
 
 
         // make an order request to klarna, first step
