@@ -17,13 +17,11 @@
                                     <input class="time_slot" type="radio" id="{{'slot-'.($loop->index+1)}}"
                                            name="which_slot" value="{{$loop->index+1}}">
                                     @error("which_slot")
-                                    <p>{{$message}}</p>
+                                    <p class="error">{{$message}}</p>
                                     @enderror
                                     <label class="unchecked" for="{{'slot-'.($loop->index+1)}}">{{$slot}}</label>
                                 </div>
                             @endforeach
-
-
                         </div>
                     </article>
                     <article class="custom-info">
@@ -36,15 +34,15 @@
                             <div class="inputs">
                                 <input name="customer_name" type="text" id="customer_name">
                                 @error("customer_name")
-                                <p>{{$message}}</p>
+                                <p class="error">{{$message}}</p>
                                 @enderror
                                 <input name="email" type="email" id="email">
                                 @error("email")
-                                <p>{{$message}}</p>
+                                <p class="error">{{$message}}</p>
                                 @enderror
                                 <input name="tel" type="text" id="tel">
                                 @error("tel")
-                                <p>{{$message}}</p>
+                                <p class="error">{{$message}}</p>
                                 @enderror
                             </div>
                         </div>

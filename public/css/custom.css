@@ -6,6 +6,12 @@ nav.wrapper {
     justify-content: space-between;
 }
 
+p.error{
+    color: #e3342f;
+    font-size: x-small;
+    margin-top: 2px;
+}
+
 .nav-logo img {
     width: 2em;
     margin: 0 1em;
