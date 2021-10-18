@@ -1,6 +1,6 @@
 <x-master>
     <h2>
-        Thank you for your purchase {{$name}}!
+        Congratulations, {{$name}}! You've successfully made the appointment!
     </h2>
     {!! $html_snippet !!}
 </x-master>

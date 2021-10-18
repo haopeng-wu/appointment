@@ -1,7 +1,7 @@
 <x-master>
     <article>
         <h2>
-            Congratulations, {{$appt->customer_name}}! Your appointment has been successfully made!
+
         </h2>
         <div>
             <p>
