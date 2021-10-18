@@ -98,7 +98,7 @@ class AppointmentController extends Controller
         $appointment->save();
 
 
-        $start_end = explode('~', $slots[$attributes['which_slot'] - 1]);
+        $start_end = explode('-', $slots[$attributes['which_slot'] - 1]);
 
         /*
          * flush these to the session to use it after the redirection
