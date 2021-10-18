@@ -16,7 +16,6 @@ class AppointmentController extends Controller
 {
     public function store(Request $request)
     {
-        $vat = 0.25;
         Log::debug("store");
         $slots = Slot::validSlots();
 
@@ -43,6 +42,17 @@ class AppointmentController extends Controller
 
         $attributes = $validator->validated();
 
+        /*
+         * calculate the prices
+         */
+        $vat = 0.25;
+        $prices = Slot::slotPrices();
+        $charge = $prices[$attributes['which_slot']];
+
+        $price = $charge/(1+$vat);
+        $tax = $charge - $price;
+
+
         // create the user and leave the password empty for now.
         $user = User::where('name', $attributes['customer_name'])->first();
         if (!$user) {
@@ -64,8 +74,8 @@ class AppointmentController extends Controller
           "purchase_country": "SE",
           "purchase_currency": "SEK",
           "locale": "en-SE",
-          "order_amount": 10000,
-          "order_tax_amount": 909,
+          "order_amount": %d,
+          "order_tax_amount": %d,
 
           "order_lines": [
               {
@@ -74,11 +84,11 @@ class AppointmentController extends Controller
                   "name": "Counselling",
                   "quantity": 1,
                   "quantity_unit": "pcs",
-                  "unit_price": 10000,
-                  "tax_rate": 1000,
-                  "total_amount": 10000,
+                  "unit_price": %d,
+                  "tax_rate": %d,
+                  "total_amount": %d,
                   "total_discount_amount": 0,
-                  "total_tax_amount": 909
+                  "total_tax_amount": %d
               }
             ],
           "merchant_urls": {
@@ -88,7 +98,7 @@ class AppointmentController extends Controller
             "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d"
           }
         }';
-        $rawBody = sprintf($rawBody, $appointment->id, $appointment->id);
+        $rawBody = sprintf($rawBody, $price, $tax, $price, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id);
         /*
          *  make the call to klarna
          */
