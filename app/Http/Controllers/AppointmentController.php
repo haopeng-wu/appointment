@@ -10,6 +10,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Validator;
 
 class AppointmentController extends Controller
 {
@@ -18,13 +19,14 @@ class AppointmentController extends Controller
         Log::debug("store");
         $slots = Slot::validSlots();
 
-        $attributes = request()->validate([
+        $attributes = Validator::make($request->all(), [
             'customer_name' => ["required"],
             'email' => ["required", "email"],
             'tel' => ["between:2,18"],
             'date' => ["required"],
             'which_slot' => ["required"]
         ]);
+
 
         // create the user and leave the password empty for now.
         $user = User::where('name', $attributes['customer_name'])->first();
