@@ -32,7 +32,6 @@ class Slot extends Model
                 $returnSlots[$item->id] = $temp_slot;
             }
         }
-        dd($returnSlots);
         return $returnSlots;
     }
 
