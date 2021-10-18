@@ -11,6 +11,10 @@ class Appointment extends Model
     use HasFactory;
     protected $guarded = [];
 
+    public static function isBookedAndPiad($date, $which_slot){
+        return self::where('date','=',$date)->where('which_slot','=',$which_slot)->where('payment_status','=','1')->first();
+    }
+
     public static function nearestTenFuturePaid(){
 
     }

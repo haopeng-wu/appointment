@@ -27,6 +27,13 @@ class AppointmentController extends Controller
             'which_slot' => ["required"]
         ]);
 
+        $validator->sometimes(
+            'which_slot',
+            'unique:appointments,which_slot, NULL, id,data,' . $validator->validated()['date'],
+            function ($input) {
+                return Appointment::isBookedAndPiad($input->date, $input->which_slot);
+            });
+
         if ($validator->fails()) {
             return redirect('/')
                 ->withErrors($validator)
