@@ -7,7 +7,7 @@ use App\Models\Appointment;
 class AdminDashController extends Controller
 {
     public function index(){
-        $todays = Appointment::onToday();
+        $todays = Appointment::onTodayPaid();
         return view('admin-schedules',['todays'=>$todays]);
     }
 }
