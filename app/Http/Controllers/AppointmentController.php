@@ -29,7 +29,7 @@ class AppointmentController extends Controller
 
         $validator->sometimes(
             'which_slot',
-            'unique:appointments,which_slot, NULL, id,data,' . $validator->validated()['date'],
+            'unique:appointments,which_slot, NULL, NULL,data,' . $validator->validated()['date'],
             function ($input) {
                 return Appointment::isBookedAndPiad($input->date, $input->which_slot);
             });
