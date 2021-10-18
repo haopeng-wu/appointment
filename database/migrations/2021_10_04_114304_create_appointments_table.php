@@ -20,7 +20,7 @@ class CreateAppointmentsTable extends Migration
             $table->string("appointment_no");
             $table->string('klarna_order_id')->nullable()->default("null");
             $table->date("date");
-            $table->integer("which_slot");
+            $table->foreignId("which_slot");
             $table->string("start_end_time");
 
             $table->foreignId("customer_id");
