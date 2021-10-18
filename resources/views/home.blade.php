@@ -12,13 +12,13 @@
                         </div>
 
                         <div class="time-slots">
+                            @error("which_slot")
+                            <p class="error">{{$message}}</p>
+                            @enderror
                             @foreach($slots as $slot)
                                 <div>
                                     <input class="time_slot" type="radio" id="{{'slot-'.($loop->index+1)}}"
                                            name="which_slot" value="{{$loop->index+1}}">
-                                    @error("which_slot")
-                                    <p class="error">{{$message}}</p>
-                                    @enderror
                                     <label class="unchecked" for="{{'slot-'.($loop->index+1)}}">{{$slot}}</label>
                                 </div>
                             @endforeach
