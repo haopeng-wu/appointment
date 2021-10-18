@@ -52,7 +52,7 @@ class AppointmentController extends Controller
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
 
-        $attributes['start_end_time'] = $slots[$attributes['which_slot'] - 1];
+        $attributes['start_end_time'] = $slots[$attributes['which_slot'] ];
 
         // creat a record in the database for this appointment
         $appointment = Appointment::create($attributes);
@@ -117,7 +117,7 @@ class AppointmentController extends Controller
         $appointment->save();
 
 
-        $start_end = explode('-', $slots[$attributes['which_slot'] - 1]);
+        $start_end = explode('-', $slots[$attributes['which_slot']]);
 
         /*
          * flush these to the session to use it after the redirection
