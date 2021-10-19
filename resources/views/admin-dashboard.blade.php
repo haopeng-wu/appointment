@@ -23,8 +23,12 @@
                 @foreach($slots as $slot)
                     <div>
                         <input type="hidden" name="id" value="{{$slot->id}}">
+                        <label for="start_at">Starts at: </label>
                         <input name="start_at" type="time" value="{{$slot->start_at}}">
+                        <label for="end_at">Ends by: </label>
                         <input name="end_at" type="time" value="{{$slot->end_at}}">
+                        <label for="price">Price: </label>
+                        <input type="number" name="price" value="{{$slot->price}}">
                     </div>
                 @endforeach
             </form>
