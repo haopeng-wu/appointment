@@ -32,6 +32,9 @@ nav ul {
 
 nav li{
     list-style-type:none;
+}
+
+nav a{
     text-underline-style: none;
 }
 
