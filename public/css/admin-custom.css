@@ -104,7 +104,7 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
     background-color: #bde2f8;
 }
 
-.schedule td{
+.schedule td, .schedule table{
     border: solid 1px black;
 }
 
