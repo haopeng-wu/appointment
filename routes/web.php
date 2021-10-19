@@ -48,7 +48,7 @@ Route::get('/out-of-stock', function () { return view('out-of-stock');});
  * admin
  */
 Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index'])->name('admin');
-Route::get('/dashboard', [\App\Http\Controllers\AdminDashController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [\App\Http\Controllers\AdminDashController::class, 'dashboard'])->name('dashboard');
 
 Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $appointment) {
     $klarna_order_id = $appointment->klarna_order_id;

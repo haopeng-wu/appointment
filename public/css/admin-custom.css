@@ -87,6 +87,10 @@ search bar
     border-collapse: collapse;
 }
 
+.search-bar input:focus{
+    all:initial;
+}
+
 .icon img {
     width: 32px;
     height: 32px;
