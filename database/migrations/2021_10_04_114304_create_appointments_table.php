@@ -37,7 +37,7 @@ class CreateAppointmentsTable extends Migration
             $table->text("memo")->nullable();
             $table->text("notes")->nullable();
             $table->boolean("payment_status")->default(0);
-            $table->string("payment_method")->nullable()->default("stripe");
+            $table->string("payment_method")->nullable()->default("klarna");
             $table->string("validity")->nullable()->default(1);
             $table->string("consultant")->nullable()->default("mother");
 
