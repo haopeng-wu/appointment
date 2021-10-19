@@ -25,7 +25,6 @@ class ConfirmationController extends Controller
         /*
          *  synchronize the checkout status
          */
-
         if ($klarna_return['status'] == 'checkout_complete'){
             $appointment->payment_status = 1;
             $appointment->charge = $klarna_return['order_amount'];
