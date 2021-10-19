@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appointment;
+use App\Models\Slot;
+use Illuminate\Http\Request;
 
 class AdminDashController extends Controller
 {
@@ -16,7 +18,8 @@ class AdminDashController extends Controller
             'theDayAfterTomorrows'=>$theDayAfterTomorrows]);
     }
 
-    public function dashboard(){
-        return view('admin-dashboard');
+    public function dashboard(Request $request){
+        $slots = Slot::all();
+        return view('admin-dashboard', ['slots'=>$slots]);
     }
 }
