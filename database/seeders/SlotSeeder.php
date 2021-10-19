@@ -28,7 +28,7 @@ class SlotSeeder extends Seeder
             'start_at'=>Carbon::createFromTime(10,30),
             'end_at'=>Carbon::createFromTime(12,0),
             'duration'=>"01:30",
-            'price'=>2000,
+            'price'=>20000,
             'is_valid'=>true,
         ]);
         DB::table('slots')->insert([
