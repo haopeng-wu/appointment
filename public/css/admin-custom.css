@@ -30,7 +30,7 @@ nav ul {
     display: flex;
 }
 
-nav li, nav a{
+nav li{
     all:initial;
 }
 
