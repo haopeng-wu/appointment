@@ -31,9 +31,9 @@ class CreateAppointmentsTable extends Migration
             $table->string("address")->nullable()->default("");
             $table->string("tel")->nullable()->default("");
 
-            $table->double("price", 12,4)->nullable()->default(300);
-            $table->decimal("discount", 4,2)->nullable()->default(1);
-            $table->double("charge", 12, 4)->nullable()->default(300);
+            $table->double("price", 12,4)->nullable();
+            $table->decimal("discount", 4,2)->nullable();
+            $table->double("charge", 12, 4)->nullable();
             $table->text("memo")->nullable();
             $table->text("notes")->nullable();
             $table->boolean("payment_status")->default(0);
