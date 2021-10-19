@@ -106,6 +106,7 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
 
 .schedule table{
     border-spacing: 0.5em;
+    border: solid 1px black;
 }
 
 .schedule td,.schedule th{
