@@ -96,7 +96,7 @@ class AppointmentController extends Controller
             "checkout": "https://www.wuhaopeng.site:22000/checkout",
             "confirmation": "https://www.wuhaopeng.site:22000/thank-you/%d",
             "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d",
-            "validation": "https://www.wuhaopeng.site:22000/validation/%d",
+            "validation": "https://www.wuhaopeng.site:22000/validation/%d"
           }
         }';
         $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id, $appointment->id);
