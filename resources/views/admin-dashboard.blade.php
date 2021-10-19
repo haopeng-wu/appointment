@@ -44,7 +44,6 @@
                 @endforeach
                 </tbody>
             </table>
-            <button type="submit">Submit</button>
         </div>
     </article>
 </x-a-master>
