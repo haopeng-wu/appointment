@@ -18,30 +18,33 @@
             $table->string('currency')->nullable()->default('SEK');
             $table->boolean('is_valid')->nullable()->default(false);
             -->
-            <form action="/slots/update" method="post">
-                @csrf
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Starts at</th>
-                        <th>Ends by</th>
-                        <th>Price</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($slots as $slot)
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Starts at</th>
+                    <th>Ends by</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($slots as $slot)
+                    <form action="/slots/update" method="post">
+                        @csrf
                         <input type="hidden" name="id" value="{{$slot->id}}">
                         <tr>
-                            <td><input name="{{'slot_'.$slot->id.'_start_at'}}" type="time" value="{{$slot->start_at}}"></td>
-                            <td><input name="{{'slot_'.$slot->id.'_end_at'}}" type="time" value="{{$slot->end_at}}"></td>
-                            <td><input type="{{'slot_'.$slot->id.'_price'}}" name="price" value="{{$slot->price}}"></td>
+                            <td><input name="start_at" type="time" value="{{$slot->start_at}}"></td>
+                            <td><input name="end_at" type="time" value="{{$slot->end_at}}"></td>
+                            <td><input name="price" type="number" value="{{$slot->price}}"></td>
+                            <td>
+                                <button type="submit">modify</button>
+                            </td>
                         </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-
-                <button type="submit">Submit</button>
-            </form>
+                    </form>
+                @endforeach
+                </tbody>
+            </table>
+            <button type="submit">Submit</button>
         </div>
     </article>
 </x-a-master>

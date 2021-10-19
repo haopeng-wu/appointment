@@ -38,16 +38,6 @@ class SlotController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Slot  $slot
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Slot $slot)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -69,7 +59,9 @@ class SlotController extends Controller
      */
     public function update(Request $request, Slot $slot)
     {
-        //
+        $attributes = request()->validate([
+            
+        ]);
     }
 
     /**
