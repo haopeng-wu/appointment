@@ -10,7 +10,7 @@
 <body>
 <nav>
     <ul>
-        <li><a href="{{route('admin')}}"></a> Schedules</li>
+        <li><a href="{{route('admin')}}">Schedules</a></li>
         <li>Dashboard</li>
         <li>Klarna Portal</li>
     </ul>
