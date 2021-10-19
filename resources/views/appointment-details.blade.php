@@ -5,7 +5,7 @@
                 Details of this appointment
             </h4>
             <div>
-                {{dd($appointment)}}
+                {{print_r($appointment)}}
             </div>
         </section>
     </main>
