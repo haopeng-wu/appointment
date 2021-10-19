@@ -31,7 +31,7 @@
     </article>
 
     <article class="the-day-after-tomorrow schedule">
-        <h4>Schedules for Tomorrow:</h4>
+        <h4>Schedules for the Day after Tomorrow:</h4>
         <div class="grid"></div>
     </article>
 
