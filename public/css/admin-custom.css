@@ -115,7 +115,7 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
 
 .schedule caption{
     font-style: italic;
-    text-align: right;
+    text-align: left;
 }
 
 /*

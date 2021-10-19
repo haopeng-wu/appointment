@@ -14,7 +14,6 @@
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
-                    <th>Type</th>
                     <th>Link</th>
                 </tr>
                 </thead>
@@ -24,7 +23,6 @@
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>type</td>
                         <td>Link</td>
                     </tr>
                 @endforeach
@@ -42,7 +40,6 @@
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
-                    <th>Type</th>
                     <th>Link</th>
                 </tr>
                 </thead>
@@ -52,7 +49,6 @@
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>type</td>
                         <td>Link</td>
                     </tr>
                 @endforeach
@@ -70,7 +66,6 @@
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
-                    <th>Type</th>
                     <th>Link</th>
                 </tr>
                 </thead>
@@ -80,7 +75,6 @@
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>type</td>
                         <td>Link</td>
                     </tr>
                 @endforeach
