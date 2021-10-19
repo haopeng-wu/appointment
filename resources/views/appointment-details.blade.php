@@ -1,4 +1,4 @@
-<x-master>
+<x-a-master>
     <main>
         <section>
             <h4>
@@ -9,4 +9,4 @@
             </pre>
         </section>
     </main>
-</x-master>
+</x-a-master>
