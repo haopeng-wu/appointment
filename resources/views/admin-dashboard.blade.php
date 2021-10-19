@@ -1,6 +1,6 @@
 <x-a-master>
     <article class="book">
-        <h4>Book Manually</h4>
+        <h4></h4>
         <div>
 
         </div>
