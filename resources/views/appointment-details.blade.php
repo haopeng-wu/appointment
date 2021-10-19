@@ -5,7 +5,7 @@
                 Details of this appointment
             </h4>
             <div>
-                {{dd($appointment->attributes)}}
+                {{dd($appointment)}}
             </div>
         </section>
     </main>
