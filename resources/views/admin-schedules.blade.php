@@ -8,7 +8,17 @@
     <article class="today schedule">
         <div class="schedule">
             <table>
-                <th>Schedules for Today:</th>
+                <caption>Schedules for Today:</caption>
+                <thead>
+                <tr>
+                    <th>Time slot</th>
+                    <th>Duration</th>
+                    <th>Details</th>
+                    <th>Type</th>
+                    <th>Link</th>
+                </tr>
+                </thead>
+                <tbody>
                 @foreach($todays as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
@@ -18,6 +28,7 @@
                         <td>Link</td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
         </div>
     </article>
@@ -25,7 +36,17 @@
     <article class="tomorrow schedule">
         <div class="schedule">
             <table>
-                <th>Schedules for Tomorrow:</th>
+                <caption>Schedules for Tomorrow:</caption>
+                <thead>
+                <tr>
+                    <th>Time slot</th>
+                    <th>Duration</th>
+                    <th>Details</th>
+                    <th>Type</th>
+                    <th>Link</th>
+                </tr>
+                </thead>
+                <tbody>
                 @foreach($tomorrows as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
@@ -35,6 +56,7 @@
                         <td>Link</td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
         </div>
     </article>
@@ -42,7 +64,17 @@
     <article class="the-day-after-tomorrow schedule">
         <div class="schedule">
             <table>
-                <th>Schedules for the Day after Tomorrow:</th>
+                <caption>Schedules for the Day after Tomorrow:</caption>
+                <thead>
+                <tr>
+                    <th>Time slot</th>
+                    <th>Duration</th>
+                    <th>Details</th>
+                    <th>Type</th>
+                    <th>Link</th>
+                </tr>
+                </thead>
+                <tbody>
                 @foreach($theDayAfterTomorrows as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
@@ -52,6 +84,7 @@
                         <td>Link</td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
         </div>
     </article>
