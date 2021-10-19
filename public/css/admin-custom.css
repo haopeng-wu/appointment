@@ -105,11 +105,12 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
 }
 
 .schedule table{
-    border-spacing: 5px;
+    border-spacing: 0.5em;
 }
 
 .schedule td,.schedule th{
     border: solid 1px black;
+    padding: 0.25em;
 }
 
 .schedule caption{
