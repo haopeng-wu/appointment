@@ -124,21 +124,18 @@ today div
  */
 
 article.today{
-    height: 20vh;
 }
 
 /*
 tomorrow div
  */
 article.tomorrow{
-    height: 20vh;
 }
 
 /*
 the-day-after-tomorrow div
  */
 article.the-day-after-tomorrow{
-    height: 20vh;
 }
 
 div.schedule span{
