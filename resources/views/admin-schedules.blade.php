@@ -6,10 +6,9 @@
         </div>
     </div>
     <article class="today schedule">
-        <h4>Schedules for Today:</h4>
         <div class="schedule">
             <table>
-                <th></th>
+                <th>Schedules for Today:</th>
                 @foreach($todays as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
@@ -24,10 +23,9 @@
     </article>
 
     <article class="tomorrow schedule">
-        <h4>Schedules for Tomorrow:</h4>
         <div class="schedule">
             <table>
-                <th></th>
+                <th>Schedules for Tomorrow:</th>
                 @foreach($tomorrows as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
@@ -42,10 +40,9 @@
     </article>
 
     <article class="the-day-after-tomorrow schedule">
-        <h4>Schedules for the Day after Tomorrow:</h4>
         <div class="schedule">
             <table>
-                <th></th>
+                <th>Schedules for the Day after Tomorrow:</th>
                 @foreach($theDayAfterTomorrows as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
