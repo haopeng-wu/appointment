@@ -19,7 +19,7 @@ class AdminDashController extends Controller
     }
 
     public function dashboard(Request $request){
-        $slots = Slot::all();
+        $slots = Slot::all()->where('is_valid', '=', 1);
         return view('admin-dashboard', ['slots'=>$slots]);
     }
 }
