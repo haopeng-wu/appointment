@@ -35,7 +35,7 @@ nav li{
 }
 
 nav a{
-    text-underline-style: none;
+    text-decoration-style: initial;
 }
 
 nav a {
