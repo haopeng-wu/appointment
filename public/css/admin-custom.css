@@ -108,6 +108,12 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
     border: solid 1px black;
 }
 
+.schedule caption{
+    direction: rtl;
+    font-style: italic;
+    font-size: larger;
+}
+
 /*
 today div
  */
