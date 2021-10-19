@@ -18,7 +18,6 @@
             $table->string('currency')->nullable()->default('SEK');
             $table->boolean('is_valid')->nullable()->default(false);
             -->
-
             <table>
                 <thead>
                 <tr>

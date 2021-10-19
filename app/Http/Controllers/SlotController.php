@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Slot;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class SlotController extends Controller
@@ -60,8 +61,17 @@ class SlotController extends Controller
     public function update(Request $request, Slot $slot)
     {
         $attributes = request()->validate([
-            
+            'start_at'=>['required','date_format:H:i'],
+            'end_at'=>['required','date_format:H:i'],
+            'price'=>['required', 'numeric', 'min:100'],
+            'id'=>['required', 'numeric', 'min:1']
         ]);
+        $attributes['duration'] = Carbon::make($attributes['start_at'])
+            ->diff(Carbon::make($attributes['end_at']))
+            ->format('%H:%i');
+        $slot = Slot::find($attributes['id']);
+        $slot->update($attributes)->save();
+        return redirect('/dashboard');
     }
 
     /**
