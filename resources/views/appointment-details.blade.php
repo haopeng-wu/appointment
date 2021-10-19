@@ -4,9 +4,9 @@
             <h4>
                 Details of this appointment
             </h4>
-            <div>
+            <pre>
                 {{print_r($appointment)}}
-            </div>
+            </pre>
         </section>
     </main>
 </x-master>
