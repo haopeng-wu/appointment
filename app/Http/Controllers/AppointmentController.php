@@ -17,8 +17,6 @@ class AppointmentController extends Controller
     public function store(Request $request)
     {
         Log::debug("store");
-        $slots = Slot::validSlots();
-
         $validator = Validator::make($request->all(), [
             'customer_name' => ["required"],
             'email' => ["required", "email"],
@@ -42,6 +40,8 @@ class AppointmentController extends Controller
 
         $attributes = $validator->validated();
 
+
+
         /*
          * calculate the prices
          */
@@ -53,16 +53,24 @@ class AppointmentController extends Controller
         $tax = $charge - $price;
 
 
-        // create the user and leave the password empty for now.
+        /*
+         * create the user and leave the password empty for now.
+         */
         $user = User::where('name', $attributes['customer_name'])->first();
         if (!$user) {
             $user = User::create(['name' => $attributes['customer_name'], 'email' => $attributes['email'], 'tel' => $attributes['tel']]);
         }
+        /*
+         * prepare the data to store
+         */
         $appointment_no = "AT" . date("ymdh") . random_int(1000, 9999);
         $attributes['appointment_no'] = $appointment_no;
         $attributes['customer_id'] = $user->id;
 
-        $attributes['start_end_time'] = $slots[$attributes['which_slot'] ];
+        $slots = Slot::validSlots();
+        $durations = Slot::slotDurations();
+        $attributes['start_end_time'] = $slots[$attributes['which_slot']];
+        $attributes['duration'] = $durations[$attributes['which_slot']];
 
         // creat a record in the database for this appointment
         $appointment = Appointment::create($attributes);
@@ -138,5 +146,9 @@ class AppointmentController extends Controller
 
 
         return redirect('/checkout');
+    }
+
+    public function retrieve(Appointment $appointment){
+        return view('appointment-details',['appointment'=>$appointment]);
     }
 }

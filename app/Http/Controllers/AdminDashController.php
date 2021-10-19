@@ -8,6 +8,11 @@ class AdminDashController extends Controller
 {
     public function index(){
         $todays = Appointment::onTodayPaid();
-        return view('admin-schedules',['todays'=>$todays]);
+        $tomorrows = Appointment::onTomorrowPaid();
+        $theDayAfterTomorrows = Appointment::onTheDayAfterTomorrowPaid();
+        return view('admin-schedules',[
+            'todays'=>$todays,
+            'tomorrows'=>$tomorrows,
+            'theDayAfterTomorrows'=>$theDayAfterTomorrows]);
     }
 }

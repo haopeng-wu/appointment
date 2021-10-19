@@ -34,6 +34,8 @@ Route::get('/check-server/{appointment}', function (\App\Models\Appointment $app
     dd($appointment);
 });
 
+Route::get('/appointment/{appointment}/details', [\App\Http\Controllers\AppointmentController::class, 'retrieve']);
+
 //Route::post('/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
 
 Route::post('/validation/{appointment}', function (){

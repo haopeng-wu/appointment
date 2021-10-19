@@ -41,16 +41,21 @@ class Slot extends Model
 
         foreach ($all as $item){
             if ($item['is_valid']){
-                $temp_slot = '';
-                $temp_time = substr($item['start_at'], 0, 5);
-                $temp_slot .= $temp_time;
-                $temp_slot .= ' - ';
-                $temp_time = substr($item['end_at'], 0, 5);
-                $temp_slot .= $temp_time;
-
                 $returnPrices[$item->id] = $item->price;
             }
         }
         return $returnPrices;
+    }
+
+    static public function slotDurations(){
+        $returnDurations = [];
+        $all = Self::all();
+
+        foreach ($all as $item){
+            if ($item['is_valid']){
+                $returnDurations[$item->id] = $item->duration;
+            }
+        }
+        return $returnDurations;
     }
 }

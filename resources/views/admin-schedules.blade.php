@@ -8,15 +8,13 @@
     <article class="today schedule">
         <h4>Schedules for Today:</h4>
         <div class="schedule">
-            @foreach($todays as $item)
-
-            @endforeach
             <table>
                 <th></th>
                 @foreach($todays as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
-                        <td>1:30</td>
+                        <td>{{$item->duration}}</td>
+                        <td><a href="/appointment/{{$item->id}}/details"></a>Details</td>
                         <td>type</td>
                         <td>Link</td>
                     </tr>
@@ -27,12 +25,38 @@
 
     <article class="tomorrow schedule">
         <h4>Schedules for Tomorrow:</h4>
-        <div class="grid"></div>
+        <div class="schedule">
+            <table>
+                <th></th>
+                @foreach($todays as $item)
+                    <tr>
+                        <td>{{$item->start_end_time}}</td>
+                        <td>{{$item->duration}}</td>
+                        <td><a href="/appointment/{{$item->id}}/details"></a>Details</td>
+                        <td>type</td>
+                        <td>Link</td>
+                    </tr>
+                @endforeach
+            </table>
+        </div>
     </article>
 
     <article class="the-day-after-tomorrow schedule">
         <h4>Schedules for the Day after Tomorrow:</h4>
-        <div class="grid"></div>
+        <div class="schedule">
+            <table>
+                <th></th>
+                @foreach($todays as $item)
+                    <tr>
+                        <td>{{$item->start_end_time}}</td>
+                        <td>{{$item->duration}}</td>
+                        <td><a href="/appointment/{{$item->id}}/details"></a>Details</td>
+                        <td>type</td>
+                        <td>Link</td>
+                    </tr>
+                @endforeach
+            </table>
+        </div>
     </article>
 
     <article class="latest-20">
