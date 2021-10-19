@@ -20,17 +20,27 @@
             -->
             <form action="/slots/update" method="post">
                 @csrf
-                @foreach($slots as $slot)
-                    <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Starts at</th>
+                        <th>Ends by</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($slots as $slot)
                         <input type="hidden" name="id" value="{{$slot->id}}">
-                        <label for="start_at">Starts at: </label>
-                        <input name="start_at" type="time" value="{{$slot->start_at}}">
-                        <label for="end_at">Ends by: </label>
-                        <input name="end_at" type="time" value="{{$slot->end_at}}">
-                        <label for="price">Price: </label>
-                        <input type="number" name="price" value="{{$slot->price}}">
-                    </div>
-                @endforeach
+                        <tr>
+                            <td><input name="{{'slot_'.$slot->id.'_start_at'}}" type="time" value="{{$slot->start_at}}"></td>
+                            <td><input name="{{'slot_'.$slot->id.'_end_at'}}" type="time" value="{{$slot->end_at}}"></td>
+                            <td><input type="{{'slot_'.$slot->id.'_price'}}" name="price" value="{{$slot->price}}"></td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+
+                <button type="submit">Submit</button>
             </form>
         </div>
     </article>
