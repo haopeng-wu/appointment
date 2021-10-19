@@ -97,7 +97,7 @@ class ConfirmationController extends Controller
              *  which informs the consumer why the purchase was not completed. The consumer will be redirected to this page.
              */
             return response('see other', 303)
-                ->header('Location ','https://www.wuhaopeng.site:22000/out-of-stock');
+                ->header('Location ','/out-of-stock');
         }
     }
 }
