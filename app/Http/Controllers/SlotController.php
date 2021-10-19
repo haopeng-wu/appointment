@@ -58,7 +58,7 @@ class SlotController extends Controller
      * @param  \App\Models\Slot  $slot
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Slot $slot)
+    public function update(Request $request)
     {
         $attributes = request()->validate([
             'start_at'=>['required','date_format:H:i'],
