@@ -83,11 +83,13 @@ class ConfirmationController extends Controller
     public function checkStock(Appointment $appointment){
         $date = $appointment->date;
         $which_slot = $appointment->which_slot;
+        Log::debug('in checkStock');
 
         if(Appointment::isBookedAndPiad($date, $which_slot)){
             /*
              * out of stock. reply with a HTTP status 200 OK
              */
+            Log::debug('Okay! In stock.');
             return response('ok',200)
                 ->header('Content-Type', 'text/plain');
         }else{
@@ -95,6 +97,7 @@ class ConfirmationController extends Controller
              *  In stock, to reply with a HTTP status 303 and to include a Location header pointing to a page
              *  which informs the consumer why the purchase was not completed. The consumer will be redirected to this page.
              */
+            Log::debug('Denied! Out of stock!');
             return response('see other', 303)
                 ->header('Location ','/out-of-stock');
         }
