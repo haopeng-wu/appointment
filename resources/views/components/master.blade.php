@@ -23,7 +23,7 @@
     </div>
 
     <div class="admin">
-        <a href="/admin">admin</a>
+        <a target="_blank" href="/admin">admin</a>
     </div>
 
 </nav>
