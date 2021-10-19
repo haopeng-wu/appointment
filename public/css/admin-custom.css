@@ -88,7 +88,7 @@ search bar
 }
 
 .search-bar input:focus{
-    all:initial;
+    border:initial;
 }
 
 .icon img {
