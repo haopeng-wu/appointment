@@ -32,9 +32,8 @@ nav ul {
 
 nav li{
     list-style-type:none;
-    text-decoration-line: none;
+    text-underline-style: none;
 }
-
 
 nav a {
     border: solid black 1px;
