@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav li{
-    all:initial;
+    list-style-type:none;
 }
 
 
