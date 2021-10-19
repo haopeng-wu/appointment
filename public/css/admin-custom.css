@@ -102,7 +102,10 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
 .schedule .morning, .schedule .afternoon{
     height: 100%;
     background-color: #bde2f8;
-    margin-right: 5px;
+}
+
+.schedule table{
+    border-spacing: 5px;
 }
 
 .schedule td,.schedule th{
