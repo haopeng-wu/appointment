@@ -14,7 +14,7 @@
                     <tr>
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
-                        <td><a href="/appointment/{{$item->id}}/details"></a>Details</td>
+                        <td><a href="/appointment/{{$item->id}}/details">Details</a></td>
                         <td>type</td>
                         <td>Link</td>
                     </tr>
@@ -28,11 +28,11 @@
         <div class="schedule">
             <table>
                 <th></th>
-                @foreach($todays as $item)
+                @foreach($tomorrows as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
-                        <td><a href="/appointment/{{$item->id}}/details"></a>Details</td>
+                        <td><a href="/appointment/{{$item->id}}/details">Details</a></td>
                         <td>type</td>
                         <td>Link</td>
                     </tr>
@@ -46,11 +46,11 @@
         <div class="schedule">
             <table>
                 <th></th>
-                @foreach($todays as $item)
+                @foreach($theDayAfterTomorrows as $item)
                     <tr>
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
-                        <td><a href="/appointment/{{$item->id}}/details"></a>Details</td>
+                        <td><a href="/appointment/{{$item->id}}/details">Details</a></td>
                         <td>type</td>
                         <td>Link</td>
                     </tr>
