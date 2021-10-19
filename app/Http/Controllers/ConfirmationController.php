@@ -80,4 +80,17 @@ class ConfirmationController extends Controller
             ->post("https://api.playground.klarna.com/ordermanagement/v1/orders/$klarna_order_id/acknowledge");
         dd($response->status());
     }
+
+    public function checkStock(Appointment $appointment){
+        $date = $appointment->date;
+        $which_slot = $appointment->which_slot;
+        if(Appointment::isBookedAndPiad($date, $which_slot)){
+            // out of stock. reply with a HTTP status 200 OK
+        }else{
+            /*
+             *  In stock, to reply with a HTTP status 303 and to include a Location header pointing to a page
+             *  which informs the consumer why the purchase was not completed. The consumer will be redirected to this page.
+             */
+        }
+    }
 }

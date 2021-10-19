@@ -95,10 +95,11 @@ class AppointmentController extends Controller
             "terms": "https://www.example.com/terms.html",
             "checkout": "https://www.wuhaopeng.site:22000/checkout",
             "confirmation": "https://www.wuhaopeng.site:22000/thank-you/%d",
-            "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d"
+            "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d",
+            "validation": "https://www.wuhaopeng.site:22000/validation/%d",
           }
         }';
-        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id);
+        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id, $appointment->id);
         /*
          *  make the call to klarna
          */
@@ -109,7 +110,7 @@ class AppointmentController extends Controller
         if (!$response->successful()) {
             dd($response->json());
         }
-
+        dd($response);
         /*
          * get the order create response from klarna
          */

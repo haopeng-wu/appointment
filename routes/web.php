@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
@@ -31,6 +32,9 @@ Route::get('/ack/{appointment}', [\App\Http\Controllers\ConfirmationController::
 Route::get('/check-server/{appointment}', function (\App\Models\Appointment $appointment){
     dd($appointment);
 });
+
+Route::post('/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
+
 
 Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index']);
 
