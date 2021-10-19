@@ -104,6 +104,10 @@ article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-
     background-color: #bde2f8;
 }
 
+.schedule td{
+    border: solid 1px black;
+}
+
 /*
 today div
  */

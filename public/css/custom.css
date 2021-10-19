@@ -29,10 +29,6 @@ article.schedule, article.custom-info {
     background-color: lavender;
 }
 
-.schedule td{
-    border: solid 1px black;
-}
-
 .labels label, .inputs input {
     border-radius: 5px;
     padding: 4px;
