@@ -5,7 +5,7 @@
                 Details of this appointment
             </h4>
             <div>
-                {{var_dump($appointment)}}
+                {{dd($appointment)}}
             </div>
         </section>
     </main>
