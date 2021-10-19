@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +34,11 @@ Route::get('/check-server/{appointment}', function (\App\Models\Appointment $app
     dd($appointment);
 });
 
-Route::post('/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
+//Route::post('/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
+
+Route::post('/validation/{appointment}', function (){
+    Log::debug('in checkStock');
+});
 
 Route::get('/out-of-stock', function () { return view('out-of-stock');});
 
