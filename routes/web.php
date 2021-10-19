@@ -44,7 +44,7 @@ Route::post('/validation/{appointment}', function (){
 
 Route::get('/out-of-stock', function () { return view('out-of-stock');});
 
-Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index']);
+Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index'])->name('admin');
 
 Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $appointment) {
     $klarna_order_id = $appointment->klarna_order_id;
