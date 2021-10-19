@@ -11,8 +11,8 @@
 <nav>
     <ul>
         <a href="{{route('admin')}}"><li>Schedules</li></a>
-        <a href="{{route('admin')}}"><li>Schedules</li></a>
-        <a href="{{route('admin')}}"><li>Schedules</li></a>
+        <a href="{{route('dashboard')}}"><li>Dashboard</li></a>
+        <a href=""><li>Klarna Portal</li></a>
     </ul>
 </nav>
 <main>

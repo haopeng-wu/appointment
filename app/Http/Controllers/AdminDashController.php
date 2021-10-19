@@ -15,4 +15,8 @@ class AdminDashController extends Controller
             'tomorrows'=>$tomorrows,
             'theDayAfterTomorrows'=>$theDayAfterTomorrows]);
     }
+
+    public function dashboard(){
+        return view('admin-dashboard');
+    }
 }
