@@ -84,13 +84,20 @@ class ConfirmationController extends Controller
     public function checkStock(Appointment $appointment){
         $date = $appointment->date;
         $which_slot = $appointment->which_slot;
+
         if(Appointment::isBookedAndPiad($date, $which_slot)){
-            // out of stock. reply with a HTTP status 200 OK
+            /*
+             * out of stock. reply with a HTTP status 200 OK
+             */
+            return response('ok',200)
+                ->header('Content-Type', 'text/plain');
         }else{
             /*
              *  In stock, to reply with a HTTP status 303 and to include a Location header pointing to a page
              *  which informs the consumer why the purchase was not completed. The consumer will be redirected to this page.
              */
+            return response('see other', 303)
+                ->header('Location ','https://www.wuhaopeng.site:22000/out-of-stock');
         }
     }
 }

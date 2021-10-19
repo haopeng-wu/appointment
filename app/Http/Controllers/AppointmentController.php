@@ -110,7 +110,6 @@ class AppointmentController extends Controller
         if (!$response->successful()) {
             dd($response->json());
         }
-        dd($response);
         /*
          * get the order create response from klarna
          */

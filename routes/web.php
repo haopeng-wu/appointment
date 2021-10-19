@@ -29,19 +29,20 @@ Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\Confirmat
 
 Route::get('/ack/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'ack']);
 
-Route::get('/check-server/{appointment}', function (\App\Models\Appointment $appointment){
+Route::get('/check-server/{appointment}', function (\App\Models\Appointment $appointment) {
     dd($appointment);
 });
 
 Route::post('/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
 
+Route::get('/out-of-stock', function () { return view('out-of-stock');});
 
 Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index']);
 
-Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $appointment){
+Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $appointment) {
     $klarna_order_id = $appointment->klarna_order_id;
     $response = Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
-        ->withHeaders(['content-type'=>'application/json'])
+        ->withHeaders(['content-type' => 'application/json'])
         ->get("https://api.playground.klarna.com/checkout/v3/orders/$klarna_order_id");
     dd($response->json());
 });
