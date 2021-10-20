@@ -138,6 +138,10 @@ article{
     text-align: left;
 }
 
+.schedule input{
+    max-width: 6em;
+}
+
 /*
 today div
  */
