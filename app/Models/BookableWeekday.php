@@ -6,9 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use phpDocumentor\Reflection\Types\Self_;
 
-function minusOne($n){
-    return ($n - 1);
-}
+
 
 class BookableWeekday extends Model
 {
@@ -20,7 +18,10 @@ class BookableWeekday extends Model
     static public function getBookableIdMinusOne(){
         $ids = self::all()->where('is_bookable','=', 1)->pluck('id');
 
-        $ids = array_map('minusOne', $ids);
+        $fun = function ($n){
+            return ($n - 1);
+        };
+        $ids = array_map($fun, $ids);
         return $ids;
     }
 }
