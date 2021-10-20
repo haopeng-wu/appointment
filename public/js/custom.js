@@ -1,6 +1,7 @@
 /*
 for slots select color
 */
+const availableWeekdays = require("lodash");
 let slots = document.querySelector(".time-slots");
 
 slots.addEventListener("change", function (event) {
@@ -25,8 +26,13 @@ flatpickr('.date input',{
     "disable": [
         function(date) {
             // return true to disable
-            return (date.getDay() !== 0 && date.getDay() !== 6 && date.getDay() !== 5);
-
+            if(availableWeekdays.includes(date.getDay() )){
+                return false;
+            }
+            else{
+                return true;
+            }
+            //return (date.getDay() !== 0 && date.getDay() !== 6 && date.getDay() !== 5);
         }
     ],
     "locale": {
