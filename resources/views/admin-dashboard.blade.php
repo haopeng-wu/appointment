@@ -10,16 +10,6 @@
             Configure Slots
         </h4>
         <div>
-<table>
-    <thead>
-    <tr>
-        <th>Start at</th>
-        <th>End by</th>
-        <th>Price</th>
-        <th>Modify</th>
-    </tr>
-    </thead>
-</table>
             @foreach($slots as $slot)
                 <form action="/slots/update" method="post">
                     <table>
