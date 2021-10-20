@@ -17,7 +17,7 @@ class BookableWeekday extends Model
 
     static public function getBookableIdMinusOne(){
         $ids = self::all()->where('is_bookable','=', 1)->pluck('id');
-
+        dd($ids);
         $fun = function ($n){
             return ($n - 1);
         };
