@@ -60,7 +60,7 @@ class Slot extends Model
         return $returnDurations;
     }
 
-    public function getStart_upAttribute($start_up){
-        return Carbon::make($start_up)->format('H:i');
+    public function getStart_atAttribute($start_at){
+        return Carbon::make($start_at)->format('H:i');
     }
 }
