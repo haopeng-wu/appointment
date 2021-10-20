@@ -12,7 +12,7 @@ class BookableWeekday extends Model
     protected $guarded = [];
 
     static public function getBookableIdMinusOne(){
-        $ids = self::all()->pluck('id');
+        $ids = self::all()->where('is_bookable','=', 1)->pluck('id');
         function minusOne($n){
             return ($n - 1);
         }
