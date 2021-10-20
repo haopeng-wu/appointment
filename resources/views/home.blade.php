@@ -62,6 +62,6 @@
     </main>
 
     <script type="text/javascript">
-        let availableWeekdays = {{$availableWeekdays}};
+        let availableWeekdays = {{json_encode($availableWeekdays)}};
     </script>
 </x-master>
