@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use phpDocumentor\Reflection\Types\Self_;
@@ -57,5 +58,9 @@ class Slot extends Model
             }
         }
         return $returnDurations;
+    }
+
+    public function getStart_upAttribute($start_up){
+        return Carbon::make($start_up)->format('H:i');
     }
 }
