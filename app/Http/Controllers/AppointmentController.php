@@ -16,6 +16,7 @@ class AppointmentController extends Controller
 {
     public function store(Request $request)
     {
+        dd($request);
         Log::debug("store");
         $validator = Validator::make($request->all(), [
             'customer_name' => ["required"],
@@ -40,7 +41,7 @@ class AppointmentController extends Controller
 
         $attributes = $validator->validated();
 
-        dd($attributes);
+
 
         /*
          * calculate the prices
