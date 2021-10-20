@@ -18,5 +18,7 @@ slots.addEventListener("change", function (event) {
 })
 
 flatpickr('.date input',{
+    altInput: true,
+    altFormat: "F j, Y",
     dateFormat: "Y-m-d",
 });
