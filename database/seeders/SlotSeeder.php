@@ -18,29 +18,29 @@ class SlotSeeder extends Seeder
     {
         //
         DB::table('slots')->insert([
-            'start_at'=>Carbon::createFromTime(8,30),
-            'end_at'=>Carbon::createFromTime(10,0),
+            'start_at'=>Carbon::createFromTime(8,30)->format('H:i'),
+            'end_at'=>Carbon::createFromTime(10,0)->format('H:i'),
             'duration'=>"01:30",
             'price'=>20000,
             'is_valid'=>true,
         ]);
         DB::table('slots')->insert([
-            'start_at'=>Carbon::createFromTime(10,30),
-            'end_at'=>Carbon::createFromTime(12,0),
+            'start_at'=>Carbon::createFromTime(10,30)->format('H:i'),
+            'end_at'=>Carbon::createFromTime(12,0)->format('H:i'),
             'duration'=>"01:30",
             'price'=>20000,
             'is_valid'=>true,
         ]);
         DB::table('slots')->insert([
-            'start_at'=>Carbon::createFromTime(14,30),
-            'end_at'=>Carbon::createFromTime(16,0),
+            'start_at'=>Carbon::createFromTime(14,30)->format('H:i'),
+            'end_at'=>Carbon::createFromTime(16,0)->format('H:i'),
             'duration'=>"01:30",
             'price'=>20000,
             'is_valid'=>true,
         ]);
         DB::table('slots')->insert([
-            'start_at'=>Carbon::createFromTime(16,30),
-            'end_at'=>Carbon::createFromTime(18,0),
+            'start_at'=>Carbon::createFromTime(16,30)->format('H:i'),
+            'end_at'=>Carbon::createFromTime(18,0)->format('H:i'),
             'duration'=>"01:30",
             'price'=>20000,
             'is_valid'=>true,
