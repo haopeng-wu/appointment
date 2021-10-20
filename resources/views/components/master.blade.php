@@ -32,11 +32,11 @@
 <footer>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script type="text/javascript"
-        src="{{asset('js/custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 <script type="text/javascript">
     let availableWeekdays = [];
 </script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script type="text/javascript"
+        src="{{asset('js/custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 </body>
 </html>
