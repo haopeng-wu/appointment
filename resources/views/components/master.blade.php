@@ -33,7 +33,7 @@
 
 </footer>
 <script type="text/javascript">
-    let availableWeekdays = [];
+    let availableWeekdays = [5,6,0];
 </script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script type="text/javascript"
