@@ -61,8 +61,8 @@ class SlotController extends Controller
     public function update(Request $request)
     {
         $attributes = request()->validate([
-            'start_at'=>['required','date_format:H:i'],
-            'end_at'=>['required','date_format:H:i'],
+            'start_at'=>['required','date_format:%H:%i'],
+            'end_at'=>['required','date_format:%H:%i'],
             'price'=>['required', 'numeric', 'min:100'],
             'id'=>['required', 'numeric', 'min:1']
         ]);
