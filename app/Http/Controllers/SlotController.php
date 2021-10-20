@@ -70,10 +70,12 @@ class SlotController extends Controller
             ->diff(Carbon::make($attributes['end_at']))
             ->format('%H:%i');
 
-        $slotId = $attributes['id'];
-        unset($attributes['id']);
-        Slot::where('id','=', $slotId)
-            ->update($attributes);
+        $slot = Slot::find($attributes['id']);
+        $slot->start_at = $attributes['start_at'];
+        $slot->end_at = $attributes['end_at'];
+        $slot->price = $attributes['price'];
+        $slot->duration = $attributes['duration'];
+        $slot->save();
 
         return redirect('/dashboard');
     }
