@@ -21,5 +21,15 @@ flatpickr('.date input',{
     altInput: true,
     altFormat: "F j, Y",
     dateFormat: "Y-m-d",
-    minDate: "today"
+    minDate: "today",
+    "disable": [
+        function(date) {
+            // return true to disable
+            return (date.getDay() !== 0 || date.getDay() !== 6 || date.getDay() !== 6);
+
+        }
+    ],
+    "locale": {
+        "firstDayOfWeek": 1 // start week on Monday
+    }
 });
