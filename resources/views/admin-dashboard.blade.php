@@ -18,17 +18,18 @@
             $table->string('currency')->nullable()->default('SEK');
             $table->boolean('is_valid')->nullable()->default(false);
             -->
-            <table>
-                <thead>
-                <tr>
-                    <th>Starts at</th>
-                    <th>Ends by</th>
-                    <th>Price</th>
-                </tr>
-                </thead>
-                <tbody>
+
                 @foreach($slots as $slot)
                     <form action="/slots/update" method="post">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Starts at</th>
+                                <th>Ends by</th>
+                                <th>Price</th>
+                            </tr>
+                            </thead>
+                            <tbody>
                         @csrf
                         <input type="hidden" name="id" value="{{$slot->id}}">
                         @error("id")
@@ -51,10 +52,11 @@
                                 <button type="submit">modify</button>
                             </td>
                         </tr>
+                        </table>
                     </form>
                 @endforeach
                 </tbody>
-            </table>
+
         </div>
     </article>
 </x-a-master>
