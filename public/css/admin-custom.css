@@ -173,7 +173,9 @@ article.latest-20{
 /*
 dashboard
  */
-
+thead th{
+    font-style: italic;
+}
 
 /*
 form error message

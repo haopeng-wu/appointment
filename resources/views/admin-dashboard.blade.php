@@ -6,8 +6,7 @@
         </div>
     </article>
     <article class="slot-configure">
-        <h3><i>Configure Slots</i>
-
+        <h3>Configure Slots
         </h3>
         <div>
             @foreach($slots as $slot)
