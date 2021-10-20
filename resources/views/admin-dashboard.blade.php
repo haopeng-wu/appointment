@@ -6,9 +6,9 @@
         </div>
     </article>
     <article class="slot-configure">
-        <h4>
-            Configure Slots
-        </h4>
+        <h3><i>Configure Slots</i>
+
+        </h3>
         <div>
             @foreach($slots as $slot)
                 <form action="/slots/update" method="post">
