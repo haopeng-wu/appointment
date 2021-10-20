@@ -7,3 +7,4 @@ thead.innerHTML = "<tr>\n" +
     "        <th>Modify</th>\n" +
     "    </tr>";
 firstTable.prepend(thead);
+

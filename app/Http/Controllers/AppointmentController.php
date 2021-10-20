@@ -40,7 +40,7 @@ class AppointmentController extends Controller
 
         $attributes = $validator->validated();
 
-
+        dd($attributes);
 
         /*
          * calculate the prices
