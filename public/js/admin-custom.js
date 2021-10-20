@@ -1,4 +1,4 @@
-const firstTable = document.querySelector('form:first-child table');
+const firstTable = document.querySelector('form:first-of-type table');
 const thead = document.createDocumentFragment(
     "<thead>\n" +
     "    <tr>\n" +
