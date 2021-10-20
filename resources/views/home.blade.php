@@ -8,7 +8,8 @@
 
                         <div class="date">
                             <label for="date">Which day would you like to schedule?</label>
-                            <input id="date" name="date" type="date" value="{{old('date')}}">
+                            <input id="date" name="date" type="date" value="{{old('date')}}"
+                            min="2021-10-20K">
                         </div>
 
                         <div class="time-slots">

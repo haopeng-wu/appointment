@@ -16,6 +16,8 @@ class CreateBookableWeekdaysTable extends Migration
         Schema::create('bookable_weekdays', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name');
+            $table->boolean('is_bookable');
         });
     }
 
