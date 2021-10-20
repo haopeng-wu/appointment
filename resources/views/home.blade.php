@@ -61,5 +61,7 @@
         </section>
     </main>
 
-
+    <script type="text/javascript">
+        let availableWeekdays = {{$availableWeekdays}};
+    </script>
 </x-master>
