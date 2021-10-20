@@ -10,11 +10,11 @@
             Configure Slots
         </h4>
         <div>
-            @foreach($slots as $slot)
-                <form action="/slots/update" method="post">
-                    <table>
+            <table>
+                @foreach($slots as $slot)
 
-                        <tbody>
+                    <tbody>
+                    <form action="/slots/update" method="post">
                         @csrf
                         <input type="hidden" name="id" value="{{$slot->id}}">
                         @error("id")
@@ -37,10 +37,12 @@
                                 <button type="submit">modify</button>
                             </td>
                         </tr>
-                    </table>
-                </form>
+                    </form>
+                    </tbody>
+
                 @endforeach
-                </tbody>
+            </table>
+
 
         </div>
     </article>
