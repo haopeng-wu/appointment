@@ -13,8 +13,9 @@
             <table>
                 @foreach($slots as $slot)
 
-                    <tbody>
+
                     <form action="/slots/update" method="post">
+                        <tbody>
                         @csrf
                         <input type="hidden" name="id" value="{{$slot->id}}">
                         @error("id")
@@ -37,8 +38,9 @@
                                 <button type="submit">modify</button>
                             </td>
                         </tr>
+                        </tbody>
                     </form>
-                    </tbody>
+
 
                 @endforeach
             </table>
