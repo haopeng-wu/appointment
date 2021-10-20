@@ -13,13 +13,7 @@
             @foreach($slots as $slot)
                 <form action="/slots/update" method="post">
                     <table>
-                        <thead>
-                        <tr>
-                            <th>Starts at</th>
-                            <th>Ends by</th>
-                            <th>Price</th>
-                        </tr>
-                        </thead>
+
                         <tbody>
                         @csrf
                         <input type="hidden" name="id" value="{{$slot->id}}">

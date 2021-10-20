@@ -171,6 +171,13 @@ article.latest-20{
 }
 
 /*
+dashboard
+ */
+.slot-configure form:first-child tbody::before{
+    content: "<thead> <tr> <th>Starts at</th> <th>Ends by</th> <th>Price</th> </tr> </thead>";
+}
+
+/*
 form error message
  */
 p.error{
