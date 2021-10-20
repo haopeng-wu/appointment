@@ -31,10 +31,22 @@
                     <form action="/slots/update" method="post">
                         @csrf
                         <input type="hidden" name="id" value="{{$slot->id}}">
+                        @error("which_slot")
+                        <p class="error">{{$message}}</p>
+                        @enderror
                         <tr>
                             <td><input name="start_at" type="time" value="{{$slot->start_at}}"></td>
+                            @error("which_slot")
+                            <p class="error">{{$message}}</p>
+                            @enderror
                             <td><input name="end_at" type="time" value="{{$slot->end_at}}"></td>
+                            @error("which_slot")
+                            <p class="error">{{$message}}</p>
+                            @enderror
                             <td><input name="price" type="number" value="{{$slot->price}}"></td>
+                            @error("which_slot")
+                            <p class="error">{{$message}}</p>
+                            @enderror
                             <td>
                                 <button type="submit">modify</button>
                             </td>

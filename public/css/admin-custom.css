@@ -170,6 +170,15 @@ article.latest-20{
     overflow: auto;
 }
 
+/*
+form error message
+ */
+p.error{
+    color: #e3342f;
+    font-size: x-small;
+    margin-top: 2px;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
