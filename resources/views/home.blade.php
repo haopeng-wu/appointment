@@ -60,7 +60,6 @@
 
         </section>
     </main>
-
     <script type="text/javascript">
         let availableWeekdays = {{json_encode($availableWeekdays)}};
     </script>
