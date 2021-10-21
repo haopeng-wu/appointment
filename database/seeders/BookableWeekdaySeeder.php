@@ -16,6 +16,17 @@ class BookableWeekdaySeeder extends Seeder
      */
     public function run()
     {
+
+        /*
+         * 0:Sun, 1: Mon, 2:Tues ... 6: Sat
+         */
+
+        // Sunday
+        DB::table('bookable_weekdays')->insert([
+            'name'=>'Sunday',
+            'is_bookable'=>1,
+        ]);
+        //
         DB::table('bookable_weekdays')->insert([
             'name'=>'Monday',
             'is_bookable'=>0,
@@ -38,10 +49,6 @@ class BookableWeekdaySeeder extends Seeder
         ]);
         DB::table('bookable_weekdays')->insert([
             'name'=>'Saturday',
-            'is_bookable'=>1,
-        ]);
-        DB::table('bookable_weekdays')->insert([
-            'name'=>'Sunday',
             'is_bookable'=>1,
         ]);
     }

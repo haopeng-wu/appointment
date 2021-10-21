@@ -20,7 +20,7 @@ class BookableWeekday extends Model
         $fun = function ($n){
             return ($n - 1);
         };
-        //$ids = array_map($fun, $ids);
+        $ids = array_map($fun, $ids);
         return $ids;
     }
 }
