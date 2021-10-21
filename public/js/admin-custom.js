@@ -10,7 +10,7 @@ firstTable.prepend(thead);
 
 //bookableFlags
 console.log('hello!');
-console.log(bookableFlag);
+console.log(bookableFlags);
 for(let i = 0; i < bookableFlags.length; i++){
     console.log('in for');
     // to select the weekday label
