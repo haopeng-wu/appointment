@@ -13,8 +13,6 @@ class BookableWeekday extends Model
     use HasFactory;
     protected $guarded = [];
 
-
-
     static public function allIdMinusOne(){
         $ids = self::all()->where('is_bookable','=', 1)->pluck('id')->toArray();
         $fun = function ($n){
