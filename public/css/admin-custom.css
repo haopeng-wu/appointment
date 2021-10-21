@@ -184,6 +184,11 @@ change bookable weekdays
     margin: 0.2em 0.2em 0.2em 0;
     text-align: center;
 }
+
+.weekdays label:hover{
+    cursor: pointer;
+}
+
 .weekdays input:checked+label{
     background-color: #fc925a;
 }
