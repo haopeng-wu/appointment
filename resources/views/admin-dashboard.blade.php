@@ -67,6 +67,7 @@
         </div>
     </article>
     <script>
+        {{dd($bookableFlags)}}
         const bookableFlags = {{json_encode($bookableFlags)}};
     </script>
 </x-a-master>
