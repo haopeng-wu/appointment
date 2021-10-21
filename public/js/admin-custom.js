@@ -8,10 +8,10 @@ thead.innerHTML = "<tr>\n" +
     "    </tr>";
 firstTable.prepend(thead);
 
-//bookableFlags
-console.log('hello!');
+/*
+change bookable weekdays part
+ */
 for(let i = 0; i < 7; i++){
-    console.log('in for');
     // to select the weekday label
     let theInput = document.querySelector(`.weekdays input#${'d'+(i+1)}`);
     //let theLable = document.querySelector(`.weekdays label[for=${i+1}]`);
@@ -20,5 +20,3 @@ for(let i = 0; i < 7; i++){
         theInput.setAttribute('checked', 1);
     }
 }
-
-// let theInput = document.querySelector(`.weekdays input#${'d'+(0+1)}`);
