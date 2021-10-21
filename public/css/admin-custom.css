@@ -178,14 +178,14 @@ change bookable weekdays
 }
 .weekdays label{
     display: inline-block;
-    background-color: burlywood;
+    background-color: #fae397;
     padding: 4px 6px;
     border-radius: 5px;
     margin: 0.2em 0.2em 0.2em 0;
     text-align: center;
 }
 .weekdays input:checked+label{
-    background-color: darkorange ;
+    background-color: #fc925a;
 }
 
 .weekdays.grid{
