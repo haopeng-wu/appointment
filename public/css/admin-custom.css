@@ -94,16 +94,6 @@ search bar
 /*
 all the schedule divs
  */
-/*
-article.today, article.tomorrow, article.the-day-after-tomorrow, article.latest-20{
-    margin:0.75em 0;
-    background-color: #fcf4e3;
-    border-radius: 5px;
-    padding: 0.45em;
-    box-sizing: border-box;
-    overflow: auto;
-}
- */
 
 article{
     margin:0.75em 0;
