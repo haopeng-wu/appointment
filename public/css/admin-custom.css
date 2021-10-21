@@ -176,7 +176,8 @@ change bookable weekdays
 .weekdays input{
     display: none;
 }
-.weekdays input+label{
+.weekdays label{
+    display: inline-block;
     background-color: burlywood;
     padding: 4px 6px;
     border-radius: 5px;
