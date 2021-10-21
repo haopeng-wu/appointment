@@ -9,8 +9,9 @@ thead.innerHTML = "<tr>\n" +
 firstTable.prepend(thead);
 
 //bookableFlags
-
+console.log('hello!');
 for(let i = 0; i < bookableFlags.length; i++){
+    console.log('in for');
     // to select the weekday label
     let theInput = document.querySelector(`.weekdays input#${'d'+(i+1)}`);
     //let theLable = document.querySelector(`.weekdays label[for=${i+1}]`);
