@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appointment;
+use App\Models\BookableWeekday;
 use App\Models\Slot;
 use Illuminate\Http\Request;
 
@@ -20,6 +21,7 @@ class AdminDashController extends Controller
 
     public function dashboard(Request $request){
         $slots = Slot::all()->where('is_valid', '=', 1);
+        BookableWeekday::getBookableIdMinusOne();
         return view('admin-dashboard', ['slots'=>$slots]);
     }
 }
