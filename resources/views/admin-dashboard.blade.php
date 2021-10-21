@@ -41,23 +41,5 @@
             @endforeach
         </div>
     </article>
-    <article>
-        <h4>Change Bookable Weekdays</h4>
-        <div class="weekdays">
-            <input type="radio" name="Monday" id="2">
-            <label for="2">Monday</label>
-            <input type="radio" name="Tuesday" id="3">
-            <label for="3">Tuesday</label>
-            <input type="radio" name="Wednesday" id="4">
-            <label for="4">Wednesday</label>
-            <input type="radio" name="Thursday" id="5">
-            <label for="5">Thursday</label>
-            <input type="radio" name="Friday" id="6">
-            <label for="6">Friday</label>
-            <input type="radio" name="Saturday" id="7">
-            <label for="7">Saturday</label>
-            <input type="radio" name="Sunday" id="1">
-            <label for="1">Sunday</label>
-        </div>
-    </article>
+
 </x-a-master>
