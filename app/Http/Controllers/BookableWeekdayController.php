@@ -67,9 +67,9 @@ class BookableWeekdayController extends Controller
      * @param  \App\Models\BookableWeekday  $bookableWeekday
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BookableWeekday $bookableWeekday)
+    public function update(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**

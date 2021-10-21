@@ -44,7 +44,7 @@
     <article>
         <h4>Change Bookable Weekdays</h4>
         <div class="weekdays">
-            <form action="" method="post">
+            <form action="/bookable-weekday/update" method="post">
                 @csrf
                 <div class="grid">
                     <input type="checkbox" name="Monday" id="d2">

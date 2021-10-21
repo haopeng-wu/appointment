@@ -51,7 +51,7 @@ Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index']
 Route::get('/dashboard', [\App\Http\Controllers\AdminDashController::class, 'dashboard'])->name('dashboard');
 
 Route::post('/slots/update',[\App\Http\Controllers\SlotController::class, 'update']);
-
+Route::post('/bookable-weekday/update',[\App\Http\Controllers\BookableWeekdayController::class, 'update']);
 /*
  * test
  */
