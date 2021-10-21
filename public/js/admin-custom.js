@@ -10,14 +10,12 @@ firstTable.prepend(thead);
 
 //bookableFlags
 console.log('hello!');
-console.log(bookableFlags.length);
 for(let i = 0; i < 7; i++){
     console.log('in for');
     // to select the weekday label
     let theInput = document.querySelector(`.weekdays input#${'d'+(i+1)}`);
     //let theLable = document.querySelector(`.weekdays label[for=${i+1}]`);
     //theInput.setAttribute('value', bookableFlags[i+1]);
-    console.log(bookableFlags);
     if (bookableFlags[i+1]==='1'){
         theInput.setAttribute('checked', 1);
     }
