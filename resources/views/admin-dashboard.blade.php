@@ -47,20 +47,20 @@
             <form action="" method="post">
                 @csrf
                 <div class="grid">
-                    <input type="checkbox" name="Monday" id="2">
-                    <label for="2">Monday</label>
-                    <input type="checkbox" name="Tuesday" id="3">
-                    <label for="3">Tuesday</label>
-                    <input type="checkbox" name="Wednesday" id="4">
-                    <label for="4">Wednesday</label>
-                    <input type="checkbox" name="Thursday" id="5">
-                    <label for="5">Thursday</label>
-                    <input type="checkbox" name="Friday" id="6">
-                    <label for="6">Friday</label>
-                    <input type="checkbox" name="Saturday" id="7">
-                    <label for="7">Saturday</label>
-                    <input type="checkbox" name="Sunday" id="1">
-                    <label for="1">Sunday</label>
+                    <input type="checkbox" name="Monday" id="d2">
+                    <label for="d2">Monday</label>
+                    <input type="checkbox" name="Tuesday" id="d3">
+                    <label for="d3">Tuesday</label>
+                    <input type="checkbox" name="Wednesday" id="d4">
+                    <label for="d4">Wednesday</label>
+                    <input type="checkbox" name="Thursday" id="d5">
+                    <label for="d5">Thursday</label>
+                    <input type="checkbox" name="Friday" id="d6">
+                    <label for="d6">Friday</label>
+                    <input type="checkbox" name="Saturday" id="d7">
+                    <label for="d7">Saturday</label>
+                    <input type="checkbox" name="Sunday" id="d1">
+                    <label for="d1">Sunday</label>
                 </div>
                 <button type="submit">Submit</button>
             </form>

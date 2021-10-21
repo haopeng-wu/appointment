@@ -12,7 +12,7 @@ firstTable.prepend(thead);
 
 for(let i = 0; i < bookableFlags.length; i++){
     // to select the weekday label
-    let theInput = document.querySelector(`.weekdays input#${i+1}`);
+    let theInput = document.querySelector(`.weekdays input#${'d'+(i+1)}`);
     //let theLable = document.querySelector(`.weekdays label[for=${i+1}]`);
     theInput.setAttribute('value', bookableFlags[i+1]);
     if (bookableFlags[i+1]===1){
