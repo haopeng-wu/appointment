@@ -170,6 +170,21 @@ dashboard
 thead th{
     font-style: italic;
 }
+/*
+change bookable weekdays
+ */
+.weekdays input{
+    display: none;
+}
+.weekdays input+label{
+    background-color: burlywood;
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+.weekdays input:checked+label{
+    background-color: ;
+}
+
 
 /*
 form error message
