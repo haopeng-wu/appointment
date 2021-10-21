@@ -187,6 +187,11 @@ change bookable weekdays
     background-color: darkorange ;
 }
 
+.weekdays.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 
 /*
 form error message

@@ -43,7 +43,7 @@
     </article>
     <article>
         <h4>Change Bookable Weekdays</h4>
-        <div class="weekdays">
+        <div class="weekdays grid">
             <input type="checkbox" name="Monday" id="2">
             <label for="2">Monday</label>
             <input type="checkbox" name="Tuesday" id="3">
