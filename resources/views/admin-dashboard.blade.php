@@ -67,6 +67,6 @@
         </div>
     </article>
     <script type="text/javascript">
-        let bookableFlags = {{json_encode($bookableFlags)}};
+        let bookableFlags = JSON.parse({{json_encode($bookableFlags)}});
     </script>
 </x-a-master>
