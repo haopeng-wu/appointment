@@ -78,7 +78,7 @@ class BookableWeekdayController extends Controller
             'Saturday'=>['in:on'],
             'Sunday'=>['in:on'],
         ]);
-        BookableWeekday::update(['is_bookable'=>1]);
+        BookableWeekday::all()->update(['is_bookable'=>1]);
         foreach ($attributes as $key => $item){
             if($item == 'on'){
                 BookableWeekday::where('name', '=', $key)
