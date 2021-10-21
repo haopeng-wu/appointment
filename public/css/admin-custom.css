@@ -182,7 +182,7 @@ change bookable weekdays
     border-radius: 5px;
 }
 .weekdays input:checked+label{
-    background-color: ;
+    background-color: darkorange ;
 }
 
 
