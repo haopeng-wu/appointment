@@ -11,7 +11,7 @@ firstTable.prepend(thead);
 //bookableFlags
 console.log('hello!');
 console.log(bookableFlags.length);
-for(let i = 0; i < bookableFlags.length; i++){
+for(let i = 0; i < 7; i++){
     console.log('in for');
     // to select the weekday label
     let theInput = document.querySelector(`.weekdays input#${'d'+(i+1)}`);
