@@ -69,7 +69,16 @@ class BookableWeekdayController extends Controller
      */
     public function update(Request $request)
     {
-        dd($request);
+        $attributes = $request->validate([
+            'Monday'=>['in:on'],
+            'Tuesday'=>['in:on'],
+            'Wednesday'=>['in:on'],
+            'Thursday'=>['in:on'],
+            'Friday'=>['in:on'],
+            'Saturday'=>['in:on'],
+            'Sunday'=>['in:on'],
+        ]);
+        dd($attributes);
     }
 
     /**
