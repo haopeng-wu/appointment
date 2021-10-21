@@ -20,7 +20,6 @@ class BookableWeekdaySeeder extends Seeder
         /*
          * 0:Sun, 1: Mon, 2:Tues ... 6: Sat
          */
-
         // Sunday
         DB::table('bookable_weekdays')->insert([
             'name'=>'Sunday',

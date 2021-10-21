@@ -21,7 +21,7 @@ class AdminDashController extends Controller
 
     public function dashboard(Request $request){
         $slots = Slot::all()->where('is_valid', '=', 1);
-        BookableWeekday::getBookableIdMinusOne();
-        return view('admin-dashboard', ['slots'=>$slots]);
+        $bookableFlags = BookableWeekday::allBookableFlags();
+        return view('admin-dashboard', ['slots'=>$slots, 'bookableFlags'=>$bookableFlags]);
     }
 }

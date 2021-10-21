@@ -188,7 +188,7 @@ change bookable weekdays
     background-color: #fc925a;
 }
 
-.weekdays.grid{
+.weekdays .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }

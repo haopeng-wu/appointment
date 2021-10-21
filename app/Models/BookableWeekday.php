@@ -15,12 +15,21 @@ class BookableWeekday extends Model
 
 
 
-    static public function getBookableIdMinusOne(){
+    static public function allIdMinusOne(){
         $ids = self::all()->where('is_bookable','=', 1)->pluck('id')->toArray();
         $fun = function ($n){
             return ($n - 1);
         };
         $ids = array_map($fun, $ids);
         return $ids;
+    }
+
+    static public function allBookableFlags(){
+        $all = self::all();
+        $bookableFlags = [];
+        foreach ($all as $item){
+            $bookableFlags[$item['id']] = $item['is_bookable'];
+        }
+        return $bookableFlags;
     }
 }

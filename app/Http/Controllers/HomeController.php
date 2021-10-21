@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function home(Request $request){
         $slots = Slot::validSlots();
-        $availableWeekdays = BookableWeekday::getBookableIdMinusOne();
+        $availableWeekdays = BookableWeekday::allIdMinusOne();
         return view('home', ['slots'=>$slots, 'availableWeekdays'=>$availableWeekdays]);
     }
 }
