@@ -60,7 +60,9 @@ dateInput.addEventListener('input', function (){
     let bookedSlots = allFutureBooked[dateInput.value];
     for(let i = 0; i < bookedSlots.length; i++){
         const theLabel = document.querySelector(`label[for=slot-${bookedSlots[i]}]`);
+        const theInputElement = document.querySelector(`input#slot-${bookedSlots[i]}`);
         clearClasses(theLabel);
         theLabel.classList.add('booked');
+        theInputElement.disable = true;
     }
 })
