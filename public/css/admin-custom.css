@@ -193,6 +193,7 @@ change bookable weekdays
 .weekdays input:checked+label{
     background-color: #fc925a;
 }
+
 /*
 .weekdays .grid{
     display: grid;

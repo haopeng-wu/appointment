@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Appointment;
+use App\Models\BookableWeekday;
 use App\Models\Slot;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -17,14 +18,20 @@ class AppointmentController extends Controller
     public function store(Request $request)
     {
         Log::debug($request);
+        /*
+         * basic validation
+         */
         $validator = Validator::make($request->all(), [
             'customer_name' => ["required"],
             'email' => ["required", "email"],
             'tel' => ["between:2,18"],
-            'date' => ["required"],
+            'date' => ["required",'date'],
             'which_slot' => ["required"]
         ]);
 
+        /*
+         *  double-booked validation
+         */
         $validator->sometimes(
             'which_slot',
             'unique:appointments,which_slot,NULL,NULL,date,' . $validator->validated()['date'],
@@ -37,6 +44,15 @@ class AppointmentController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }
+
+        /*
+         * check the date belongs to the bookable weekdays
+         */
+        $bookableFlags = BookableWeekday::allBookableFlags();
+
+
+
+
 
         $attributes = $validator->validated();
 
