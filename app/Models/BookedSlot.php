@@ -29,11 +29,7 @@ class BookedSlot extends Model
     static public function allFutureBookedAppointments(){
         $returnArray = [];
         $all = self::all();
-        $tempArray = [];
         foreach ($all as $item){
-            //$returnArray[$item['date']] = $item['slot_id'];
-            //array_push($tempArray, $item) ;
-            //$returnArray[$item['date']] = [];
             if (!isset($returnArray[$item['date']])){
                 $returnArray[$item['date']] = [];
             }

@@ -47,13 +47,19 @@ flatpickr('.date input',{
 indicating the booked slots
  */
 
+function clearClasses(element){
+    for (let cssClass of element.classList){
+        element.classList.remove(cssClass);
+    }
+}
+
 const dateInput = document.querySelector('.date input#date');
 
 dateInput.addEventListener('input', function (){
-    console.log(allFutureBooked);
-    console.log(dateInput.value);
-    if(allFutureBooked[dateInput.value] === 1){
-        // not bookable, because it's already been booked
 
+    let bookedSlots = allFutureBooked[dateInput.value];
+    for(let i = 0; i < bookedSlots.length; i++){
+        const theLabel = document.querySelector(`label[for=slot-${bookedSlots[i]}]`);
+        clearClasses(theLabel);
     }
 })

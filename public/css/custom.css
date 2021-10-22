@@ -72,6 +72,10 @@ nav li:last-child {
     background-color: #b38cf3;
 }
 
+.booked {
+    background-color: #e4d6fd;
+}
+
 .unchecked:hover {
     background-color: #d1baf6;
     cursor: pointer;
