@@ -28,6 +28,7 @@ flatpickr('.date input',{
             if(availableWeekdays.includes(date.getDay()))
             {
                 //return false;
+                return true;
             }
             else{
                 return true;
