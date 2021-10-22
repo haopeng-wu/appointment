@@ -57,7 +57,7 @@ class AppointmentController extends Controller
         if (!$theDate->diff($today)->invert){
             return redirect('/')
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
-                ->withErrors(['date'=>'Can not book in the past.'])
+                ->withErrors(['date'=>'Can not book days in the past.'])
                 ->withInput();
         }
 
