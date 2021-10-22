@@ -85,11 +85,13 @@ nav li:last-child {
 }
  */
 
-
 .unchecked:hover {
     background-color: #f6b3bb;
     cursor: pointer;
     transition: background-color 200ms;
+}
+.unchecked:hover{
+    background-color: #f1939e;
 }
 
 
