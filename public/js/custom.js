@@ -57,12 +57,17 @@ const dateInput = document.querySelector('.date input#date');
 
 dateInput.addEventListener('input', function (){
     /*
-    first remove all the classes of all the labels
+    first remove all the classes of all the labels. and able all the input radios
      */
     let slotLabels = document.querySelectorAll(".time-slots label");
     for(let i = 0; i < slotLabels.length; i++) {
         clearClasses(slotLabels[i]);
     }
+    let slotInputs = document.querySelectorAll(".time-slots input");
+    for(let i = 0; i < slotInputs.length; i++) {
+        slotLabels[i].disabled = true;
+    }
+
     console.log(allFutureBooked);
     let bookedSlots = allFutureBooked[dateInput.value];
     for(let i = 0; i < bookedSlots.length; i++){
