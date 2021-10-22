@@ -93,6 +93,7 @@ nav li:last-child {
 }
 .time-slots .booked:hover{
     cursor: not-allowed;
+    background-color: #e4d6fd;
 }
 
 
