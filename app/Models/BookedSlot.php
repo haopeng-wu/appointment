@@ -21,11 +21,20 @@ class BookedSlot extends Model
         ]);
     }
 
+    /*
+     *      $table->date('date');
+            $table->foreignId('slot_id');
+     */
+
     static public function allFutureBookedAppointments(){
         $returnArray = [];
         $all = self::all();
+        $tempArray = [];
         foreach ($all as $item){
-            $returnArray[$item['date']] = $item['slot_id'];
+            //$returnArray[$item['date']] = $item['slot_id'];
+            //array_push($tempArray, $item) ;
+            //$returnArray[$item['date']] = [];
+            array_push($returnArray[$item['date']], $item['slot_id']);
         }
         return $returnArray;
     }
