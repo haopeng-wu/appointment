@@ -90,7 +90,7 @@ nav li:last-child {
     cursor: pointer;
     transition: background-color 200ms;
 }
-.unchecked:focus{
+.unchecked:active{
     background-color: #f1939e;
 }
 
