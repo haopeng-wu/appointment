@@ -67,8 +67,7 @@ nav li:last-child {
 .checked {
     background-color: #f66d7d;
 }
-
-.unchecked {
+.time-slots label{
     background-color: #b38cf3;
 }
 
