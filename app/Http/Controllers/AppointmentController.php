@@ -53,7 +53,7 @@ class AppointmentController extends Controller
         /*
          * check the date belongs to future or is at least today
          */
-        $today = Carbon::today();
+        $today = Carbon::today()->subDays(1);
         $theDate = Carbon::make($attributes['date']);
         if (!$theDate->diff($today)->invert){
             return redirect('/')

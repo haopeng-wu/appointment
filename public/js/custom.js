@@ -52,4 +52,8 @@ const dateInput = document.querySelector('.date input#date');
 dateInput.addEventListener('input', function (){
     console.log(allFutureBooked);
     console.log(dateInput.value);
+    if(allFutureBooked[dateInput.value] === 1){
+        // not bookable, because it's already been booked
+
+    }
 })
