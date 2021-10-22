@@ -50,5 +50,6 @@ indicating the booked slots
 const dateInput = document.querySelector('.date input#date');
 
 dateInput.addEventListener('input', function (){
+    console.log(allFutureBooked);
     console.log(dateInput.value);
 })
