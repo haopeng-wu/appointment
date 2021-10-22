@@ -52,31 +52,27 @@ class AppointmentController extends Controller
         /*
          * check the date belongs to future or is at least today
          */
-
-
-        /*
-         * $errors = $this->session->get('errors', new ViewErrorBag);
-
-        if (! $errors instanceof ViewErrorBag) {
-            $errors = new ViewErrorBag;
+        $today = Carbon::today();
+        $theDate = Carbon::make($attributes['date']);
+        if ($theDate->diff($today) > 0){
+            return redirect('/')
+                // The withErrors method accepts a validator, a MessageBag, or a PHP array.
+                ->withErrors(['date'=>'Can not book in the past.'])
+                ->withInput();
         }
-
-        $this->session->flash(
-            'errors', $errors->put($key, $value)
-        );
-         */
 
 
         /*
          * check the date belongs to the bookable weekdays
          */
         $bookableFlags = BookableWeekday::allBookableDayFlags();
-        if ($bookableFlags[Carbon::make($attributes['date'])->dayName] != 1){
+        if ($bookableFlags[$theDate->dayName] != 1){
             return redirect('/')
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date'=>'The day of the week is not bookable.'])
                 ->withInput();
         }
+
 
 
         /*
