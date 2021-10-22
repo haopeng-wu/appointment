@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use App\Models\BookableWeekday;
+use App\Models\BookedSlot;
 use App\Models\Slot;
 use App\Models\User;
 use Carbon\Carbon;
@@ -73,6 +74,8 @@ class AppointmentController extends Controller
         }
 
 
+        // only for test purpose
+        BookedSlot::sealTheAppointment($attributes['date'], $attributes['which_slot']);
 
         /*
          * calculate the prices
