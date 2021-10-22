@@ -54,7 +54,7 @@ class AppointmentController extends Controller
          */
         $today = Carbon::today();
         $theDate = Carbon::make($attributes['date']);
-        if ($theDate->diff($today) > 0){
+        if (!$theDate->diff($today)->invert){
             return redirect('/')
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date'=>'Can not book in the past.'])
