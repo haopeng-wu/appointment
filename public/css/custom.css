@@ -84,12 +84,12 @@ nav li:last-child {
     content: '';
 }
  */
-.unchecked:hover {
+.time-slots label:hover {
     background-color: #f66d7d;
     cursor: pointer;
     transition: background-color 200ms;
 }
-.unchecked:active{
+.time-slots label:active{
     background-color: #f1939e;
 }
 
