@@ -56,6 +56,13 @@ function clearClasses(element){
 const dateInput = document.querySelector('.date input#date');
 
 dateInput.addEventListener('input', function (){
+    /*
+    first remove all the classes of all the labels
+     */
+    let slotLabels = document.querySelectorAll(".time-slots label");
+    for(let i = 0; i < slotLabels.length; i++) {
+        clearClasses(slotLabels[i]);
+    }
     console.log(allFutureBooked);
     let bookedSlots = allFutureBooked[dateInput.value];
     for(let i = 0; i < bookedSlots.length; i++){
