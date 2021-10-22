@@ -73,12 +73,7 @@ nav li:last-child {
     background-color: #f66d7d;
 }
 
-.time-slots .booked {
-    background-color: #e4d6fd;
-}
-.booked:hover{
-    cursor: not-allowed;
-}
+
 /*
 .booked::after{
     content: '';
@@ -93,7 +88,12 @@ nav li:last-child {
     background-color: #f1939e;
 }
 
-
+.time-slots .booked {
+    background-color: #e4d6fd;
+}
+.time-slots .booked:hover{
+    cursor: not-allowed;
+}
 
 
 input.time_slot {
