@@ -34,7 +34,6 @@ flatpickr('.date input',{
                 return false;
                 return true;
             }
-            //return (date.getDay() !== 0 && date.getDay() !== 6 && date.getDay() !== 5);
         }
     ],
     "locale": {
@@ -65,7 +64,7 @@ dateInput.addEventListener('input', function (){
     }
     let slotInputs = document.querySelectorAll(".time-slots input");
     for(let i = 0; i < slotInputs.length; i++) {
-        slotLabels[i].disabled = false;
+        slotInputs[i].disabled = false;
     }
 
     console.log(allFutureBooked);
