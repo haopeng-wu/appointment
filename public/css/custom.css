@@ -86,7 +86,7 @@ nav li:last-child {
  */
 
 .unchecked:hover {
-    background-color: #f6b3bb;
+    background-color: #f66d7d;
     cursor: pointer;
     transition: background-color 200ms;
 }
