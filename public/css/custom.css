@@ -84,7 +84,6 @@ nav li:last-child {
     content: '';
 }
  */
-
 .unchecked:hover {
     background-color: #f66d7d;
     cursor: pointer;
