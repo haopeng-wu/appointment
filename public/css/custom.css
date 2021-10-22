@@ -75,6 +75,9 @@ nav li:last-child {
 .booked {
     background-color: #e4d6fd;
 }
+.booked::after{
+    content: 'a';
+}
 
 .unchecked:hover {
     background-color: #d1baf6;
