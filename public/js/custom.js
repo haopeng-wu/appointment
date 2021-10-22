@@ -56,7 +56,7 @@ function clearClasses(element){
 const dateInput = document.querySelector('.date input#date');
 
 dateInput.addEventListener('input', function (){
-
+    console.log(allFutureBooked);
     let bookedSlots = allFutureBooked[dateInput.value];
     for(let i = 0; i < bookedSlots.length; i++){
         const theLabel = document.querySelector(`label[for=slot-${bookedSlots[i]}]`);
