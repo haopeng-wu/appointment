@@ -27,10 +27,11 @@ flatpickr('.date input',{
             // return true to disable
             if(availableWeekdays.includes(date.getDay()))
             {
-                //return false;
+                return false;
                 return true;
             }
             else{
+                return false;
                 return true;
             }
             //return (date.getDay() !== 0 && date.getDay() !== 6 && date.getDay() !== 5);
