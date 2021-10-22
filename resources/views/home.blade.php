@@ -8,8 +8,10 @@
 
                         <div class="date">
                             <label for="date">Which day would you like to schedule?</label>
-                            <input id="date" name="date" type="date" value="{{old('date')}}"
-                            >
+                            <input id="date" name="date" type="date" value="{{old('date')}}">
+                            @error("date")
+                            <p class="error">{{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="time-slots">
@@ -33,7 +35,8 @@
                                 <label for="tel">Tel: </label>
                             </div>
                             <div class="inputs">
-                                <input name="customer_name" type="text" id="customer_name" value="{{old('customer_name')}}">
+                                <input name="customer_name" type="text" id="customer_name"
+                                       value="{{old('customer_name')}}">
                                 @error("customer_name")
                                 <p class="error">{{$message}}</p>
                                 @enderror
