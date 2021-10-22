@@ -63,6 +63,6 @@ dateInput.addEventListener('input', function (){
         const theInputElement = document.querySelector(`input#slot-${bookedSlots[i]}`);
         clearClasses(theLabel);
         theLabel.classList.add('booked');
-        theInputElement.disable = true;
+        theInputElement.disabled = true;
     }
 })
