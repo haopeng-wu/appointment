@@ -30,4 +30,13 @@ class BookableWeekday extends Model
         }
         return $bookableFlags;
     }
+
+    static public function allBookableDayFlags(){
+        $all = self::all();
+        $bookableFlags = [];
+        foreach ($all as $item){
+            $bookableFlags[$item['name']] = $item['is_bookable'];
+        }
+        return $bookableFlags;
+    }
 }

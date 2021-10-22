@@ -8,10 +8,12 @@ use App\Models\Appointment;
 use App\Models\BookableWeekday;
 use App\Models\Slot;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\ViewErrorBag;
 
 class AppointmentController extends Controller
 {
@@ -45,17 +47,36 @@ class AppointmentController extends Controller
                 ->withInput();
         }
 
+        $attributes = $validator->validated();
+
+        /*
+         * check the date belongs to future or is at least today
+         */
+
+
+        /*
+         * $errors = $this->session->get('errors', new ViewErrorBag);
+
+        if (! $errors instanceof ViewErrorBag) {
+            $errors = new ViewErrorBag;
+        }
+
+        $this->session->flash(
+            'errors', $errors->put($key, $value)
+        );
+         */
+
+
         /*
          * check the date belongs to the bookable weekdays
          */
-        $bookableFlags = BookableWeekday::allBookableFlags();
-
-
-
-
-
-        $attributes = $validator->validated();
-
+        $bookableFlags = BookableWeekday::allBookableDayFlags();
+        if ($bookableFlags[Carbon::make($attributes['date'])->dayName] != 1){
+            return redirect('/')
+                // The withErrors method accepts a validator, a MessageBag, or a PHP array.
+                ->withErrors(['date'=>'The day of the week is not bookable.'])
+                ->withInput();
+        }
 
 
         /*
