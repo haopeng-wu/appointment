@@ -21,7 +21,7 @@ flatpickr('.date input',{
     altInput: true,
     altFormat: "F j, Y",
     dateFormat: "Y-m-d",
-    minDate: "today",
+    //minDate: "today",
     "disable": [
         function(date) {
             // return true to disable
