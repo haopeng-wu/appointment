@@ -74,7 +74,7 @@ class AppointmentController extends Controller
         }
 
 
-        // only for test purpose
+        // only for testing purpose
         BookedSlot::sealTheAppointment($attributes['date'], $attributes['which_slot']);
 
         /*
