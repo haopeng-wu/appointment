@@ -61,7 +61,6 @@ class AppointmentController extends Controller
                 ->withInput();
         }
 
-
         /*
          * check the date belongs to the bookable weekdays
          */

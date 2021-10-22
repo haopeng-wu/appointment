@@ -16,6 +16,12 @@ class CreateBookedSlotsTable extends Migration
         Schema::create('booked_slots', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->date('date');
+            $table->foreignId('slot_id');
+
+            $table->unique(['date', 'slot_id']);
+            $table->foreign('slot_id')->references('id')->on('slots');
         });
     }
 

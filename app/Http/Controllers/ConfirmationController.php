@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Appointment;
+use App\Models\BookedSlot;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
@@ -26,6 +27,7 @@ class ConfirmationController extends Controller
          *  synchronize the checkout status
          */
         if ($klarna_return['status'] == 'checkout_complete'){
+            BookedSlot::sealTheAppointment($appointment->date, $appointment->which_slot);
             $appointment->payment_status = 1;
             $appointment->charge = $klarna_return['order_amount'];
             $appointment->save();

@@ -18,11 +18,11 @@
                             @error("which_slot")
                             <p class="error">{{$message}}</p>
                             @enderror
-                            @foreach($slots as $slot)
+                            @foreach($slots as $key => $slot)
                                 <div>
-                                    <input class="time_slot" type="radio" id="{{'slot-'.($loop->index+1)}}"
-                                           name="which_slot" value="{{$loop->index+1}}">
-                                    <label class="unchecked" for="{{'slot-'.($loop->index+1)}}">{{$slot}}</label>
+                                    <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
+                                           name="which_slot" value="{{$key}}">
+                                    <label class="unchecked" for="{{'slot-'.$key}}">{{$slot}}</label>
                                 </div>
                             @endforeach
                         </div>
@@ -65,5 +65,6 @@
     </main>
     <script type="text/javascript">
         let availableWeekdays = {{json_encode($availableWeekdays)}};
+        let allFutureBooked = {!! json_encode($allFutureBooked) !!};
     </script>
 </x-master>

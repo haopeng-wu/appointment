@@ -41,3 +41,14 @@ flatpickr('.date input',{
         "firstDayOfWeek": 1 // start week on Monday
     }
 });
+//allFutureBooked
+
+/*
+indicating the booked slots
+ */
+
+const dateInput = document.querySelector('.date input#date');
+
+dateInput.addEventListener('input', function (){
+    console.log(dateInput.value);
+})

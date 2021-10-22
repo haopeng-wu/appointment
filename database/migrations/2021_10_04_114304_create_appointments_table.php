@@ -24,7 +24,7 @@ class CreateAppointmentsTable extends Migration
             $table->string("start_end_time");
             $table->string('duration');
 
-            $table->foreignId("customer_id");
+            $table->foreignId("custo'mer_id");
 
             $table->string("customer_name");
             $table->string("email");
