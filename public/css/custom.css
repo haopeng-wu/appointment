@@ -64,14 +64,16 @@ nav li:last-child {
     text-align: center;
 }
 
-.checked {
-    background-color: #f66d7d;
-}
+
 .time-slots label{
     background-color: #b38cf3;
 }
 
-.booked {
+.time-slots .checked {
+    background-color: #f66d7d;
+}
+
+.time-slots .booked {
     background-color: #e4d6fd;
 }
 .booked:hover{
