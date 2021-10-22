@@ -34,6 +34,9 @@ class BookedSlot extends Model
             //$returnArray[$item['date']] = $item['slot_id'];
             //array_push($tempArray, $item) ;
             //$returnArray[$item['date']] = [];
+            if (!$returnArray[$item['date']]){
+                $returnArray[$item['date']] = [];
+            }
             array_push($returnArray[$item['date']], $item['slot_id']);
         }
         return $returnArray;
