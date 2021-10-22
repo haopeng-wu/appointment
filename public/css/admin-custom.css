@@ -183,6 +183,7 @@ change bookable weekdays
     border-radius: 5px;
     margin: 0.2em 0.2em 0.2em 0;
     text-align: center;
+    min-width: 6rem;
 }
 
 .weekdays label:hover{
