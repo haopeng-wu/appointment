@@ -65,7 +65,7 @@ dateInput.addEventListener('input', function (){
     }
     let slotInputs = document.querySelectorAll(".time-slots input");
     for(let i = 0; i < slotInputs.length; i++) {
-        slotLabels[i].disabled = true;
+        slotLabels[i].disabled = false;
     }
 
     console.log(allFutureBooked);
