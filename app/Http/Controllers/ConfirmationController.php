@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use App\Models\BookedSlot;
+use App\Models\User;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
@@ -24,6 +25,25 @@ class ConfirmationController extends Controller
             dd($response->json());
         }
         $klarna_return = $response->json();
+        /*
+         * create the user and leave the password empty for now.
+         */
+        $user = User::updateOrInsert(
+            ['email' => $klarna_return['billing_address']['email']],
+            [
+                'given_name' => $klarna_return['billing_address']['given_name'],
+                'family_name' => $klarna_return['billing_address']['family_name'],
+                'gender' => $klarna_return['customer']['gender'],
+                'phone' => $klarna_return['billing_address']['email']
+            ]
+        );
+        if(isset($klarna_return['customer']['date_of_birth'])) {
+            $user->date_of_birth = $klarna_return['customer']['date_of_birth'];
+        }
+        $user->save();
+
+        $appointment->customer_id = $user->id;
+
         /*
          * Retrieve the customer info from klarna
          */
