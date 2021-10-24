@@ -78,7 +78,9 @@ class ConfirmationController extends Controller
          *  synchronize the checkout status
          */
         if ($klarna_return['status'] == 'checkout_complete') {
-            BookedSlot::sealTheAppointment($appointment->date, $appointment->which_slot);
+            if (!BookedSlot::checkIfBooked($appointment->date, $appointment->which_slot)){
+                BookedSlot::sealTheAppointment($appointment->date, $appointment->which_slot);
+            }
             $appointment->payment_status = 1;
 
             Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
