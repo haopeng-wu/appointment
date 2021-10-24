@@ -27,30 +27,6 @@
                             @endforeach
                         </div>
                     </article>
-                    <article class="custom-info">
-                        <div class="wrapper">
-                            <div class="labels">
-                                <label for="customer_name">Your name: </label>
-                                <label for="email">Email: </label>
-                                <label for="tel">Tel: </label>
-                            </div>
-                            <div class="inputs">
-                                <input name="customer_name" type="text" id="customer_name"
-                                       value="{{old('customer_name')}}">
-                                @error("customer_name")
-                                <p class="error">{{$message}}</p>
-                                @enderror
-                                <input name="email" type="email" id="email" value="{{old('email')}}">
-                                @error("email")
-                                <p class="error">{{$message}}</p>
-                                @enderror
-                                <input name="tel" type="text" id="tel" value="{{old('tel')}}">
-                                @error("tel")
-                                <p class="error">{{$message}}</p>
-                                @enderror
-                            </div>
-                        </div>
-                    </article>
                 </div>
 
                 <button type="submit">Make this appointment now</button>

@@ -40,12 +40,11 @@ flatpickr('.date input',{
         "firstDayOfWeek": 1 // start week on Monday
     }
 });
-//allFutureBooked
+
 
 /*
 indicating the booked slots
  */
-
 function clearClasses(element){
     for (let cssClass of element.classList){
         element.classList.remove(cssClass);
