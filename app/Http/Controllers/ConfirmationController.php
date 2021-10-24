@@ -28,7 +28,7 @@ class ConfirmationController extends Controller
         /*
          * create the user and leave the password empty for now.
          */
-        $user = User::updateOrInsert(
+        User::updateOrInsert(
             ['email' => $klarna_return['billing_address']['email']],
             [
                 'given_name' => $klarna_return['billing_address']['given_name'],
@@ -36,6 +36,7 @@ class ConfirmationController extends Controller
                 'phone' => $klarna_return['billing_address']['email']
             ]
         );
+        $user = User::where('email','=', $klarna_return['billing_address']['email'])->first();
         if(isset($klarna_return['customer']['date_of_birth'])) {
             $user->date_of_birth = $klarna_return['customer']['date_of_birth'];
         }
