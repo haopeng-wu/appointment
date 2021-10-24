@@ -27,13 +27,13 @@ class ConfirmationController extends Controller
         /*
          * Retrieve the customer info from klarna
          */
-        $appointment->given_name = $klarna_return['given_name'];
-        $appointment->family_name = $klarna_return['family_name'];
-        if(isset($klarna_return['date_of_birth'])){
-            $appointment->date_of_birth = $klarna_return['date_of_birth'];
+        $appointment->given_name = $klarna_return['billing_address']['given_name'];
+        $appointment->family_name = $klarna_return['billing_address']['family_name'];
+        if(isset($klarna_return['customer']['date_of_birth'])){
+            $appointment->date_of_birth = $klarna_return['customer']['date_of_birth'];
         }
-        if(isset($klarna_return['gender'])){
-            $appointment->gender = $klarna_return['gender'];
+        if(isset($klarna_return['customer']['gender'])){
+            $appointment->gender = $klarna_return['customer']['gender'];
         }
 
         $appointment->purchase_country = $klarna_return['purchase_country'];
@@ -41,13 +41,13 @@ class ConfirmationController extends Controller
         $appointment->locale = $klarna_return['locale'];
 
         $appointment->order_amount = $klarna_return['order_amount'];
-        $appointment->email = $klarna_return['email'];
-        $appointment->street_address = $klarna_return['street_address'];
-        $appointment->postal_code = $klarna_return['postal_code'];
-        $appointment->city = $klarna_return['city'];
-        $appointment->country = $klarna_return['country'];
-        if(isset($klarna_return['phone'])){
-            $appointment->phone = $klarna_return['phone'];
+        $appointment->email = $klarna_return['billing_address']['email'];
+        $appointment->street_address = $klarna_return['billing_address']['street_address'];
+        $appointment->postal_code = $klarna_return['billing_address']['postal_code'];
+        $appointment->city = $klarna_return['billing_address']['city'];
+        $appointment->country = $klarna_return['billing_address']['country'];
+        if(isset($klarna_return['billing_address']['phone'])){
+            $appointment->phone = $klarna_return['billing_address']['phone'];
         }
 
 
