@@ -33,12 +33,14 @@ class ConfirmationController extends Controller
             [
                 'given_name' => $klarna_return['billing_address']['given_name'],
                 'family_name' => $klarna_return['billing_address']['family_name'],
-                'gender' => $klarna_return['customer']['gender'],
                 'phone' => $klarna_return['billing_address']['email']
             ]
         );
         if(isset($klarna_return['customer']['date_of_birth'])) {
             $user->date_of_birth = $klarna_return['customer']['date_of_birth'];
+        }
+        if(isset($klarna_return['customer']['gender'])) {
+            $user->gender = $klarna_return['customer']['gender'];
         }
         $user->save();
 
