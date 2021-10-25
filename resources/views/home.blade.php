@@ -7,8 +7,7 @@
                     <article class="schedule">
 
                         <div class="date">
-                            <label for="date">Which day would you like to schedule?</label>
-                            <input id="date" name="date" type="date" value="{{old('date')}}">
+                            <input id="date" placeholder="Select a date to schedule" name="date" type="date" value="{{old('date')}}">
                             @error("date")
                             <p class="error">{{$message}}</p>
                             @enderror
