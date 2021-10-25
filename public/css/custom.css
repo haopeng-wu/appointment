@@ -22,11 +22,11 @@ p.error{
     padding: 5px;
 }
 
-section.appointment{
-    width: 100vw;
+main, section.appointment{
 }
 
 article.schedule{
+    width: 80vw;
     border-radius: 5px;
     margin: 1em;
     padding: 1em;
