@@ -7,7 +7,7 @@
                     <article class="schedule">
 
                         <div class="date">
-                            <input id="date" placeholder="Select a date to schedule" name="date" type="date" value="{{old('date')}}">
+                            <input id="date" placeholder="Select a date" name="date" type="date" value="{{old('date')}}">
                             @error("date")
                             <p class="error">{{$message}}</p>
                             @enderror
