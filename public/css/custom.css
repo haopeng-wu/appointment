@@ -49,7 +49,6 @@ article.schedule, article.custom-info {
 nav li {
     all: initial;
     margin-right: 2em;
-
 }
 
 nav li:last-child {
@@ -63,7 +62,6 @@ nav li:last-child {
     display: inline-block;
     text-align: center;
 }
-
 
 .time-slots label{
     background-color: #b38cf3;
@@ -94,7 +92,6 @@ nav li:last-child {
     cursor: not-allowed;
     background-color: #e4d6fd;
 }
-
 
 input.time_slot {
     display: none;

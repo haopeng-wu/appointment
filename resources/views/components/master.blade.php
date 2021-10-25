@@ -22,11 +22,6 @@
             <li>Link 3</li>
         </ul>
     </div>
-
-    <div class="admin">
-        <a target="_blank" href="/admin">admin</a>
-    </div>
-
 </nav>
 {{$slot}}
 <footer>
