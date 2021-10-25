@@ -22,7 +22,11 @@ p.error{
     padding: 5px;
 }
 
-article.schedule, article.custom-info {
+section.appointment{
+    width: 100vw;
+}
+
+article.schedule{
     border-radius: 5px;
     margin: 1em;
     padding: 1em;

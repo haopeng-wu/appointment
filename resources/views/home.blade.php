@@ -1,5 +1,8 @@
 <x-master>
     <main>
+        <section>
+
+        </section>
         <section class="appointment">
             <form method="post" class="appointment" action="/appointment">
                 @csrf
