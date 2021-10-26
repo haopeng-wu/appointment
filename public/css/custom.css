@@ -12,7 +12,7 @@ button
 button{
     background-color: #03A5D4;
     border: 0;
-    border-radius: 1500px;
+    border-radius: 100%;
     color: white;
 }
 
