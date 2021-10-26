@@ -20,7 +20,7 @@ nav.wrapper {
 .nav-logo img {
     display: block;
     height: 2em;
-    margin: auto;
+    margin: 1em auto;
 }
 
 .appointment button {
@@ -65,8 +65,6 @@ article.schedule{
 .labels {
     margin-right: 10px;
 }
-
-
 
 /* schedule article */
 .time-slots label {
