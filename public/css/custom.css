@@ -11,14 +11,14 @@ button
  */
 
 .appointment button {
-    margin: 1em;
+    margin-left: 0.7em;
     background-color: #03A5D4;
     border: 0;
     border-radius: 1500px;
-    padding: 9px 17px;
+    padding: 8px 16px;
     color: white;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 450;
 }
 
 /* nav */
