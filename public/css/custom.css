@@ -26,8 +26,8 @@ nav ul.wrapper{
     justify-content: space-around;
 }
 
-nav > .wrapper {
-    justify-content: space-between;
+.nav-logo{
+    margin-right: 1.5em;
 }
 
 nav.wrapper {
