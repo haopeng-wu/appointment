@@ -24,6 +24,9 @@ nav li:last-child {
 
 .hamburger-wrapper{
     margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 img.hamburger-icon{
     height: 1em;
