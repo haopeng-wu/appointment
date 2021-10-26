@@ -2,18 +2,23 @@
     display: flex;
 }
 
+/* nav */
+
+nav li {
+    all: initial;
+    margin-right: 2em;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
 nav.wrapper {
     justify-content: space-between;
 }
 
-p.error{
-    color: #e3342f;
-    font-size: x-small;
-    margin-top: 2px;
-}
-
 .nav-logo img {
-    display: inline-block;
+    display: block;
     height: 2em;
     margin: auto;
 }
@@ -21,6 +26,12 @@ p.error{
 .appointment button {
     margin: 1em;
     padding: 5px;
+}
+
+p.error{
+    color: #e3342f;
+    font-size: x-small;
+    margin-top: 2px;
 }
 
 main, section.appointment{
@@ -55,16 +66,7 @@ article.schedule{
     margin-right: 10px;
 }
 
-/* nav */
 
-nav li {
-    all: initial;
-    margin-right: 2em;
-}
-
-nav li:last-child {
-    margin-right: 0;
-}
 
 /* schedule article */
 .time-slots label {
