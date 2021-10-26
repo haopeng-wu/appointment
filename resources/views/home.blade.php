@@ -27,7 +27,7 @@
                                 </div>
                             @endforeach
                         </div>
-                        <button type="submit">Make this appointment now</button>
+                        <button type="submit">Make the Appointment</button>
                     </article>
                 </div>
             </form>
