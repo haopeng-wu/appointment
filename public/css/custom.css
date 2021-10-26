@@ -15,7 +15,7 @@ nav li:last-child {
 }
 
 nav ul.wrapper{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav.wrapper {
