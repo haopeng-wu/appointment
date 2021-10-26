@@ -1,7 +1,7 @@
 <x-master>
     <main>
-        <section>
-
+        <section class="center-pic">
+            <img src="{{asset('images/home-center.png')}}" alt="home cozy picture">
         </section>
         <section class="appointment">
             <form method="post" class="appointment" action="/appointment">

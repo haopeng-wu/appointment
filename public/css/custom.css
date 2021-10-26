@@ -25,8 +25,12 @@ p.error{
 main, section.appointment{
 }
 
+.center-pic img{
+    width: 100vw;
+}
+
 article.schedule{
-    width: 80vw;
+    width: 90vw;
     border-radius: 5px;
     margin: 1em;
     padding: 1em;
