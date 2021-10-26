@@ -14,7 +14,7 @@ nav li {
 li {
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    justify-content: space-between;
 }
 
 nav li:last-child {
