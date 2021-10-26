@@ -110,6 +110,10 @@ article.schedule{
     margin: 0.7em;
 }
 
+.date input[type=date]{
+    margin: 0.7em;
+}
+
 .inputs input {
     width: 12em;
 }
