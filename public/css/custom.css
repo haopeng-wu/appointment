@@ -28,6 +28,7 @@ main, section.appointment{
 .center-pic img{
     width: 90vw;
     margin: 0 auto;
+    display: inline-block;
 }
 
 article.schedule{
