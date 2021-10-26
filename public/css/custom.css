@@ -15,10 +15,16 @@ li {
 
 nav li:last-child {
 }
+.hamburger-menu{
+    display: none;
+}
 
 @media screen and (max-width: 400px) {
     nav ul.wrapper{
         display: none;
+    }
+    .hamburger-menu{
+        display: inline-block;
     }
 }
 

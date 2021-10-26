@@ -17,6 +17,9 @@
                 <img src="{{asset('images/one-line-text-icon.svg')}}" alt="the site logo">
             </a>
         </div>
+        <div>
+            <img class="hamburger-menu" src="{{asset('images/radix-icons_hamburger-menu.png')}}" alt="radix-icons_hamburger-menu">
+        </div>
         <ul class="wrapper">
             <li>Link 1</li>
             <li>Link 2</li>
