@@ -131,6 +131,7 @@ article.schedule{
 
 .time-slots .checked {
     background-color: #03A5D4;
+    color: white;
 }
 
 /*
