@@ -7,6 +7,9 @@ body{
 }
 
 /* nav */
+nav{
+    margin-left: 1em;
+}
 nav > div.nav-wrapper{
     display: flex;
     justify-content: space-between;
@@ -49,10 +52,6 @@ img.hamburger-icon{
 
 nav ul.wrapper{
     justify-content: space-around;
-}
-
-.nav-logo{
-    margin-right: 1em;
 }
 
 nav.wrapper {
