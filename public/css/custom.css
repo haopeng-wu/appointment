@@ -5,16 +5,13 @@
 /* nav */
 
 nav li {
-    display: inline-block;
     list-style: none;
-    height: 100%;
-    text-align: center;
     margin-right: 20px;
 }
 li {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-content: center;
 }
 
 nav li:last-child {
