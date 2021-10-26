@@ -5,6 +5,7 @@
 /* nav */
 
 nav li {
+    display: inline-block;
     all: initial;
     margin-right: 2em;
     text-align: center;
