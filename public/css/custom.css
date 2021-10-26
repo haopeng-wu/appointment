@@ -137,12 +137,12 @@ article.schedule{
 }
  */
 .time-slots label:hover {
-    background-color: #f66d7d;
+    background-color: #03A5D4;
     cursor: pointer;
     transition: background-color 200ms;
 }
 .time-slots label:active{
-    background-color: #f1939e;
+    background-color: #64b4cc;
 }
 
 .time-slots .booked {
