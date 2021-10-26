@@ -8,11 +8,14 @@ nav li {
     display: inline-block;
     all: initial;
     margin-right: 2em;
-    text-align: center;
 }
 
 nav li:last-child {
     margin-right: 0;
+}
+
+nav ul.wrapper{
+    justify-content: space-between;
 }
 
 nav.wrapper {
