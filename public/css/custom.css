@@ -11,6 +11,8 @@ button
  */
 button{
     background-color: #03A5D4;
+    border: 0;
+    border-radius: 5px;
 }
 
 /* nav */
