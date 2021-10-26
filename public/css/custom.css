@@ -9,7 +9,12 @@ nav li {
     list-style: none;
     height: 100%;
     text-align: center;
-    margin-right: 2em;
+    margin-right: 20px;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 nav li:last-child {
