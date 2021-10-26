@@ -28,17 +28,17 @@
                                 </div>
                             @endforeach
                         </div>
+                        <button type="submit">Make this appointment now</button>
                     </article>
                 </div>
-
-                <button type="submit">Make this appointment now</button>
             </form>
         </section>
-        <section class="promote">
 
+
+
+        <section class="promote">
         </section>
         <section class="introduction">
-
         </section>
     </main>
     <script type="text/javascript">
