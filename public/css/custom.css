@@ -6,7 +6,8 @@
 
 nav li {
     display: inline-block;
-    all: initial;
+    list-style: none;
+    height: 100%;
     margin-right: 2em;
 }
 
