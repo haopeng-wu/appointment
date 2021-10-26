@@ -5,7 +5,7 @@
 /* nav */
 nav > div.nav-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -23,7 +23,7 @@ nav li:last-child {
 }
 
 .hamburger-wrapper{
-
+    margin-right: 1em;
 }
 img.hamburger-icon{
     height: 1em;
