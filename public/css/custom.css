@@ -3,7 +3,7 @@
 }
 
 /* nav */
-nav, nav > div{
+nav > div{
     width: 100%;
 }
 nav li {
