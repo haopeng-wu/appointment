@@ -6,6 +6,7 @@
     <link href="{{ asset('css/custom.css')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="{{asset('images/icon.svg)}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
