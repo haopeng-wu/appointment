@@ -9,11 +9,13 @@ body{
 /*
 button
  */
-button{
+
+.appointment button {
+    margin: 1em;
     background-color: #03A5D4;
     border: 0;
     border-radius: 1200px;
-    padding: 4px 6px;
+    padding: 6px 10px;
     color: white;
 }
 
@@ -73,11 +75,6 @@ nav.wrapper {
     display: block;
     height: 2em;
     margin: 1em auto;
-}
-
-.appointment button {
-    margin: 1em;
-    padding: 5px;
 }
 
 p.error{
