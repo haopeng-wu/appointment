@@ -19,7 +19,7 @@ nav li:last-child {
 .hamburger-wrapper{
 
 }
-.hamburger-icon{
+img.hamburger-icon{
     height: 1em;
     display: none;
     margin: 1em auto;
@@ -33,8 +33,8 @@ nav > div.wrapper{
     nav ul.wrapper{
         display: none;
     }
-    .hamburger-icon{
-        display: inline-block;
+    img.hamburger-icon{
+        display: block;
     }
 }
 
