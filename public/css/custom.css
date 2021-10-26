@@ -7,6 +7,7 @@
 nav li {
     all: initial;
     margin-right: 2em;
+    text-align: center;
 }
 
 nav li:last-child {
