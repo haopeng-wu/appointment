@@ -114,6 +114,7 @@ article.schedule{
     border: solid 1px #03A5D4;
     border-radius: 5px;
     margin-left: 0.9em;
+    padding: 4px 8px;
 }
 
 .inputs input {
@@ -128,7 +129,7 @@ article.schedule{
 .time-slots label {
     border-radius: 5px;
     border: solid 1px #03A5D4;
-    padding: 4px;
+    padding: 4px 8px;
     display: inline-block;
     text-align: center;
 }
