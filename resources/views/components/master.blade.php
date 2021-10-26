@@ -11,7 +11,7 @@
 </head>
 <body>
 <nav class="wrapper">
-    <div class="wrapper">
+    <div class="nav-wrapper">
         <div class="nav-logo">
             <a href="/">
                 <img src="{{asset('images/one-line-text-icon.svg')}}" alt="the site logo">

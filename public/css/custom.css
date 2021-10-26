@@ -3,9 +3,12 @@
 }
 
 /* nav */
-nav > div{
+nav > div.nav-wrapper{
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
 }
+
 nav li {
     list-style: none;
     margin-right: 20px;
@@ -26,10 +29,6 @@ img.hamburger-icon{
     height: 1em;
     display: none;
     margin: 1em auto;
-}
-
-nav > div.wrapper{
-    justify-content: space-between;
 }
 
 @media screen and (max-width: 400px) {
