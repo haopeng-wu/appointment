@@ -29,7 +29,7 @@ nav li:last-child {
     justify-content: space-evenly;
 }
 img.hamburger-icon{
-    height: 1em;
+    height: 1.5em;
     display: none;
     margin: 1em auto;
 }
