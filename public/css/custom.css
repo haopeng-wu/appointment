@@ -78,6 +78,10 @@ p.error{
 main, section.appointment{
 }
 
+.center-pic{
+    margin-left: 1em;
+}
+
 .center-pic img{
     width: 90vw;
     margin: 0 auto;
