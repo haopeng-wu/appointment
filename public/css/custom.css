@@ -21,7 +21,7 @@ nav ul.wrapper{
     justify-content: space-around;
 }
 
-nav wrapper {
+nav .wrapper {
     justify-content: space-between;
 }
 
