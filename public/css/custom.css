@@ -82,7 +82,7 @@ nav.wrapper {
 p.error{
     color: #e3342f;
     font-size: x-small;
-    margin-top: 2px;
+    margin-top: 0.7em;
 }
 
 main, section.appointment{
@@ -119,10 +119,6 @@ article.schedule{
     padding: 4px 8px;
 }
 
-.inputs input {
-    width: 12em;
-}
-
 .labels {
     margin-right: 10px;
 }
@@ -141,18 +137,15 @@ article.schedule{
     color: white;
 }
 
-/*
-.booked::after{
-    content: '';
-}
- */
 .time-slots label:hover {
     background-color: #03A5D4;
+    color: white;
     cursor: pointer;
     transition: background-color 200ms;
 }
 .time-slots label:active{
     background-color: #64b4cc;
+    color: white;
 }
 
 .time-slots .booked {
