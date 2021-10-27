@@ -9,16 +9,14 @@
                 <div class="wrapper">
                     <article class="schedule">
                         <div class="date">
-                            <input id="date" placeholder="Select a date" name="date" type="date" value="{{old('date')}}">
+                            <input id="date" placeholder="Select a date" name="date" type="date"
+                                   value="{{old('date')}}">
                             @error("date")
                             <p class="error">{{$message}}</p>
                             @enderror
                         </div>
 
                         <div class="time-slots">
-                            @error("which_slot")
-                            <p class="error">{{$message}}</p>
-                            @enderror
                             @foreach($slots as $key => $slot)
                                 <div>
                                     <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
@@ -26,13 +24,15 @@
                                     <label class="" for="{{'slot-'.$key}}">{{$slot}}</label>
                                 </div>
                             @endforeach
+                            @error("which_slot")
+                            <p class="error">{{$message}}</p>
+                            @enderror
                         </div>
                         <button type="submit">Make the Appointment</button>
                     </article>
                 </div>
             </form>
         </section>
-
 
 
         <section class="promote">
