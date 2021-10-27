@@ -82,7 +82,8 @@ nav.wrapper {
 p.error{
     color: #e3342f;
     font-size: x-small;
-    margin-top: 0.7em;
+    margin-top: 4px;
+    margin-left: 0.7em;
 }
 
 main, section.appointment{
