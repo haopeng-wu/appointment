@@ -1,8 +1,8 @@
 <x-a-master>
     <article class="appointment">
-        <h2>
+        <h4>
             Book Out Manually
-        </h2>
+        </h4>
         <form method="post" class="appointment" action="/appointment">
             @csrf
             <div class="wrapper">
