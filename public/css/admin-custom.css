@@ -162,7 +162,6 @@ change bookable weekdays
     margin: 0.2em 0.2em 0.2em 0;
     text-align: center;
     min-width: 6rem;
-    color: white;
 }
 
 .weekdays label:hover{
@@ -171,6 +170,7 @@ change bookable weekdays
 
 .weekdays input:checked+label{
     background-color: #fc925a;
+    color: white;
 }
 
 /*
@@ -252,15 +252,25 @@ article.schedule{
 button
  */
 
-button {
+button.big {
     margin: 0.7em 0 0.7em 0.7em;
     background-color: #fc925a;
     border: 0;
     border-radius: 1500px;
-    padding: 8px 16px;
+    padding: 6px 12px;
     color: white;
     font-size: 17px;
     font-weight: 450;
+}
+
+button.small {
+    margin: 0.2em;
+    background-color: #fc925a;
+    border: 0;
+    border-radius: 800px;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 400;
 }
 
 input.time_slot {

@@ -27,7 +27,7 @@
                         <p class="error">{{$message}}</p>
                         @enderror
                     </div>
-                    <button type="submit">Book Out</button>
+                    <button class="big" type="submit">Book Out</button>
                 </div>
             </div>
         </form>
@@ -60,7 +60,7 @@
                             <p class="error">{{$message}}</p>
                             @enderror
                             <td>
-                                <button type="submit">modify</button>
+                                <button class="small" type="submit">modify</button>
                             </td>
                         </tr>
                         </tbody>
