@@ -3,7 +3,7 @@
         <h4>
             Book Out Manually
         </h4>
-        <form method="post" class="appointment" action="/appointment">
+        <form method="post" class="appointment" action="/booked-slot-update">
             @csrf
             <div class="wrapper">
                 <div class="schedule">

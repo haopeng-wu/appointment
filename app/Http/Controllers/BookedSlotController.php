@@ -67,9 +67,18 @@ class BookedSlotController extends Controller
      * @param  \App\Models\BookedSlot  $bookedSlot
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BookedSlot $bookedSlot)
+    public function update(Request $request)
     {
-        //
+        $attributes = $request->validate(
+            ['date' => ["required",'date'],
+            'which_slot' => ["required"]]
+        );
+        $date = $attributes['date'];
+        $slot = $attributes['slot'];
+        if (!BookedSlot::checkIfBooked($date, $slot)){
+            BookedSlot::sealTheAppointment($date, $slot);
+        }
+        return redirect('/dashboard');
     }
 
     /**

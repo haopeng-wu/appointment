@@ -20,16 +20,6 @@ class AdminDashController extends Controller
             'theDayAfterTomorrows'=>$theDayAfterTomorrows]);
     }
 
-
-    /*
-     * $slots = Slot::validSlots();
-        $availableWeekdays = BookableWeekday::allIdMinusOne();
-        $allFutureBooked = BookedSlot::allFutureBookedAppointments();
-        return view('home', ['slots'=>$slots,
-            'availableWeekdays'=>$availableWeekdays,
-            'allFutureBooked'=>$allFutureBooked]);
-     */
-
     public function dashboard(Request $request){
         $slots = Slot::all()->where('is_valid', '=', 1);
         $bookableFlags = BookableWeekday::allBookableFlags();
