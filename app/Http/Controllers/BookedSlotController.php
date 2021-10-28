@@ -74,7 +74,7 @@ class BookedSlotController extends Controller
             'which_slot' => ["required"]]
         );
         $date = $attributes['date'];
-        $slot = $attributes['slot'];
+        $slot = $attributes['which_slot'];
         if (!BookedSlot::checkIfBooked($date, $slot)){
             BookedSlot::sealTheAppointment($date, $slot);
         }
