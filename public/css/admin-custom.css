@@ -166,11 +166,13 @@ change bookable weekdays
     border: solid 1px #fc925a;
     padding: 4px 6px;
     border-radius: 5px;
-    margin: 0.2em;
     text-align: center;
     min-width: 6rem;
 }
 
+.weekdays input[type=checkbox]+label{
+    margin: 0.2em;
+}
 .weekdays label:hover{
     cursor: pointer;
 }
