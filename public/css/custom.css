@@ -109,6 +109,11 @@ article.schedule{
     padding: 4px 8px;
 }
 
+.date input:hover{
+    cursor:pointer;
+    box-shadow: inset 1px 1px 5px black;
+}
+
 .labels {
     margin-right: 10px;
 }
