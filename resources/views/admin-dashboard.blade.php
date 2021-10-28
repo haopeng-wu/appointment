@@ -1,9 +1,9 @@
 <x-a-master>
-    <section class="appointment">
+    <article class="appointment">
         <form method="post" class="appointment" action="/appointment">
             @csrf
             <div class="wrapper">
-                <article class="schedule">
+                <div class="schedule">
                     <div class="date">
                         <input id="date" placeholder="Select a date" name="date" type="date"
                                value="{{old('date')}}">
@@ -25,10 +25,11 @@
                         @enderror
                     </div>
                     <button type="submit">Make the Appointment</button>
-                </article>
+                </div>
             </div>
         </form>
-    </section>
+    </article>
+
     <article class="slot-configure">
         <h4>Configure Slots
         </h4>
