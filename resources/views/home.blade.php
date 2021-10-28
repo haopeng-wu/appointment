@@ -15,7 +15,6 @@
                             <p class="error">{{$message}}</p>
                             @enderror
                         </div>
-
                         <div class="time-slots">
                             @foreach($slots as $key => $slot)
                                 <div>

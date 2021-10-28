@@ -159,6 +159,11 @@ button
     font-weight: 450;
 }
 
+.appointment button:hover{
+    cursor: pointer;
+    background-color: #31abce;
+}
+
 input.time_slot {
     display: none;
 }
