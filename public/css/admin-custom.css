@@ -155,13 +155,14 @@ change bookable weekdays
     display: none;
 }
 .weekdays label{
-    display: inline-block;
+    display: block;
     border: solid 1px #fc925a;
     padding: 4px 6px;
     border-radius: 5px;
     margin: 0.2em 0.2em 0.2em 0;
     text-align: center;
     min-width: 6rem;
+    color: white;
 }
 
 .weekdays label:hover{
