@@ -34,12 +34,9 @@ nav li{
     list-style-type:none;
 }
 
-nav a{
-    text-decoration: none;
-}
-
 nav a {
-    border: solid black 1px;
+    text-decoration: none;
+    border: solid black;
     border-width: 1px 0 1px 1px;
     display: inline-block;
     padding: 10px 20px;
@@ -132,25 +129,6 @@ article{
     max-width: 6em;
 }
 
-/*
-today div
- */
-
-article.today{
-}
-
-/*
-tomorrow div
- */
-article.tomorrow{
-}
-
-/*
-the-day-after-tomorrow div
- */
-article.the-day-after-tomorrow{
-}
-
 div.schedule span{
     display: inline-block;
     margin-right: 0.25em;
@@ -178,7 +156,7 @@ change bookable weekdays
 }
 .weekdays label{
     display: inline-block;
-    background-color: #fff5d4;
+    border: solid 1px #fc925a;
     padding: 4px 6px;
     border-radius: 5px;
     margin: 0.2em 0.2em 0.2em 0;
@@ -227,7 +205,7 @@ article.schedule{
 }
 
 .date input{
-    border: solid 1px #03A5D4;
+    border: solid 1px #fc925a;
     border-radius: 5px;
     margin-left: 0.9em;
     padding: 4px 8px;
@@ -239,25 +217,25 @@ article.schedule{
 
 .time-slots label {
     border-radius: 5px;
-    border: solid 1px #03A5D4;
+    border: solid 1px #fc925a;
     padding: 4px 8px;
     display: inline-block;
     text-align: center;
 }
 
 .time-slots .checked {
-    background-color: #03A5D4;
+    background-color: #fc925a;
     color: white;
 }
 
 .time-slots label:hover {
-    background-color: #03A5D4;
+    background-color: #fc925a;
     color: white;
     cursor: pointer;
     transition: background-color 200ms;
 }
 .time-slots label:active{
-    background-color: #64b4cc;
+    background-color: #fc925a;
     color: white;
 }
 
@@ -273,9 +251,9 @@ article.schedule{
 button
  */
 
-.appointment button {
+button {
     margin: 0.7em 0 0.7em 0.7em;
-    background-color: #03A5D4;
+    background-color: #fc925a;
     border: 0;
     border-radius: 1500px;
     padding: 8px 16px;

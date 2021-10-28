@@ -1,5 +1,8 @@
 <x-a-master>
     <article class="appointment">
+        <h2>
+            Book Out Manually
+        </h2>
         <form method="post" class="appointment" action="/appointment">
             @csrf
             <div class="wrapper">
@@ -24,7 +27,7 @@
                         <p class="error">{{$message}}</p>
                         @enderror
                     </div>
-                    <button type="submit">Make the Appointment</button>
+                    <button type="submit">Book Out</button>
                 </div>
             </div>
         </form>
