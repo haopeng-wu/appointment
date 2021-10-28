@@ -21,6 +21,7 @@
 <footer>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script type="text/javascript" src="{{ asset('js/admin-custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 </body>
 </html>

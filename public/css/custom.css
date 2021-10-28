@@ -6,21 +6,6 @@ body{
     display: flex;
 }
 
-/*
-button
- */
-
-.appointment button {
-    margin: 0.7em 0 0.7em 0.7em;
-    background-color: #03A5D4;
-    border: 0;
-    border-radius: 1500px;
-    padding: 8px 16px;
-    color: white;
-    font-size: 17px;
-    font-weight: 450;
-}
-
 /* nav */
 nav{
     margin-left: 1em;
@@ -99,6 +84,9 @@ main, section.appointment{
     display: inline-block;
 }
 
+
+
+/* schedule article */
 article.schedule{
     width: 90vw;
     border-radius: 5px;
@@ -124,7 +112,6 @@ article.schedule{
     margin-right: 10px;
 }
 
-/* schedule article */
 .time-slots label {
     border-radius: 5px;
     border: solid 1px #03A5D4;
@@ -155,6 +142,21 @@ article.schedule{
 .time-slots .booked:hover{
     cursor: not-allowed;
     background-color: #e4d6fd;
+}
+
+/*
+button
+ */
+
+.appointment button {
+    margin: 0.7em 0 0.7em 0.7em;
+    background-color: #03A5D4;
+    border: 0;
+    border-radius: 1500px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 17px;
+    font-weight: 450;
 }
 
 input.time_slot {
