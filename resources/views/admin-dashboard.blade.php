@@ -13,7 +13,7 @@
                     </div>
 
                     <div class="time-slots">
-                        @foreach($slots as $key => $slot)
+                        @foreach($slotsForBooking as $key => $slot)
                             <div>
                                 <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
                                        name="which_slot" value="{{$key}}">
@@ -92,5 +92,7 @@
     </article>
     <script type="text/javascript">
         let bookableFlags = {!! json_encode($bookableFlags) !!};
+        let availableWeekdays = {{json_encode($availableWeekdays)}};
+        let allFutureBooked = {!! json_encode($allFutureBooked) !!};
     </script>
 </x-a-master>

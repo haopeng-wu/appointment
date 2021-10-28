@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use App\Models\BookableWeekday;
+use App\Models\BookedSlot;
 use App\Models\Slot;
 use Illuminate\Http\Request;
 
@@ -19,9 +20,29 @@ class AdminDashController extends Controller
             'theDayAfterTomorrows'=>$theDayAfterTomorrows]);
     }
 
+
+    /*
+     * $slots = Slot::validSlots();
+        $availableWeekdays = BookableWeekday::allIdMinusOne();
+        $allFutureBooked = BookedSlot::allFutureBookedAppointments();
+        return view('home', ['slots'=>$slots,
+            'availableWeekdays'=>$availableWeekdays,
+            'allFutureBooked'=>$allFutureBooked]);
+     */
+
     public function dashboard(Request $request){
         $slots = Slot::all()->where('is_valid', '=', 1);
         $bookableFlags = BookableWeekday::allBookableFlags();
-        return view('admin-dashboard', ['slots'=>$slots, 'bookableFlags'=>$bookableFlags]);
+
+        $slotsForBooking = Slot::validSlots();
+        $availableWeekdays = BookableWeekday::allIdMinusOne();
+        $allFutureBooked = BookedSlot::allFutureBookedAppointments();
+
+        return view('admin-dashboard', [
+            'slots'=>$slots,
+            'bookableFlags'=>$bookableFlags,
+            'slotsForBooking'=>$slotsForBooking,
+            'availableWeekdays'=>$availableWeekdays,
+            'allFutureBooked'=>$allFutureBooked]);
     }
 }
