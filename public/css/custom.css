@@ -111,7 +111,7 @@ article.schedule{
 
 .date input:hover{
     cursor:pointer;
-    box-shadow: inset 2px 1px 5px #03A5D4;
+    box-shadow: inset 2px 1px 5px rgba(4, 142, 182, 0.89);
 }
 
 .labels {
