@@ -162,7 +162,7 @@ button
 
 .appointment button:hover{
     cursor: pointer;
-    background-color: #31abce;
+    background-color: #50afcb;
 }
 
 input.time_slot {
