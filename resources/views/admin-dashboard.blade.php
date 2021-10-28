@@ -1,10 +1,34 @@
 <x-a-master>
-    <article class="book">
-        <h4></h4>
-        <div>
+    <section class="appointment">
+        <form method="post" class="appointment" action="/appointment">
+            @csrf
+            <div class="wrapper">
+                <article class="schedule">
+                    <div class="date">
+                        <input id="date" placeholder="Select a date" name="date" type="date"
+                               value="{{old('date')}}">
+                        @error("date")
+                        <p class="error">{{$message}}</p>
+                        @enderror
+                    </div>
 
-        </div>
-    </article>
+                    <div class="time-slots">
+                        @foreach($slots as $key => $slot)
+                            <div>
+                                <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
+                                       name="which_slot" value="{{$key}}">
+                                <label class="" for="{{'slot-'.$key}}">{{$slot}}</label>
+                            </div>
+                        @endforeach
+                        @error("which_slot")
+                        <p class="error">{{$message}}</p>
+                        @enderror
+                    </div>
+                    <button type="submit">Make the Appointment</button>
+                </article>
+            </div>
+        </form>
+    </section>
     <article class="slot-configure">
         <h4>Configure Slots
         </h4>
