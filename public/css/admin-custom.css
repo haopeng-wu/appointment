@@ -157,6 +157,9 @@ change bookable weekdays
 .weekdays input{
     display: none;
 }
+input[type=checkbox]+label{
+    margin:initial;
+}
 .weekdays label{
     display: block;
     border: solid 1px #fc925a;
