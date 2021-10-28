@@ -90,7 +90,7 @@
                     <input type="checkbox" name="Sunday" id="d1">
                     <label for="d1">Sunday</label>
                 </div>
-                <button type="submit">Submit</button>
+                <button class="big" type="submit">Submit</button>
             </form>
         </div>
     </article>
