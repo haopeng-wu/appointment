@@ -170,6 +170,7 @@ change bookable weekdays
     border-radius: 5px;
     text-align: center;
     min-width: 6rem;
+    max-width: 12rem;
 }
 
 .weekdays input[type=checkbox]+label{

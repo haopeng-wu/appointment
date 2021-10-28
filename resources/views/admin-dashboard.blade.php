@@ -27,7 +27,7 @@
                         <p class="error">{{$message}}</p>
                         @enderror
                     </div>
-                    <button class="big" type="submit">Book Out</button>
+                    <button class="big" type="submit">Book It Out</button>
                 </div>
             </div>
         </form>
