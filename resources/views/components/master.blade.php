@@ -38,11 +38,10 @@
 
 
 <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
-<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
-
+<script type="text/javascript" src="{{asset('js/flatpickr-se.js')}}"></script>
 <!--
 
-<script type="text/javascript" src="{{asset('js/flatpickr-se.js')}}"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
 -->
 
 <script type="text/javascript"
