@@ -81,12 +81,12 @@
         </div>
     </article>
 
-    <article class="latest-20">
+    <article class="latest-20 schedules">
         <h4>Latest 20 Orders:</h4>
 
     </article>
 
-    <article class="all-the-orders">
+    <article class="all-the-orders schedules">
         <div class="schedule">
             <table>
                 <caption>All the orders:</caption>
