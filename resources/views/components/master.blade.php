@@ -35,11 +35,11 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
+<script type="text/javascript" src="{{asset('js/flatpickr-se.js')}}"></script>
 <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
 
 <!--
-<script type="text/javascript" src="{{asset('js/flatpickr-se.js')}}"></script>
+
 <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
 -->
 
