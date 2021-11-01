@@ -103,6 +103,7 @@ dateInput.addEventListener('input', function (){
             let now = new Date(0, 0, 0, todayDate.getHours(), todayDate.getMinutes());
             console.log(now);
             for (const key in all_slots){
+                console.log(key);
                 h = all_slots[key].split(' - ')[0].split(':')[0];
                 m = all_slots[key].split(' - ')[0].split(':')[1];
                 slotTime = new Date(0, 0, 0, h, m);
