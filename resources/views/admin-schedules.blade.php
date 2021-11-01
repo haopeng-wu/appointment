@@ -87,16 +87,28 @@
     </article>
 
     <article class="all-the-orders">
-        <h4>All the orders:</h4>
-        <div>
-            @foreach($all as $item)
+        <div class="schedule">
+            <table>
+                <caption>All the orders:</caption>
+                <thead>
                 <tr>
-                    <td>{{$item->start_end_time}}</td>
-                    <td>{{$item->duration}}</td>
-                    <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                    <td>Link</td>
+                    <th>Time slot</th>
+                    <th>Duration</th>
+                    <th>Details</th>
+                    <th>Link</th>
                 </tr>
-            @endforeach
+                </thead>
+                <tbody>
+                @foreach($all as $item)
+                    <tr>
+                        <td>{{$item->start_end_time}}</td>
+                        <td>{{$item->duration}}</td>
+                        <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
+                        <td>Link</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
         </div>
     </article>
 </x-a-master>
