@@ -36,6 +36,9 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/se.js"></script>
 <script type="text/javascript"
         src="{{asset('js/custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 </body>
