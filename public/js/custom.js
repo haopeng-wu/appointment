@@ -100,6 +100,7 @@ dateInput.addEventListener('input', function (){
         if (all_slots){
             let h = '', m = '', slotTime = '';
             let now = new Date(0, 0, 0, todayDate.getHours(), todayDate.getMinutes());
+            console.log(now);
             for (let i = 0; i < all_slots.length; i++){
                 h = all_slots[i].split(' - ')[0].split(':')[0];
                 m = all_slots[i].split(' - ')[0].split(':')[1];
