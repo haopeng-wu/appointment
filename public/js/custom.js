@@ -110,8 +110,8 @@ dateInput.addEventListener('input', function (){
                 slotTime = new Date(0, 0, 0, h, m);
                 console.log(now - slotTime);
                 if (now - slotTime > 0){
-                    const _theLabel = document.querySelector(`label[for=slot-${bookedSlots[key-1]}]`);
-                    const _theInputElement = document.querySelector(`input#slot-${bookedSlots[key-1]}`);
+                    const _theLabel = document.querySelector(`label[for=slot-${key}]`);
+                    const _theInputElement = document.querySelector(`input#slot-${key}`);
                     clearClasses(_theLabel);
                     _theLabel.classList.add('booked');
                     _theInputElement.disabled = true;
