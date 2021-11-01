@@ -36,7 +36,7 @@ flatpickr('.date input',{
             }
         }
     ],
-    "locale":ru,
+    "locale":"ru",
 
 });
 
