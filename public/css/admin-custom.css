@@ -106,6 +106,19 @@ article{
     overflow: auto;
 }
 
+/*
+set max-height
+ */
+article.latest-20{
+    max-height: 25vh;
+    overflow: auto;
+}
+
+article.all-the-orders{
+    max-height: 80vh;
+    overflow: auto;
+}
+
 .schedules .wrapper{
     justify-content: space-between;
 }
@@ -192,14 +205,6 @@ article.schedules{
     margin: 1em;
     padding: 1em;
 }
-/*
-latest 20 orders
- */
-article.latest-20{
-    height: 25vh;
-    overflow: auto;
-}
-
 
 .labels label, .inputs input {
     border-radius: 5px;
