@@ -102,9 +102,9 @@ dateInput.addEventListener('input', function (){
             let todayDate = new Date();
             let now = new Date(0, 0, 0, todayDate.getHours(), todayDate.getMinutes());
             console.log(now);
-            for (let i = 0; i < all_slots.length; i++){
-                h = all_slots[i].split(' - ')[0].split(':')[0];
-                m = all_slots[i].split(' - ')[0].split(':')[1];
+            for (const key in all_slots){
+                h = all_slots[key].split(' - ')[0].split(':')[0];
+                m = all_slots[key].split(' - ')[0].split(':')[1];
                 slotTime = new Date(0, 0, 0, h, m);
                 console.log(slotTime);
                 console.log(now - slotTime);
