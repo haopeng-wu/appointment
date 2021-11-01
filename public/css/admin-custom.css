@@ -106,26 +106,26 @@ article{
     overflow: auto;
 }
 
-.schedule .wrapper{
+.schedules .wrapper{
     justify-content: space-between;
 }
 
-.schedule .morning, .schedule .afternoon{
+.schedules .morning, .schedules .afternoon{
     height: 100%;
     background-color: #bde2f8;
 }
 
-.schedule table{
+.schedules table{
     border-spacing: 0.3em;
     border: solid 1px black;
 }
 
-.schedule td,.schedule th{
+.schedules td,.schedules th{
     border: solid 1px black;
     padding: 0.15em 0.25em;
 }
 
-.schedule caption{
+.schedules caption{
     font-style: italic;
     text-align: left;
 }
@@ -139,13 +139,6 @@ div.schedule span{
     margin-right: 0.25em;
 }
 
-/*
-latest 20 orders
- */
-article.latest-20{
-    height: 25vh;
-    overflow: auto;
-}
 
 /*
 dashboard
@@ -193,12 +186,20 @@ p.error{
 }
 
 /* schedule article */
-article.schedule{
+article.schedules{
     width: 90vw;
     border-radius: 5px;
     margin: 1em;
     padding: 1em;
 }
+/*
+latest 20 orders
+ */
+article.latest-20{
+    height: 25vh;
+    overflow: auto;
+}
+
 
 .labels label, .inputs input {
     border-radius: 5px;

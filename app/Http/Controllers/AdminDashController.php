@@ -14,10 +14,12 @@ class AdminDashController extends Controller
         $todays = Appointment::onTodayPaid();
         $tomorrows = Appointment::onTomorrowPaid();
         $theDayAfterTomorrows = Appointment::onTheDayAfterTomorrowPaid();
+        $all = Appointment::all();
         return view('admin-schedules',[
             'todays'=>$todays,
             'tomorrows'=>$tomorrows,
-            'theDayAfterTomorrows'=>$theDayAfterTomorrows]);
+            'theDayAfterTomorrows'=>$theDayAfterTomorrows,
+            'all'=>$all]);
     }
 
     public function dashboard(Request $request){

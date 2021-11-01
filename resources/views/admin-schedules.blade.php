@@ -5,7 +5,7 @@
             <img src="{{asset('images/search_icon.png')}}" alt="search icon">
         </div>
     </div>
-    <article class="today schedule">
+    <article class="today schedules">
         <div class="schedule">
             <table>
                 <caption>Schedules for Today:</caption>
@@ -30,8 +30,7 @@
             </table>
         </div>
     </article>
-
-    <article class="tomorrow schedule">
+    <article class="tomorrow schedules">
         <div class="schedule">
             <table>
                 <caption>Schedules for Tomorrow:</caption>
@@ -56,8 +55,7 @@
             </table>
         </div>
     </article>
-
-    <article class="the-day-after-tomorrow schedule">
+    <article class="the-day-after-tomorrow schedules">
         <div class="schedule">
             <table>
                 <caption>Schedules for the Day after Tomorrow:</caption>
@@ -85,5 +83,20 @@
 
     <article class="latest-20">
         <h4>Latest 20 Orders:</h4>
+
+    </article>
+
+    <article class="all-the-orders">
+        <h4>All the orders:</h4>
+        <div>
+            @foreach($all as $item)
+                <tr>
+                    <td>{{$item->start_end_time}}</td>
+                    <td>{{$item->duration}}</td>
+                    <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
+                    <td>Link</td>
+                </tr>
+            @endforeach
+        </div>
     </article>
 </x-a-master>
