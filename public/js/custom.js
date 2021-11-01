@@ -74,7 +74,7 @@ dateInput.addEventListener('input', function (){
         slotInputs[i].checked = false;
     }
 
-    console.log(allFutureBooked);
+    //console.log(allFutureBooked);
     let bookedSlots = allFutureBooked[dateInput.value];
     if(bookedSlots){
         for(let i = 0; i < bookedSlots.length; i++){
