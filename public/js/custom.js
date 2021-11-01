@@ -95,6 +95,16 @@ dateInput.addEventListener('input', function (){
     if (selectedDate.setHours(0, 0, 0, 0) === todayDate.setHours(0, 0, 0, 0)){
         console.log(all_slots);
         // now disable the slots that has passed away
+        if (all_slots){
+            let h = '', m = '', slotTime = '';
+            let now = new Date(0, 0, 0, todayDate.getHours(), todayDate.getMinutes());
+            for (let i = 0; i < all_slots.length; i++){
+                h = all_slots[i].split(' - ')[0].split(':')[0];
+                m = all_slots[i].split(' - ')[0].split(':')[1];
+                slotTime = new Date(0, 0, 0, h, m);
+                console.log(now - slotTime);
+            }
+        }
     }else {
         console.log('not today');
     }
