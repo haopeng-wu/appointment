@@ -57,11 +57,11 @@
             return "";
         },
         rangeSeparator: " — ",
-        weekAbbreviation: "Нед.",
-        scrollTitle: "Прокрутите для увеличения",
-        toggleTitle: "Нажмите для переключения",
-        amPM: ["ДП", "ПП"],
-        yearAriaLabel: "Год",
+        weekAbbreviation: "weekAbbreviation",
+        scrollTitle: "scrollTitle",
+        toggleTitle: "toggleTitle",
+        amPM: ["am", "pm"],
+        yearAriaLabel: "yearAriaLabel",
         time_24hr: true,
     };
     fp.l10ns.ru = Russian;
