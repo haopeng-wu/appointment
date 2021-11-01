@@ -4275,3 +4275,1741 @@ Updating 90aa742..153acd6
 Fast-forward
  public/css/admin-custom.css | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   153acd6..7ddd0a3  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   7ddd0a3..94bd041  master     -> origin/master
+Updating 7ddd0a3..94bd041
+Fast-forward
+ ...10_20_091534_create_bookable_weekdays_table.php |  2 ++
+ database/seeders/BookableWeekdaySeeder.php         | 32 +++++++++++++++++++++-
+ database/seeders/DatabaseSeeder.php                |  1 +
+ resources/views/home.blade.php                     |  3 +-
+ 4 files changed, 36 insertions(+), 2 deletions(-)
+From ../appointment
+   94bd041..4a6189c  master     -> origin/master
+Updating 94bd041..4a6189c
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   4a6189c..c60174c  master     -> origin/master
+Updating 4a6189c..c60174c
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c60174c..b309641  master     -> origin/master
+Updating c60174c..b309641
+Fast-forward
+ resources/views/components/master.blade.php | 2 ++
+ resources/views/home.blade.php              | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   b309641..e85d0ab  master     -> origin/master
+Updating b309641..e85d0ab
+Fast-forward
+ app/Http/Controllers/AppointmentController.php |  2 +-
+ public/js/admin-custom.js                      |  3 ++-
+ public/js/custom.js                            | 20 ++++----------------
+ 3 files changed, 7 insertions(+), 18 deletions(-)
+From ../appointment
+   e85d0ab..d71f881  master     -> origin/master
+Updating e85d0ab..d71f881
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   d71f881..7df8a86  master     -> origin/master
+Updating d71f881..7df8a86
+Fast-forward
+ public/js/custom.js | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   7df8a86..6f5364a  master     -> origin/master
+Updating 7df8a86..6f5364a
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   6f5364a..f48615c  master     -> origin/master
+Updating 6f5364a..f48615c
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   f48615c..73b477a  master     -> origin/master
+Updating f48615c..73b477a
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   73b477a..31792c9  master     -> origin/master
+Updating 73b477a..31792c9
+Fast-forward
+ public/js/custom.js | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+From ../appointment
+   31792c9..151dc87  master     -> origin/master
+Updating 31792c9..151dc87
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   151dc87..5be144c  master     -> origin/master
+Updating 151dc87..5be144c
+Fast-forward
+ public/js/custom.js                         | 10 ++++++++--
+ resources/views/components/master.blade.php |  3 +++
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+From ../appointment
+   5be144c..c1a1d94  master     -> origin/master
+Updating 5be144c..c1a1d94
+Fast-forward
+ public/js/custom.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   c1a1d94..24cd5f8  master     -> origin/master
+Updating c1a1d94..24cd5f8
+Fast-forward
+ resources/views/components/master.blade.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   24cd5f8..dc27673  master     -> origin/master
+Updating 24cd5f8..dc27673
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   dc27673..3758405  master     -> origin/master
+Updating dc27673..3758405
+Fast-forward
+ app/Http/Controllers/HomeController.php     | 3 ++-
+ resources/views/components/master.blade.php | 4 +---
+ resources/views/home.blade.php              | 4 +++-
+ 3 files changed, 6 insertions(+), 5 deletions(-)
+From ../appointment
+   3758405..fadbf34  master     -> origin/master
+Updating 3758405..fadbf34
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   fadbf34..98ad1c0  master     -> origin/master
+Updating fadbf34..98ad1c0
+Fast-forward
+ app/Http/Controllers/HomeController.php |  3 ++-
+ app/Models/BookableWeekday.php          | 11 +++++++++++
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+From ../appointment
+   98ad1c0..1e6f2de  master     -> origin/master
+Updating 98ad1c0..1e6f2de
+Fast-forward
+ app/Models/BookableWeekday.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1e6f2de..b75e076  master     -> origin/master
+Updating 1e6f2de..b75e076
+Fast-forward
+ database/seeders/BookableWeekdaySeeder.php | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+From ../appointment
+   b75e076..3742396  master     -> origin/master
+Updating b75e076..3742396
+Fast-forward
+ app/Models/BookableWeekday.php | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+From ../appointment
+   3742396..0122a82  master     -> origin/master
+Updating 3742396..0122a82
+Fast-forward
+ app/Models/BookableWeekday.php | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+From ../appointment
+   0122a82..23e2842  master     -> origin/master
+Updating 0122a82..23e2842
+Fast-forward
+ app/Models/BookableWeekday.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   23e2842..927919f  master     -> origin/master
+Updating 23e2842..927919f
+Fast-forward
+ app/Models/BookableWeekday.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   927919f..fd54488  master     -> origin/master
+Updating 927919f..fd54488
+Fast-forward
+ app/Models/BookableWeekday.php | 2 +-
+ resources/views/home.blade.php | 1 -
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   fd54488..72394b6  master     -> origin/master
+Updating fd54488..72394b6
+Fast-forward
+ app/Models/BookableWeekday.php             |  2 +-
+ database/seeders/BookableWeekdaySeeder.php | 15 +++++++++++----
+ 2 files changed, 12 insertions(+), 5 deletions(-)
+From ../appointment
+   72394b6..9185a91  master     -> origin/master
+Updating 72394b6..9185a91
+Fast-forward
+ app/Http/Controllers/AdminDashController.php |  2 ++
+ public/css/custom.css                        |  4 ++++
+ resources/views/admin-dashboard.blade.php    | 25 +++++++++++++++++++++----
+ 3 files changed, 27 insertions(+), 4 deletions(-)
+From ../appointment
+   9185a91..b300aef  master     -> origin/master
+Updating 9185a91..b300aef
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b300aef..f8f4e17  master     -> origin/master
+Updating b300aef..f8f4e17
+Fast-forward
+ public/css/custom.css                     |  4 ----
+ resources/views/admin-dashboard.blade.php | 20 +-------------------
+ 2 files changed, 1 insertion(+), 23 deletions(-)
+From ../appointment
+   f8f4e17..4241db1  master     -> origin/master
+Updating f8f4e17..4241db1
+Fast-forward
+ public/css/admin-custom.css               | 10 ----------
+ resources/views/admin-dashboard.blade.php | 20 +++++++++++++++++++-
+ 2 files changed, 19 insertions(+), 11 deletions(-)
+From ../appointment
+   4241db1..9be67df  master     -> origin/master
+Updating 4241db1..9be67df
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+From ../appointment
+   9be67df..207c562  master     -> origin/master
+Updating 9be67df..207c562
+Fast-forward
+ public/css/admin-custom.css | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+From ../appointment
+   207c562..e793178  master     -> origin/master
+Updating 207c562..e793178
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   e793178..8105e97  master     -> origin/master
+Updating e793178..8105e97
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   8105e97..c3316f7  master     -> origin/master
+Updating 8105e97..c3316f7
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   c3316f7..3b9cb9d  master     -> origin/master
+Updating c3316f7..3b9cb9d
+Fast-forward
+ public/css/admin-custom.css               | 5 +++++
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   3b9cb9d..2c75984  master     -> origin/master
+Updating 3b9cb9d..2c75984
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   2c75984..acde5b2  master     -> origin/master
+Updating 2c75984..acde5b2
+Fast-forward
+ public/css/admin-custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   acde5b2..3e31101  master     -> origin/master
+Updating acde5b2..3e31101
+Fast-forward
+ app/Http/Controllers/AdminDashController.php  |  4 +--
+ app/Http/Controllers/HomeController.php       |  2 +-
+ app/Models/BookableWeekday.php                | 11 +++++++-
+ database/seeders/BookableWeekdaySeeder.php    |  1 -
+ public/css/admin-custom.css                   |  2 +-
+ public/js/admin-custom.js                     | 11 ++++++++
+ resources/views/admin-dashboard.blade.php     | 39 ++++++++++++++++-----------
+ resources/views/components/a-master.blade.php |  1 -
+ 8 files changed, 49 insertions(+), 22 deletions(-)
+From ../appointment
+   3e31101..d3da3e7  master     -> origin/master
+Updating 3e31101..d3da3e7
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   d3da3e7..9e89ac4  master     -> origin/master
+Updating d3da3e7..9e89ac4
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   9e89ac4..81ceab1  master     -> origin/master
+Updating 9e89ac4..81ceab1
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   81ceab1..f60586f  master     -> origin/master
+Updating 81ceab1..f60586f
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+From ../appointment
+   f60586f..b321975  master     -> origin/master
+Updating f60586f..b321975
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b321975..65291d9  master     -> origin/master
+Updating b321975..65291d9
+Fast-forward
+ app/Models/BookableWeekday.php            | 2 --
+ public/js/admin-custom.js                 | 4 ++--
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 3 files changed, 3 insertions(+), 5 deletions(-)
+From ../appointment
+   65291d9..648cf29  master     -> origin/master
+Updating 65291d9..648cf29
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   648cf29..124d4ad  master     -> origin/master
+Updating 648cf29..124d4ad
+Fast-forward
+ public/js/admin-custom.js                 |  2 +-
+ resources/views/admin-dashboard.blade.php | 28 ++++++++++++++--------------
+ 2 files changed, 15 insertions(+), 15 deletions(-)
+From ../appointment
+   124d4ad..1efe274  master     -> origin/master
+Updating 124d4ad..1efe274
+Fast-forward
+ public/js/admin-custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1efe274..1e9f613  master     -> origin/master
+Updating 1efe274..1e9f613
+Fast-forward
+ public/js/admin-custom.js | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+From ../appointment
+   1e9f613..305e499  master     -> origin/master
+Updating 1e9f613..305e499
+Fast-forward
+ public/js/admin-custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   305e499..c381663  master     -> origin/master
+Updating 305e499..c381663
+Fast-forward
+ public/js/admin-custom.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   c381663..cd5c739  master     -> origin/master
+Updating c381663..cd5c739
+Fast-forward
+ public/js/admin-custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   cd5c739..218e31e  master     -> origin/master
+Updating cd5c739..218e31e
+Fast-forward
+ public/js/admin-custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   218e31e..80bb62d  master     -> origin/master
+Updating 218e31e..80bb62d
+Fast-forward
+ public/js/admin-custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   80bb62d..6bd57fd  master     -> origin/master
+Updating 80bb62d..6bd57fd
+Fast-forward
+ public/js/admin-custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   6bd57fd..0fcb711  master     -> origin/master
+Updating 6bd57fd..0fcb711
+Fast-forward
+ public/js/admin-custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   0fcb711..618e3e8  master     -> origin/master
+Updating 0fcb711..618e3e8
+Fast-forward
+ public/js/admin-custom.js | 2 --
+ 1 file changed, 2 deletions(-)
+From ../appointment
+   618e3e8..c044620  master     -> origin/master
+Updating 618e3e8..c044620
+Fast-forward
+ public/js/admin-custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c044620..66ed936  master     -> origin/master
+Updating c044620..66ed936
+Fast-forward
+ public/js/admin-custom.js | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+From ../appointment
+   66ed936..cf05d70  master     -> origin/master
+Updating 66ed936..cf05d70
+Fast-forward
+ public/css/admin-custom.css | 5 +++++
+ 1 file changed, 5 insertions(+)
+From ../appointment
+   cf05d70..3127615  master     -> origin/master
+Updating cf05d70..3127615
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 4 ++--
+ resources/views/admin-dashboard.blade.php          | 2 +-
+ routes/web.php                                     | 2 +-
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   3127615..a8a2711  master     -> origin/master
+Updating 3127615..a8a2711
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+From ../appointment
+   a8a2711..b6e0813  master     -> origin/master
+Updating a8a2711..b6e0813
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+From ../appointment
+   b6e0813..161b0d7  master     -> origin/master
+Updating b6e0813..161b0d7
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   161b0d7..c179f9c  master     -> origin/master
+Updating 161b0d7..c179f9c
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c179f9c..55414fe  master     -> origin/master
+Updating c179f9c..55414fe
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   55414fe..b309914  master     -> origin/master
+Updating 55414fe..b309914
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   b309914..a59fa74  master     -> origin/master
+Updating b309914..a59fa74
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   a59fa74..aefa325  master     -> origin/master
+Updating a59fa74..aefa325
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   aefa325..168dbbc  master     -> origin/master
+Updating aefa325..168dbbc
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 18 +++++++++++++++++-
+ public/css/admin-custom.css                    |  1 +
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+From ../appointment
+   168dbbc..1e5528b  master     -> origin/master
+Updating 168dbbc..1e5528b
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 27 +++++++++++++++++++++++---
+ app/Models/BookableWeekday.php                 |  9 +++++++++
+ public/js/custom.js                            |  2 +-
+ 3 files changed, 34 insertions(+), 4 deletions(-)
+From ../appointment
+   1e5528b..de1113e  master     -> origin/master
+Updating 1e5528b..de1113e
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   de1113e..0da3b8d  master     -> origin/master
+Updating de1113e..0da3b8d
+Fast-forward
+ public/js/custom.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   0da3b8d..a374b18  master     -> origin/master
+Updating 0da3b8d..a374b18
+Fast-forward
+ resources/views/home.blade.php | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+From ../appointment
+   a374b18..bbe76aa  master     -> origin/master
+Updating a374b18..bbe76aa
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   bbe76aa..ade5688  master     -> origin/master
+Updating bbe76aa..ade5688
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 22 +++++++++-------------
+ 1 file changed, 9 insertions(+), 13 deletions(-)
+From ../appointment
+   ade5688..3e01c5e  master     -> origin/master
+Updating ade5688..3e01c5e
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   3e01c5e..0c43bd7  master     -> origin/master
+Updating 3e01c5e..0c43bd7
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   0c43bd7..48d4357  master     -> origin/master
+Updating 0c43bd7..48d4357
+Fast-forward
+ app/Http/Controllers/AppointmentController.php     |  1 -
+ app/Http/Controllers/ConfirmationController.php    |  2 ++
+ app/Http/Controllers/HomeController.php            |  6 +++-
+ app/Models/BookedSlot.php                          | 36 ++++++++++++++++++++++
+ ...2021_10_04_114304_create_appointments_table.php |  2 +-
+ ...2021_10_20_091452_create_booked_slots_table.php |  6 ++++
+ public/js/admin-custom.js                          |  2 +-
+ public/js/custom.js                                | 11 +++++++
+ resources/views/home.blade.php                     |  9 +++---
+ 9 files changed, 67 insertions(+), 8 deletions(-)
+From ../appointment
+   48d4357..83c8dad  master     -> origin/master
+Updating 48d4357..83c8dad
+Fast-forward
+ database/migrations/2021_10_04_114304_create_appointments_table.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   83c8dad..70c207d  master     -> origin/master
+Updating 83c8dad..70c207d
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   70c207d..284317e  master     -> origin/master
+Updating 70c207d..284317e
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   284317e..0c5b89f  master     -> origin/master
+Updating 284317e..0c5b89f
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ public/js/custom.js                            | 4 ++++
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   0c5b89f..fcb9aed  master     -> origin/master
+Updating 0c5b89f..fcb9aed
+Fast-forward
+ app/Models/BookedSlot.php | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+From ../appointment
+   fcb9aed..181fc53  master     -> origin/master
+Updating fcb9aed..181fc53
+Fast-forward
+ app/Models/BookedSlot.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   181fc53..dc2a4d9  master     -> origin/master
+Updating 181fc53..dc2a4d9
+Fast-forward
+ app/Models/BookedSlot.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   dc2a4d9..107ef31  master     -> origin/master
+Updating dc2a4d9..107ef31
+Fast-forward
+ app/Models/BookedSlot.php |  4 ----
+ public/css/custom.css     |  4 ++++
+ public/js/custom.js       | 14 ++++++++++----
+ 3 files changed, 14 insertions(+), 8 deletions(-)
+From ../appointment
+   107ef31..45cd227  master     -> origin/master
+Updating 107ef31..45cd227
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   45cd227..13a20df  master     -> origin/master
+Updating 45cd227..13a20df
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   13a20df..b3e11ae  master     -> origin/master
+Updating 13a20df..b3e11ae
+Fast-forward
+ public/css/custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   b3e11ae..4bd20fb  master     -> origin/master
+Updating b3e11ae..4bd20fb
+Fast-forward
+ public/css/custom.css | 5 ++++-
+ public/js/custom.js   | 2 ++
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   4bd20fb..bd85a50  master     -> origin/master
+Updating 4bd20fb..bd85a50
+Fast-forward
+ public/css/custom.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+From ../appointment
+   bd85a50..ee5c1cc  master     -> origin/master
+Updating bd85a50..ee5c1cc
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   ee5c1cc..bda3422  master     -> origin/master
+Updating ee5c1cc..bda3422
+Fast-forward
+ public/css/custom.css | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+From ../appointment
+   bda3422..68966a6  master     -> origin/master
+Updating bda3422..68966a6
+Fast-forward
+ public/css/custom.css | 3 +--
+ public/js/custom.js   | 4 ++--
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+From ../appointment
+   68966a6..3aa7214  master     -> origin/master
+Updating 68966a6..3aa7214
+Fast-forward
+ public/css/custom.css | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+From ../appointment
+   3aa7214..e16cb29  master     -> origin/master
+Updating 3aa7214..e16cb29
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   e16cb29..2158123  master     -> origin/master
+Updating e16cb29..2158123
+Fast-forward
+ public/css/custom.css | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   2158123..617e8fe  master     -> origin/master
+Updating 2158123..617e8fe
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   617e8fe..312de16  master     -> origin/master
+Updating 617e8fe..312de16
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   312de16..fac58f3  master     -> origin/master
+Updating 312de16..fac58f3
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   fac58f3..bc4c4bf  master     -> origin/master
+Updating fac58f3..bc4c4bf
+Fast-forward
+ public/css/custom.css          | 1 -
+ resources/views/home.blade.php | 2 +-
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   bc4c4bf..1001b80  master     -> origin/master
+Updating bc4c4bf..1001b80
+Fast-forward
+ public/css/custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   1001b80..320c034  master     -> origin/master
+Updating 1001b80..320c034
+Fast-forward
+ public/css/custom.css | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+From ../appointment
+   320c034..0a93183  master     -> origin/master
+Updating 320c034..0a93183
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   0a93183..d38ff5f  master     -> origin/master
+Updating 0a93183..d38ff5f
+Fast-forward
+ public/js/custom.js | 7 +++++++
+ 1 file changed, 7 insertions(+)
+From ../appointment
+   d38ff5f..65bc944  master     -> origin/master
+Updating d38ff5f..65bc944
+Fast-forward
+ public/js/custom.js | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   65bc944..9e82615  master     -> origin/master
+Updating 65bc944..9e82615
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   9e82615..33cfbf5  master     -> origin/master
+Updating 9e82615..33cfbf5
+Fast-forward
+ public/js/custom.js | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   33cfbf5..789fb26  master     -> origin/master
+Updating 33cfbf5..789fb26
+Fast-forward
+ public/js/custom.js | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   789fb26..dcf35b3  master     -> origin/master
+Updating 789fb26..dcf35b3
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ public/js/custom.js                            | 6 +++---
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   dcf35b3..044b2bb  master     -> origin/master
+Updating dcf35b3..044b2bb
+Fast-forward
+ public/js/custom.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   044b2bb..11aea0a  master     -> origin/master
+Updating 044b2bb..11aea0a
+Fast-forward
+ app/Http/Controllers/AppointmentController.php     | 29 +++++-----
+ app/Http/Controllers/ConfirmationController.php    | 66 ++++++++++++++++------
+ .../2014_10_12_000000_create_users_table.php       | 10 +++-
+ ...2021_10_04_114304_create_appointments_table.php | 42 ++++++++++----
+ public/css/custom.css                              |  1 -
+ public/js/custom.js                                |  3 +-
+ resources/views/home.blade.php                     | 24 --------
+ 7 files changed, 102 insertions(+), 73 deletions(-)
+From ../appointment
+   11aea0a..7f11784  master     -> origin/master
+Updating 11aea0a..7f11784
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 26 ++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+From ../appointment
+   7f11784..816b471  master     -> origin/master
+Updating 7f11784..816b471
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php      | 20 ++++++++++++++++++++
+ .../2014_10_12_000000_create_users_table.php         |  8 +++-----
+ 2 files changed, 23 insertions(+), 5 deletions(-)
+From ../appointment
+   816b471..ad0b930  master     -> origin/master
+Updating 816b471..ad0b930
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   ad0b930..1810a28  master     -> origin/master
+Updating ad0b930..1810a28
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   1810a28..baa4e53  master     -> origin/master
+Updating 1810a28..baa4e53
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   baa4e53..d832771  master     -> origin/master
+Updating baa4e53..d832771
+Fast-forward
+ resources/views/home.blade.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   d832771..4aef9b3  master     -> origin/master
+Updating d832771..4aef9b3
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   4aef9b3..a80693c  master     -> origin/master
+Updating 4aef9b3..a80693c
+Fast-forward
+ public/css/custom.css                       |   3 ---
+ public/images/home-center.png               | Bin 0 -> 61453 bytes
+ resources/views/components/master.blade.php |   5 -----
+ 3 files changed, 8 deletions(-)
+ create mode 100644 public/images/home-center.png
+From ../appointment
+   a80693c..f0266b0  master     -> origin/master
+Updating a80693c..f0266b0
+Fast-forward
+ public/css/custom.css          | 6 +++++-
+ resources/views/home.blade.php | 3 +++
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+From ../appointment
+   f0266b0..3af69e9  master     -> origin/master
+Updating f0266b0..3af69e9
+Fast-forward
+ public/css/custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   3af69e9..b5436a0  master     -> origin/master
+Updating 3af69e9..b5436a0
+Fast-forward
+ public/css/custom.css          | 6 +++++-
+ resources/views/home.blade.php | 4 ++--
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+From ../appointment
+   b5436a0..61e9796  master     -> origin/master
+Updating b5436a0..61e9796
+Fast-forward
+ public/css/custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   61e9796..86c1722  master     -> origin/master
+Updating 61e9796..86c1722
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   86c1722..69bca87  master     -> origin/master
+Updating 86c1722..69bca87
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   69bca87..d816616  master     -> origin/master
+Updating 69bca87..d816616
+Fast-forward
+ public/images/icon.svg                      |  4 ++++
+ public/images/one-line-text-icon.svg        | 23 +++++++++++++++++++++++
+ public/images/two-line-text-icon.svg        | 24 ++++++++++++++++++++++++
+ resources/views/components/master.blade.php |  2 +-
+ 4 files changed, 52 insertions(+), 1 deletion(-)
+ create mode 100644 public/images/icon.svg
+ create mode 100644 public/images/one-line-text-icon.svg
+ create mode 100644 public/images/two-line-text-icon.svg
+From ../appointment
+   d816616..c83752f  master     -> origin/master
+Updating d816616..c83752f
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c83752f..61e6907  master     -> origin/master
+Updating c83752f..61e6907
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   61e6907..461af42  master     -> origin/master
+Updating 61e6907..461af42
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   461af42..b26ae49  master     -> origin/master
+Updating 461af42..b26ae49
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   b26ae49..9620d84  master     -> origin/master
+Updating b26ae49..9620d84
+Fast-forward
+ public/css/custom.css | 34 ++++++++++++++++++----------------
+ 1 file changed, 18 insertions(+), 16 deletions(-)
+From ../appointment
+   9620d84..8cdf5f1  master     -> origin/master
+Updating 9620d84..8cdf5f1
+Fast-forward
+ public/css/custom.css | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+From ../appointment
+   8cdf5f1..6f7886c  master     -> origin/master
+Updating 8cdf5f1..6f7886c
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   6f7886c..62255bc  master     -> origin/master
+Updating 6f7886c..62255bc
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   62255bc..b30f337  master     -> origin/master
+Updating 62255bc..b30f337
+Fast-forward
+ public/css/custom.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+From ../appointment
+   b30f337..a2aec10  master     -> origin/master
+Updating b30f337..a2aec10
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   a2aec10..1056da3  master     -> origin/master
+Updating a2aec10..1056da3
+Fast-forward
+ public/css/custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   1056da3..207009b  master     -> origin/master
+Updating 1056da3..207009b
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   207009b..79b144e  master     -> origin/master
+Updating 207009b..79b144e
+Fast-forward
+ public/css/custom.css | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   79b144e..bed4b8f  master     -> origin/master
+Updating 79b144e..bed4b8f
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   bed4b8f..c28a034  master     -> origin/master
+Updating bed4b8f..c28a034
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c28a034..bdec90d  master     -> origin/master
+Updating c28a034..bdec90d
+Fast-forward
+ public/css/custom.css | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+From ../appointment
+   bdec90d..f68511b  master     -> origin/master
+Updating bdec90d..f68511b
+Fast-forward
+ public/css/custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   f68511b..b3e81a3  master     -> origin/master
+Updating f68511b..b3e81a3
+Fast-forward
+ public/css/custom.css | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+From ../appointment
+   b3e81a3..5fe4a8e  master     -> origin/master
+Updating b3e81a3..5fe4a8e
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   5fe4a8e..56f16d3  master     -> origin/master
+Updating 5fe4a8e..56f16d3
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   56f16d3..a636e97  master     -> origin/master
+Updating 56f16d3..a636e97
+Fast-forward
+ resources/views/components/master.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   a636e97..c1f8f8d  master     -> origin/master
+Updating a636e97..c1f8f8d
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   c1f8f8d..5aec831  master     -> origin/master
+Updating c1f8f8d..5aec831
+Fast-forward
+ public/css/custom.css | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+From ../appointment
+   5aec831..754e3a5  master     -> origin/master
+Updating 5aec831..754e3a5
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   754e3a5..15b2e16  master     -> origin/master
+Updating 754e3a5..15b2e16
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   15b2e16..15653e5  master     -> origin/master
+Updating 15b2e16..15653e5
+Fast-forward
+ public/css/custom.css                       | 4 ++--
+ resources/views/components/master.blade.php | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   15653e5..15e6026  master     -> origin/master
+Updating 15653e5..15e6026
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   15e6026..8eac8e3  master     -> origin/master
+Updating 15e6026..8eac8e3
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   8eac8e3..b57497a  master     -> origin/master
+Updating 8eac8e3..b57497a
+Fast-forward
+ public/css/custom.css                        |   6 ++++++
+ public/images/radix-icons_hamburger-menu.png | Bin 0 -> 204 bytes
+ resources/views/components/master.blade.php  |   3 +++
+ 3 files changed, 9 insertions(+)
+ create mode 100644 public/images/radix-icons_hamburger-menu.png
+From ../appointment
+   b57497a..8cece89  master     -> origin/master
+Updating b57497a..8cece89
+Fast-forward
+ public/css/custom.css                       | 14 ++++++++++++--
+ resources/views/components/master.blade.php |  4 ++--
+ 2 files changed, 14 insertions(+), 4 deletions(-)
+From ../appointment
+   8cece89..5a1db00  master     -> origin/master
+Updating 8cece89..5a1db00
+Fast-forward
+ public/css/custom.css | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   5a1db00..694fb9a  master     -> origin/master
+Updating 5a1db00..694fb9a
+Fast-forward
+ public/css/custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   694fb9a..353893a  master     -> origin/master
+Updating 694fb9a..353893a
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   353893a..a0639bf  master     -> origin/master
+Updating 353893a..a0639bf
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   a0639bf..e93d331  master     -> origin/master
+Updating a0639bf..e93d331
+Fast-forward
+ public/css/custom.css                       | 9 ++++-----
+ resources/views/components/master.blade.php | 2 +-
+ 2 files changed, 5 insertions(+), 6 deletions(-)
+From ../appointment
+   e93d331..1968b63  master     -> origin/master
+Updating e93d331..1968b63
+Fast-forward
+ public/css/custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   1968b63..c2105a2  master     -> origin/master
+Updating 1968b63..c2105a2
+Fast-forward
+ public/css/custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   c2105a2..17a444f  master     -> origin/master
+Updating c2105a2..17a444f
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   17a444f..2136437  master     -> origin/master
+Updating 17a444f..2136437
+Fast-forward
+ public/css/custom.css | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   2136437..df53ff3  master     -> origin/master
+Updating 2136437..df53ff3
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   df53ff3..eb07e2a  master     -> origin/master
+Updating df53ff3..eb07e2a
+Fast-forward
+ public/css/custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   eb07e2a..44a6ce3  master     -> origin/master
+Updating eb07e2a..44a6ce3
+Fast-forward
+ public/css/custom.css | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+From ../appointment
+   44a6ce3..ed2b03e  master     -> origin/master
+Updating 44a6ce3..ed2b03e
+Fast-forward
+ public/css/custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   ed2b03e..709b13b  master     -> origin/master
+Updating ed2b03e..709b13b
+Fast-forward
+ public/css/custom.css | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+From ../appointment
+   709b13b..0c74eee  master     -> origin/master
+Updating 709b13b..0c74eee
+Fast-forward
+ public/css/custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   0c74eee..041bf74  master     -> origin/master
+Updating 0c74eee..041bf74
+Fast-forward
+ public/css/custom.css | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   041bf74..6a9563f  master     -> origin/master
+Updating 041bf74..6a9563f
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   6a9563f..75a512a  master     -> origin/master
+Updating 6a9563f..75a512a
+Fast-forward
+ public/css/custom.css          | 1 -
+ resources/views/home.blade.php | 8 ++++----
+ 2 files changed, 4 insertions(+), 5 deletions(-)
+From ../appointment
+   75a512a..907f663  master     -> origin/master
+Updating 75a512a..907f663
+Fast-forward
+ public/css/custom.css          | 1 +
+ resources/views/home.blade.php | 1 -
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   907f663..8fcb5c5  master     -> origin/master
+Updating 907f663..8fcb5c5
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   8fcb5c5..3cdc3eb  master     -> origin/master
+Updating 8fcb5c5..3cdc3eb
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   3cdc3eb..52cdda9  master     -> origin/master
+Updating 3cdc3eb..52cdda9
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   52cdda9..68419f8  master     -> origin/master
+Updating 52cdda9..68419f8
+Fast-forward
+ public/css/custom.css | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+From ../appointment
+   68419f8..00430d6  master     -> origin/master
+Updating 68419f8..00430d6
+Fast-forward
+ public/css/custom.css | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+From ../appointment
+   00430d6..01f9111  master     -> origin/master
+Updating 00430d6..01f9111
+Fast-forward
+ public/css/custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   01f9111..414274e  master     -> origin/master
+Updating 01f9111..414274e
+Fast-forward
+ public/css/custom.css | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   414274e..64f4800  master     -> origin/master
+Updating 414274e..64f4800
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   64f4800..3bda55b  master     -> origin/master
+Updating 64f4800..3bda55b
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   3bda55b..239efd5  master     -> origin/master
+Updating 3bda55b..239efd5
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   239efd5..94cf87a  master     -> origin/master
+Updating 239efd5..94cf87a
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   94cf87a..df0dfe7  master     -> origin/master
+Updating 94cf87a..df0dfe7
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   df0dfe7..11cd04d  master     -> origin/master
+Updating df0dfe7..11cd04d
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   11cd04d..1b6a7b9  master     -> origin/master
+Updating 11cd04d..1b6a7b9
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1b6a7b9..2fdc1ba  master     -> origin/master
+Updating 1b6a7b9..2fdc1ba
+Fast-forward
+ public/css/custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   2fdc1ba..cd4a6be  master     -> origin/master
+Updating 2fdc1ba..cd4a6be
+Fast-forward
+ public/css/custom.css | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   cd4a6be..d5dba2d  master     -> origin/master
+Updating cd4a6be..d5dba2d
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   d5dba2d..dd2adc1  master     -> origin/master
+Updating d5dba2d..dd2adc1
+Fast-forward
+ public/css/custom.css          | 2 +-
+ resources/views/home.blade.php | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   dd2adc1..dd7fab6  master     -> origin/master
+Updating dd2adc1..dd7fab6
+Fast-forward
+ public/css/custom.css | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+From ../appointment
+   dd7fab6..56016d8  master     -> origin/master
+Updating dd7fab6..56016d8
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   56016d8..5e31793  master     -> origin/master
+Updating 56016d8..5e31793
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   5e31793..d6f335a  master     -> origin/master
+Updating 5e31793..d6f335a
+Fast-forward
+ public/css/custom.css | 13 +++----------
+ 1 file changed, 3 insertions(+), 10 deletions(-)
+From ../appointment
+   d6f335a..0361742  master     -> origin/master
+Updating d6f335a..0361742
+Fast-forward
+ public/css/custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   0361742..b7aad27  master     -> origin/master
+Updating 0361742..b7aad27
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b7aad27..478c438  master     -> origin/master
+Updating b7aad27..478c438
+Fast-forward
+ resources/views/home.blade.php | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+From ../appointment
+   478c438..705d475  master     -> origin/master
+Updating 478c438..705d475
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 34 ++++++++++++++++++++++++++-----
+ 1 file changed, 29 insertions(+), 5 deletions(-)
+From ../appointment
+   705d475..d8dfabd  master     -> origin/master
+Updating 705d475..d8dfabd
+Fast-forward
+ app/Http/Controllers/AdminDashController.php | 23 ++++++-
+ public/js/admin-custom.js                    | 90 ++++++++++++++++++++++++++++
+ resources/views/admin-dashboard.blade.php    |  4 +-
+ 3 files changed, 115 insertions(+), 2 deletions(-)
+From ../appointment
+   d8dfabd..e35519c  master     -> origin/master
+Updating d8dfabd..e35519c
+Fast-forward
+ public/css/admin-custom.css                   | 82 +++++++++++++++++++++++++++
+ public/css/custom.css                         | 34 +++++------
+ resources/views/components/a-master.blade.php |  1 +
+ 3 files changed, 101 insertions(+), 16 deletions(-)
+From ../appointment
+   e35519c..8d6bc87  master     -> origin/master
+Updating e35519c..8d6bc87
+Fast-forward
+ resources/views/admin-dashboard.blade.php | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+From ../appointment
+   8d6bc87..546d840  master     -> origin/master
+Updating 8d6bc87..546d840
+Fast-forward
+ resources/views/components/a-master.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   546d840..97d5625  master     -> origin/master
+Updating 546d840..97d5625
+Fast-forward
+ public/css/admin-custom.css               | 42 ++++++++-----------------------
+ resources/views/admin-dashboard.blade.php |  5 +++-
+ 2 files changed, 14 insertions(+), 33 deletions(-)
+From ../appointment
+   97d5625..740447e  master     -> origin/master
+Updating 97d5625..740447e
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   740447e..faf88c7  master     -> origin/master
+Updating 740447e..faf88c7
+Fast-forward
+ public/css/admin-custom.css               | 16 +++++++++++++---
+ resources/views/admin-dashboard.blade.php |  4 ++--
+ 2 files changed, 15 insertions(+), 5 deletions(-)
+From ../appointment
+   faf88c7..afc8a17  master     -> origin/master
+Updating faf88c7..afc8a17
+Fast-forward
+ public/css/admin-custom.css               | 13 ++++---------
+ resources/views/admin-dashboard.blade.php |  4 ++--
+ 2 files changed, 6 insertions(+), 11 deletions(-)
+From ../appointment
+   afc8a17..051dd63  master     -> origin/master
+Updating afc8a17..051dd63
+Fast-forward
+ public/css/admin-custom.css | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   051dd63..9c16f5e  master     -> origin/master
+Updating 051dd63..9c16f5e
+Fast-forward
+ public/css/admin-custom.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   9c16f5e..3601634  master     -> origin/master
+Updating 9c16f5e..3601634
+Fast-forward
+ public/css/admin-custom.css | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   3601634..f0697ec  master     -> origin/master
+Updating 3601634..f0697ec
+Fast-forward
+ public/css/admin-custom.css               | 2 +-
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   f0697ec..9d3cba2  master     -> origin/master
+Updating f0697ec..9d3cba2
+Fast-forward
+ public/css/admin-custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   9d3cba2..cf1e372  master     -> origin/master
+Updating 9d3cba2..cf1e372
+Fast-forward
+ public/css/admin-custom.css | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   cf1e372..9c2097a  master     -> origin/master
+Updating cf1e372..9c2097a
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   9c2097a..9c5cff1  master     -> origin/master
+Updating 9c2097a..9c5cff1
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   9c5cff1..86ebc5b  master     -> origin/master
+Updating 9c5cff1..86ebc5b
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   86ebc5b..0655a3c  master     -> origin/master
+Updating 86ebc5b..0655a3c
+Fast-forward
+ app/Http/Controllers/AdminDashController.php  | 10 ----------
+ app/Http/Controllers/BookedSlotController.php | 13 +++++++++++--
+ resources/views/admin-dashboard.blade.php     |  2 +-
+ routes/web.php                                |  1 +
+ 4 files changed, 13 insertions(+), 13 deletions(-)
+From ../appointment
+   0655a3c..849d9e8  master     -> origin/master
+Updating 0655a3c..849d9e8
+Fast-forward
+ public/css/admin-custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   849d9e8..4136bac  master     -> origin/master
+Updating 849d9e8..4136bac
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   4136bac..be293f9  master     -> origin/master
+Updating 4136bac..be293f9
+Fast-forward
+ public/css/admin-custom.css               | 1 +
+ resources/views/admin-dashboard.blade.php | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   be293f9..b206a12  master     -> origin/master
+Updating be293f9..b206a12
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b206a12..7596f6c  master     -> origin/master
+Updating b206a12..7596f6c
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   7596f6c..4c256e7  master     -> origin/master
+Updating 7596f6c..4c256e7
+Fast-forward
+ public/css/admin-custom.css | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+From ../appointment
+   4c256e7..d5b3da5  master     -> origin/master
+Updating 4c256e7..d5b3da5
+Fast-forward
+ public/css/admin-custom.css | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   d5b3da5..dbd0065  master     -> origin/master
+Updating d5b3da5..dbd0065
+Fast-forward
+ public/css/admin-custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   dbd0065..b5229d3  master     -> origin/master
+Updating dbd0065..b5229d3
+Fast-forward
+ app/Http/Controllers/BookedSlotController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b5229d3..5078cfc  master     -> origin/master
+Updating b5229d3..5078cfc
+Fast-forward
+ public/css/custom.css          | 5 +++++
+ resources/views/home.blade.php | 1 -
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+From ../appointment
+   5078cfc..36c060a  master     -> origin/master
+Updating 5078cfc..36c060a
+Fast-forward
+ public/css/custom.css | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   36c060a..e096300  master     -> origin/master
+Updating 36c060a..e096300
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   e096300..d83d9b6  master     -> origin/master
+Updating e096300..d83d9b6
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   d83d9b6..6fd24e8  master     -> origin/master
+Updating d83d9b6..6fd24e8
+Fast-forward
+ public/css/custom.css | 5 +++++
+ 1 file changed, 5 insertions(+)
+From ../appointment
+   6fd24e8..2c654fb  master     -> origin/master
+Updating 6fd24e8..2c654fb
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   2c654fb..5c521fa  master     -> origin/master
+Updating 2c654fb..5c521fa
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   5c521fa..b9e1ee7  master     -> origin/master
+Updating 5c521fa..b9e1ee7
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   b9e1ee7..dd2bcf9  master     -> origin/master
+Updating b9e1ee7..dd2bcf9
+Fast-forward
+ public/css/custom.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   dd2bcf9..4d976b9  master     -> origin/master
+Updating dd2bcf9..4d976b9
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 2 --
+ 1 file changed, 2 deletions(-)
+From ../appointment
+   4d976b9..f6148e2  master     -> origin/master
+Updating 4d976b9..f6148e2
+Fast-forward
+ app/Http/Controllers/AdminDashController.php |  4 +++-
+ public/css/admin-custom.css                  | 27 ++++++++++++++-------------
+ resources/views/admin-schedules.blade.php    | 23 ++++++++++++++++++-----
+ 3 files changed, 35 insertions(+), 19 deletions(-)
+From ../appointment
+   f6148e2..f11dbfb  master     -> origin/master
+Updating f6148e2..f11dbfb
+Fast-forward
+ resources/views/admin-schedules.blade.php | 28 ++++++++++++++++++++--------
+ 1 file changed, 20 insertions(+), 8 deletions(-)
+From ../appointment
+   f11dbfb..264ab7f  master     -> origin/master
+Updating f11dbfb..264ab7f
+Fast-forward
+ resources/views/admin-schedules.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   264ab7f..7036e03  master     -> origin/master
+Updating 264ab7f..7036e03
+Fast-forward
+ resources/views/admin-schedules.blade.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   7036e03..6f72148  master     -> origin/master
+Updating 7036e03..6f72148
+Fast-forward
+ app/Http/Controllers/AdminDashController.php |  3 +++
+ resources/views/admin-schedules.blade.php    | 33 ++++++++++++++++++++++++++--
+ 2 files changed, 34 insertions(+), 2 deletions(-)
+From ../appointment
+   6f72148..1affb46  master     -> origin/master
+Updating 6f72148..1affb46
+Fast-forward
+ app/Http/Controllers/AdminDashController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1affb46..46c9b6d  master     -> origin/master
+Updating 1affb46..46c9b6d
+Fast-forward
+ resources/views/admin-schedules.blade.php | 4 ++++
+ 1 file changed, 4 insertions(+)
+From ../appointment
+   46c9b6d..8715ab6  master     -> origin/master
+Updating 46c9b6d..8715ab6
+Fast-forward
+ app/Http/Controllers/AdminDashController.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   8715ab6..d5ff5e5  master     -> origin/master
+Updating 8715ab6..d5ff5e5
+Fast-forward
+ public/css/admin-custom.css | 21 +++++++++++++--------
+ 1 file changed, 13 insertions(+), 8 deletions(-)
+From ../appointment
+   d5ff5e5..0586a2e  master     -> origin/master
+Updating d5ff5e5..0586a2e
+Fast-forward
+ resources/views/components/master.blade.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   0586a2e..48fe7d3  master     -> origin/master
+Updating 0586a2e..48fe7d3
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   48fe7d3..f487e5f  master     -> origin/master
+Updating 48fe7d3..f487e5f
+Fast-forward
+ public/js/custom.js                         | 1 +
+ resources/views/components/master.blade.php | 3 +++
+ 2 files changed, 4 insertions(+)
+From ../appointment
+   f487e5f..ea35721  master     -> origin/master
+Updating f487e5f..ea35721
+Fast-forward
+ public/js/custom.js | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+From ../appointment
+   ea35721..24be9f9  master     -> origin/master
+Updating ea35721..24be9f9
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   24be9f9..84944bb  master     -> origin/master
+Updating 24be9f9..84944bb
+Fast-forward
+ public/js/custom.js | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+From ../appointment
+   84944bb..6b1dc4a  master     -> origin/master
+Updating 84944bb..6b1dc4a
+Fast-forward
+ public/js/flatpickr-se.js                   | 75 +++++++++++++++++++++++++++++
+ resources/views/components/master.blade.php |  9 +++-
+ 2 files changed, 82 insertions(+), 2 deletions(-)
+ create mode 100644 public/js/flatpickr-se.js
+From ../appointment
+   6b1dc4a..7231196  master     -> origin/master
+Updating 6b1dc4a..7231196
+Fast-forward
+ public/js/custom.js | 3 ---
+ 1 file changed, 3 deletions(-)
+From ../appointment
+   7231196..039f2f8  master     -> origin/master
+Updating 7231196..039f2f8
+Fast-forward
+ resources/views/components/master.blade.php | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+From ../appointment
+   039f2f8..abe1e9e  master     -> origin/master
+Updating 039f2f8..abe1e9e
+Fast-forward
+ resources/views/components/master.blade.php | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+From ../appointment
+   abe1e9e..a6570f9  master     -> origin/master
+Updating abe1e9e..a6570f9
+Fast-forward
+ public/js/flatpickr-se.js                   | 48 ++++++++++++++---------------
+ resources/views/components/master.blade.php |  1 -
+ 2 files changed, 24 insertions(+), 25 deletions(-)
+From ../appointment
+   a6570f9..4afd0ed  master     -> origin/master
+Updating a6570f9..4afd0ed
+Fast-forward
+ resources/views/components/master.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   4afd0ed..de832d8  master     -> origin/master
+Updating 4afd0ed..de832d8
+Fast-forward
+ resources/views/components/master.blade.php | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   de832d8..3170aa4  master     -> origin/master
+Updating de832d8..3170aa4
+Fast-forward
+ public/js/{flatpickr-se.js => ru.js}        | 0
+ resources/views/components/master.blade.php | 2 +-
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ rename public/js/{flatpickr-se.js => ru.js} (100%)
+From ../appointment
+   3170aa4..856e013  master     -> origin/master
+Updating 3170aa4..856e013
+Fast-forward
+ resources/views/components/master.blade.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   856e013..f4d48ba  master     -> origin/master
+Updating 856e013..f4d48ba
+Fast-forward
+ public/js/custom.js                         | 2 +-
+ public/js/{ru.js => se.js}                  | 0
+ resources/views/components/master.blade.php | 2 +-
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ rename public/js/{ru.js => se.js} (100%)
+From ../appointment
+   f4d48ba..2b0c6b6  master     -> origin/master
+Updating f4d48ba..2b0c6b6
+Fast-forward
+ resources/views/components/master.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   2b0c6b6..5bf149d  master     -> origin/master
+Updating 2b0c6b6..5bf149d
+Fast-forward
+ public/js/custom.js                         | 2 +-
+ public/js/{se.js => ru.js}                  | 0
+ resources/views/components/master.blade.php | 2 +-
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ rename public/js/{se.js => ru.js} (100%)
+From ../appointment
+   5bf149d..5cefe01  master     -> origin/master
+Updating 5bf149d..5cefe01
+Fast-forward
+ public/js/ru.js | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+From ../appointment
+   5cefe01..12f0a00  master     -> origin/master
+Updating 5cefe01..12f0a00
+Fast-forward
+ public/js/ru.js | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+From ../appointment
+   12f0a00..2e225ee  master     -> origin/master
+Updating 12f0a00..2e225ee
+Fast-forward
+ resources/views/components/a-master.blade.php | 2 +-
+ resources/views/components/master.blade.php   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   2e225ee..c11abdb  master     -> origin/master
+Updating 2e225ee..c11abdb
+Fast-forward
+ resources/views/components/master.blade.php | 1 +
+ 1 file changed, 1 insertion(+)
