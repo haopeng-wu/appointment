@@ -15,7 +15,7 @@ class AdminDashController extends Controller
         $tomorrows = Appointment::onTomorrowPaid();
         $theDayAfterTomorrows = Appointment::onTheDayAfterTomorrowPaid();
         $all = Appointment::latest()->get();
-        $latest = $all[20];
+        $latest = $all->slice(0,20);
 
         return view('admin-schedules',[
             'todays'=>$todays,
