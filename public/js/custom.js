@@ -80,6 +80,7 @@ dateInput.addEventListener('input', function (){
         for(let i = 0; i < bookedSlots.length; i++){
             const theLabel = document.querySelector(`label[for=slot-${bookedSlots[i]}]`);
             const theInputElement = document.querySelector(`input#slot-${bookedSlots[i]}`);
+            console.log('theInputElement'+theInputElement);
             clearClasses(theLabel);
             theLabel.classList.add('booked');
             theInputElement.disabled = true;
