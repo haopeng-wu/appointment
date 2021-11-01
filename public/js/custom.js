@@ -37,9 +37,7 @@ flatpickr('.date input',{
         }
     ],
     "locale":ru,
-    "locale": {
-        "firstDayOfWeek": 1 // start week on Monday
-    }
+
 });
 
 
