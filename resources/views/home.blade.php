@@ -42,5 +42,6 @@
     <script type="text/javascript">
         let availableWeekdays = {{json_encode($availableWeekdays)}};
         let allFutureBooked = {!! json_encode($allFutureBooked) !!};
+        let all_slots = {!! $slots !!};
     </script>
 </x-master>

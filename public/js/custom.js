@@ -93,7 +93,8 @@ dateInput.addEventListener('input', function (){
     const selectedDate = new Date(dateInput.value);
     const todayDate = new Date();
     if (selectedDate.setHours(0, 0, 0, 0) === todayDate.setHours(0, 0, 0, 0)){
-        console.log('today');
+        console.log(all_slots);
+        // now disable the slots that has passed away
     }else {
         console.log('not today');
     }
