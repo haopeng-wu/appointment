@@ -106,8 +106,14 @@ dateInput.addEventListener('input', function (){
                 h = all_slots[key].split(' - ')[0].split(':')[0];
                 m = all_slots[key].split(' - ')[0].split(':')[1];
                 slotTime = new Date(0, 0, 0, h, m);
-                console.log(slotTime);
                 console.log(now - slotTime);
+                if (now - slotTime > 0){
+                    const _theLabel = document.querySelector(`label[for=slot-${bookedSlots[key-1]}]`);
+                    const _theInputElement = document.querySelector(`input#slot-${bookedSlots[key-1]}`);
+                    clearClasses(_theLabel);
+                    _theLabel.classList.add('booked');
+                    _theInputElement.disabled = true;
+                }
             }
         }
     }else {
