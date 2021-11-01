@@ -96,6 +96,7 @@
                     <th>Date</th>
                     <th>Time slot</th>
                     <th>Duration</th>
+                    <th>Created at</th>
                     <th>Details</th>
                     <th>Link</th>
                 </tr>
@@ -106,6 +107,7 @@
                         <td>{{$item->date}}</td>
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
+                        <td>{{$item->created_at}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
                         <td>Link</td>
                     </tr>
@@ -124,6 +126,7 @@
                     <th>Date</th>
                     <th>Time slot</th>
                     <th>Duration</th>
+                    <th>Created at</th>
                     <th>Details</th>
                     <th>Link</th>
                 </tr>
@@ -134,6 +137,7 @@
                         <td>{{$item->date}}</td>
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
+                        <td>{{$item->created_at}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
                         <td>Link</td>
                     </tr>
