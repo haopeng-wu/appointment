@@ -91,7 +91,7 @@ dateInput.addEventListener('input', function (){
      */
     //console.log(dateInput.value);
     const selectedDate = new Date(dateInput.value);
-    const todayDate = new Date();
+    let todayDate = new Date();
     if (selectedDate.setHours(0, 0, 0, 0) === todayDate.setHours(0, 0, 0, 0)){
         //console.log(all_slots);
         // now disable the slots that has passed away
@@ -99,6 +99,7 @@ dateInput.addEventListener('input', function (){
         //console.log(all_slots);
         if (all_slots){
             let h = '', m = '', slotTime = '';
+            let todayDate = new Date();
             let now = new Date(0, 0, 0, todayDate.getHours(), todayDate.getMinutes());
             console.log(now);
             for (let i = 0; i < all_slots.length; i++){
