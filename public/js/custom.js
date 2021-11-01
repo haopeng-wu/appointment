@@ -4,7 +4,7 @@ for slots select color
 let slots = document.querySelector(".time-slots");
 
 slots.addEventListener("change", function (event) {
-    console.log(event.target.id);
+    //console.log(event.target.id);
 
     let slotLabels = document.querySelectorAll(".time-slots label");
     for(let i = 0; i < slotLabels.length; i++) {
@@ -89,12 +89,13 @@ dateInput.addEventListener('input', function (){
     /*
     disable all the passed time slots in today
      */
-    console.log(dateInput.value);
+    //console.log(dateInput.value);
     const selectedDate = new Date(dateInput.value);
     const todayDate = new Date();
     if (selectedDate.setHours(0, 0, 0, 0) === todayDate.setHours(0, 0, 0, 0)){
-        console.log(all_slots);
+        //console.log(all_slots);
         // now disable the slots that has passed away
+        console.log('Today');
         if (all_slots){
             let h = '', m = '', slotTime = '';
             let now = new Date(0, 0, 0, todayDate.getHours(), todayDate.getMinutes());
