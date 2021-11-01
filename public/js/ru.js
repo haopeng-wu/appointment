@@ -11,15 +11,15 @@
         };
     var Russian = {
         weekdays: {
-            shorthand: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            shorthand: ["Sön", "Mån", "Tis", "Ons", "Tors", "Fre", "Lör"],
             longhand: [
-                "Воскресенье",
-                "Понедельник",
-                "Вторник",
-                "Среда",
-                "Четверг",
-                "Пятница",
-                "Суббота",
+                "söndag",
+                "måndag",
+                "tisdag",
+                "onsdag",
+                "torsdag",
+                "fredag",
+                "lördag",
             ],
         },
         months: {
