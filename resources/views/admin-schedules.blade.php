@@ -92,6 +92,7 @@
                 <caption>All the orders:</caption>
                 <thead>
                 <tr>
+                    <th>Date</th>
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
@@ -101,6 +102,7 @@
                 <tbody>
                 @foreach($all as $item)
                     <tr>
+                        <td>{{$item->date}}</td>
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
