@@ -44,7 +44,7 @@ flatpickr('.date input',{
     }
  */
 /*
-indicating the booked slots
+clear all of the element's classes
  */
 function clearClasses(element){
     for (let cssClass of element.classList){
@@ -57,17 +57,20 @@ const dateInput = document.querySelector('.date input#date');
 dateInput.addEventListener('input', function (){
     /*
     Do the cleaning first:
-    a) Remove all the classes of all the labels
-    b) Enable all the input radio buttons by setting disabled = false
-    c) Deselect all the input radios buttons
+        a) Remove all the classes of all the labels
+        b) Enable all the input radio buttons by setting disabled = false
+        c) Deselect all the input radios buttons
      */
     let slotLabels = document.querySelectorAll(".time-slots label");
+    // Remove all the classes of all the labels
     for(let i = 0; i < slotLabels.length; i++) {
         clearClasses(slotLabels[i]);
     }
     let slotInputs = document.querySelectorAll(".time-slots input");
     for(let i = 0; i < slotInputs.length; i++) {
+        // Enable all the input radio buttons by setting disabled = false
         slotInputs[i].disabled = false;
+        // Deselect all the input radios buttons
         slotInputs[i].checked = false;
     }
 
@@ -80,4 +83,9 @@ dateInput.addEventListener('input', function (){
         theLabel.classList.add('booked');
         theInputElement.disabled = true;
     }
+
+    /*
+    disable all the passed time slots in today
+     */
+    console.log(dateInput.value);
 })
