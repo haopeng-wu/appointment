@@ -62,6 +62,7 @@ class AppointmentController extends Controller
         /*
          * check the date belongs to the bookable weekdays
          */
+        dd($theDate);
         $bookableFlags = BookableWeekday::allBookableDayFlags();
         if ($bookableFlags[$theDate->dayName] != 1){
             return redirect('/')
