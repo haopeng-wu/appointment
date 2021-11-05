@@ -6119,3 +6119,6 @@ Updating f2b489c..17b537c
 Fast-forward
  public/js/custom.js | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
+From ../appointment
+   17b537c..6016bc8  master     -> origin/master
+Already up-to-date.
