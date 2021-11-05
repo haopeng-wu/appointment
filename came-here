@@ -6013,3 +6013,109 @@ Updating 2e225ee..c11abdb
 Fast-forward
  resources/views/components/master.blade.php | 1 +
  1 file changed, 1 insertion(+)
+From ../appointment
+   c11abdb..08f7442  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   08f7442..e7047ab  master     -> origin/master
+Updating 08f7442..e7047ab
+Fast-forward
+ public/js/custom.js | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+From ../appointment
+   e7047ab..c667a7b  master     -> origin/master
+Updating e7047ab..c667a7b
+Fast-forward
+ public/js/custom.js | 7 +++++++
+ 1 file changed, 7 insertions(+)
+From ../appointment
+   c667a7b..227fe6f  master     -> origin/master
+Updating c667a7b..227fe6f
+Fast-forward
+ public/js/custom.js | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+From ../appointment
+   227fe6f..ff28818  master     -> origin/master
+Updating 227fe6f..ff28818
+Fast-forward
+ public/js/custom.js            | 3 ++-
+ resources/views/home.blade.php | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   ff28818..38115a3  master     -> origin/master
+Updating ff28818..38115a3
+Fast-forward
+ resources/views/home.blade.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   38115a3..d149a75  master     -> origin/master
+Updating 38115a3..d149a75
+Fast-forward
+ public/js/custom.js | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+From ../appointment
+   d149a75..dd7d27c  master     -> origin/master
+Updating d149a75..dd7d27c
+Fast-forward
+ public/js/custom.js | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+From ../appointment
+   dd7d27c..35ab7ee  master     -> origin/master
+Updating dd7d27c..35ab7ee
+Fast-forward
+ public/js/custom.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   35ab7ee..b430373  master     -> origin/master
+Updating 35ab7ee..b430373
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   b430373..715fbcc  master     -> origin/master
+Updating b430373..715fbcc
+Fast-forward
+ public/js/custom.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   715fbcc..5036e5e  master     -> origin/master
+Updating 715fbcc..5036e5e
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   5036e5e..7488603  master     -> origin/master
+Updating 5036e5e..7488603
+Fast-forward
+ public/js/custom.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   7488603..c2d5421  master     -> origin/master
+Updating 7488603..c2d5421
+Fast-forward
+ public/js/custom.js | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   c2d5421..6e6c314  master     -> origin/master
+Updating c2d5421..6e6c314
+Fast-forward
+ public/js/custom.js | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+From ../appointment
+   6e6c314..2008c65  master     -> origin/master
+Updating 6e6c314..2008c65
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   2008c65..f2b489c  master     -> origin/master
+Updating 2008c65..f2b489c
+Fast-forward
+ public/js/custom.js | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   f2b489c..17b537c  master     -> origin/master
+Updating f2b489c..17b537c
+Fast-forward
+ public/js/custom.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)

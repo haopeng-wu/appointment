@@ -126,6 +126,7 @@ class ComposerStaticInit4cdf3c9e3e0aab2f8f90dc20ccd8755f
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
+            'Laravel\\Breeze\\' => 15,
         ),
         'I' => 
         array (
@@ -398,6 +399,10 @@ class ComposerStaticInit4cdf3c9e3e0aab2f8f90dc20ccd8755f
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+        'Laravel\\Breeze\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/breeze/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -526,6 +531,7 @@ class ComposerStaticInit4cdf3c9e3e0aab2f8f90dc20ccd8755f
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\BookableWeekdayController' => __DIR__ . '/../..' . '/app/Http/Controllers/BookableWeekdayController.php',
         'App\\Http\\Controllers\\BookedSlotController' => __DIR__ . '/../..' . '/app/Http/Controllers/BookedSlotController.php',
         'App\\Http\\Controllers\\CheckoutController' => __DIR__ . '/../..' . '/app/Http/Controllers/CheckoutController.php',
         'App\\Http\\Controllers\\ConfirmationController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConfirmationController.php',
@@ -663,6 +669,7 @@ class ComposerStaticInit4cdf3c9e3e0aab2f8f90dc20ccd8755f
         'Database\\Factories\\PageContentFactory' => __DIR__ . '/../..' . '/database/factories/PageContentFactory.php',
         'Database\\Factories\\SlotFactory' => __DIR__ . '/../..' . '/database/factories/SlotFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\BookableWeekdaySeeder' => __DIR__ . '/../..' . '/database/seeders/BookableWeekdaySeeder.php',
         'Database\\Seeders\\BookedSlotSeeder' => __DIR__ . '/../..' . '/database/seeders/BookedSlotSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\PageContentSeeder' => __DIR__ . '/../..' . '/database/seeders/PageContentSeeder.php',
@@ -2607,6 +2614,8 @@ class ComposerStaticInit4cdf3c9e3e0aab2f8f90dc20ccd8755f
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laravel\\Breeze\\BreezeServiceProvider' => __DIR__ . '/..' . '/laravel/breeze/src/BreezeServiceProvider.php',
+        'Laravel\\Breeze\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/breeze/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',

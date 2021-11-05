@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+*/
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 
@@ -64,4 +71,6 @@ Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $app
     dd($response->json());
 });
 
-Auth::routes();
+//Auth::routes();
+
+require __DIR__.'/auth.php';

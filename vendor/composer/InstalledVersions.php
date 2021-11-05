@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5f078edb74931c8dfefefb57b8b03a9d6511b74e',
+    'reference' => '17b537cf3b80197d98e15fe9c0466cd7656eb05d',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -443,6 +443,15 @@ private static $installed = array (
         0 => '*',
       ),
     ),
+    'laravel/breeze' => 
+    array (
+      'pretty_version' => 'v1.4.3',
+      'version' => '1.4.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'bb97d9a56fe74d9bd0de3ea6ac162ea033637adb',
+    ),
     'laravel/framework' => 
     array (
       'pretty_version' => 'v8.43.0',
@@ -459,7 +468,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5f078edb74931c8dfefefb57b8b03a9d6511b74e',
+      'reference' => '17b537cf3b80197d98e15fe9c0466cd7656eb05d',
     ),
     'laravel/sail' => 
     array (
