@@ -25,7 +25,7 @@ class AppointmentController extends Controller
          * basic validation
          */
         $validator = Validator::make($request->all(), [
-            'date' => ["required",'date'],
+            'date' => ["required", 'date'],
             'which_slot' => ["required"]
         ]);
 
@@ -52,10 +52,10 @@ class AppointmentController extends Controller
          */
         $today = Carbon::today()->subDays(1);
         $theDate = Carbon::make($attributes['date']);
-        if (!$theDate->diff($today)->invert){
+        if (!$theDate->diff($today)->invert) {
             return redirect('/')
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
-                ->withErrors(['date'=>'Can not book days in the past.'])
+                ->withErrors(['date' => 'Can not book days in the past.'])
                 ->withInput();
         }
 
@@ -63,10 +63,11 @@ class AppointmentController extends Controller
          * check the date belongs to the bookable weekdays
          */
         $bookableFlags = BookableWeekday::allBookableDayFlags();
-        if ($bookableFlags[$theDate->locale('en_US')->dayName] != 1){
+        #if ($bookableFlags[$theDate->locale('en_US')->dayName] != 1){
+        if ($bookableFlags[$theDate->dayName] != 1) {
             return redirect('/')
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
-                ->withErrors(['date'=>'The day of the week is not bookable.'])
+                ->withErrors(['date' => 'The day of the week is not bookable.'])
                 ->withInput();
         }
 
@@ -82,7 +83,7 @@ class AppointmentController extends Controller
         $prices = Slot::slotPrices();
         $charge = $prices[$attributes['which_slot']];
 
-        $price = $charge/(1+$vat);
+        $price = $charge / (1 + $vat);
         $tax = $charge - $price;
 
         /*
@@ -144,7 +145,7 @@ class AppointmentController extends Controller
             "validation": "https://www.wuhaopeng.site:22000/validation/%d"
           }
         }';
-        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat*10000), $charge, $tax, $appointment->id, $appointment->id, $appointment->id);
+        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat * 10000), $charge, $tax, $appointment->id, $appointment->id, $appointment->id);
         /*
          *  make the call to klarna
          */
@@ -184,7 +185,8 @@ class AppointmentController extends Controller
         return redirect('/checkout');
     }
 
-    public function retrieve(Appointment $appointment){
-        return view('appointment-details',['appointment'=>$appointment]);
+    public function retrieve(Appointment $appointment)
+    {
+        return view('appointment-details', ['appointment' => $appointment]);
     }
 }
