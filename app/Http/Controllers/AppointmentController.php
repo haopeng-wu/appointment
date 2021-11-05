@@ -62,9 +62,8 @@ class AppointmentController extends Controller
         /*
          * check the date belongs to the bookable weekdays
          */
-        dd($theDate->dayName);
         $bookableFlags = BookableWeekday::allBookableDayFlags();
-        if ($bookableFlags[$theDate->dayName] != 1){
+        if ($bookableFlags[$theDate->locale('en_US')->dayName] != 1){
             return redirect('/')
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date'=>'The day of the week is not bookable.'])
