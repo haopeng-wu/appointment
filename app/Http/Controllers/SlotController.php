@@ -9,49 +9,6 @@ use Illuminate\Http\Request;
 class SlotController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Slot  $slot
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Slot $slot)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -77,17 +34,6 @@ class SlotController extends Controller
         $slot->duration = $attributes['duration'];
         $slot->save();
 
-        return redirect('/dashboard');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Slot  $slot
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Slot $slot)
-    {
-        //
+        return redirect(route('dashboard'));
     }
 }
