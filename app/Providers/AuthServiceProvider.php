@@ -28,7 +28,7 @@ class AuthServiceProvider extends ServiceProvider
 
         //
         Gate::define('admin', function (User $user){
-            $admins = ['haopeng_wu@qq.com', 'markus.n.a@live.se'];
+            $admins = ['haopeng_wu@qq.com', 'markus.n.a@live.se', 'admin@admin.com'];
             if (in_array($user->email, $admins)){
                 return true;
             }
