@@ -54,9 +54,10 @@ Route::get('/out-of-stock', function () { return view('out-of-stock');});
 /*
  * admin
  */
-Route::get('/admin', [\App\Http\Controllers\AdminDashController::class, 'index'])
+Route::get('/admin3x6y', [\App\Http\Controllers\AdminDashController::class, 'index'])
     ->name('admin')->middleware('auth')->middleware('can:admin');
-Route::get('/dashboard', [\App\Http\Controllers\AdminDashController::class, 'dashboard'])->name('dashboard');
+Route::get('/fds4fgdashboard5y9z', [\App\Http\Controllers\AdminDashController::class, 'dashboard'])
+    ->name('dashboard')->middleware('auth')->middleware('can:admin');;
 
 Route::post('/slots/update',[\App\Http\Controllers\SlotController::class, 'update']);
 Route::post('/booked-slot-update', [\App\Http\Controllers\BookedSlotController::class, 'update']);
