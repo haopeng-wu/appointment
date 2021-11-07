@@ -139,13 +139,17 @@ class AppointmentController extends Controller
             ],
           "merchant_urls": {
             "terms": "https://www.example.com/terms.html",
-            "checkout": "https://www.wuhaopeng.site:22000/checkout",
-            "confirmation": "https://www.wuhaopeng.site:22000/thank-you/%d",
-            "push": "https://www.wuhaopeng.site:22000/confirmation/push/%d",
-            "validation": "https://www.wuhaopeng.site:22000/validation/%d"
+            "checkout": "%s",
+            "confirmation": "%sd",
+            "push": "%s",
+            "validation": "%s"
           }
         }';
-        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat * 10000), $charge, $tax, $appointment->id, $appointment->id, $appointment->id);
+        $checkoutUrl = url('/').'/checkout';
+        $confirmationUrl = sprintf(url('/thank-you/').'%d', $appointment->id);
+        $pushUrl = sprintf(url('/klarna/confirmation/push/').'%d', $appointment->id);
+        $validationUrl = sprintf(url('/klarna/validation/').'%d', $appointment->id);
+        $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat * 10000), $charge, $tax, $checkoutUrl, $confirmationUrl, $pushUrl, $validationUrl);
         /*
          *  make the call to klarna
          */

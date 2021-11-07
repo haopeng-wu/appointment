@@ -33,8 +33,6 @@ Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationContro
 
 Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
 
-Route::post('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
-
 Route::get('/ack/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'ack']);
 
 Route::get('/check-server/{appointment}', function (\App\Models\Appointment $appointment) {
@@ -42,14 +40,13 @@ Route::get('/check-server/{appointment}', function (\App\Models\Appointment $app
 });
 
 Route::get('/appointment/{appointment}/details', [\App\Http\Controllers\AppointmentController::class, 'retrieve']);
-
-//Route::post('/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
-
-Route::post('/validation/{appointment}', function (){
-    Log::debug('in checkStock');
-});
-
 Route::get('/out-of-stock', function () { return view('out-of-stock');});
+
+/*
+ * klarna hook url
+*/
+Route::post('/klarna/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
+Route::post('/klarna/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
 
 /*
  * admin
@@ -73,7 +70,7 @@ Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $app
     dd($response->json());
 });
 
-//aws
+// aws hook url
 Route::post('/aws/handle-bounces', [\App\Http\Controllers\AWSController::class, 'handle_bounces']);
 Route::post('/aws/handle-complaints', [\App\Http\Controllers\AWSController::class, 'handle_complaints']);
 Route::post('/aws/deliveries', [\App\Http\Controllers\AWSController::class, 'handle_deliveries']);
