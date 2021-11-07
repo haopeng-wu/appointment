@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Log;
 class AWSController extends Controller
 {
     public function handle_bounces(Request $request){
+        Log::debug('In handle_bounces');
         //SubscriptionConfirmation, Notification and UnsubscribeConfirmation
         if ($request->header('x-amz-sns-message-type') === 'SubscriptionConfirmation '){
 
@@ -21,6 +22,7 @@ class AWSController extends Controller
     }
 
     public function handle_complaints(Request $request){
+        Log::debug('In handle_complaints');
         //SubscriptionConfirmation, Notification and UnsubscribeConfirmation
         if ($request->header('x-amz-sns-message-type') === 'SubscriptionConfirmation '){
 
@@ -33,6 +35,7 @@ class AWSController extends Controller
     }
 
     public function handle_deliveries(Request $request){
+        Log::debug('In handle_deliveries');
         //SubscriptionConfirmation, Notification and UnsubscribeConfirmation
         if ($request->header('x-amz-sns-message-type') === 'SubscriptionConfirmation '){
 
