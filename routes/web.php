@@ -73,6 +73,9 @@ Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $app
     dd($response->json());
 });
 
+//aws
+Route::post('/aws/handle-bounces', [\App\Http\Controllers\AWSController::class, 'handle_bounces']);
+
 //Auth::routes();
 
 require __DIR__.'/auth.php';
