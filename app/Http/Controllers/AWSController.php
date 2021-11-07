@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class AWSController extends Controller
 {
@@ -14,6 +15,8 @@ class AWSController extends Controller
             $body = $request->json();
             $subscribeURL = $body['SubscribeURL'];
             Http::get($subscribeURL);
+            Log::debug('bounce confirmation: ');
+            Log::debug($body);
         }
     }
 }
