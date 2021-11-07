@@ -31,4 +31,16 @@ class AWSController extends Controller
             Log::debug($body);
         }
     }
+
+    public function handle_deliveries(Request $request){
+        //SubscriptionConfirmation, Notification and UnsubscribeConfirmation
+        if ($request->header('x-amz-sns-message-type') === 'SubscriptionConfirmation '){
+
+            $body = $request->json();
+            $subscribeURL = $body['SubscribeURL'];
+            Http::get($subscribeURL);
+            Log::debug('complaints confirmation: ');
+            Log::debug($body);
+        }
+    }
 }
