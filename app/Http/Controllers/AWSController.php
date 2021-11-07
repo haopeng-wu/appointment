@@ -18,6 +18,7 @@ class AWSController extends Controller
             Http::get($subscribeURL);
             Log::debug('bounce confirmation: ');
             Log::debug($body);
+            return 'hello this is handle_bounces';
         }
     }
 
@@ -31,6 +32,7 @@ class AWSController extends Controller
             Http::get($subscribeURL);
             Log::debug('complaints confirmation: ');
             Log::debug($body);
+            return 'hello this is handle_complaints';
         }
     }
 
@@ -44,6 +46,7 @@ class AWSController extends Controller
             Http::get($subscribeURL);
             Log::debug('complaints confirmation: ');
             Log::debug($body);
+            return 'hello this is handle_deliveries';
         }
     }
 }
