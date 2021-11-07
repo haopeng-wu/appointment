@@ -75,6 +75,7 @@ Route::get('/check-klarna/{appointment}', function (\App\Models\Appointment $app
 
 //aws
 Route::post('/aws/handle-bounces', [\App\Http\Controllers\AWSController::class, 'handle_bounces']);
+Route::post('/aws/handle-complaints', [\App\Http\Controllers\AWSController::class, 'handle_complaints']);
 
 //Auth::routes();
 
