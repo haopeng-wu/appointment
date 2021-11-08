@@ -41,7 +41,7 @@ class AWSController extends Controller
         //SubscriptionConfirmation, Notification and UnsubscribeConfirmation
         Log::debug($request->headers);
         Log::debug($request->url());
-        Log::debug(dd($request));
+        Log::debug($request);
         if ($request->header('X-Amz-Sns-Message-Type') === 'SubscriptionConfirmation '){
 
             Log::debug('in deliveries confirmation');
