@@ -49,7 +49,6 @@ class AWSController extends Controller
             $subscribeURL = $body['SubscribeURL'];
             Http::get($subscribeURL);
 
-            //return 'hello this is handle_deliveries';
         }
     }
 }
