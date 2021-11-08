@@ -44,7 +44,7 @@ class AWSController extends Controller
         Log::debug($request->json());
         if ($request->header('X-Amz-Sns-Message-Type') === 'SubscriptionConfirmation '){
 
-            Log::debug('in complaints confirmation');
+            Log::debug('in deliveries confirmation');
             $body = $request->json();
             $subscribeURL = $body['SubscribeURL'];
             Http::get($subscribeURL);
