@@ -24,11 +24,13 @@
         <div class="hamburger-wrapper">
             <img class="hamburger-icon" src="{{asset('images/radix-icons_hamburger-menu.png')}}" alt="radix-icons_hamburger-menu">
         </div>
+        <!--
         <ul class="wrapper">
             <li>Link 1</li>
             <li>Link 2</li>
             <li>Link 3</li>
         </ul>
+        -->
     </div>
 </nav>
 {{$slot}}
