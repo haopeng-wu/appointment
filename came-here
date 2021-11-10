@@ -6398,3 +6398,6 @@ Updating 81658d0..c2fc814
 Fast-forward
  app/Http/Controllers/AppointmentController.php | 6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
+From ../appointment
+   c2fc814..46ee48c  master     -> origin/master
+Already up-to-date.
