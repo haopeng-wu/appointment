@@ -72,7 +72,10 @@ class ConfirmationController extends Controller
         if(isset($klarna_return['billing_address']['phone'])){
             $appointment->phone = $klarna_return['billing_address']['phone'];
         }
-
+        /*
+         * Save to the database
+         */
+        $appointment->save();
 
         /*
          *  checkout completed, synchronize the checkout status
@@ -92,7 +95,7 @@ class ConfirmationController extends Controller
                 ->post("https://api.playground.klarna.com/ordermanagement/v1/orders/$klarna_order_id/acknowledge");
         }
         /*
-         * Save to the database
+         * Save to the database again
          */
         $appointment->save();
 
