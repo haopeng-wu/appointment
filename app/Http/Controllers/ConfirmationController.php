@@ -36,11 +36,11 @@ class ConfirmationController extends Controller
                 'phone' => $klarna_return['billing_address']['email']
             ]
         );
-        $user = User::where('email','=', $klarna_return['billing_address']['email'])->first();
-        if(isset($klarna_return['customer']['date_of_birth'])) {
+        $user = User::where('email', '=', $klarna_return['billing_address']['email'])->first();
+        if (isset($klarna_return['customer']['date_of_birth'])) {
             $user->date_of_birth = $klarna_return['customer']['date_of_birth'];
         }
-        if(isset($klarna_return['customer']['gender'])) {
+        if (isset($klarna_return['customer']['gender'])) {
             $user->gender = $klarna_return['customer']['gender'];
         }
         $user->save();
@@ -52,10 +52,10 @@ class ConfirmationController extends Controller
          */
         $appointment->given_name = $klarna_return['billing_address']['given_name'];
         $appointment->family_name = $klarna_return['billing_address']['family_name'];
-        if(isset($klarna_return['customer']['date_of_birth'])){
+        if (isset($klarna_return['customer']['date_of_birth'])) {
             $appointment->date_of_birth = $klarna_return['customer']['date_of_birth'];
         }
-        if(isset($klarna_return['customer']['gender'])){
+        if (isset($klarna_return['customer']['gender'])) {
             $appointment->gender = $klarna_return['customer']['gender'];
         }
 
@@ -69,22 +69,26 @@ class ConfirmationController extends Controller
         $appointment->postal_code = $klarna_return['billing_address']['postal_code'];
         $appointment->city = $klarna_return['billing_address']['city'];
         $appointment->country = $klarna_return['billing_address']['country'];
-        if(isset($klarna_return['billing_address']['phone'])){
+        if (isset($klarna_return['billing_address']['phone'])) {
             $appointment->phone = $klarna_return['billing_address']['phone'];
         }
-        /*
-         * Save to the database
-         */
-        $appointment->save();
 
         /*
          *  checkout completed, synchronize the checkout status
          */
         if ($klarna_return['status'] == 'checkout_complete') {
-            if (!BookedSlot::checkIfBooked($appointment->date, $appointment->which_slot)){
+            if (!BookedSlot::checkIfBooked($appointment->date, $appointment->which_slot)) {
                 BookedSlot::sealTheAppointment($appointment->date, $appointment->which_slot);
             }
             $appointment->payment_status = 1;
+            /*
+            * Save to the database
+            */
+            $appointment->save();
+
+            // to re-hydrate it using fresh data from the database
+            $appointment->refresh();
+
 
             // send confirmation email to user
             Mail::to($user)
@@ -93,14 +97,17 @@ class ConfirmationController extends Controller
             Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
                 ->withHeaders(['content-type' => 'application/json'])
                 ->post("https://api.playground.klarna.com/ordermanagement/v1/orders/$klarna_order_id/acknowledge");
+        } else {
+            /*
+            * Save to the database
+            */
+            $appointment->save();
         }
-        /*
-         * Save to the database again
-         */
-        $appointment->save();
 
         $html_snippet = $klarna_return['html_snippet'];
 
+        // to re-hydrate it using fresh data from the database
+        $appointment->refresh();
         return view('thank-you', ['name' => $appointment->customer_name, 'html_snippet' => $html_snippet]);
     }
 
