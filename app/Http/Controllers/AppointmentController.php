@@ -146,9 +146,9 @@ class AppointmentController extends Controller
           }
         }';
         $checkoutUrl = url('/').'/checkout';
-        $confirmationUrl = sprintf(url('/thank-you/').'%d', $appointment->id);
-        $pushUrl = sprintf(url('/klarna/confirmation/push/').'%d', $appointment->id);
-        $validationUrl = sprintf(url('/klarna/validation/').'%d', $appointment->id);
+        $confirmationUrl = sprintf(url('/thank-you').'/'.'%d', $appointment->id);
+        $pushUrl = sprintf(url('/klarna/confirmation/push').'/'.'%d', $appointment->id);
+        $validationUrl = sprintf(url('/klarna/validation').'/'.'%d', $appointment->id);
         $rawBody = sprintf($rawBody, $charge, $tax, $charge, intval($vat * 10000), $charge, $tax, $checkoutUrl, $confirmationUrl, $pushUrl, $validationUrl);
         /*
          *  make the call to klarna
