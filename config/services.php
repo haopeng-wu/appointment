@@ -25,8 +25,8 @@ return [
     ],
 
     'ses' => [
-        'key' => env('AKIARRFQ6CSDHVENI662'),
-        'secret' => env('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'),
+        'key' => env('AWS_ACCESS_KEY_ID'),
+        'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'eu-north-1'),
     ],
 

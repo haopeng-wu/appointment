@@ -6378,3 +6378,23 @@ Fast-forward
 From ../appointment
    460b9d8..c1eb334  master     -> origin/master
 Already up-to-date.
+From ../appointment
+   f4ceda5..81658d0  master     -> origin/master
+Updating f4ceda5..81658d0
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php     |  8 +++++++-
+ app/Mail/AppointmentConfirmation.php                | 15 +++++++++++----
+ public/css/email.css                                |  0
+ resources/views/components/email.blade.php          | 18 ++++++++++++++++++
+ .../views/emails/appointment-confirmation.blade.php | 21 +++++++++++++++++++++
+ routes/web.php                                      |  2 --
+ 6 files changed, 57 insertions(+), 7 deletions(-)
+ create mode 100644 public/css/email.css
+ create mode 100644 resources/views/components/email.blade.php
+ create mode 100644 resources/views/emails/appointment-confirmation.blade.php
+From ../appointment
+   81658d0..c2fc814  master     -> origin/master
+Updating 81658d0..c2fc814
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
