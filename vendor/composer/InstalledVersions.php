@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '460b9d810b959d0afd65a7a6b09047ea3c6df814',
+    'reference' => 'c1eb334dda075e67e4396a309bbdef62d5d09545',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -42,6 +42,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '9cb795bf30988e8c96dd3c40623c48a877bc6714',
+    ),
+    'aws/aws-crt-php' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3942776a8c99209908ee0b287746263725685732',
+    ),
+    'aws/aws-sdk-php' => 
+    array (
+      'pretty_version' => '3.201.0',
+      'version' => '3.201.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd2bb0296a3fe62fbc975075d7b06c41002a6517d',
     ),
     'brick/math' => 
     array (
@@ -468,7 +486,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '460b9d810b959d0afd65a7a6b09047ea3c6df814',
+      'reference' => 'c1eb334dda075e67e4396a309bbdef62d5d09545',
     ),
     'laravel/sail' => 
     array (
@@ -548,6 +566,15 @@ private static $installed = array (
       array (
         0 => '^1.0',
       ),
+    ),
+    'mtdowling/jmespath.php' => 
+    array (
+      'pretty_version' => '2.6.1',
+      'version' => '2.6.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9b87907a81b87bc76d19a7fb2d61e61486ee9edb',
     ),
     'myclabs/deep-copy' => 
     array (

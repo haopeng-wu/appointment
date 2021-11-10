@@ -6375,3 +6375,6 @@ Updating 40cab88..460b9d8
 Fast-forward
  resources/views/components/master.blade.php | 2 ++
  1 file changed, 2 insertions(+)
+From ../appointment
+   460b9d8..c1eb334  master     -> origin/master
+Already up-to-date.
