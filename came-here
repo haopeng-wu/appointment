@@ -6122,3 +6122,256 @@ Fast-forward
 From ../appointment
    17b537c..6016bc8  master     -> origin/master
 Already up-to-date.
+From ../appointment
+   6016bc8..0d5523b  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   0d5523b..2028bb7  master     -> origin/master
+Updating 0d5523b..2028bb7
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   2028bb7..1df0fc5  master     -> origin/master
+Updating 2028bb7..1df0fc5
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1df0fc5..eb88c47  master     -> origin/master
+Updating 1df0fc5..eb88c47
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+From ../appointment
+   eb88c47..69bb5c3  master     -> origin/master
+Updating eb88c47..69bb5c3
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 20 +++++++++++---------
+ config/app.php                                 |  2 +-
+ 2 files changed, 12 insertions(+), 10 deletions(-)
+From ../appointment
+   69bb5c3..33d8c05  master     -> origin/master
+Updating 69bb5c3..33d8c05
+Fast-forward
+ app/Providers/AuthServiceProvider.php | 5 +++++
+ routes/web.php                        | 3 ++-
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+From ../appointment
+   33d8c05..0da2169  master     -> origin/master
+Updating 33d8c05..0da2169
+Fast-forward
+ routes/web.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   0da2169..3a8d928  master     -> origin/master
+Updating 0da2169..3a8d928
+Fast-forward
+ app/Providers/AuthServiceProvider.php | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+From ../appointment
+   3a8d928..588c405  master     -> origin/master
+Updating 3a8d928..588c405
+Fast-forward
+ app/Providers/AuthServiceProvider.php | 1 +
+ 1 file changed, 1 insertion(+)
+From ../appointment
+   588c405..0b74225  master     -> origin/master
+Updating 588c405..0b74225
+Fast-forward
+ routes/web.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   0b74225..ad7123e  master     -> origin/master
+Updating 0b74225..ad7123e
+Fast-forward
+ routes/web.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   ad7123e..270f309  master     -> origin/master
+Updating ad7123e..270f309
+Fast-forward
+ resources/views/home-bk.blade.php | 47 ---------------------------------------
+ routes/web.php                    |  5 +++--
+ 2 files changed, 3 insertions(+), 49 deletions(-)
+ delete mode 100644 resources/views/home-bk.blade.php
+From ../appointment
+   270f309..6b09a07  master     -> origin/master
+Updating 270f309..6b09a07
+Fast-forward
+ app/Http/Controllers/BookableWeekdayController.php | 65 +--------------------
+ app/Http/Controllers/BookedSlotController.php      | 66 +---------------------
+ app/Http/Controllers/SlotController.php            | 56 +-----------------
+ 3 files changed, 3 insertions(+), 184 deletions(-)
+From ../appointment
+   6b09a07..b3cb50a  master     -> origin/master
+Updating 6b09a07..b3cb50a
+Fast-forward
+ app/Providers/RouteServiceProvider.php | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+From ../appointment
+   b3cb50a..9d175fe  master     -> origin/master
+Updating b3cb50a..9d175fe
+Fast-forward
+ app/Providers/AuthServiceProvider.php              |  2 +-
+ .../2014_10_12_000000_create_users_table.php       |  3 ++-
+ database/seeders/DatabaseSeeder.php                |  3 ++-
+ database/seeders/UserSeeder.php                    | 25 ++++++++++++++++++++++
+ 4 files changed, 30 insertions(+), 3 deletions(-)
+ create mode 100644 database/seeders/UserSeeder.php
+From ../appointment
+   9d175fe..3e930d7  master     -> origin/master
+Updating 9d175fe..3e930d7
+Fast-forward
+ resources/views/auth/login.blade.php | 2 ++
+ 1 file changed, 2 insertions(+)
+From ../appointment
+   3e930d7..2738857  master     -> origin/master
+Updating 3e930d7..2738857
+Fast-forward
+ resources/views/components/auth-card.blade.php | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+From ../appointment
+   2738857..7ec898d  master     -> origin/master
+Updating 2738857..7ec898d
+Fast-forward
+ app/Http/Controllers/AWSController.php | 19 +++++++++++++++++++
+ routes/web.php                         |  3 +++
+ 2 files changed, 22 insertions(+)
+ create mode 100644 app/Http/Controllers/AWSController.php
+From ../appointment
+   7ec898d..6a42417  master     -> origin/master
+Updating 7ec898d..6a42417
+Fast-forward
+ app/Http/Controllers/AWSController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   6a42417..c5d2eca  master     -> origin/master
+Updating 6a42417..c5d2eca
+Fast-forward
+ app/Http/Controllers/AWSController.php | 12 ++++++++++++
+ routes/web.php                         |  1 +
+ 2 files changed, 13 insertions(+)
+From ../appointment
+   c5d2eca..c58bdcc  master     -> origin/master
+Updating c5d2eca..c58bdcc
+Fast-forward
+ app/Http/Controllers/AWSController.php | 12 ++++++++++++
+ routes/web.php                         |  1 +
+ 2 files changed, 13 insertions(+)
+From ../appointment
+   c58bdcc..71e1312  master     -> origin/master
+Updating c58bdcc..71e1312
+Fast-forward
+ routes/web.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   71e1312..c78a106  master     -> origin/master
+Updating 71e1312..c78a106
+Fast-forward
+ app/Http/Controllers/AWSController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   c78a106..c99fa14  master     -> origin/master
+Updating c78a106..c99fa14
+Fast-forward
+ app/Http/Controllers/AWSController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   c99fa14..af3d1a3  master     -> origin/master
+Updating c99fa14..af3d1a3
+Fast-forward
+ app/Http/Controllers/AppointmentController.php | 14 +++++++++-----
+ app/Http/Middleware/VerifyCsrfToken.php        |  2 ++
+ routes/web.php                                 | 17 +++++++----------
+ 3 files changed, 18 insertions(+), 15 deletions(-)
+From ../appointment
+   af3d1a3..e3e870e  master     -> origin/master
+Updating af3d1a3..e3e870e
+Fast-forward
+ app/Http/Controllers/AWSController.php | 3 +++
+ 1 file changed, 3 insertions(+)
+From ../appointment
+   e3e870e..7d1e5db  master     -> origin/master
+Updating e3e870e..7d1e5db
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   7d1e5db..a5ad30c  master     -> origin/master
+Updating 7d1e5db..a5ad30c
+Fast-forward
+ app/Http/Controllers/AWSController.php | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+From ../appointment
+   a5ad30c..75f8f08  master     -> origin/master
+Updating a5ad30c..75f8f08
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   75f8f08..df0c538  master     -> origin/master
+Updating 75f8f08..df0c538
+Fast-forward
+ app/Http/Controllers/AWSController.php | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+From ../appointment
+   df0c538..756be9c  master     -> origin/master
+Updating df0c538..756be9c
+Fast-forward
+ app/Http/Controllers/AWSController.php | 1 -
+ 1 file changed, 1 deletion(-)
+From ../appointment
+   756be9c..d2355ca  master     -> origin/master
+Updating 756be9c..d2355ca
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   d2355ca..5f4a9ad  master     -> origin/master
+Updating d2355ca..5f4a9ad
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   5f4a9ad..1bf07cb  master     -> origin/master
+Updating 5f4a9ad..1bf07cb
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1bf07cb..a1f4aa9  master     -> origin/master
+Updating 1bf07cb..a1f4aa9
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   a1f4aa9..8110a9f  master     -> origin/master
+Updating a1f4aa9..8110a9f
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   8110a9f..1550284  master     -> origin/master
+Updating 8110a9f..1550284
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   1550284..f1ea8ab  master     -> origin/master
+Updating 1550284..f1ea8ab
+Fast-forward
+ app/Http/Controllers/AWSController.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From ../appointment
+   f1ea8ab..40cab88  master     -> origin/master
+Updating f1ea8ab..40cab88
+Fast-forward
+ app/Http/Controllers/AWSController.php | 6 ++++++
+ 1 file changed, 6 insertions(+)
+From ../appointment
+   40cab88..460b9d8  master     -> origin/master
+Updating 40cab88..460b9d8
+Fast-forward
+ resources/views/components/master.blade.php | 2 ++
+ 1 file changed, 2 insertions(+)
