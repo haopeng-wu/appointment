@@ -31,8 +31,6 @@ Route::get('/checkout', [\App\Http\Controllers\CheckoutController::class, 'check
 
 Route::get('/thank-you/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'render']);
 
-Route::get('/confirmation/push/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'push']);
-
 Route::get('/ack/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'ack']);
 
 Route::get('/check-server/{appointment}', function (\App\Models\Appointment $appointment) {

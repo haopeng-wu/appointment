@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AppointmentConfirmation;
 use App\Models\Appointment;
 use App\Models\BookedSlot;
 use App\Models\User;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ConfirmationController extends Controller
 {
@@ -73,13 +75,17 @@ class ConfirmationController extends Controller
 
 
         /*
-         *  synchronize the checkout status
+         *  checkout completed, synchronize the checkout status
          */
         if ($klarna_return['status'] == 'checkout_complete') {
             if (!BookedSlot::checkIfBooked($appointment->date, $appointment->which_slot)){
                 BookedSlot::sealTheAppointment($appointment->date, $appointment->which_slot);
             }
             $appointment->payment_status = 1;
+
+            // send confirmation email to user
+            Mail::to($user)
+                ->queue(new AppointmentConfirmation($appointment));
 
             Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
                 ->withHeaders(['content-type' => 'application/json'])
