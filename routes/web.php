@@ -47,6 +47,13 @@ Route::post('/klarna/confirmation/push/{appointment}', [\App\Http\Controllers\Co
 Route::post('/klarna/validation/{appointment}', [\App\Http\Controllers\ConfirmationController::class, 'checkStock']);
 
 /*
+ * zoom url
+ */
+Route::get('/zoom/redirect', function (){
+    return "hello, this is zoom!";
+});
+
+/*
  * admin
  */
 Route::get('/admin3x6y', [\App\Http\Controllers\AdminDashController::class, 'index'])
