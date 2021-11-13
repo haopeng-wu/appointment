@@ -6401,3 +6401,31 @@ Fast-forward
 From ../appointment
    c2fc814..46ee48c  master     -> origin/master
 Already up-to-date.
+From ../appointment
+   46ee48c..5900bbd  master     -> origin/master
+Already up-to-date.
+From ../appointment
+   5900bbd..f72dcf0  master     -> origin/master
+Updating 5900bbd..f72dcf0
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+From ../appointment
+   f72dcf0..4c003e1  master     -> origin/master
+Updating f72dcf0..4c003e1
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 37 +++++++++++++++----------
+ 1 file changed, 22 insertions(+), 15 deletions(-)
+From ../appointment
+   4c003e1..3e79f14  master     -> origin/master
+Updating 4c003e1..3e79f14
+Fast-forward
+ routes/web.php | 7 +++++++
+ 1 file changed, 7 insertions(+)
+From ../appointment
+   3e79f14..befdfac  master     -> origin/master
+Updating 3e79f14..befdfac
+Fast-forward
+ app/Http/Controllers/ConfirmationController.php | 3 ++-
+ routes/web.php                                  | 6 +++++-
+ 2 files changed, 7 insertions(+), 2 deletions(-)

@@ -8,6 +8,7 @@
         "php": "^7.3|^8.0",
         "aws/aws-sdk-php": "^3.201",
         "fideloper/proxy": "^4.4",
+        "firebase/php-jwt": "^5.5",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.4",
         "laravel/framework": "^8.40",
