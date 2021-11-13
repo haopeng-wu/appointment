@@ -53,8 +53,12 @@ Route::get('/zoom/redirect', function (){
     return "hello, this is zoom!";
 });
 
+Route::get('/zoom/index', function (){
+
+});
+
 /*
- * admin
+ * adm url
  */
 Route::get('/admin3x6y', [\App\Http\Controllers\AdminDashController::class, 'index'])
     ->name('admin')->middleware('auth')->middleware('can:admin');

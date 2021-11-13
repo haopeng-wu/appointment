@@ -74,7 +74,7 @@ class ConfirmationController extends Controller
         }
 
         /*
-         *  checkout completed, synchronize the checkout status
+         *  checkout completed, synchronize the checkout status and schedule a meeting with zoom
          */
         if ($klarna_return['status'] == 'checkout_complete') {
             if (!BookedSlot::checkIfBooked($appointment->date, $appointment->which_slot)) {
@@ -89,6 +89,7 @@ class ConfirmationController extends Controller
             // to re-hydrate it using fresh data from the database
             $appointment->refresh();
 
+            // schedule a meeting using zoom
 
             // send confirmation email to user
             Mail::to($user)
