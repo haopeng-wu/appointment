@@ -90,7 +90,7 @@ class ScheduleMeetings implements ShouldQueue
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
         Log::debug("Meeting Password: " . $data->password);
-        Log::debug($data);
+        Log::debug(json_encode($data));
 
     }
 
