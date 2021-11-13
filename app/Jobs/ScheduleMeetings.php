@@ -77,6 +77,8 @@ class ScheduleMeetings implements ShouldQueue
             "settings"=>[
                 'auto_recording'=>'none',
                 'waiting_room'=>'true',
+                'host_video'=>'true',
+                'join_before_host'=>'false'
 
             ]
         ]);
