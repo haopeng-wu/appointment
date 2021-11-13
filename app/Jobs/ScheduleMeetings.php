@@ -74,6 +74,11 @@ class ScheduleMeetings implements ShouldQueue
             'start_time' => $this->appointment->date.'T'.$startTime,
             'duration' => $totalMinutes,
             "password" => $this->genRandomPass(),
+            "settings"=>[
+                'auto_recording'=>'none',
+                'waiting_room'=>'true',
+
+            ]
         ]);
         Log::debug("date and duration");
         Log::debug($this->appointment->date.'T'.$startTime);
@@ -81,9 +86,11 @@ class ScheduleMeetings implements ShouldQueue
         Log::debug($response->status());
 
         $data = json_decode($response->getBody());
+        Log::debug("Start URL: " . $data->start_url);
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
         Log::debug("Meeting Password: " . $data->password);
+        Log::debug($data);
 
     }
 
