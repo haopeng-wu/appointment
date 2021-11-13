@@ -94,8 +94,7 @@ class ConfirmationController extends Controller
             ScheduleMeetings::dispatch($appointment);
 
             // send confirmation email to user
-            Mail::to($user)
-                ->queue(new AppointmentConfirmation($appointment));
+            //Mail::to($user)->queue(new AppointmentConfirmation($appointment));
 
             Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
                 ->withHeaders(['content-type' => 'application/json'])
