@@ -68,6 +68,7 @@ class ScheduleMeetings implements ShouldQueue
         Log::debug($response->status());
         Log::debug($response->body());
         Log::debug($response->json());
+        Log::debug($response->headers());
         $data = json_decode($response->getBody());
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
