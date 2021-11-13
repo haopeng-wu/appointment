@@ -62,7 +62,7 @@ class ScheduleMeetings implements ShouldQueue
         $totalMinutes = (int)(((int)$h)*60 + $m);
 
         // get start time
-        $startTime = explode(' - ', $this->start_end_time)[0];
+        $startTime = explode(' - ', $this->appointment->start_end_time)[0];
 
         $response = Http::withHeaders([
                 'Authorization' => "Bearer" . $this->getZoomAccessToken()
