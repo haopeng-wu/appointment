@@ -37,6 +37,7 @@ class ScheduleMeetings implements ShouldQueue
      */
     public function handle()
     {
+        Log::debug('in ScheduleMeetings\' handle');
         $this->createZoomMeeting();
     }
 
@@ -64,7 +65,7 @@ class ScheduleMeetings implements ShouldQueue
             'duration' => $this->appointment->duration,
             "password" => $this->genRandomPass(),
         ]);
-
+        Log::debug($response->status());
         $data = json_decode($response->getBody());
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
