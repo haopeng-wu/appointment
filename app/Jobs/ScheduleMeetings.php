@@ -65,10 +65,10 @@ class ScheduleMeetings implements ShouldQueue
             'duration' => $this->appointment->duration,
             "password" => $this->genRandomPass(),
         ]);
+        Log::debug("date and duration");
+        Log::debug($this->appointment->date);
+        Log::debug($this->appointment->duration);
         Log::debug($response->status());
-        Log::debug($response->body());
-        Log::debug($response->json());
-        Log::debug($response->headers());
         $data = json_decode($response->getBody());
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
