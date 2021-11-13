@@ -91,8 +91,7 @@ class ConfirmationController extends Controller
             $appointment->refresh();
 
             // schedule a meeting using zoom
-            $meeting = new ScheduleMeetings($appointment);
-            ScheduleMeetings::dispatch($meeting);
+            ScheduleMeetings::dispatch($appointment);
 
             // send confirmation email to user
             Mail::to($user)
