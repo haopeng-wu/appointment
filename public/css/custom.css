@@ -143,11 +143,13 @@ article.schedule{
 }
 
 .time-slots .booked {
-    background-color: #e4d6fd;
+    background-color: #cbf0fc;
+    color: white;
 }
 .time-slots .booked:hover{
     cursor: not-allowed;
-    background-color: #e4d6fd;
+    background-color: #cbf0fc;
+    color: white;
 }
 
 /*

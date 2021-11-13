@@ -74,10 +74,12 @@ class ScheduleMeetings implements ShouldQueue
         Log::debug($this->appointment->date);
         Log::debug($totalMinutes);
         Log::debug($response->status());
+        /*
         $data = json_decode($response->getBody());
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
         Log::debug("Meeting Password: " . $data->password);
+        */
     }
 
     protected function genRandomPass()
