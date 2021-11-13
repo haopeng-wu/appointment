@@ -55,7 +55,7 @@ class ScheduleMeetings implements ShouldQueue
     {
         $base_uri = 'https://api.zoom.us/v2/users/me/meetings';
 
-        $tmp = $this->appointment->duration.explode(':');
+        $tmp =explode(':', $this->appointment->duration);
         $h = $tmp[0];
         $m = $tmp[1];
         $totalMinutes = (int)(((int)$h)*60 + $m);
