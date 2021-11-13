@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\ScheduleMeetings;
 use App\Mail\AppointmentConfirmation;
 use App\Models\Appointment;
 use App\Models\BookedSlot;
@@ -90,6 +91,8 @@ class ConfirmationController extends Controller
             $appointment->refresh();
 
             // schedule a meeting using zoom
+            $meeting = new ScheduleMeetings($appointment);
+            ScheduleMeetings::dispatch($meeting);
 
             // send confirmation email to user
             Mail::to($user)
