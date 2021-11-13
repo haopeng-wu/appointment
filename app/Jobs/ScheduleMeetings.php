@@ -78,8 +78,8 @@ class ScheduleMeetings implements ShouldQueue
                 'auto_recording'=>'none',
                 'waiting_room'=>'true',
                 'host_video'=>'true',
-                'join_before_host'=>'false'
-
+                'participant_video'=>'false',
+                'join_before_host'=>'false',
             ]
         ]);
         Log::debug("date and duration");
