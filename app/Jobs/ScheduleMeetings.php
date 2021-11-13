@@ -66,6 +66,7 @@ class ScheduleMeetings implements ShouldQueue
             "password" => $this->genRandomPass(),
         ]);
         Log::debug($response->status());
+        Log::debug($response->body());
         $data = json_decode($response->getBody());
         Log::debug("Join URL: " . $data->join_url);
         Log::debug("<br>");
