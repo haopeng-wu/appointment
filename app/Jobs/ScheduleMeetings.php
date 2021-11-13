@@ -55,10 +55,14 @@ class ScheduleMeetings implements ShouldQueue
     {
         $base_uri = 'https://api.zoom.us/v2/users/me/meetings';
 
+        // get duration in minutes
         $tmp =explode(':', $this->appointment->duration);
         $h = $tmp[0];
         $m = $tmp[1];
         $totalMinutes = (int)(((int)$h)*60 + $m);
+
+        // get start time
+        $startTime = explode(' - ', $this->start_end_time)[0];
 
         $response = Http::withHeaders([
                 'Authorization' => "Bearer" . $this->getZoomAccessToken()
@@ -66,7 +70,8 @@ class ScheduleMeetings implements ShouldQueue
         )->post($base_uri, [
             'topic' => "relationsutveckling",
             'type' => 2,
-            'start_time' => $this->appointment->date,
+            'timezone'=>'Europe/Stockholm',
+            'start_time' => $this->appointment->date.'T'.$startTime,
             'duration' => $totalMinutes,
             "password" => $this->genRandomPass(),
         ]);
