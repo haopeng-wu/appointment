@@ -23,7 +23,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 */
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'welcome']);
+
+//Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 

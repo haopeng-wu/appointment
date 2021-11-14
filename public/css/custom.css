@@ -41,7 +41,7 @@ img.hamburger-icon{
     margin: 1em auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     nav ul.wrapper{
         display: none;
     }
@@ -49,6 +49,8 @@ img.hamburger-icon{
         display: block;
     }
 }
+
+
 
 nav ul.wrapper{
     justify-content: space-around;
