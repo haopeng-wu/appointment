@@ -91,7 +91,7 @@ class ScheduleMeetings implements ShouldQueue
         Log::debug($totalMinutes);
         Log::debug($response->status());
 
-        if ($response->ok()) {
+        if ($response->successful()) {
             $data = json_decode($response->getBody());
 
             Log::debug("Start URL: " . $data->start_url);
