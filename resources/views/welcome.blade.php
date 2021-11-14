@@ -1,5 +1,5 @@
 <x-master>
-    <article>
+    <article class="promote">
         <header>
             <h2>
                 Familjerådgivning/parterapi
