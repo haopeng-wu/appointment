@@ -2,7 +2,10 @@
 
 namespace App\Jobs;
 
+use App\Mail\AppointmentConfirmation;
+use App\Mail\NewMeeting;
 use App\Models\Appointment;
+use App\Models\User;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -12,6 +15,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Firebase\JWT\JWT;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 
 
 class ScheduleMeetings implements ShouldQueue
@@ -56,10 +60,10 @@ class ScheduleMeetings implements ShouldQueue
         $base_uri = 'https://api.zoom.us/v2/users/me/meetings';
 
         // get duration in minutes
-        $tmp =explode(':', $this->appointment->duration);
+        $tmp = explode(':', $this->appointment->duration);
         $h = $tmp[0];
         $m = $tmp[1];
-        $totalMinutes = (int)(((int)$h)*60 + $m);
+        $totalMinutes = (int)(((int)$h) * 60 + $m);
 
         // get start time
         $startTime = explode(' - ', $this->appointment->start_end_time)[0];
@@ -70,30 +74,58 @@ class ScheduleMeetings implements ShouldQueue
         )->post($base_uri, [
             'topic' => "relationsutveckling",
             'type' => 2,
-            'timezone'=>'Europe/Stockholm',
-            'start_time' => $this->appointment->date.'T'.$startTime,
+            'timezone' => 'Europe/Stockholm',
+            'start_time' => $this->appointment->date . 'T' . $startTime,
             'duration' => $totalMinutes,
             "password" => $this->genRandomPass(),
-            "settings"=>[
-                'auto_recording'=>'none',
-                'waiting_room'=>'true',
-                'host_video'=>'true',
-                'participant_video'=>'false',
-                'join_before_host'=>'false',
+            "settings" => [
+                'auto_recording' => 'none',
+                'waiting_room' => 'true',
+                'host_video' => 'true',
+                'participant_video' => 'false',
+                'join_before_host' => 'false',
             ]
         ]);
         Log::debug("date and duration");
-        Log::debug($this->appointment->date.'T'.$startTime);
+        Log::debug($this->appointment->date . 'T' . $startTime);
         Log::debug($totalMinutes);
         Log::debug($response->status());
 
-        $data = json_decode($response->getBody());
-        Log::debug("Start URL: " . $data->start_url);
-        Log::debug("Join URL: " . $data->join_url);
-        Log::debug("<br>");
-        Log::debug("Meeting Password: " . $data->password);
-        Log::debug(json_encode($data));
+        if ($response->ok()) {
+            $data = json_decode($response->getBody());
 
+            Log::debug("Start URL: " . $data->start_url);
+            Log::debug("Join URL: " . $data->join_url);
+            Log::debug("<br>");
+            Log::debug("Meeting Password: " . $data->password);
+            Log::debug(json_encode($data));
+
+            $start_url = $data->start_url;
+            $join_url = $data->join_url;
+            $meeting_pw = $data->password;
+
+            // Save the zoom information to the appointment model
+            $this->appointment->zoom_start_url = $start_url;
+            $this->appointment->zoom_join_url = $join_url;
+            $this->appointment->zoom_meeting_pw = $meeting_pw;
+
+            // Save to the database and refresh the model
+            $this->appointment->save();
+            $this->appointment->refresh();
+
+            // send meeting email to our counsellor and administrators
+            foreach([
+                'haopeng_wu@qq.com',
+                // 'markus.nyberg.andersson@lexly.com',
+                // 'markus.n.a@live.se',
+                    ] as $recipient){
+                Mail::to($recipient)->queue(new NewMeeting($this->appointment));
+            }
+
+            // send confirmation email to user
+            $user = User::find($this->appointment->customer_id);
+            Mail::to($user)->queue(new AppointmentConfirmation($this->appointment));
+        }
     }
 
     protected function genRandomPass()

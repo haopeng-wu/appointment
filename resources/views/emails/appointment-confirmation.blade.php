@@ -9,7 +9,7 @@
         <br>
     </p>
     <p>
-        The meeting is at www.zoom.com.
+        The meeting is at {{$join_url}}. Please join it on time.
         <br>
     </p>
     <p>

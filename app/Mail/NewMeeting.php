@@ -8,7 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class AppointmentConfirmation extends Mailable implements ShouldQueue
+class NewMeeting extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -38,7 +38,7 @@ class AppointmentConfirmation extends Mailable implements ShouldQueue
     public function build()
     {
         return $this->from('service@relationsutveckling.se', 'relationsutveckling')
-            ->subject('Appointment Scheduled')
-            ->view('emails.appointment-confirmation');
+            ->subject('Meeting Scheduled')
+            ->view('emails.new-meeting');
     }
 }

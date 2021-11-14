@@ -90,11 +90,8 @@ class ConfirmationController extends Controller
             // to re-hydrate it using fresh data from the database
             $appointment->refresh();
 
-            // schedule a meeting using zoom
+            // schedule a meeting using zoom and send the emails
             ScheduleMeetings::dispatch($appointment);
-
-            // send confirmation email to user
-            //Mail::to($user)->queue(new AppointmentConfirmation($appointment));
 
             Http::withBasicAuth('PK45418_9cb391cd02a1', 'ngVXPw5cTH02Rqyj')
                 ->withHeaders(['content-type' => 'application/json'])

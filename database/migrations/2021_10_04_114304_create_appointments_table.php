@@ -49,6 +49,12 @@ class CreateAppointmentsTable extends Migration
             $table->string('purchase_country')->nullable();
             $table->string('purchase_currency')->nullable();
             $table->string('locale')->nullable();
+            /*
+             * Zoom meeting
+             */
+            $table->string('zoom_start_url')->nullable();
+            $table->string('zoom_join_url')->nullable();
+            $table->string('zoom_meeting_pw')->nullable();
 
             $table->decimal("discount", 4,2)->nullable();
             $table->double("price", 12,4)->nullable();
