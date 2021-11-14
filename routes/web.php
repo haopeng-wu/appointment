@@ -23,7 +23,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 */
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'welcome']);
+Route::get('/', function (){
+    return view('welcome');
+});
 
 //Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 
