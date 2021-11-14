@@ -27,7 +27,7 @@ Route::get('/', function (){
     return view('welcome');
 });
 
-//Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
+Route::get('/make-appointment', [\App\Http\Controllers\HomeController::class, 'home']);
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
