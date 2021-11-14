@@ -14,6 +14,7 @@ class NewMeeting extends Mailable implements ShouldQueue
 
     public $appointment;
     public $start_end;
+    public $start_url;
     public $join_url;
     public $password;
 
@@ -26,6 +27,7 @@ class NewMeeting extends Mailable implements ShouldQueue
     {
         $this->start_end = explode('-', $appointment->start_end_time);
         $this->appointment = $appointment;
+        $this->start_url = $appointment->zoom_start_url;
         $this->join_url = $appointment->zoom_join_url;
         $this->password = $appointment->zoom_meeting_pw;
     }
