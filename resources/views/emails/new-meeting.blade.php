@@ -1,10 +1,10 @@
 <x-email>
     <p>
-        Hello Our Counsellor,
+        Hello Dear Counsellor,
         <br>
     </p>
     <p>
-        Good news! A new customer has successfully made an appointment with you
+        A new customer has successfully made an appointment with you
         from {{$start_end[0]}} to {{$start_end[1]}} on {{$appointment->date}}.
         <br>
     </p>
