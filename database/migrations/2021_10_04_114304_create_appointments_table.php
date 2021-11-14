@@ -52,8 +52,8 @@ class CreateAppointmentsTable extends Migration
             /*
              * Zoom meeting
              */
-            $table->string('zoom_start_url')->nullable();
-            $table->string('zoom_join_url')->nullable();
+            $table->text('zoom_start_url')->nullable();
+            $table->text('zoom_join_url')->nullable();
             $table->string('zoom_meeting_pw')->nullable();
 
             $table->decimal("discount", 4,2)->nullable();
