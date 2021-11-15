@@ -23,19 +23,59 @@
 
     <article>
         <header>
-
+            <h2>
+                Krisbearbetning
+            </h2>
         </header>
         <div>
-
+            <ul>
+                <li>Ålders/utveckligskris</li>
+                <li>Depression</li>
+                <li>Allvarlig fysisk sjukdom</li>
+                <li>Separation</li>
+                <li>Anhörigs död</li>
+            </ul>
         </div>
     </article>
 
     <article>
         <header>
-
+            <h2>Samtalsterapi/KBT/fobiträning</h2>
         </header>
         <div>
+            <ul>
+                <li>Bearbetning av känslor och tankemönster som leder till oönskade</li>
+                <li>reaktioner, handlingar, undvikanden.</li>
+                <li>Aggressionsproblematik</li>
+                <li>Olika former av fobier</li>
+            </ul>
+        </div>
+    </article>
 
+    <article>
+        <header>
+            <h2>Utbildning</h2>
+        </header>
+        <div>
+            <ul>
+                <li>Socionom</li>
+                <li>Kognitiv psykoterapi</li>
+                <li>Sexologi</li>
+            </ul>
+        </div>
+    </article>
+
+    <article>
+        <header>
+            <h2>Lång arbetslivserfarenhet som</h2>
+        </header>
+        <div>
+            <ul>
+                <li>Behandlare beroendeproblematik</li>
+                <li>Socionom slutenvårdspsykiatri</li>
+                <li>Kurator på vårdcentral</li>
+                <li>Auktoriserad familjerådgivare</li>
+            </ul>
         </div>
     </article>
 </x-master>
