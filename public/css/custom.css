@@ -154,22 +154,16 @@ div.schedule{
 }
  */
 
-h1#fill-form{
+article.fill-form header{
     display: block;
     width: 90%;
     max-width: 300px;
     margin: 1.2em auto 1em auto;
-    text-align: center;
-    font-size: 1.5em;
 }
 
-p#now{
-    display: block;
-    width: 60%;
-    max-width: 300px;
-    margin: 1.2em auto 1em auto;
+h1#fill-form{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 div.appointment{

@@ -1,8 +1,10 @@
 <x-master>
     <main>
-        <article>
-            <h1 id="fill-form">Make An Appointment With Our Best</h1>
-            <p id="now">Now</p>
+        <article class="fill-form">
+            <header>
+                <h1 id="fill-form">Make An Appointment With Our Best</h1>
+                <p id="now">Now</p>
+            </header>
             <form method="post" class="appointment" action="/appointment">
                 <div class="appointment">
                     @csrf
