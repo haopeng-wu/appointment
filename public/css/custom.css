@@ -112,7 +112,7 @@ article.first{
     height: calc(100vh - 4rem);
 }
 .first p{
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .landing-page article{
@@ -129,7 +129,7 @@ article.first{
 
 .landing-page .cozy-home-pic{
     width: 100%;
-    margin: 2em auto;
+    margin: 0.25em auto;
     margin-bottom: 0;
 }
 button.go-to-form {
