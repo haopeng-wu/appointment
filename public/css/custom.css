@@ -153,8 +153,11 @@ div.schedule{
     padding: 1em;
 }
  */
-article.fill-form{
-    width: 90%;
+
+h1#fill-form{
+    display: block;
+    width: 60%;
+    max-width: 300px;
     margin: 0 auto;
 }
 
