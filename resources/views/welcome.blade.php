@@ -2,6 +2,7 @@
     <main class="landing-page">
 
         <article class="promote first">
+            <img class="cozy-home-pic" src="{{asset('images/home-center.png')}}" alt="home cozy picture">
             <header>
                 <h1>Serious about saving or improving your relationship?</h1>
             </header>
@@ -15,9 +16,6 @@
                         Get Started
                     </button>
                 </div>
-
-
-                <img class="cozy-home-pic" src="{{asset('images/home-center.png')}}" alt="home cozy picture">
 
             </div>
         </article>
