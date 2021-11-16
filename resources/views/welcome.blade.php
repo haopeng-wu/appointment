@@ -39,7 +39,7 @@
         </article>
 
         <button class="go-to-form">
-            Get Started
+            We're ready
         </button>
 
         <article>
@@ -60,7 +60,7 @@
         </article>
 
         <button class="go-to-form">
-            We're Ready
+            Get Started
         </button>
 
         <article>
