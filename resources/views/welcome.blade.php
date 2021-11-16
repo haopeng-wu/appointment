@@ -1,5 +1,6 @@
 <x-master>
     <main class="landing-page">
+
         <article class="promote">
             <header>
                 <h1>Serious about saving or improving your relationship?</h1>
@@ -14,10 +15,11 @@
                 </button>
             </div>
         </article>
+
         <article class="promote">
             <header>
                 <h1>
-                    Familjerådgivning/parterapi
+                    Familjerådgivning / parterapi
                 </h1>
             </header>
             <div>
@@ -63,7 +65,7 @@
 
         <article>
             <header>
-                <h1>Samtalsterapi/KBT/fobiträning</h1>
+                <h1>Samtalsterapi /KBT / fobiträning</h1>
             </header>
             <div>
                 <ul>
