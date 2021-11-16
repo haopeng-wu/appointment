@@ -253,6 +253,7 @@ appointment button
     display: block;
     width: 14em;
     margin: 1em auto;
+    margin-top: 2em;
 }
 
 .appointment button:hover{

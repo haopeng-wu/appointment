@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit">Let Us Help</button>
+                <button type="submit">Schedule</button>
             </form>
         </article>
 
