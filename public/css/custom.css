@@ -111,7 +111,7 @@ landing page
 article.first{
     height: calc(100vh - 4rem);
 }
-.first p{
+.first p, .first li{
     font-size: 1.25em;
 }
 
