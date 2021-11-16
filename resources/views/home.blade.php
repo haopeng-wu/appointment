@@ -3,7 +3,7 @@
         <section class="center-pic">
             <img src="{{asset('images/home-center.png')}}" alt="home cozy picture">
         </section>
-        <section class="appointment">
+        <article class="appointment">
             <form method="post" class="appointment" action="/appointment">
                 @csrf
                 <div class="wrapper">
@@ -31,7 +31,7 @@
                     </article>
                 </div>
             </form>
-        </section>
+        </article>
 
 
         <section class="promote">
