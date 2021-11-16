@@ -166,10 +166,8 @@ article.schedule{
 }
 
 .time-slots .date input{
-    border-radius: 5px;
     cursor:pointer;
-    border: solid 1px #050505;
-    box-shadow: inset 1px 1px 5px rgba(7, 7, 7, 0.94);
+    box-shadow: inset 1px 1px 5px rgba(3, 165, 212, 0.94);
     margin-bottom: 0.7em;
 }
 
