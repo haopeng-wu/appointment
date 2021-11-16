@@ -16,12 +16,11 @@
                     </button>
                 </div>
 
-                <section class="cozy-home-pic">
-                    <img src="{{asset('images/home-center.png')}}" alt="home cozy picture">
-                </section>
+
+                <img class="cozy-home-pic" src="{{asset('images/home-center.png')}}" alt="home cozy picture">
+
             </div>
         </article>
-
 
 
         <article class="promote">
