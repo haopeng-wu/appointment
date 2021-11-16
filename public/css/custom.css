@@ -90,6 +90,7 @@ p.error{
 landing page
  */
 button.go-to-form{
+    all:initial;
     width: 10em;
     font-size: 1.5em;
     padding: 1em;
