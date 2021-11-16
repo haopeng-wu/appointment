@@ -111,6 +111,9 @@ landing page
 article.first{
     height: calc(100vh - 4rem);
 }
+.first{
+    font-size: 1.5em;
+}
 
 .landing-page article{
     margin-bottom: 2em;
@@ -127,8 +130,8 @@ article.first{
 .landing-page .cozy-home-pic{
     width: 100%;
     margin: 2em auto;
+    margin-bottom: 0;
 }
-
 button.go-to-form {
     all: initial;
     color: white;
