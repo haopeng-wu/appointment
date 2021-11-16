@@ -42,6 +42,10 @@
         </div>
     </article>
 
+    <button class="go-to-form">
+        We're Ready
+    </button>
+
     <article>
         <header>
             <h1>Samtalsterapi/KBT/fobiträning</h1>

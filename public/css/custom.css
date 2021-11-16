@@ -86,6 +86,7 @@ p.error{
     max-width: 1000px;
 }
 
+
 /*
 landing page
  */
@@ -98,8 +99,8 @@ button.go-to-form{
     padding: 0.4em 1em;
     text-align: center;
     border-radius: 1500px;
-    margin: 0.5em auto;
-
+    margin: 1.2em auto;
+    width: 10em;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
