@@ -154,7 +154,7 @@ div.schedule{
 }
  */
 
-article.appointment{
+div.appointment{
     display: flex;
     justify-content: center;
 }
