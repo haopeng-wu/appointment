@@ -156,6 +156,9 @@ div.schedule{
 }
  */
 
+article.appointment{
+    margin: 0 auto;
+}
 
 .labels label, .inputs input {
     border-radius: 5px;
@@ -171,7 +174,7 @@ div.schedule{
 .time-slots .date input{
     cursor:pointer;
     box-shadow: inset 1px 1px 5px rgba(3, 165, 212, 0.94);
-    margin-bottom: 0.7em;
+    margin-bottom: 0.3em;
 }
 
 /*
