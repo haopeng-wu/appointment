@@ -90,6 +90,13 @@ p.error{
 /*
 landing page
  */
+
+.landing-page{
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 button.go-to-form{
     all:initial;
     color: white;
