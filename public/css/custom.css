@@ -23,6 +23,7 @@ nav li {
 ul{
     all:initial;
 }
+
 li {
     display: flex;
     flex-direction: column;
@@ -53,8 +54,6 @@ img.hamburger-icon{
     }
 }
 
-
-
 nav ul.wrapper{
     justify-content: space-around;
 }
@@ -76,9 +75,6 @@ p.error{
     margin-left: 2em;
 }
 
-main, section.appointment{
-}
-
 .center-pic{
     margin-left: 1em;
 }
@@ -90,6 +86,14 @@ main, section.appointment{
     max-width: 1000px;
 }
 
+/*
+landing page
+ */
+button.go-to-form{
+    width: 10em;
+    font-size: 1.5em;
+    padding: 1em;
+}
 
 
 /* schedule article */

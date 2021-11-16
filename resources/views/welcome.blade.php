@@ -1,9 +1,9 @@
 <x-master>
     <article class="promote">
         <header>
-            <h2>
+            <h1>
                 Familjerådgivning/parterapi
-            </h2>
+            </h1>
         </header>
         <div>
             <ul>
@@ -21,11 +21,15 @@
         </div>
     </article>
 
+    <button class="go-to-form">
+        Get Started
+    </button>
+
     <article>
         <header>
-            <h2>
+            <h1>
                 Krisbearbetning
-            </h2>
+            </h1>
         </header>
         <div>
             <ul>
@@ -40,7 +44,7 @@
 
     <article>
         <header>
-            <h2>Samtalsterapi/KBT/fobiträning</h2>
+            <h1>Samtalsterapi/KBT/fobiträning</h1>
         </header>
         <div>
             <ul>
@@ -54,7 +58,7 @@
 
     <article>
         <header>
-            <h2>Utbildning</h2>
+            <h1>Utbildning</h1>
         </header>
         <div>
             <ul>
@@ -67,7 +71,7 @@
 
     <article>
         <header>
-            <h2>Lång arbetslivserfarenhet som</h2>
+            <h1>Lång arbetslivserfarenhet som</h1>
         </header>
         <div>
             <ul>
