@@ -108,6 +108,10 @@ landing page
     margin: 2em 0;
 }
 
+.landing-page article:first-of-type{
+    margin-top: 0;
+}
+
 .landing-page .card{
     height: 50%;
 }
