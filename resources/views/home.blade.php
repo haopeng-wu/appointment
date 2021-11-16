@@ -14,7 +14,7 @@
                 @error("date")
                 <p class="error">{{$message}}</p>
                 @enderror
-                <div class="appointment">
+                <div class="appointment flex-center">
                     <div class="schedule">
                         <div class="time-slots">
                             @foreach($slots as $key => $slot)

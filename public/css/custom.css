@@ -172,11 +172,6 @@ h1#now{
     font-size: 2em;
 }
 
-div.appointment{
-    display: flex;
-    justify-content: center;
-}
-
 /*
 .labels label, .inputs input {
     border-radius: 5px;
@@ -203,6 +198,7 @@ div.appointment{
     margin-bottom: 0.3em;
     font-size: 1.2em;
     padding: 5px 8px;
+    width: 12em;
 }
 
 .time-slots label, .date input {
