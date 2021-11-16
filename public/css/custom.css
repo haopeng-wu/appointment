@@ -159,6 +159,9 @@ h1#fill-form{
     width: 60%;
     max-width: 300px;
     margin: 0 auto;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 2em;
 }
 
 div.appointment{
