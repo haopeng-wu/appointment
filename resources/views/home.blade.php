@@ -1,6 +1,6 @@
 <x-master>
     <main>
-        <article>
+        <article class="fill-form">
             <h1>Make An Appointment Now</h1>
             <form method="post" class="appointment" action="/appointment">
                 <div class="appointment">

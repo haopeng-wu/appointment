@@ -153,6 +153,10 @@ div.schedule{
     padding: 1em;
 }
  */
+article.fill-form{
+    width: 90%;
+    margin: 0 auto;
+}
 
 div.appointment{
     display: flex;
