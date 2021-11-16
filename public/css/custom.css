@@ -162,10 +162,12 @@ article.schedule{
 }
 
 .date input{
+    all:initial;
     border: solid 1px #03A5D4;
     border-radius: 5px;
     margin-left: 0.9em;
     padding: 4px 8px;
+    text-align: center;
 }
 
 .date input:hover{
