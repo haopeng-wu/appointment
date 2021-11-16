@@ -104,6 +104,10 @@ landing page
     margin: 0 auto;
 }
 
+article .first{
+    height: calc(100vh - 4rem);
+}
+
 .landing-page article{
     margin: 2em 0;
 }
