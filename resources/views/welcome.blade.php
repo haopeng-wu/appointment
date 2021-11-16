@@ -1,6 +1,18 @@
 <x-master>
     <article class="promote">
         <header>
+            <h1>Serious about saving or improving your relationship?</h1>
+        </header>
+        <div>
+            Get professional therapy from a licensed therapist
+            anytime anywhere at the cozy of your home online.
+            <button class="go-to-form">
+                Get Started
+            </button>
+        </div>
+    </article>
+    <article class="promote">
+        <header>
             <h1>
                 Familjerådgivning/parterapi
             </h1>
