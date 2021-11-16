@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+.flex{
+    display: flex;
+}
+
 .wrapper {
     display: flex;
 }
@@ -99,7 +103,16 @@ landing page
     max-width: 400px;
     margin: 0 auto;
 }
-.landing-page ul li{
+
+.landing-page .first{
+    height: calc(100vh - 4em);
+}
+
+.landing-page .card{
+    height: 50%;
+}
+.landing-page .cozy-home-pic{
+    height: 50%;
 }
 
 button.go-to-form{

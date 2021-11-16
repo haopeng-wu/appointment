@@ -1,20 +1,28 @@
 <x-master>
     <main class="landing-page">
 
-        <article class="promote">
+        <article class="promote first">
             <header>
                 <h1>Serious about saving or improving your relationship?</h1>
             </header>
             <div>
-                <p>
-                    Get professional therapy from a licensed therapist
-                    anytime anywhere at the cozy of your home online.
-                </p>
-                <button class="go-to-form">
-                    Get Started
-                </button>
+                <div class="card">
+                    <p>
+                        Get professional therapy from a licensed therapist
+                        anytime anywhere at the cozy of your home online.
+                    </p>
+                    <button class="go-to-form">
+                        Get Started
+                    </button>
+                </div>
+
+                <section class="cozy-home-pic">
+                    <img src="{{asset('images/home-center.png')}}" alt="home cozy picture">
+                </section>
             </div>
         </article>
+
+
 
         <article class="promote">
             <header>
