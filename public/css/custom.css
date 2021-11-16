@@ -157,7 +157,8 @@ div.schedule{
  */
 
 article.appointment{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .labels label, .inputs input {
