@@ -31,7 +31,6 @@
             </form>
         </article>
 
-
         <section class="promote">
         </section>
         <section class="introduction">

@@ -146,13 +146,16 @@ button.go-to-form{
 }
 
 
-/* schedule article */
+/* schedule article */0
+/*
 div.schedule{
     width: 90vw;
     border-radius: 5px;
     margin: 1em;
     padding: 1em;
 }
+ */
+
 
 .labels label, .inputs input {
     border-radius: 5px;
