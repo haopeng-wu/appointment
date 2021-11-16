@@ -196,6 +196,8 @@ div.appointment{
     cursor:pointer;
     box-shadow: inset 1px 1px 5px rgba(3, 165, 212, 0.94);
     margin-bottom: 0.3em;
+    font-size: 1.2em;
+    padding: 5px 8px;
 }
 
 .time-slots label, .date input {
