@@ -1,8 +1,6 @@
 <x-master>
     <main>
-        <section class="center-pic">
-            <img src="{{asset('images/home-center.png')}}" alt="home cozy picture">
-        </section>
+        <h1>Make An Appointment Now</h1>
         <form method="post" class="appointment" action="/appointment">
             <article class="appointment">
                 @csrf
@@ -28,7 +26,7 @@
                     </div>
                 </div>
             </article>
-            <button type="submit">Make the Appointment Now</button>
+            <button type="submit">Let Us Help</button>
         </form>
 
         <section class="promote">

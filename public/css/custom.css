@@ -171,21 +171,18 @@ article.appointment{
 }
 
 .time-slots .date input{
+    border:0;
+    border-bottom: solid 1px #03A5D4;;
     cursor:pointer;
     box-shadow: inset 1px 1px 5px rgba(3, 165, 212, 0.94);
     margin-bottom: 0.3em;
 }
-
 /*
-.date input:hover{
-    cursor:pointer;
-    box-shadow: inset 1px 1px 5px rgba(7, 133, 169, 0.94);
-}
- */
-
 .labels {
     margin-right: 10px;
 }
+ */
+
 
 .time-slots label, .date input {
     border-radius: 5px;
