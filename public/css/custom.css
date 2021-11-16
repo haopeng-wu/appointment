@@ -195,7 +195,7 @@ div.appointment{
     justify-content: center;
 }
 
-.time-slots .date input{
+.date input{
     border:0;
     border-bottom: solid 1px #03A5D4;;
     cursor:pointer;
