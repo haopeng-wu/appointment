@@ -177,12 +177,14 @@ div.appointment{
     justify-content: center;
 }
 
+/*
 .labels label, .inputs input {
     border-radius: 5px;
     padding: 4px 6px;
     display: block;
     margin: 0.7em;
 }
+ */
 
 .date input{
     all:initial;
@@ -195,12 +197,6 @@ div.appointment{
     box-shadow: inset 1px 1px 5px rgba(3, 165, 212, 0.94);
     margin-bottom: 0.3em;
 }
-/*
-.labels {
-    margin-right: 10px;
-}
- */
-
 
 .time-slots label, .date input {
     border-radius: 5px;
