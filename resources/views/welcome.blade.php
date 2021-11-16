@@ -12,9 +12,11 @@
                         Get professional therapy from a licensed therapist
                         anytime anywhere at the cozy of your home online.
                     </p>
-                    <button class="go-to-form">
-                        Get Started
-                    </button>
+                    <a href="{{route('fill-form')}}">
+                        <button class="go-to-form">
+                            Get Started
+                        </button>
+                    </a>
                 </div>
 
             </div>
