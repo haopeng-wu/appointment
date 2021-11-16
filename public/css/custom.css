@@ -91,9 +91,14 @@ landing page
  */
 button.go-to-form{
     all:initial;
+    color: white;
+    background-color: #03A5D4;
+    font-weight: bolder;
     width: 10em;
-    font-size: 1.5em;
-    padding: 1em;
+    font-size: 1.2em;
+    padding: 0.8em;
+    text-align: center;
+    border-radius: 500px;
 }
 
 
