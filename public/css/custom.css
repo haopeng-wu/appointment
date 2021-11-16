@@ -190,6 +190,11 @@ div.appointment{
     all:initial;
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
 .time-slots .date input{
     border:0;
     border-bottom: solid 1px #03A5D4;;

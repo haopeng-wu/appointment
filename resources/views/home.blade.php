@@ -6,17 +6,17 @@
                 <h1 id="now">Now</h1>
             </header>
             <form method="post" class="appointment" action="/appointment">
+                @csrf
+                <div class="date flex-center">
+                    <input id="date" placeholder="Select a date" name="date" type="date"
+                           value="{{old('date')}}">
+                </div>
+                @error("date")
+                <p class="error">{{$message}}</p>
+                @enderror
                 <div class="appointment">
-                    @csrf
                     <div class="schedule">
                         <div class="time-slots">
-                            <div class="date">
-                                <input id="date" placeholder="Select a date" name="date" type="date"
-                                       value="{{old('date')}}">
-                                @error("date")
-                                <p class="error">{{$message}}</p>
-                                @enderror
-                            </div>
                             @foreach($slots as $key => $slot)
                                 <div>
                                     <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
