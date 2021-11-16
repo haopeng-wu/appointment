@@ -163,17 +163,17 @@ article.schedule{
 
 .date input{
     all:initial;
-    border: solid 1px #03A5D4;
-    border-radius: 5px;
-    margin-left: 0.9em;
-    padding: 4px 8px;
-    text-align: center;
+    cursor:pointer;
+    box-shadow: inset 1px 1px 5px rgba(7, 133, 169, 0.94);
 }
 
+/*
 .date input:hover{
     cursor:pointer;
     box-shadow: inset 1px 1px 5px rgba(7, 133, 169, 0.94);
 }
+ */
+
 
 .labels {
     margin-right: 10px;

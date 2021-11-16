@@ -8,14 +8,14 @@
                 @csrf
                 <div class="wrapper">
                     <article class="schedule">
-                        <div class="date">
-                            <input id="date" placeholder="Select a date" name="date" type="date"
-                                   value="{{old('date')}}">
-                            @error("date")
-                            <p class="error">{{$message}}</p>
-                            @enderror
-                        </div>
                         <div class="time-slots">
+                            <div class="date">
+                                <input id="date" placeholder="Select a date" name="date" type="date"
+                                       value="{{old('date')}}">
+                                @error("date")
+                                <p class="error">{{$message}}</p>
+                                @enderror
+                            </div>
                             @foreach($slots as $key => $slot)
                                 <div>
                                     <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
