@@ -185,6 +185,7 @@ article.schedule{
     padding: 4px 8px;
     display: inline-block;
     text-align: center;
+    width: 10em;
 }
 
 .time-slots .checked {
