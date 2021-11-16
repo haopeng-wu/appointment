@@ -91,16 +91,14 @@ p.error{
 landing page
  */
 .landing-page h1{
-    letter-spacing: 5px;
-}
-.landing-page p{
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .landing-page{
     width: 80%;
     max-width: 400px;
     margin: 0 auto;
+    letter-spacing: 2px;
 }
 
 button.go-to-form{
