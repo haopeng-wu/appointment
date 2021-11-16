@@ -104,15 +104,17 @@ landing page
     margin: 0 auto;
 }
 
-.landing-page .first{
-    height: calc(100vh - 4em);
+.landing-page article{
+    margin-bottom: 5em;
 }
 
 .landing-page .card{
     height: 50%;
 }
+
 .landing-page .cozy-home-pic{
     width: 100%;
+    margin: 2em;
 }
 
 button.go-to-form{
