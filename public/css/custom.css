@@ -177,7 +177,7 @@ article.schedule{
     margin-right: 10px;
 }
 
-.time-slots label {
+.time-slots label, .date input {
     border-radius: 5px;
     border: solid 1px #03A5D4;
     padding: 4px 8px;
