@@ -109,7 +109,7 @@ article.first{
 }
 
 .landing-page article{
-    margin: 2em 0;
+    margin-bottom: 2em;
 }
 
 .landing-page article:first-of-type{
