@@ -3,7 +3,7 @@
         <article class="fill-form">
             <header>
                 <h1 id="fill-form">Make An Appointment With Our Best</h1>
-                <p id="now">Now</p>
+                <h1 id="now">Now</h1>
             </header>
             <form method="post" class="appointment" action="/appointment">
                 <div class="appointment">
