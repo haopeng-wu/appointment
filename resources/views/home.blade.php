@@ -1,7 +1,7 @@
 <x-master>
     <main>
         <article>
-            <h1 id="fill-form">Make An Appointment Now</h1>
+            <h1 id="fill-form">Make An Appointment With Our Best Now</h1>
             <form method="post" class="appointment" action="/appointment">
                 <div class="appointment">
                     @csrf
