@@ -99,6 +99,10 @@ button.go-to-form{
     text-align: center;
     border-radius: 1500px;
     margin: 0.5em auto;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 
