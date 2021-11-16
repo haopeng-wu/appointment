@@ -225,20 +225,23 @@ article.appointment{
 }
 
 /*
-button
+appointment button
  */
 
 .appointment button {
-    background-color: #03A5D4;
-    border: 0;
-    border-radius: 1500px;
-    padding: 8px 16px;
+    all: initial;
     color: white;
-    font-size: 17px;
-    font-weight: 450;
+    background-color: #03A5D4;
+    font-weight: normal;
+    font-size: 1.2em;
+    padding: 0.7em 1em;
+    text-align: center;
+    border-radius: 10px;
     display: block;
     width: 14em;
     margin: 0.7em auto;
+
+
 }
 
 .appointment button:hover{
