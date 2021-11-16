@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </article>
-            <button type="submit">Make the Appointment</button>
+            <button type="submit">Make the Appointment Now</button>
         </form>
 
         <section class="promote">

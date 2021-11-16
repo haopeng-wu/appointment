@@ -140,7 +140,7 @@ button.go-to-form {
     border-radius: 10px;
     display: block;
     width: 10em;
-    margin: 1.2em auto;
+    margin: 2.2em auto;
 }
 
 
@@ -237,7 +237,7 @@ appointment button
     border-radius: 10px;
     display: block;
     width: 14em;
-    margin: 0.7em auto;
+    margin: 1em auto;
 }
 
 .appointment button:hover{
