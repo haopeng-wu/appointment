@@ -43,9 +43,11 @@
             </div>
         </article>
 
-        <button class="go-to-form">
-            We're ready
-        </button>
+        <a href="{{route('fill-form')}}">
+            <button class="go-to-form">
+                We're ready
+            </button>
+        </a>
 
         <article>
             <header>

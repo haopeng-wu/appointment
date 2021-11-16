@@ -25,9 +25,9 @@ Route::get('/dashboard', function () {
 
 Route::get('/', function (){
     return view('welcome');
-});
+})->name('welcome');
 
-Route::get('/make-appointment', [\App\Http\Controllers\HomeController::class, 'home']);
+Route::get('/make-appointment', [\App\Http\Controllers\HomeController::class, 'home'])->name('fill-form');
 
 Route::post('/appointment', 'App\Http\Controllers\AppointmentController@store');
 
