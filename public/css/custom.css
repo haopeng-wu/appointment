@@ -158,7 +158,16 @@ h1#fill-form{
     display: block;
     width: 60%;
     max-width: 300px;
-    margin: 1.2em auto;
+    margin: 1.2em auto 1em auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+p#now{
+    display: block;
+    width: 60%;
+    max-width: 300px;
+    margin: 1.2em auto 1em auto;
     text-align: center;
     font-size: 2em;
 }
