@@ -129,8 +129,8 @@ article.first{
     margin: 2em auto;
 }
 
-button.go-to-form{
-    all:initial;
+button.go-to-form {
+    all: initial;
     color: white;
     background-color: #03A5D4;
     font-weight: normal;
@@ -146,7 +146,7 @@ button.go-to-form{
 }
 
 
-/* schedule article */0
+/* schedule article */
 /*
 div.schedule{
     width: 90vw;
