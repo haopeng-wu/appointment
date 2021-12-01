@@ -137,6 +137,12 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'date' => [
+            'required'=>'Datumfältet är obligatoriskt.',
+        ],
+        'which_slot' => [
+            'required' =>'Tidsfältet är obligatoriskt.',
+        ],
     ],
 
     /*
