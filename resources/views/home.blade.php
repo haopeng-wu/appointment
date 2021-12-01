@@ -10,6 +10,8 @@
                 <div class="date flex-center">
                     <input id="date" placeholder="Select a date" name="date" type="date"
                            value="{{old('date')}}">
+                </div>
+                <div class="flex-center">
                     @error("date")
                     <p class="error">{{$message}}</p>
                     @enderror
