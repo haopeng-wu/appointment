@@ -40,7 +40,7 @@ class AppointmentController extends Controller
             });
 
         if ($validator->fails()) {
-            return redirect('/')
+            return redirect(route('fill-form'))
                 ->withErrors($validator)
                 ->withInput();
         }
