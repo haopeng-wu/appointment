@@ -53,7 +53,7 @@ class AppointmentController extends Controller
         $today = Carbon::today()->subDays(1);
         $theDate = Carbon::make($attributes['date']);
         if (!$theDate->diff($today)->invert) {
-            return redirect('/')
+            return redirect(route('fill-form'))
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date' => 'Can not book days in the past.'])
                 ->withInput();
