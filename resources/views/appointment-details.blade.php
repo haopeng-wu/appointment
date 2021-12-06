@@ -2,9 +2,13 @@
     <main>
         <section class="appointment-details">
             <table>
+                <caption>
+                    Details of this appointment
+                </caption>
                 <thead>
                 <tr>
-                    <th colspan="2">Details of this appointment</th>
+                    <th>Name</th>
+                    <th>Value</th>
                 </tr>
                 </thead>
                 <tbody>
