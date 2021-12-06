@@ -10,7 +10,7 @@
 
                 </thead>
                 <tbody>
-                @foreach($appointment as $key => $value)
+                @foreach($appointment->getAttributes() as $key => $value)
                     <tr>
                         <td>
                             {{$key}}
