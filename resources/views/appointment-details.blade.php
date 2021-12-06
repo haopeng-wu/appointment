@@ -3,7 +3,9 @@
         <section class="appointment-details">
             <table>
                 <thead>
-                Details of this appointment
+                <tr>
+                    <th colspan="2">Details of this appointment</th>
+                </tr>
                 </thead>
                 <tbody>
                 @foreach($appointment->getAttributes() as $key => $value)
