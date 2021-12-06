@@ -3,7 +3,9 @@
         <section class="appointment-details">
             <table>
                 <caption>
-                    Details of this appointment
+                    <h2>
+                        Details of this appointment
+                    </h2>
                 </caption>
                 <thead>
                 <tr>

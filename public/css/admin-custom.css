@@ -300,7 +300,7 @@ section.appointment-details{
     margin: 0 auto;
 }
 
-.appointment-details table, .appointment-details td{
+.appointment-details table, .appointment-details td, .appointment-details th{
     border: solid 1px #333;
 }
 
