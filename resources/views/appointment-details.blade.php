@@ -1,13 +1,9 @@
 <x-a-master>
     <main>
         <section class="appointment-details">
-            <h4>
-                Details of this appointment
-            </h4>
-
             <table>
                 <thead>
-
+                Details of this appointment
                 </thead>
                 <tbody>
                 @foreach($appointment->getAttributes() as $key => $value)
