@@ -9,7 +9,7 @@
                 </caption>
                 <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>Column Name</th>
                     <th>Value</th>
                 </tr>
                 </thead>
