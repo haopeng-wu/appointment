@@ -20,6 +20,11 @@
                         </td>
                     </tr>
                 @endforeach
+                <tr>
+                    <td>
+                        {{$appointment->duration}}
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </section>
