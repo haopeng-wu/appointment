@@ -289,6 +289,24 @@ input.time_slot {
     margin: 0.7em;
 }
 
+section.appointment-details{
+    display: block;
+    width: 70vw;
+    margin: 2em auto;
+}
+
+.appointment-details table, .appointment-details td{
+    border: solid 1px #333;
+}
+
+.appointment-details .name{
+    width: 8em;
+    overflow: auto;
+}
+.appointment-details .value{
+    width: 15em;
+    overflow: auto;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

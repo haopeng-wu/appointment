@@ -1,6 +1,6 @@
 <x-a-master>
     <main>
-        <section>
+        <section class="appointment-details">
             <h4>
                 Details of this appointment
             </h4>
@@ -13,10 +13,16 @@
                 @foreach($appointment->getAttributes() as $key => $value)
                     <tr>
                         <td>
-                            {{$key}}
+                            <div class="name">
+                                {{$key}}
+                            </div>
+
                         </td>
                         <td>
-                            {{$value}}
+                            <div class="value">
+                                {{$value}}
+                            </div>
+
                         </td>
                     </tr>
                 @endforeach
