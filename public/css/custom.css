@@ -178,6 +178,13 @@ h1#now{
     font-size: 2em;
 }
 
+.confirm {
+    max-width: 640px;
+    margin:0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
 /*
 .labels label, .inputs input {
     border-radius: 5px;
