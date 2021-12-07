@@ -261,7 +261,7 @@ appointment button
     margin-top: 2em;
 }
 
-.appointment button:hover{
+.appointment button:hover, button.go-to-form{
     cursor: pointer;
     background-color: #50afcb;
 }

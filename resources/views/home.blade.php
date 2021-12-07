@@ -2,13 +2,13 @@
     <main>
         <article class="fill-form">
             <header>
-                <h1 id="fill-form">Make An Appointment With Our Best</h1>
+                <h1 id="fill-form">Boka rådgivning med oss Nu</h1>
                 <h1 id="now">Now</h1>
             </header>
             <form method="post" class="appointment" action="/appointment">
                 @csrf
                 <div class="date flex-center">
-                    <input id="date" placeholder="Select a date" name="date" type="date"
+                    <input id="date" placeholder="välj ett datum" name="date" type="date"
                            value="{{old('date')}}">
                 </div>
                 <div class="flex-center">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit">Schedule</button>
+                <button type="submit">Boka</button>
             </form>
         </article>
 
