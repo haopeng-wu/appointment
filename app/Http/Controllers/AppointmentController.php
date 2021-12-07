@@ -53,7 +53,7 @@ class AppointmentController extends Controller
         $today = Carbon::today()->subDays(1);
         $theDate = Carbon::make($attributes['date']);
         if (!$theDate->diff($today)->invert) {
-            return redirect(route('fill-form'))
+            return redirect(url()->current())
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date' => 'Can not book days in the past.'])
                 ->withInput();
@@ -65,7 +65,7 @@ class AppointmentController extends Controller
         $bookableFlags = BookableWeekday::allBookableDayFlags();
         #if ($bookableFlags[$theDate->locale('en_US')->dayName] != 1){
         if ($bookableFlags[$theDate->dayName] != 1) {
-            return redirect('/')
+            return redirect(url()->current())
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date' => 'The day of the week is not bookable.'])
                 ->withInput();
@@ -86,15 +86,6 @@ class AppointmentController extends Controller
         $price = $charge / (1 + $vat);
         $tax = $charge - $price;
 
-        /*
-         * create the user and leave the password empty for now.
-         */
-        /*
-         * $user = User::where('name', $attributes['customer_name'])->first();
-        if (!$user) {
-            $user = User::create(['name' => $attributes['customer_name'], 'email' => $attributes['email'], 'tel' => $attributes['tel']]);
-        }
-         */
 
         /*
          * prepare the data to store
