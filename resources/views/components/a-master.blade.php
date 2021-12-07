@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Admin Page</title>
+    <title>Admin</title>
     <meta charset="UTF-8">
+    <!--
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    -->
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
     <link href="{{ asset('css/admin-custom.css')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"
           rel="stylesheet">
+    <link rel="icon" href="{{asset('images/icon.svg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
@@ -23,6 +27,8 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+<script type="text/javascript" src="{{asset('js/ru.js')}}"></script>
 <script type="text/javascript" src="{{ asset('js/admin-custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 </body>
 </html>
