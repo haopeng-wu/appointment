@@ -45,6 +45,7 @@
                     <th>Duration</th>
                     <th>Details</th>
                     <th>Link</th>
+                    <th>Status</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -55,6 +56,7 @@
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
                         <td>Link</td>
+                        <td>@if($item->payment_status)Paid@else Unpaid @endif</td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -72,6 +74,7 @@
                     <th>Duration</th>
                     <th>Details</th>
                     <th>Link</th>
+                    <th>Status</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -82,6 +85,7 @@
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
                         <td>Link</td>
+                        <td>@if($item->payment_status)Paid@else Unpaid @endif</td>
                     </tr>
                 @endforeach
                 </tbody>
