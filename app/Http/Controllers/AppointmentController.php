@@ -40,7 +40,7 @@ class AppointmentController extends Controller
             });
 
         if ($validator->fails()) {
-            return redirect(url()->current())
+            return redirect(url()->previous())
                 ->withErrors($validator)
                 ->withInput();
         }
@@ -53,7 +53,7 @@ class AppointmentController extends Controller
         $today = Carbon::today()->subDays(1);
         $theDate = Carbon::make($attributes['date']);
         if (!$theDate->diff($today)->invert) {
-            return redirect(url()->current())
+            return redirect(url()->previous())
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date' => 'Can not book days in the past.'])
                 ->withInput();
@@ -63,18 +63,12 @@ class AppointmentController extends Controller
          * check the date belongs to the bookable weekdays
          */
         $bookableFlags = BookableWeekday::allBookableDayFlags();
-        #if ($bookableFlags[$theDate->locale('en_US')->dayName] != 1){
         if ($bookableFlags[$theDate->dayName] != 1) {
-            return redirect(url()->current())
+            return redirect(url()->previous())
                 // The withErrors method accepts a validator, a MessageBag, or a PHP array.
                 ->withErrors(['date' => 'The day of the week is not bookable.'])
                 ->withInput();
         }
-
-        /*
-         * only for testing purpose
-         */
-        //BookedSlot::sealTheAppointment($attributes['date'], $attributes['which_slot']);
 
         /*
          * calculate the prices
