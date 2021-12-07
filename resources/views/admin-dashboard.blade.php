@@ -8,7 +8,7 @@
             <div class="wrapper">
                 <div class="schedule">
                     <div class="date">
-                        <input id="date" placeholder="Select a date" name="date" type="date"
+                        <input id="date" placeholder="välj ett datum" name="date" type="date"
                                value="{{old('date')}}">
                         @error("date")
                         <p class="error">{{$message}}</p>
