@@ -1,11 +1,11 @@
 <x-master>
     <article class="confirm">
-        <h2>
+        <h6>
             <!--
             Please check the appointment before you continue to make the payment
             -->
             Vänligen kontrollera mötet innan du fortsätter att göra betalningen.
-        </h2>
+        </h6>
         <div>
             <p>
                 Den {{$appt->date}}, från kl {{$start_end[0]}} till kl {{$start_end[1]}}, via ZOOM.
