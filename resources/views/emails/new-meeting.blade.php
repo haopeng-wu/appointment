@@ -9,7 +9,7 @@
         <br>
     </p>
     <p>
-        The start url(very long) is <br> {{$start_url}} <br>, which you should use to start the meeting 5 minutes before the start time.
+        Click <a href="{{$start_url}}"> here</a> to start the meeting, which you'd better do 5 minutes before the meeting start time.
         <br>The join url is {{$join_url}}, which our customer will use to join the meeting.
         <br>The password of the meeting is {{$password}}. Please join it on time.
         <br>
