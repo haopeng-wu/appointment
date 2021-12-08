@@ -17,8 +17,8 @@ class CheckoutController extends Controller
                 'start_end' => $start_end,
                 'html_snippet' => $html_snippet
             ]);
-        }else{
-            redirect(route('fill-form'));
         }
+
+        redirect(route('fill-form'));
     }
 }
