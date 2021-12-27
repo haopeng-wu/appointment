@@ -122,3 +122,7 @@ dateInput.addEventListener('input', function (){
         console.log('not today');
     }
 })
+
+window.setTimeout(() => {
+    document.querySelector('div.message').classList.add('hide')
+}, 27000)

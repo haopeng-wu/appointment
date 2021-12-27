@@ -297,6 +297,10 @@ div.message {
     right: 20px;
 }
 
+.hide{
+    display: none;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
