@@ -290,7 +290,6 @@ div.message {
     border-radius: 4px;
     position: absolute;
     top: -15px;
-    display: none;
     font-size: 12px;
     left: 20px;
 }
