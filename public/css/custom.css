@@ -294,7 +294,7 @@ div.message {
     position: absolute;
     top: -15px;
     font-size: 12px;
-    left: 20px;
+    right: 20px;
 }
 
 /* Chrome, Safari, Edge, Opera */
