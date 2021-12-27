@@ -48,7 +48,7 @@ class Handler extends ExceptionHandler
                 ->back()
                 ->withInput($request->except('password'))
                 ->with([
-                    'message' => 'Page expired. Please try again.',
+                    'message' => 'Page refreshed. Please go on.',
                     'message-type' => 'TokenMismatchException'
                 ]);
         }
