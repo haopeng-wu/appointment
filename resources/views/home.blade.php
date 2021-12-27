@@ -11,7 +11,7 @@
                 <h1 id="now">Nu</h1>
             </header>
             <form method="post" class="appointment" action="/appointment">
-
+                @csrf
                 <div class="date flex-center">
                     <input id="date" placeholder="välj ett datum" name="date" type="date"
                            value="{{old('date')}}">
