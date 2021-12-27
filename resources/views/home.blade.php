@@ -5,6 +5,9 @@
             {{ session()->get('message')}}
         </div>
         @endif
+            <div class="message">
+                {{ session()->get('message')}}
+            </div>
         <article class="fill-form">
             <header>
                 <h1 id="fill-form">Boka rådgivning med oss</h1>
