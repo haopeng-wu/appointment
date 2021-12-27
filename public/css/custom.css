@@ -288,7 +288,7 @@ input.time_slot {
 
 div.message {
     margin: 0 auto;
-    background-color: #a6cb6f;
+    background-color: greenyellow;
     padding: 2px 2px;
     border-radius: 4px;
     position: absolute;
