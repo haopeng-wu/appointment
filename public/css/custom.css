@@ -282,6 +282,19 @@ input.time_slot {
     margin: 0.7em;
 }
 
+div.message {
+    width: 90%;
+    margin: 0 auto;
+    background-color: greenyellow;
+    padding: 2px 2px;
+    border-radius: 4px;
+    position: absolute;
+    top: -15px;
+    display: none;
+    font-size: 12px;
+    left: 20px;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

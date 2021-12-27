@@ -1,5 +1,10 @@
 <x-master>
     <main>
+        @if( session()->has('message-type') == 'TokenMismatchException')
+        <div class="message">
+            {{ session()->get('message')}}
+        </div>
+        @endif
         <article class="fill-form">
             <header>
                 <h1 id="fill-form">Boka rådgivning med oss</h1>
