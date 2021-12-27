@@ -125,4 +125,4 @@ dateInput.addEventListener('input', function (){
 
 window.setTimeout(() => {
     document.querySelector('div.message').classList.add('hide')
-}, 27000)
+}, 3000)
