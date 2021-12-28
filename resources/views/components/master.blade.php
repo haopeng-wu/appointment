@@ -11,9 +11,9 @@
     -->
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.relationsutveckling.se/images/favicon_package_v0/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="120x120" href="https://www.relationsutveckling.se/images/favicon_package_v0/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="https://www.relationsutveckling.se/images/favicon_package_v0/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.relationsutveckling.se/images/favicon_package_v0/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon-16x16.png">
     <link rel="manifest" href="https://www.relationsutveckling.se/images/favicon_package_v0/site.webmanifest">
