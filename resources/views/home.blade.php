@@ -8,7 +8,6 @@
         <article class="fill-form">
             <header>
                 <h1 id="fill-form">Boka rådgivning med oss</h1>
-                <h1 id="now">Nu</h1>
             </header>
             <form method="post" class="appointment" action="/appointment">
                 @csrf
