@@ -11,12 +11,14 @@
     -->
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/favicon_package_v0/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/favicon_package_v0/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon_package_v0/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{asset('images/favicon_package_v0/site.webmanifest')}}">
-    <link rel="mask-icon" href="{{asset('images/favicon_package_v0/safari-pinned-tab.svg')}}" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00aba9">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.relationsutveckling.se/images/favicon_package_v0/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon-16x16.png">
+    <link rel="manifest" href="https://www.relationsutveckling.se/images/favicon_package_v0/site.webmanifest">
+    <link rel="mask-icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://www.relationsutveckling.se/images/favicon_package_v0/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
