@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     -->
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('images/favicon.ico')}}">
+    <link rel="shortcut icon" type="apple-touch-icon" href="{{asset('images/favicon.ico')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
