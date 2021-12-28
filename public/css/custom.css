@@ -253,6 +253,10 @@ h1#now{
     color: white;
 }
 
+form.appointment{
+    margin-top: 3em;
+}
+
 /*
 appointment button
  */
