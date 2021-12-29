@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon-16x16.png">
     <link rel="manifest" href="https://www.relationsutveckling.se/images/favicon_package_v0/site.webmanifest">
     <link rel="mask-icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="https://www.relationsutveckling.se/images/favicon_package_v0/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
