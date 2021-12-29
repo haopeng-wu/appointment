@@ -6,9 +6,7 @@
     <meta name="description" content="Relationsutveckling provides professional family counselling service to couples and family members.">
     <link href="{{ asset('css/custom.css')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"
           rel="stylesheet">
-    <!--
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    -->
+
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
 
     <link rel="shortcut icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon.ico">
