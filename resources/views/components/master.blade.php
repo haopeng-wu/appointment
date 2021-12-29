@@ -17,6 +17,8 @@
     <link rel="manifest" href="https://www.relationsutveckling.se/images/favicon_package_v0/site.webmanifest">
     <link rel="mask-icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.relationsutveckling.se/images/favicon_package_v0/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="https://www.relationsutveckling.se/images/favicon_package_v0/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
