@@ -27,7 +27,7 @@
                                 <div>
                                     <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
                                            name="which_slot" value="{{$key}}">
-                                    <label class="" for="{{'slot-'.$key}}">{{$slot}}({{$durations[$key]}} min)</label>
+                                    <label class="" for="{{'slot-'.$key}}">{{$slot}}    ({{$durations[$key]}} min)</label>
                                 </div>
                             @endforeach
                             @error("which_slot")
