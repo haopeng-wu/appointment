@@ -43,6 +43,10 @@ class Appointment extends Model
         return self::where('date','=',substr(Carbon::today()->addDays(2),0,10))->where('payment_status','=', '1')->orderBy('start_end_time')->get();
     }
 
+    public static function allPaid(){
+        return self::where('payment_status','=', '1')->orderBy('created_at')->get();
+    }
+
     public static function onTomorrow(){
 
     }
