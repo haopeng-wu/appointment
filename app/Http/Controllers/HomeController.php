@@ -15,6 +15,7 @@ class HomeController extends Controller
         $tmpArray = [];
         $durations = [];
         foreach ($_durations as $key => $value){
+            if ($key==0) continue;
             $tmpArray = explode(':', '$value');
             $durations[$key] = intval($tmpArray[0])*60 + intval($tmpArray[1]);
         }
