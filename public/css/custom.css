@@ -256,6 +256,10 @@ h1#now{
     color: white;
 }
 
+.one-slot{
+    position: relative;
+}
+
 form.appointment{
     margin-top: 3em;
 }

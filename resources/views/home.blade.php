@@ -24,10 +24,15 @@
                     <div class="schedule">
                         <div class="time-slots">
                             @foreach($slots as $key => $slot)
-                                <div>
+                                <div class="one-slot">
                                     <input class="time_slot" type="radio" id="{{'slot-'.$key}}"
                                            name="which_slot" value="{{$key}}">
                                     <label class="" for="{{'slot-'.$key}}">{{$slot}}<span class="ml-10">({{$durations[$key]}} min)</span></label>
+                                    @if($durations[$key] < 60)
+                                        <span class="which-type">For Individuals</span>
+                                    @elseif($durations[$key] >= 60)
+                                        <span class="which-type">For Couples</span>
+                                    @endif
                                 </div>
                             @endforeach
                             @error("which_slot")
