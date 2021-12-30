@@ -260,6 +260,18 @@ h1#now{
     position: relative;
 }
 
+.which-type {
+    position: absolute;
+    line-height: 1.8em;
+    width: 7em;
+    font-size: 0.7em;
+    padding: 4px 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(28,175,130);
+}
+
 form.appointment{
     margin-top: 3em;
 }
