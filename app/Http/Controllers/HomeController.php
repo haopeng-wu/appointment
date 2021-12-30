@@ -11,9 +11,18 @@ class HomeController extends Controller
 {
     public function home(Request $request){
         $slots = Slot::validSlots();
+        $_durations = Slot::slotDurations();    // this yields duration like 1:30 instead of what we need like 90min
+        $tmpArray = [];
+        $durations = [];
+        foreach ($_durations as $key => $value){
+            $tmpArray = preg_split(':', '$value');
+            $durations[$key] = $tmpArray[0]*60 + $tmpArray[1];
+        }
         $availableWeekdays = BookableWeekday::allIdMinusOne();
         $allFutureBooked = BookedSlot::allFutureBookedAppointments();
-        return view('home', ['slots'=>$slots,
+        return view('home', [
+            'slots'=>$slots,
+            'durations'=>$durations,
             'availableWeekdays'=>$availableWeekdays,
             'allFutureBooked'=>$allFutureBooked]);
     }

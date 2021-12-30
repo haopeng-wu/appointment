@@ -19,8 +19,7 @@ class Slot extends Model
         $returnSlots = [];
         $all = Self::all();
 
-        $temp_slot = '';
-        $temp_time = '';
+
         foreach ($all as $item){
             if ($item['is_valid']){
                 $temp_slot = '';
