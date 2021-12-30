@@ -15,8 +15,8 @@ class HomeController extends Controller
         $tmpArray = [];
         $durations = [];
         foreach ($_durations as $key => $value){
-            $tmpArray = preg_split(':', '$value');
-            $durations[$key] = $tmpArray[0]*60 + $tmpArray[1];
+            $tmpArray = explode(':', '$value');
+            $durations[$key] = intval($tmpArray[0])*60 + intval($tmpArray[1]);
         }
         $availableWeekdays = BookableWeekday::allIdMinusOne();
         $allFutureBooked = BookedSlot::allFutureBookedAppointments();
