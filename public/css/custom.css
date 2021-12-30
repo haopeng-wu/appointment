@@ -266,8 +266,8 @@ h1#now{
     width: 7em;
     font-size: 0.7em;
     padding: 4px 0;
+    margin-left: 4px;
     display: inline-block;
-    text-align: center;
     border-radius: 5px;
     color: rgb(28,175,130);
 }
