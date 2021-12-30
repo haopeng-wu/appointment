@@ -56,10 +56,6 @@
 <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
 <script type="text/javascript" src="{{asset('js/ru.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
 
-<!--
-
-<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
--->
 
 <script type="text/javascript"
         src="{{asset('js/custom.js')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"></script>
