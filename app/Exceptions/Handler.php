@@ -49,37 +49,44 @@ class Handler extends ExceptionHandler
 
     public function render($request, Throwable $e)
     {
-        Log::debug("in Handler's render, first line of the function");
+        Log::debug("location 1");
         if (method_exists($e, 'render') && $response = $e->render($request)) {
+            Log::debug("location 2");
             return Router::toResponse($request, $response);
         } elseif ($e instanceof Responsable) {
+            Log::debug("location 3");
             return $e->toResponse($request);
         }
 
         $e = $this->prepareException($this->mapException($e));
 
         foreach ($this->renderCallbacks as $renderCallback) {
+            Log::debug("location 4");
             if (is_a($e, $this->firstClosureParameterType($renderCallback))) {
                 $response = $renderCallback($e, $request);
-
+                Log::debug("location 5");
                 if (! is_null($response)) {
+                    Log::debug("location 6");
                     return $response;
                 }
             }
         }
 
         if ($e instanceof HttpResponseException) {
+            Log::debug("location 7");
             return $e->getResponse();
         } elseif ($e instanceof AuthenticationException) {
+            Log::debug("location 8");
             return $this->unauthenticated($request, $e);
         } elseif ($e instanceof ValidationException) {
+            Log::debug("location 9");
             return $this->convertValidationExceptionToResponse($e, $request);
         }
 
         if ($e instanceof TokenMismatchException)
         {
 
-            Log::debug("in Handler's render, before redirect.");
+            Log::debug("location 10");
             return redirect()
                 ->back()
                 ->withInput($request->except('password'))
@@ -88,6 +95,7 @@ class Handler extends ExceptionHandler
                     'message-type' => 'TokenMismatchException'
                 ]);
         }
+        Log::debug("location 11");
         return parent::render($request, $e);
     }
 }
