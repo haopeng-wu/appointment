@@ -2,12 +2,15 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Log\Logger;
 use Illuminate\Routing\Router;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\ValidationException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -46,14 +49,35 @@ class Handler extends ExceptionHandler
 
     public function render($request, Throwable $e)
     {
+        Log::debug("in Handler's render, first line of the function");
+        if (method_exists($e, 'render') && $response = $e->render($request)) {
+            return Router::toResponse($request, $response);
+        } elseif ($e instanceof Responsable) {
+            return $e->toResponse($request);
+        }
+
+        $e = $this->prepareException($this->mapException($e));
+
+        foreach ($this->renderCallbacks as $renderCallback) {
+            if (is_a($e, $this->firstClosureParameterType($renderCallback))) {
+                $response = $renderCallback($e, $request);
+
+                if (! is_null($response)) {
+                    return $response;
+                }
+            }
+        }
+
+        if ($e instanceof HttpResponseException) {
+            return $e->getResponse();
+        } elseif ($e instanceof AuthenticationException) {
+            return $this->unauthenticated($request, $e);
+        } elseif ($e instanceof ValidationException) {
+            return $this->convertValidationExceptionToResponse($e, $request);
+        }
+
         if ($e instanceof TokenMismatchException)
         {
-            Log::debug("in Handler's render, first line of the function");
-            if (method_exists($e, 'render') && $response = $e->render($request)) {
-                return Router::toResponse($request, $response);
-            } elseif ($e instanceof Responsable) {
-                return $e->toResponse($request);
-            }
 
             Log::debug("in Handler's render, before redirect.");
             return redirect()
