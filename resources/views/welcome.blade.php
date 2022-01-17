@@ -1,6 +1,10 @@
 <x-master>
     <main class="landing-page">
-
+        @if( session()->has('message-type') == 'TokenMismatchException')
+            <div class="message">
+                {{ session()->get('message')}}
+            </div>
+        @endif
         <article class="promote first">
             <img class="cozy-home-pic" src="{{asset('images/home-center.png')}}" alt="home cozy picture">
             <header>
