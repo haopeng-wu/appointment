@@ -50,6 +50,18 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $e)
     {
         Log::debug("location 1");
+        if ($e instanceof TokenMismatchException)
+        {
+
+            Log::debug("location 1.5");
+            return redirect()
+                ->back()
+                ->withInput($request->except('password'))
+                ->with([
+                    'message' => 'Page refreshed. Please go on.',
+                    'message-type' => 'TokenMismatchException'
+                ]);
+        }
         if (method_exists($e, 'render') && $response = $e->render($request)) {
             Log::debug("location 2");
             return Router::toResponse($request, $response);
@@ -57,7 +69,7 @@ class Handler extends ExceptionHandler
             Log::debug("location 3");
             return $e->toResponse($request);
         }
-
+        Log::debug($e);
         $e = $this->prepareException($this->mapException($e));
 
         foreach ($this->renderCallbacks as $renderCallback) {
