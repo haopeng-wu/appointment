@@ -21,6 +21,7 @@ use Illuminate\Routing\Router;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Reflector;
 use Illuminate\Support\Traits\ReflectsClosures;
 use Illuminate\Support\ViewErrorBag;
@@ -324,31 +325,40 @@ class Handler implements ExceptionHandlerContract
     public function render($request, Throwable $e)
     {
         if (method_exists($e, 'render') && $response = $e->render($request)) {
+            Log::debug("location 3");
             return Router::toResponse($request, $response);
         } elseif ($e instanceof Responsable) {
+            Log::debug("location 4");
             return $e->toResponse($request);
         }
 
         $e = $this->prepareException($this->mapException($e));
+        Log::debug("location 5");
 
         foreach ($this->renderCallbacks as $renderCallback) {
+            Log::debug("location 6");
             if (is_a($e, $this->firstClosureParameterType($renderCallback))) {
                 $response = $renderCallback($e, $request);
-
+                Log::debug("location 7");
                 if (! is_null($response)) {
+                    Log::debug("location 8");
                     return $response;
                 }
             }
         }
 
         if ($e instanceof HttpResponseException) {
+            Log::debug("location 9");
             return $e->getResponse();
         } elseif ($e instanceof AuthenticationException) {
+            Log::debug("location 10");
             return $this->unauthenticated($request, $e);
         } elseif ($e instanceof ValidationException) {
+            Log::debug("location 11");
             return $this->convertValidationExceptionToResponse($e, $request);
         }
 
+        Log::debug("location 12");
         return $request->expectsJson()
                     ? $this->prepareJsonResponse($request, $e)
                     : $this->prepareResponse($request, $e);
