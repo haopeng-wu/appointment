@@ -15,6 +15,7 @@ class ConfirmationController extends Controller
 {
     public function render(Appointment $appointment)
     {
+        Log::debug('in ConfirmationController\'s render');
         /*
          *  make a request to klarna to retrieve the order
          */
