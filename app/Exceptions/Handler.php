@@ -50,21 +50,5 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $e)
     {
         return parent::render($request, $e);
-        Log::debug("location 1");
-
-
-        if ($e instanceof TokenMismatchException)
-        {
-
-            Log::debug("location 2");
-            return redirect()
-                ->back()
-                ->withInput($request->except('password'))
-                ->with([
-                    'message' => 'Page refreshed. Please go on.',
-                    'message-type' => 'TokenMismatchException'
-                ]);
-        }
-        return parent::render($request, $e);
     }
 }
