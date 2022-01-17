@@ -359,6 +359,7 @@ class Handler implements ExceptionHandlerContract
         }
 
         Log::debug("location 12");
+        Log::debug($e->getMessage());
         return $request->expectsJson()
                     ? $this->prepareJsonResponse($request, $e)
                     : $this->prepareResponse($request, $e);
