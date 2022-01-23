@@ -71,7 +71,7 @@ img.hamburger-icon{
     opacity: 1;
 }
 
-.dropdown > .hamburger-icon:focus + .dropdown-menu{
+.dropdown > .link:focus + .dropdown-menu{
     opacity: 1;
 }
 

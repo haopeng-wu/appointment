@@ -43,8 +43,10 @@
             </a>
         </div>
         <div class="hamburger-wrapper dropdown">
-            <img class="hamburger-icon" src="{{asset('images/radix-icons_hamburger-menu.png')}}"
-                 alt="radix-icons_hamburger-menu">
+            <button class="link">
+                <img class="hamburger-icon" src="{{asset('images/radix-icons_hamburger-menu.png')}}"
+                     alt="radix-icons_hamburger-menu">
+            </button>
             <div class="dropdown-menu">
                 <div><a href="/customer-service">Customer Service</a></div>
                 <div><a href="/q-and-a">Questions and Answers</a></div>
