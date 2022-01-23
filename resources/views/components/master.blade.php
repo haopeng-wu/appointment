@@ -4,7 +4,7 @@
     <title>Relationsutveckling</title>
     <meta charset="UTF-8">
     <meta name="description"
-          content="Relationsutveckling provides professional family counselling service to couples and family members.">
+          content="Välkommen till Relationsutveckling.se – Förbättra din relation idag – Familjerådgivning online">
     <link href="{{ asset('css/custom.css')}}?v={{getdate()['mon'].getdate()['mday'].getdate()['hours'].getdate()['minutes']}}"
           rel="stylesheet">
 
