@@ -65,6 +65,7 @@ img.hamburger-icon{
     background-color: #cbf0fc;
     padding: .75rem;
     opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 .dropdown-menu.active{
