@@ -44,6 +44,18 @@ Route::get('/check-server/{appointment}', function (\App\Models\Appointment $app
 Route::get('/appointment/{appointment}/details', [\App\Http\Controllers\AppointmentController::class, 'retrieve']);
 Route::get('/out-of-stock', function () { return view('out-of-stock');});
 
+Route::get('/customer-service', function (){
+    return view('customer-service');
+});
+Route::get('/q-and-a', function (){
+    return view('q-and-a');
+});
+Route::get('/about-us', function (){
+    return view('about-us', function (){
+        return view('about-us');
+    });
+});
+
 /*
  * klarna hook url
 */

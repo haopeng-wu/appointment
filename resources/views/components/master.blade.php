@@ -48,13 +48,13 @@
             -->
 
         </div>
-        <!--
+
         <ul class="wrapper">
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
+            <li><a href="/customer-service">Customer Service</a></li>
+            <li><a href="/q-and-a">Questions and Answers</a></li>
+            <li><a href="/about-us">About us</a></li>
         </ul>
-        -->
+
     </div>
 </nav>
 {{$slot}}
