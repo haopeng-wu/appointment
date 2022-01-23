@@ -42,9 +42,12 @@
                 <img src="{{asset('images/one-line-text-icon.svg')}}" alt="the site logo">
             </a>
         </div>
-        <div class="hamburger-wrapper dropdown" data-dropdown>
 
-            <img class="hamburger-icon" data-dropdown-button
+        <div class="hamburger-wrapper dropdown"
+             data-dropdown>
+
+            <img class="hamburger-icon"
+                 data-dropdown-button
                  src="{{asset('images/radix-icons_hamburger-menu.png')}}"
                  alt="radix-icons_hamburger-menu">
 

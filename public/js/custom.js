@@ -133,7 +133,7 @@ for the menu drop down
  */
 document.addEventListener('click', e => {
     const isDropDownButton = e.target.matches('[data-dropdown-button]');
-    if (! isDropDownButton && e.target.closest('[data-dropdown]') != null) return;
+    if (!isDropDownButton && e.target.closest('[data-dropdown]') != null) return;
 
     let currentDropdown;
     if (isDropDownButton){
