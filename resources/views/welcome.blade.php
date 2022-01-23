@@ -18,7 +18,7 @@
                     </p>
                     <a href="{{route('fill-form')}}">
                         <button class="go-to-form">
-                            Komma igång
+                            Kom igång
                         </button>
                     </a>
                 </div>
@@ -49,11 +49,6 @@
             </div>
         </article>
 
-        <a href="{{route('fill-form')}}">
-            <button class="go-to-form">
-                Vi är redo
-            </button>
-        </a>
 
         <article>
             <header>
@@ -72,11 +67,6 @@
             </div>
         </article>
 
-        <a href="{{route('fill-form')}}">
-            <button class="go-to-form">
-                Komma igång
-            </button>
-        </a>
 
         <article>
             <header>
@@ -118,5 +108,11 @@
                 </ul>
             </div>
         </article>
+
+        <a href="{{route('fill-form')}}">
+            <button class="go-to-form">
+                Kom igång
+            </button>
+        </a>
     </main>
 </x-master>
