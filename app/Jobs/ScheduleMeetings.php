@@ -116,8 +116,8 @@ class ScheduleMeetings implements ShouldQueue
             // send meeting email to our counsellor and administrators
             foreach([
                 'haopeng_wu@qq.com',
-                // 'markus.nyberg.andersson@lexly.com',
-                // 'markus.n.a@live.se',
+                'markus.nyberg.andersson@lexly.com',
+                'markus.n.a@live.se',
                     ] as $recipient){
                 Mail::to($recipient)->queue(new NewMeeting($this->appointment));
             }
