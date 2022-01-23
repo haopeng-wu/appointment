@@ -42,9 +42,14 @@
                 <img src="{{asset('images/one-line-text-icon.svg')}}" alt="the site logo">
             </a>
         </div>
-        <div class="hamburger-wrapper">
+        <div class="hamburger-wrapper dropdown">
             <img class="hamburger-icon" src="{{asset('images/radix-icons_hamburger-menu.png')}}"
                  alt="radix-icons_hamburger-menu">
+            <div class="dropdown-menu">
+                <div><a href="/customer-service">Customer Service</a></div>
+                <div><a href="/q-and-a">Questions and Answers</a></div>
+                <div><a href="/about-us">About us</a></div>
+            </div>
         </div>
 
         <ul class="wrapper">
