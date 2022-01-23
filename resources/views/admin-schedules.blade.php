@@ -134,6 +134,7 @@
                         <td>{{$item->duration}}</td>
                         <td>{{$item->created_at}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
+                        <td><a href="{{$item->zoom_join_url}}">Join</a></td>
                         <td><a href="{{$item->zoom_start_url}}">Start</a></td>
                         <td>
                             @if($item->payment_status)
