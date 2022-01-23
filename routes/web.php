@@ -51,9 +51,7 @@ Route::get('/q-and-a', function (){
     return view('q-and-a');
 });
 Route::get('/about-us', function (){
-    return view('about-us', function (){
-        return view('about-us');
-    });
+    return view('about-us');
 });
 
 /*
