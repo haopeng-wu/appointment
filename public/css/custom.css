@@ -70,11 +70,7 @@ img.hamburger-icon{
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.dropdown-menu.active{
-    opacity: 1;
-}
-
-.dropdown > .link:focus + .dropdown-menu{
+.dropdown:active > .hamburger-icon + .dropdown-menu{
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
