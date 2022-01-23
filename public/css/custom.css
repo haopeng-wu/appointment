@@ -53,6 +53,28 @@ img.hamburger-icon{
     margin: 1em auto;
 }
 
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: calc(100% + .25rem);
+    background-color: #cbf0fc;
+    padding: .75rem;
+    opacity: 0;
+}
+
+.dropdown-menu.active{
+    opacity: 1;
+}
+
+.dropdown > .hamburger-icon:focus + .dropdown-menu{
+    opacity: 1;
+}
+
 @media screen and (max-width: 500px) {
     nav ul.wrapper{
         display: none;
