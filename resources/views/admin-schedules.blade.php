@@ -15,7 +15,7 @@
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
-                    <th>Link</th>
+                    <th>Zoom</th>
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -26,7 +26,7 @@
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>Link</td>
+                        <td><a href="{{$item->zoom_start_url}}">Start</a></td>
                         <td>
                             @if($item->payment_status)
                                 Paid
@@ -50,7 +50,7 @@
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
-                    <th>Link</th>
+                    <th>Zoom</th>
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -61,7 +61,7 @@
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>Link</td>
+                        <td><a href="{{$item->zoom_start_url}}">Start</a></td>
                         <td>
                             @if($item->payment_status)
                                 Paid
@@ -85,7 +85,7 @@
                     <th>Time slot</th>
                     <th>Duration</th>
                     <th>Details</th>
-                    <th>Link</th>
+                    <th>Zoom</th>
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -96,7 +96,7 @@
                         <td>{{$item->start_end_time}}</td>
                         <td>{{$item->duration}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>Link</td>
+                        <td><a href="{{$item->zoom_start_url}}">Start</a></td>
                         <td>
                             @if($item->payment_status)
                                 Paid
@@ -122,7 +122,7 @@
                     <th>Duration</th>
                     <th>Created at</th>
                     <th>Details</th>
-                    <th>Link</th>
+                    <th>Zoom</th>
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -134,7 +134,7 @@
                         <td>{{$item->duration}}</td>
                         <td>{{$item->created_at}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>Link</td>
+                        <td><a href="{{$item->zoom_start_url}}">Start</a></td>
                         <td>
                             @if($item->payment_status)
                                 Paid
@@ -160,7 +160,7 @@
                     <th>Duration</th>
                     <th>Created at</th>
                     <th>Details</th>
-                    <th>Link</th>
+                    <th>Zoom</th>
                     <th>Status</th>
                 </tr>
                 </thead>
@@ -172,7 +172,7 @@
                         <td>{{$item->duration}}</td>
                         <td>{{$item->created_at}}</td>
                         <td><a href="/appointment/{{$item->id}}/details">Click</a></td>
-                        <td>Link</td>
+                        <td><a href="{{$item->zoom_start_url}}">Start</a></td>
                         <td>
                             @if($item->payment_status)
                                 Paid
