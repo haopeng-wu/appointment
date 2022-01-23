@@ -17,6 +17,7 @@ main{
 /* nav */
 nav{
     margin-left: 1em;
+    position: relative;
 }
 nav > div.nav-wrapper{
     display: flex;
@@ -69,6 +70,7 @@ img.hamburger-icon{
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 1;
 }
 
 .dropdown.active > .hamburger-icon + .dropdown-menu{
