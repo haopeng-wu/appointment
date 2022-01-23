@@ -55,10 +55,6 @@ img.hamburger-icon{
     margin: 1em auto;
 }
 
-.dropdown{
-    position: relative;
-}
-
 .dropdown-menu{
     position: absolute;
     left: 0;
