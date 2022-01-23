@@ -30,7 +30,6 @@
         <article class="promote">
             <header>
                 <h1>
-                    Heloooooooo!
                     Familjerådgivning/ parterapi
                 </h1>
             </header>
