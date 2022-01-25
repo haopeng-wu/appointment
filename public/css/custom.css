@@ -59,7 +59,7 @@ img.hamburger-icon{
     /*width: 100%;*/
     /*height: 100%;*/
     top: 4rem;
-    right: 0;
+    right: 1em;
     height: 7.5em;
     width: 16em;
     background-color: #03a5d4c4;
@@ -68,8 +68,8 @@ img.hamburger-icon{
     transition: 250ms ease-in-out;
     z-index: 1;
     border-radius: 10px;
-    font-family: Courier New,inherit monospace;
-    font-size: small;
+    font-family: Arial ,sans-serif;
+    font-size: large;
     padding-top: 0.125em;
 }
 
