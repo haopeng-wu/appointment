@@ -60,7 +60,7 @@ img.hamburger-icon{
     /*height: 100%;*/
     top: 4rem;
     right: 0;
-    height: 7.5em;
+    /*height: 8.5em;*/
     width: 14em;
     background-color: #03a5d4e6;
     pointer-events: none;
@@ -71,6 +71,7 @@ img.hamburger-icon{
     font-family: Arial ,sans-serif;
     font-size: large;
     padding-top: 0.125em;
+    padding-bottom: 1.125em;
 }
 
 .menu-top-bar img{

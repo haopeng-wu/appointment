@@ -64,6 +64,8 @@
                     <div><a href="/q-and-a">Questions and Answers</a></div>
                     <hr>
                     <div><a href="/about-us">About us</a></div>
+                    <hr>
+                    <div><a href="#">Contact us</a></div>
                 </div>
             </div>
         </div>
