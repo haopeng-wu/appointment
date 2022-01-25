@@ -67,8 +67,8 @@ img.hamburger-icon{
     z-index: 1;
 }
 
-hr{
-    border-color: lightgray;
+.menu-top-bar img{
+    height: 1.25em;
 }
 
 .dropdown.active > .hamburger-icon + .dropdown-menu{
@@ -115,6 +115,11 @@ hr{
     border: none;
     height: 1px;
     background-color: #e8e8e4;
+}
+
+.dropdown-menu hr {
+    margin-top: 0;
+    height: 0;
 }
 
 .menu-items {
