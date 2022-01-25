@@ -58,12 +58,14 @@ img.hamburger-icon{
     position: absolute;
     inset: 0;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
+    height: 7.5em;
     background-color: #03a5d4;
     pointer-events: none;
-    transform: translateY(-100%);
+    transform: translateX(100%);
     transition: 150ms ease-in-out;
     z-index: 1;
+    top: 4em;
 }
 
 .menu-top-bar img{
@@ -71,7 +73,7 @@ img.hamburger-icon{
 }
 
 .dropdown.active > .hamburger-icon + .dropdown-menu{
-    transform: translateY(0);
+    transform: translateX(0);
     pointer-events: auto;
 }
 

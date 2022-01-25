@@ -53,11 +53,11 @@
 
             <div class="dropdown-menu">
                 <hr>
-                <div class="menu-top-bar flex">
-                    <img src="{{asset('images/white-filled-logo.svg')}}" alt="logo">
-                    <span class="x-mark">X</span>
-                </div>
-                <hr>
+{{--                <div class="menu-top-bar flex">--}}
+{{--                    <img src="{{asset('images/white-filled-logo.svg')}}" alt="logo">--}}
+{{--                    <span class="x-mark">X</span>--}}
+{{--                </div>--}}
+{{--                <hr>--}}
                 <div class="menu-items">
                     <div><a href="/customer-service">Customer Service</a></div>
                     <hr>
