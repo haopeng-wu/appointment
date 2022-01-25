@@ -61,8 +61,8 @@ img.hamburger-icon{
     top: 4rem;
     right: 0;
     height: 7.5em;
-    width: 16em;
-    background-color: #03a5d4c4;
+    width: 14em;
+    background-color: #03a5d4e6;
     pointer-events: none;
     transform: translateX(100%);
     transition: 250ms ease-in-out;
@@ -80,6 +80,10 @@ img.hamburger-icon{
 .dropdown.active > .hamburger-icon + .dropdown-menu{
     transform: translateX(-1em);
     pointer-events: auto;
+}
+
+.menu-items > a:hover{
+    color: black;
 }
 
 .dropdown-menu a{
