@@ -56,8 +56,9 @@ img.hamburger-icon{
 
 .dropdown-menu{
     position: absolute;
-    left: 0;
+    inset: 0;
     width: 100%;
+    height: 100%;
     background-color: #03a5d4;
     padding: .75rem;
     pointer-events: none;
