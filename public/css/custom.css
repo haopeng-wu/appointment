@@ -86,7 +86,7 @@ img.hamburger-icon{
     right: 2em;
     color: white;
     text-decoration-thickness: 1px;
-    font-family: Helvetica sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: smaller;
     line-height: 1.5em;
 }
@@ -115,11 +115,6 @@ img.hamburger-icon{
     border: none;
     height: 1px;
     background-color: #e8e8e4;
-}
-
-.dropdown-menu hr {
-    margin-top: 0;
-    height: 0;
 }
 
 .menu-items {
