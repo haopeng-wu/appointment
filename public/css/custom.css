@@ -82,7 +82,7 @@ img.hamburger-icon{
     pointer-events: auto;
 }
 
-.menu-items > a:hover{
+.menu-items > div > a:hover{
     color: black;
 }
 
