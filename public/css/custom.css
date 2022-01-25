@@ -17,7 +17,6 @@ main{
 /* nav */
 nav{
     margin-left: 1em;
-    position: relative;
 }
 nav > div.nav-wrapper{
     display: flex;
@@ -59,20 +58,22 @@ img.hamburger-icon{
     position: absolute;
     left: 0;
     width: 100%;
-    top: calc(100% + .25rem);
-    background-color: #cbf0fc;
+    background-color: #03a5d4;
     padding: .75rem;
-    opacity: 0;
     pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(-100%);
+    transition: 150ms ease-in-out;
     z-index: 1;
 }
 
 .dropdown.active > .hamburger-icon + .dropdown-menu{
-    opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+}
+
+.dropdown-menu a{
+    text-decoration-line: unset;
+    color: white;
 }
 
 @media screen and (max-width: 500px) {
