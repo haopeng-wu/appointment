@@ -107,12 +107,12 @@
                     <li>Auktoriserad familjerådgivare</li>
                 </ul>
             </div>
-        </article>
 
-        <a href="{{route('fill-form')}}">
-            <button class="go-to-form">
-                Kom igång
-            </button>
-        </a>
+            <a href="{{route('fill-form')}}">
+                <button class="go-to-form">
+                    Kom igång
+                </button>
+            </a>
+        </article>
     </main>
 </x-master>
