@@ -81,7 +81,7 @@ img.hamburger-icon{
 }
 
 .dropdown.active > .hamburger-icon + .dropdown-menu{
-    /*transform: translateX(-1em);*/
+    transform: translateX(-1em);
     opacity: 1;
     pointer-events: auto;
 }
