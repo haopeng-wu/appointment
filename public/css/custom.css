@@ -61,7 +61,7 @@ img.hamburger-icon{
     top: 4rem;
     right: 0;
     /*height: 8.5em;*/
-    width: 14em;
+    /*width: 14em;*/
     background-color: #03a5d4e6;
     pointer-events: none;
     transform: translateX(100%);
@@ -72,6 +72,7 @@ img.hamburger-icon{
     font-size: large;
     padding-top: 0.125em;
     padding-bottom: 1.125em;
+    white-space: nowrap;
 }
 
 .menu-top-bar img{
@@ -90,6 +91,7 @@ img.hamburger-icon{
 .dropdown-menu a{
     text-decoration-line: unset;
     color: white;
+    margin-right: 3em;
 }
 
 .menu-top-bar .x-mark{
