@@ -67,6 +67,10 @@ img.hamburger-icon{
     z-index: 1;
 }
 
+hr{
+    border-color: lightgray;
+}
+
 .dropdown.active > .hamburger-icon + .dropdown-menu{
     transform: translateY(0);
     pointer-events: auto;

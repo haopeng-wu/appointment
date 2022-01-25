@@ -52,9 +52,18 @@
                  alt="radix-icons_hamburger-menu">
 
             <div class="dropdown-menu">
-                <div><a href="/customer-service">Customer Service</a></div>
-                <div><a href="/q-and-a">Questions and Answers</a></div>
-                <div><a href="/about-us">About us</a></div>
+                <div class="menu-top-bar flex">
+                    <img src="{{asset('images/white-filled-logo.svg')}}" alt="logo">
+                    <span class="x-mark">X</span>
+                </div>
+                <hr>
+                <div class="menu-items">
+                    <div><a href="/customer-service">Customer Service</a></div>
+                    <hr>
+                    <div><a href="/q-and-a">Questions and Answers</a></div>
+                    <hr>
+                    <div><a href="/about-us">About us</a></div>
+                </div>
             </div>
         </div>
 
