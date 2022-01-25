@@ -63,7 +63,7 @@ img.hamburger-icon{
     background-color: #03a5d4;
     pointer-events: none;
     transform: translateX(100%);
-    transition: 150ms ease-in-out;
+    transition: 250ms ease-in-out;
     z-index: 1;
     top: 4em;
 }
