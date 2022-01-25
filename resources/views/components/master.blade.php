@@ -52,6 +52,7 @@
                  alt="radix-icons_hamburger-menu">
 
             <div class="dropdown-menu">
+                <hr>
                 <div class="menu-top-bar flex">
                     <img src="{{asset('images/white-filled-logo.svg')}}" alt="logo">
                     <span class="x-mark">X</span>

@@ -60,7 +60,6 @@ img.hamburger-icon{
     width: 100%;
     height: 100%;
     background-color: #03a5d4;
-    padding: .75rem;
     pointer-events: none;
     transform: translateY(-100%);
     transition: 150ms ease-in-out;
