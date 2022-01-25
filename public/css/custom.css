@@ -206,8 +206,13 @@ article.first{
     font-size: 1.25em;
 }
 
+.landing-page article:first-of-type{
+    margin-bottom: 0;
+}
+
 .landing-page article{
-    margin-bottom: 2em;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 3em;
 }
 
 .landing-page article:first-of-type{
