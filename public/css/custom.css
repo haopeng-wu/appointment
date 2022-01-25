@@ -81,6 +81,48 @@ hr{
     color: white;
 }
 
+.menu-top-bar .x-mark{
+    position: absolute;
+    right: 2em;
+    color: white;
+    text-decoration-thickness: 1px;
+    font-family: Helvetica sans-serif;
+    font-size: smaller;
+    line-height: 1.5em;
+}
+
+.menu-top-bar {
+    position: relative;
+    padding: 0.125em 0;
+}
+
+.menu-top-bar.flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu-top-bar img{
+    height: 1.25em;
+}
+
+.dropdown-menu hr:first-child {
+    margin-top: 0;
+    height: 0;
+}
+
+.dropdown-menu hr {
+    border: none;
+    height: 1px;
+    background-color: #e8e8e4;
+}
+
+.menu-items {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0.125em;
+}
+
 @media screen and (max-width: 500px) {
     nav ul.wrapper{
         display: none;
