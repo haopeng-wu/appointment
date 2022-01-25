@@ -81,6 +81,7 @@ img.hamburger-icon{
 }
 
 .menu-top-bar .x-mark{
+    cursor: pointer;
     position: absolute;
     right: 2em;
     color: white;
