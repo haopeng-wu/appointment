@@ -143,6 +143,10 @@ for the menu drop down
  */
 document.addEventListener('click', e => {
     const isDropDownButton = e.target.matches('[data-dropdown-button]');
+    if (e.target.matches('.menu-top-bar .x-mark')) {
+        const dropdown = document.querySelector('[data-dropdown]');
+        dropdown.classList.remove('active');
+    }
     if (!isDropDownButton && e.target.closest('[data-dropdown]') != null) return;
 
     let currentDropdown;
