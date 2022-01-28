@@ -61,15 +61,10 @@ img.hamburger-icon{
 
 .dropdown-menu{
     position: absolute;
-    /*width: 100%;*/
-    /*height: 100%;*/
     top: 4rem;
     right: 0;
-    /*height: 8.5em;*/
-    /*width: 14em;*/
     background-color: #03a5d4e6;
     pointer-events: none;
-    /*transform: translateX(100%);*/
     opacity: 0;
     transition: 300ms ease-in-out;
     z-index: 1;
@@ -98,7 +93,8 @@ img.hamburger-icon{
 .dropdown-menu a{
     text-decoration-line: unset;
     color: white;
-    margin-right: 3em;
+    display: block;
+    padding-right: 2.75em;
 }
 
 .menu-top-bar .x-mark{
