@@ -4,7 +4,7 @@
             <table>
                 <caption>
                     <h2>
-                        Details of this appointment
+                        Detaljer om detta möte
                     </h2>
                 </caption>
                 <thead>
