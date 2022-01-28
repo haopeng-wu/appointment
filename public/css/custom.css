@@ -28,6 +28,11 @@ nav li {
     list-style: none;
     margin-right: 20px;
 }
+
+nav li:last-of-type{
+    margin-right: 0;
+}
+
 ul{
     all:initial;
 }
