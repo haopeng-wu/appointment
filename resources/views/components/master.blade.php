@@ -54,13 +54,13 @@
             <div class="dropdown-menu">
                 <hr>
                 <div class="menu-items">
-                    <div><a href="/customer-service">Customer Service</a></div>
+                    <div><a href="/customer-service">Kundtjänst</a></div>
                     <hr>
-                    <div><a href="/q-and-a">Questions and Answers</a></div>
+                    <div><a href="/q-and-a">Frågor och svar</a></div>
                     <hr>
-                    <div><a href="/about-us">About us</a></div>
+                    <div><a href="/about-us">Om oss</a></div>
                     <hr>
-                    <div><a href="#">Contact us</a></div>
+                    <div><a href="#">Kontakta oss</a></div>
                 </div>
             </div>
         </div>
