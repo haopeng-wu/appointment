@@ -198,14 +198,20 @@ landing page
     max-width: 400px;
     margin: 0 auto;
 }
-
+.landing-page .box{
+    border: 1px solid #4373BF;
+    border-top: 10px solid #4373BF;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 20px;
+    margin-top: 30px;
+}
 .landing-page a{
     all: initial;
 }
 
-article.first{
-    height: calc(100vh - 4rem);
-}
+/*article.first{*/
+/*    height: calc(100vh - 4rem);*/
+/*}*/
 .landing-page p, .landing-page li{
     font-size: 1.25em;
 }

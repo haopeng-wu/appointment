@@ -25,9 +25,26 @@
 
             </div>
         </article>
+        <article class="box">
+            <h1>Krisbearbetning</h1>
 
-           
-            </a>
+            <ul>
+                <li><span style="font-size:16px">&Aring;lders/utveckligskris</span></li>
+                <li><span style="font-size:16px">Depression</span></li>
+                <li><span style="font-size:16px">Allvarlig fysisk sjukdom</span></li>
+                <li><span style="font-size:16px">Separation</span></li>
+                <li><span style="font-size:16px">Anh&ouml;rigs d&ouml;d</span></li>
+            </ul>
+        </article>
+        <article class="box">
+            <h1>Samtalsterapi / KBT / fobitr&auml;ning</h1>
+
+            <ul>
+                <li><span style="font-size:16px">Bearbetning av k&auml;nslor och tankem&ouml;nster som leder till o&ouml;nskade reaktioner, handlingar, undvikanden.</span>
+                </li>
+                <li><span style="font-size:16px">Aggressionsproblematik</span></li>
+                <li><span style="font-size:16px">Olika former av fobier</span></li>
+            </ul>
         </article>
     </main>
 </x-master>
