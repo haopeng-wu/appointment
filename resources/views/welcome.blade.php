@@ -36,7 +36,7 @@
                 <li><span style="font-size:16px">Anh&ouml;rigs d&ouml;d</span></li>
             </ul>
         </article>
-        <article class="box">
+        <article class="box green">
             <h1>Samtalsterapi / KBT / fobitr&auml;ning</h1>
 
             <ul>

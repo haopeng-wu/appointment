@@ -205,6 +205,11 @@ landing page
     padding: 15px 20px;
     margin-top: 30px;
 }
+
+.landing-page .box.green{
+    border: 1px solid #6aa84f;
+}
+
 .landing-page a{
     all: initial;
 }
