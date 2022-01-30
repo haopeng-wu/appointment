@@ -29,6 +29,7 @@
             <h1>Krisbearbetning</h1>
 
             <ul>
+                <li>we can add scorll to fade in effect to this section</li>
                 <li><span style="font-size:16px">&Aring;lders/utveckligskris</span></li>
                 <li><span style="font-size:16px">Depression</span></li>
                 <li><span style="font-size:16px">Allvarlig fysisk sjukdom</span></li>
@@ -36,6 +37,7 @@
                 <li><span style="font-size:16px">Anh&ouml;rigs d&ouml;d</span></li>
             </ul>
         </article>
+            <hr>
         <article class="box green">
             <h1>Samtalsterapi / KBT / fobitr&auml;ning</h1>
 
