@@ -25,7 +25,7 @@
 
             </div>
         </article>
-        <article class="box">
+        <article class="box fade-in">
             <h1>Krisbearbetning</h1>
 
             <ul>
@@ -38,7 +38,7 @@
             </ul>
         </article>
             <hr>
-        <article class="box green">
+        <article class="box green fade-in">
             <h1>Samtalsterapi / KBT / fobitr&auml;ning</h1>
 
             <ul>

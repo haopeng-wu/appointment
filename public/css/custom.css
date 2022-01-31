@@ -204,6 +204,11 @@ landing page
     border-radius: 0 0 10px 10px;
     padding: 15px 20px;
     margin-top: 30px;
+    transition: opacity 200ms ease-in-out;
+}
+
+.fade-in{
+    opacity: 0;
 }
 
 .landing-page .box.green{

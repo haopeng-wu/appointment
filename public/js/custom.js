@@ -160,3 +160,29 @@ document.addEventListener('click', e => {
         dropdown.classList.remove('active');
     })
 })
+
+/*
+scroll to fade in effect on welcome page
+ */
+
+function isVisible(element){
+    let elementBox = element.getBoundingClientRect();
+    let distanceFromTop = -200;
+
+    if (element.top - window.innerHeight < distanceFromTop){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function scanDocument(){
+    let articleList = document.querySelectorAll('.fade-in');
+    articleList.forEach(function (article){
+        if (isVisible(article)){
+            article.classList.remove('fade-in');
+        }
+    })
+}
+
+document.addEventListener('scroll', scanDocument);
