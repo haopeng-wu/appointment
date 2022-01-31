@@ -167,7 +167,7 @@ scroll to fade in effect on welcome page
 
 function isVisible(element){
     let elementBox = element.getBoundingClientRect();
-    let distanceFromTop = -200;
+    let distanceFromTop = -300;
 
     if (elementBox.top - window.innerHeight < distanceFromTop){
         return true;
