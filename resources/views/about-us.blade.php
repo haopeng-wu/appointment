@@ -1,9 +1,8 @@
 <x-master>
 
     <main class="about-us">
+        <h1>Om oss</h1>
         <article class="box">
-            <h1>Om oss</h1>
-
             <p><strong><span style="font-size:20px">Vad kan vi erbjuda er/dig?</span></strong></p>
 
             <p><strong><span style="font-size:18px">Familjer&aring;dgivning och parterapi</span></strong></p>
