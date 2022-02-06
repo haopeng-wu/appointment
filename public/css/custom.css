@@ -362,6 +362,7 @@ h1#now{
     display: inline-block;
     text-align: center;
     width: 10em;
+    white-space: nowrap;
 }
 
 .time-slots .checked {
