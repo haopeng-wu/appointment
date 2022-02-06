@@ -8,6 +8,9 @@ body{
 
 main{
     position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -234,6 +237,15 @@ landing page
 .landing-page article{
     font-family: Helvetica, sans-serif;
     margin-bottom: 3em;
+}
+
+article{
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 3em;
+}
+
+article:first-of-type{
+    margin-top: 0;
 }
 
 .landing-page article:first-of-type{
