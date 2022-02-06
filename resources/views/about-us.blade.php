@@ -1,7 +1,7 @@
 <x-master>
 
-    <main>
-        <article>
+    <main class="about-us">
+        <article class="box">
             <h1>Om oss</h1>
 
             <p><strong><span style="font-size:20px">Vad kan vi erbjuda er/dig?</span></strong></p>
@@ -24,7 +24,7 @@
             </ul>
         </article>
 
-        <article>
+        <article class="box">
             <p><strong><span style="font-size:18px">Krisbearbetning</span></strong></p>
 
             <ul>
@@ -36,7 +36,7 @@
             </ul>
         </article>
 
-        <article>
+        <article class="box fade-in">
             <p><strong><span style="font-size:18px">Samtalsterapi / KBT / fobitr&auml;ning</span></strong></p>
 
             <ul>
@@ -47,7 +47,7 @@
             </ul>
         </article>
 
-        <article>
+        <article class="box fade-in">
             <p><strong><span
                             style="font-size:20px">Vad g&ouml;r oss kvalificerade att hj&auml;lpa er/dig?</span></strong>
             </p>
@@ -61,7 +61,7 @@
             </ul>
         </article>
 
-        <article>
+        <article class="box fade-in">
             <p><strong><span style="font-size:18px">L&aring;ng arbetslivserfarenhet som</span></strong></p>
 
             <ul>
