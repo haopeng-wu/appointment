@@ -24,7 +24,7 @@
             </ul>
         </article>
 
-        <article class="box">
+        <article class="box green">
             <p><strong><span style="font-size:18px">Krisbearbetning</span></strong></p>
 
             <ul>
@@ -36,7 +36,7 @@
             </ul>
         </article>
 
-        <article class="box fade-in">
+        <article class="box fade-in light-green">
             <p><strong><span style="font-size:18px">Samtalsterapi / KBT / fobitr&auml;ning</span></strong></p>
 
             <ul>
@@ -47,7 +47,7 @@
             </ul>
         </article>
 
-        <article class="box fade-in">
+        <article class="box fade-in orange">
             <p><strong><span
                             style="font-size:20px">Vad g&ouml;r oss kvalificerade att hj&auml;lpa er/dig?</span></strong>
             </p>
@@ -61,7 +61,7 @@
             </ul>
         </article>
 
-        <article class="box fade-in">
+        <article class="box fade-in yellow">
             <p><strong><span style="font-size:18px">L&aring;ng arbetslivserfarenhet som</span></strong></p>
 
             <ul>

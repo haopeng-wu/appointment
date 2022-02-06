@@ -214,9 +214,21 @@ landing page
     opacity: 0;
 }
 
-.landing-page .box.green{
+main .box.green{
     border: 1px solid #6aa84f;
     border-top: 10px solid #6aa84f;
+}
+main .box.yellow{
+    border: 1px solid #f5d50d;
+    border-top: 10px solid #f5d50d;
+}
+main .box.orange{
+    border: 1px solid #ec7623;
+    border-top: 10px solid #ec7623;
+}
+main .box.light-green{
+    border: 1px solid #1dc4b1;
+    border-top: 10px solid #1dc4b1;
 }
 
 .landing-page a{
